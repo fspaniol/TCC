@@ -1,0 +1,11 @@
+\begin{align*}
+    \mathbf{min} &\sum_{a\in A_0^+} \sum_{k \in K} {X_{ak}} \\
+   \mathbf{s.t} &\sum_{a\in N_f^+(u) \cup A_0}{X_{ak}} - \sum_{a\in N_f^-(u) \cup A_0}{X_{ak}} = 0 & \forall k \in K, \forall u \in V, \forall f \in F \\
+        &\sum_{k \in K}{Y_{ku}=1} & \forall u \in V\\
+        &Y_{ku} = \sum_{a\in N^+(u)}{X_{ak}} & \forall k \in K, \forall u \in V\\
+        &C_{kv} - C_{ku} = d_v * Y_{kv} & \forall (u,v) \in V, \forall k \in K\\
+        &C_{ku} \leq Q & \forall k \in K, \forall u \in V \\
+        &C_{ku} \in \mathcal{Z^+} \\
+        &X_{ak} \in \{0,1\} \\
+        &Y_{ku} \in \{0,1\}
+\end{align*}
