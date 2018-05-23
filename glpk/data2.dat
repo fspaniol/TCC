@@ -1,11 +1,14 @@
-set V := 1 2 3;
+data;
 
-set N := 1 2 1 3 2 3;
-set F := f1 f2 f3;
+set V := 0 1 2 3;
 
-param d := 
-        1 10
-        2 10
-        3 10;
-    
-param q := 25;
+param q := 10;
+
+param d :=
+0 0
+1 10
+2 10
+3 10
+;
+
+end;

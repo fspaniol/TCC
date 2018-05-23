@@ -4,53 +4,43 @@
 # gets data from all routers present at a landscape
 #
 # Authors: Fernando Spaniol, Luciana Buriol, Jonatas Marques, Luciano Gaspary
+# what if i only use routers?!?!?! I can represent flows as sequence of routers
+# minimize the routes that cover the base node 
 
-set F;
+#set F;
 # Set of flows in an environment
 
 set V;
 # Set of routers in a network
 
-set N within(V cross V);
-# Set of links (or archs) in a given network
-
-set U within V;
-# set of links leaving base router
-
-set K within N;
+set K := V;
 # Set of routes possible
 
-var C{K,V};
-# Control que weight each route has after node u
+var C{K} >= 0;
+# Control the weight that each route is handling
 
-var X{N,K} >= 0;
-# Check whether link a is covered by route k
-
-var Y{K,V};
+var Y{K,V} binary;
 # Check whether node u is handled by route k
 
-param d{v in V};
+param d{u in V};
 # Amount of items in each router of the network
 
 param q;
 # Capacity that each flow can carry at one same time
 
-minimize cost: sum{(i,j) in N,(k,l) in K} X[i,j,k,l];
+minimize cost: sum{k in K} Y[k,0];
 # amount of telemetry submitions
 
-s.t. links{(k,l) in K, u in V, f in F}: sum{(i,j) in N} X[i,j,k,l] - sum{(i,j) in N} X[i,j,k,l] = 0;
-# If a link enters a place in one flow, one has to exit
-
-s.t. cover{u in V}: sum{(k,l) in K} Y[k,l,u] = 1;
+s.t. cover{u in V}: sum{k in K} Y[k,u] >= 1;
 # Only one route takes care of a node
 
-s.t. bind{(k,l) in K, u in V}: Y[k,l,u] = sum{(i,j) in N} X[i,j,k,l];
-# if a given arch A in route K is used, mark it on Y
+s.t. bind{k in K}: C[k] <= Y[k,0] * 9999999;
+# If a route has weight higher than 0, it means it's being used and we should count it
 
-s.t. setWeight{u in V, (k,l) in K}: C[k,l,u+1] - C[k,l,u] = d[u+1] * Y[k,l,u+1];
+s.t. setWeight{k in K}: C[k] = sum{u in V} Y[k,u] * d[u];
 # if a route covers a place, get its weight
 
-s.t. limitWeight{(k,l) in K, u in V}: C[k,l,u] <= q;
+s.t. limitWeight{k in K}: C[k] <= q;
 # limit the weigth a route is carrying by que max weight
 
 end;

@@ -1,0 +1,4 @@
+read 0.lp
+set thread 4
+optimize
+display solution variables -
