@@ -31,16 +31,16 @@ param q;
 minimize cost: sum{k in K} Y[k,0];
 # amount of telemetry submitions
 
-s.t. cover{u in V}: sum{k in K} Y[k,u] >= 1;
+s.t. cover{u in V: u != 0}: sum{k in K: k != 0} Y[k,u] = 1;
 # Only one route takes care of a node
 
-s.t. bind{k in K}: C[k] <= Y[k,0] * 9999999;
+s.t. bind{k in K: k != 0}: C[k] <= Y[k,0] * 9999999;
 # If a route has weight higher than 0, it means it's being used and we should count it
 
-s.t. setWeight{k in K}: C[k] = sum{u in V} Y[k,u] * d[u];
+s.t. setWeight{k in K: k != 0}: C[k] = sum{u in V: u != 0} Y[k,u] * d[u];
 # if a route covers a place, get its weight
 
-s.t. limitWeight{k in K}: C[k] <= q;
+s.t. limitWeight{k in K: k != 0}: C[k] <= q;
 # limit the weigth a route is carrying by que max weight
 
 end;
