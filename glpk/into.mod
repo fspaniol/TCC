@@ -7,13 +7,10 @@
 # what if i only use routers?!?!?! I can represent flows as sequence of routers
 # minimize the routes that cover the base node 
 
-#set F;
-# Set of flows in an environment
-
 set V;
 # Set of routers in a network
 
-set K := V;
+set K := {1..card(V)-1};
 # Set of routes possible
 
 var C{K} >= 0;
@@ -25,22 +22,30 @@ var Y{K,V} binary;
 param d{u in V};
 # Amount of items in each router of the network
 
+param F{i in {1..2},u in V}, binary;
+# Flows in the network
+
 param q;
 # Capacity that each flow can carry at one same time
 
 minimize cost: sum{k in K} Y[k,0];
 # amount of telemetry submitions
 
-s.t. cover{u in V: u != 0}: sum{k in K: k != 0} Y[k,u] = 1;
+s.t. checkFlow{k in K, u in V: u != 0}: Y[k,u] <= sum{i in {1..2}} F[i,u];
+# check if all elements in a route belong to some flow
+# for now it can only check if some flow covers it
+# we need to check whether all nodes in one route are covered by one flow
+
+s.t. cover{u in V: u != 0}: sum{k in K} Y[k,u] = 1;
 # Only one route takes care of a node
 
-s.t. bind{k in K: k != 0}: C[k] <= Y[k,0] * 9999999;
+s.t. bind{k in K}: C[k] <= Y[k,0] * 9999999;
 # If a route has weight higher than 0, it means it's being used and we should count it
 
-s.t. setWeight{k in K: k != 0}: C[k] = sum{u in V: u != 0} Y[k,u] * d[u];
+s.t. setWeight{k in K}: C[k] = sum{u in V: u != 0} Y[k,u] * d[u];
 # if a route covers a place, get its weight
 
-s.t. limitWeight{k in K: k != 0}: C[k] <= q;
+s.t. limitWeight{k in K}: C[k] <= q;
 # limit the weigth a route is carrying by que max weight
 
 end;
