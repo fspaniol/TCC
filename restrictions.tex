@@ -1,0 +1,33 @@
+Make sure that all nodes are covered. \\
+
+\begin{align*}
+&\sum_{k \in K}{X_{ak}=1} & \forall a \in A\\
+\end{align*}
+
+Make sure that a route only covers an arch if the flow with the same index passes by it. \\
+
+\begin{align*}
+        &X_{af} \leq F_{af} & \forall a \in f, \forall f in F \\
+\end{align*}
+
+Make sure that a group only dispatches if it collects in that arch. \\
+
+\begin{align*}
+        &X_{ak} \geq Y_{ku} & \forall k \in K, \forall a = (u,v) \in A \\
+\end{align*}
+
+The next two restrictions make sure of the following: \\
+
+\begin{itemize}
+    \item If $X_{ak}$ equals 1 and $C_{kv}$ equals 0, it means that the content was dispatched, therefore $Y_{ku}$ equals 1. \\
+    \item If $X_{ak}$ equals 1 and $C_{kv}$ is more than 0, it means that the content was not dispatched, therefore $Y_{ku}$ equals 0. \\ 
+    \item If $X_{ak}$ equals 0, then $C_{ku}$ has to be 0 and $Y_{ku}$ also has to be 0. \\
+\end{itemize}
+
+\begin{align*}
+        &Y_{ku} - X_{ak} \geq -C_{vk} & \forall k \in K, \forall a = (u,v) \in A \\
+\end{align*}
+
+\begin{align*}
+        &(-Y_{ku} + X_{ak}) * Q \geq C_{kv} & \forall k \in K, \forall a = (u,v) \in A \\
+\end{align*}

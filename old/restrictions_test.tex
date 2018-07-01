@@ -1,0 +1,41 @@
+Every single arch is covered by one route. \\
+
+\begin{align*}
+    &\sum_{k \in K}{X_{ak} = 1} & \forall a \in A \\
+\end{align*}
+
+A route only takes arches from flow with similar index. \\
+
+\begin{align*}
+    &X_{af} \leq F_{af} & \forall a \in f, \forall f in F \\
+\end{align*}
+
+A route always respects it's capacity
+
+\begin{align*}
+    &C_{ku} \leq Q & \forall k \in k, \forall u \in V \\
+\end{align*}
+
+A route can only dispatch if it collects in that arch.
+
+\begin{align*}
+    &Y_{ak} \leq X_{ak} & \forall a \in A, \forall k \in K \\
+\end{align*}
+
+If a node collects a node, get it's weight. \\
+
+\begin{align*}
+    &C_{kv} - C_{ku} = d * X_{ak} & \forall a=(u,v) \in f, \forall f \in F \\
+\end{align*}
+
+Reset the weight if it dispatches. \\
+
+\begin{align*}
+    &C_{kv} \leq (1 - Y_{ak}) * Q & \forall a=(u,v) \in k, \forall k \in K \\
+\end{align*}
+
+If an arch is not taken after one being taken, dispatch. \\
+
+\begin{align*}
+    &C_{kv} (C_{kv} + Y_{ak}) > C_{ku} & \forall k \in K, a=(u,v) \in A
+\end{align*}
