@@ -5,13 +5,16 @@
 #
 # Authors: Fernando Spaniol, Luciana Buriol, Jonatas Marques, Luciano Gaspary
 
+set S;
+# Array of sizes of each flow
+
+set F{s in S};
+# All flows in an environment
+
 set V;
 # Set of routers in a network
 
-param c;
-# amount of flows that are given
-
-set K := {1..c};
+set K := {s in S};
 # Set of routes possible
 
 set A;
@@ -26,22 +29,13 @@ var Y{K,V} binary;
 var X{A,K} binary;
 # Check whether arch A is handled by route K
 
-param F{i in {1..c}};
-# Flows in the network
-
 param q;
 # Capacity that each flow can carry at one same time
 
 minimize cost: sum{k in K, v in V} Y[k,v];
 # amount of telemetry submitions
 
-s.t. checkFlow{a in A}: sum{k in K} Y[a,k] = 1;
+s.t. checkFlow{a in A}: sum{k in K} X[a,k] = 1;
 # check if all archs are being covered by a route
-
-solve;
-
-printf("\n\nINTO Problem, the flows are: \n\n");
-printf(F[1]);
-printf("\n");
 
 end;
