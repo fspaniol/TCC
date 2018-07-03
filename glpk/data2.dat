@@ -6,6 +6,7 @@ set V := 1 2 3 4 5;
 set A := 1 2
 		2 3
 		3 4
+		4 5
 		;
 # Set that defines what archs are in a network
 
