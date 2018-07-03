@@ -17,7 +17,7 @@ set K := {s in S};
 set V;
 # Set that defines what routers are in a network
 
-set A := {(1,2),(2,3)};
+set A within (V cross V);
 # Set of archs in a network
 
 var C{K,V} >= 0;
@@ -32,20 +32,28 @@ var X{A,K} binary;
 param q;
 # Capacity that each flow can carry at one same time
 
-minimize cost: sum{k in K, u in V} Y[k,u];
+minimize groups: sum{k in K, u in V} Y[k,u];
 # amount of telemetry submitions
 
-s.t. checkFlow{(a,b) in A}: sum{k in K} X[a,b,k] = 1;
+s.t. checkFlow{(u,v) in A}: sum{k in K} X[u,v,k] = 1;
 # check if all archs are being covered by a route
 
 #s.t. sameFlow(f in F, a in f): X[a,f] <= F[0];
 # Check whether a route only takes something from the same index
 
-#s.t. delivery{(u,v) in A, k in K}: X[(u,v),k] >= Y[k,u];
+s.t. deliver{(u,v) in A, k in K}: X[u,v,k] >= Y[k,u];
+# A route can only deliver if it collects on that node
 
-solve;
+s.t. weight1{(u,v) in A, k in K}: Y[k,u] - X[u,v,k] >= C[k,v] * -1;
+# If a route carries and not delivers, bind the weight, if it carries and delivers, the weight has to be 0
 
-printf{(a,b) in A} "\n%d %d \n",a, b;
-#printf{(f,g) in F[1]} "\n\n%d\n\n", g;
+s.t. weight2{(u,v) in A, k in K}: ((-1 * Y[k,u]) + X[u,v,k]) * q >= C[k,v];
+# Limit the capacity of a flow and make it dispatch
+
+s.t. bindWeights{(u,v) in A, k in K}: C[k,v] - C[k,u] >= X[u,v,k] - Y[k,u];
+# If it collects and not dispatches, add
+
+#have to bind the routes to flows
+# have to make sure they dispatch at the last node
 
 end;
