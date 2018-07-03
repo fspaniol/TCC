@@ -13,8 +13,10 @@ set A := 1 2
 set S := 1 2;
 # Set that defines the flows in a network
 
-set F[1] := 1,2 ;
-set F[2] := 3,4,5;
+set F[1] := 1 2 
+			2 3;
+set F[2] := 3 4
+			4 5;
 # Sets that define the flows
 
 param q := 1;

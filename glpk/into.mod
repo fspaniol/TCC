@@ -14,7 +14,7 @@ set K := {s in S};
 set V;
 # Set that defines what routers are in a network
 
-set F{s in S};
+set F{s in S} within (V cross V);
 # All flows in an environment
 
 set A within (V cross V);
@@ -38,8 +38,8 @@ minimize groups: sum{k in K, u in V} Y[k,u];
 s.t. checkFlow{(u,v) in A}: sum{k in K} X[u,v,k] = 1;
 # check if all archs are being covered by a route
 
-#s.t. sameFlow{s in S, (u,v) in A}: X[u,v,s] <= F[s];
-# Check whether a route only takes something from the same index
+s.t. sameFlow{s in S, (u,v) in A diff F[s]}: X[u,v,s] = 0;
+# Make sure that a route only takes items from passes through a flow with same index
 
 s.t. deliver{(u,v) in A, k in K}: X[u,v,k] >= Y[k,u];
 # A route can only deliver if it collects on that node
@@ -53,11 +53,10 @@ s.t. weight2{(u,v) in A, k in K}: ((-1 * Y[k,u]) + X[u,v,k]) * q >= C[k,v];
 s.t. bindWeights{(u,v) in A, k in K}: C[k,v] - C[k,u] >= X[u,v,k] - Y[k,u];
 # If it collects and not dispatches, add
 
-#have to bind the routes to flows
 # have to make sure they dispatch at the last node
 
 solve;
 
-display{s in S, a in V diff F[s]} a;
+#display{s in S, a in V diff F[s]} a;
 
 end;
