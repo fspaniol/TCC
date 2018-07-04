@@ -19,7 +19,7 @@ set F[2] := 3 4
 			4 5;
 # Sets that define the flows
 
-param q := 1;
+param q := 2;
 # Parameter that defines the limit of weight for each flow
 
 end;
