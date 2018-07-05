@@ -46,19 +46,16 @@ s.t. deliver{(u,v) in A, k in K}: X[u,v,k] >= Y[k,u];
 
 s.t. weight1{(u,v) in A, k in K}: Y[k,u] - X[u,v,k] >= -C[k,v];# + C[k,u];
 # If a route carries and not delivers, bind the weight, if it carries and delivers, the weight has to be 0
-# This add of C[k,u] is making the flows always deliver, because otherwise there's no correct answer
-# We have to find a formula that lets us get a flow and add it's weight, unless we dispatch it
 
 s.t. weight2{(u,v) in A, k in K}: (-Y[k,u] + X[u,v,k]) * q >= C[k,v];
 # Limit the capacity of a flow and make it dispatch
 
-s.t. bindWeight1{(u,v) in A, k in K}: C[k,v] <= C[k,u] + (1 - X[u,v,k]) * q + (1 - Y[k,u]) * q;
+s.t. bindWeight1{(u,v) in A, k in K}: C[k,v] <= C[k,u] + 1 + (1 - X[u,v,k]) * q + Y[k,u] * q;
 # First bindage of the weight
 
-s.t. bindWeight2{(u,v) in A, k in K}: C[k,v] >= C[k,u] - (1 - X[u,v,k]) * q - (1 - Y[k,u]) * q;
+s.t. bindWeight2{(u,v) in A, k in K}: C[k,v] >= C[k,u] + 1 - (1 - X[u,v,k]) * q - Y[k,u] * q;
 # Second bindage of the weight 
 
-# Have to check the binding of weights, I'm not sure if it's right
 # have to make sure they dispatch at the last node
 
 solve;
