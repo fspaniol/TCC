@@ -17,6 +17,9 @@ set V;
 set F{s in S} within (V cross V);
 # All flows in an environment
 
+set Last{s in S} within (V cross V);
+# All flows in an environment
+
 set A within (V cross V);
 # Set of archs in a network
 
@@ -46,6 +49,9 @@ s.t. sameFlow{s in S, (u,v) in A diff F[s]}: X[u,v,s] = 0;
 s.t. deliver{s in S, (u,v) in F[s]}: X[u,v,s] >= Y[s,u];
 # A route can only deliver if it collects on that node
 
+s.t. receive{s in S, (u,v) in F[s]}: C[s,u] <= X[u,v,s];
+# If a node is not going to collect a flow, it should have never gotten any weight
+
 s.t. weight1{s in S, (u,v) in F[s]}: Y[s,u] - X[u,v,s] >= -C[s,v];
 # If a route carries and not delivers, bind the weight, if it carries and delivers, the weight has to be 0
 
@@ -58,10 +64,7 @@ s.t. bindWeight1{s in S, (u,v) in F[s]}: C[s,v] <= C[s,u] + 1 + (1 - X[u,v,s]) *
 s.t. bindWeight2{s in S, (u,v) in F[s]}: C[s,v] >= C[s,u] + 1 - (1 - X[u,v,s]) * q - Y[s,u] * q;
 # Second bindage of the weight 
 
-# have to make sure they dispatch at the last node
-
-solve;
-
-#display{s in S, (f,g) in F[s]}: f;
+s.t. dispatchLast{s in S, (u,v) in Last[s]}: Y[s,u] >= X[u,v,s];
+# Dispatch the last node
 
 end;
