@@ -48,6 +48,16 @@ set F[2] := 2 3;
 set F[3] := 2 1;
 ```
 
+## Set Last
+
+Set `Last` is a set that only tells what is the last link of a flow, since in GLPK we can't access the order of a set, this is needed to be able to force the flow to dispatch at the lost router. Therefore, for the example above the `Last` set would be:
+
+```
+set Last[1] := 2 3;
+set Last[2] := 2 3;
+set Last[3] := 2 1;
+```
+
 ## Param q
 
 Param q states the total capacity of each flow, it will determine how many items a route can gather before having to dispatch due to it being full, e.g.:
@@ -70,8 +80,8 @@ set V := 1 2 3 4 5;
 # Set that defines the routers present at a network
 
 set A := 1 2
-		2 3
 		3 4
+		2 3
 		4 5
 		;
 # Set that defines what archs are in a network
@@ -81,12 +91,21 @@ set S := 1 2;
 
 set F[1] := 1 2 
 			2 3;
-set F[2] := 3 4
+set F[2] := 1 2
+			2 3
+			3 4
 			4 5;
 # Sets that define the flows
 
-param q := 2;
+set Last[1] := 2 3;
+set Last[2] := 4 5;
+# Set last indicates what is the last link in every flow
+
+param q := 10;
 # Parameter that defines the limit of weight for each flow
 
+#param last [1] 1 2 [2] 4 5;
+
 end;
+
 ```

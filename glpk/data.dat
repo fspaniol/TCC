@@ -4,8 +4,8 @@ set V := 1 2 3 4 5;
 # Set that defines the routers present at a network
 
 set A := 1 2
-		3 4
 		2 3
+		3 4
 		4 5
 		;
 # Set that defines what archs are in a network
