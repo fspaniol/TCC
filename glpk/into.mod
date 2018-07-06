@@ -23,7 +23,7 @@ set A within (V cross V);
 var C{K,V} >= 0;
 # Control the weight that each route is handling
 
-var Y{K,V} binary;
+var Y{K,V}, binary;
 # Check whether route k dispatches on node V
 
 var X{A,K} binary;
@@ -31,6 +31,8 @@ var X{A,K} binary;
 
 param q;
 # Capacity that each flow can carry at one same time
+
+#param last{i in 1..card(S)}, symbolic, in A;
 
 minimize groups: sum{k in K, u in V} Y[k,u];
 # amount of telemetry submitions
@@ -41,25 +43,25 @@ s.t. checkFlow{(u,v) in A}: sum{k in K} X[u,v,k] = 1;
 s.t. sameFlow{s in S, (u,v) in A diff F[s]}: X[u,v,s] = 0;
 # Make sure that a route only takes items from passes through a flow with same index
 
-s.t. deliver{(u,v) in A, k in K}: X[u,v,k] >= Y[k,u];
+s.t. deliver{s in S, (u,v) in F[s]}: X[u,v,s] >= Y[s,u];
 # A route can only deliver if it collects on that node
 
-s.t. weight1{(u,v) in A, k in K}: Y[k,u] - X[u,v,k] >= -C[k,v];# + C[k,u];
+s.t. weight1{s in S, (u,v) in F[s]}: Y[s,u] - X[u,v,s] >= -C[s,v];
 # If a route carries and not delivers, bind the weight, if it carries and delivers, the weight has to be 0
 
-s.t. weight2{(u,v) in A, k in K}: (-Y[k,u] + X[u,v,k]) * q >= C[k,v];
+s.t. weight2{s in S, (u,v) in F[s]}: (-Y[s,u] + X[u,v,s]) * q >= C[s,v];
 # Limit the capacity of a flow and make it dispatch
 
-s.t. bindWeight1{(u,v) in A, k in K}: C[k,v] <= C[k,u] + 1 + (1 - X[u,v,k]) * q + Y[k,u] * q;
+s.t. bindWeight1{s in S, (u,v) in F[s]}: C[s,v] <= C[s,u] + 1 + (1 - X[u,v,s]) * q + Y[s,u] * q;
 # First bindage of the weight
 
-s.t. bindWeight2{(u,v) in A, k in K}: C[k,v] >= C[k,u] + 1 - (1 - X[u,v,k]) * q - Y[k,u] * q;
+s.t. bindWeight2{s in S, (u,v) in F[s]}: C[s,v] >= C[s,u] + 1 - (1 - X[u,v,s]) * q - Y[s,u] * q;
 # Second bindage of the weight 
 
 # have to make sure they dispatch at the last node
 
 solve;
 
-#display{s in S, a in V diff F[s]} a;
+#display{s in S, (f,g) in F[s]}: f;
 
 end;
