@@ -8,9 +8,6 @@
 set S;
 # Array of indexes of flows
 
-set K := {s in S};
-# Set of routes possible
-
 set V;
 # Set that defines what routers are in a network
 
@@ -23,24 +20,22 @@ set Last{s in S} within (V cross V);
 set A within (V cross V);
 # Set of archs in a network
 
-var C{K,V} >= 0;
+var C{S,V} >= 0;
 # Control the weight that each route is handling
 
-var Y{K,V}, binary;
+var Y{S,V}, binary;
 # Check whether route k dispatches on node V
 
-var X{A,K} binary;
+var X{A,S} binary;
 # Check whether arch A is handled by route K
 
 param q;
 # Capacity that each flow can carry at one same time
 
-#param last{i in 1..card(S)}, symbolic, in A;
-
-minimize groups: sum{k in K, u in V} Y[k,u];
+minimize groups: sum{s in S, u in V} Y[s,u];
 # amount of telemetry submitions
 
-s.t. checkFlow{(u,v) in A}: sum{k in K} X[u,v,k] = 1;
+s.t. checkFlow{(u,v) in A}: sum{s in S} X[u,v,s] = 1;
 # check if all archs are being covered by a route
 
 s.t. sameFlow{s in S, (u,v) in A diff F[s]}: X[u,v,s] = 0;
