@@ -44,7 +44,7 @@ s.t. sameFlow{s in S, (u,v) in A diff F[s]}: X[u,v,s] = 0;
 s.t. deliver{s in S, (u,v) in F[s]}: X[u,v,s] >= Y[s,u];
 # A route can only deliver if it collects on that node
 
-s.t. receive{s in S, (u,v) in F[s]}: C[s,u] <= X[u,v,s];
+s.t. receive{s in S, (u,v) in F[s]}: C[s,u] <= X[u,v,s] * q;
 # If a node is not going to collect a flow, it should have never gotten any weight
 
 s.t. weight1{s in S, (u,v) in F[s]}: Y[s,u] - X[u,v,s] >= -C[s,v];
