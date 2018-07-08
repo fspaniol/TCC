@@ -1,119 +1,1568 @@
 Problem:    into
-Rows:       40
-Columns:    25 (18 integer, 18 binary)
-Non-zeros:  115
+Rows:       522
+Columns:    510 (456 integer, 456 binary)
+Non-zeros:  1470
 Status:     INTEGER OPTIMAL
-Objective:  groups = 2 (MINimum)
+Objective:  groups = 13 (MINimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 groups                      2                             
-     2 checkFlow[1,2]
+     1 groups                     13                             
+     2 checkFlow[s1,h1]
                                    1             1             = 
-     3 checkFlow[2,3]
+     3 checkFlow[s1,s2]
                                    1             1             = 
-     4 checkFlow[3,4]
+     4 checkFlow[s2,s1]
                                    1             1             = 
-     5 checkFlow[4,5]
+     5 checkFlow[s2,h2]
                                    1             1             = 
-     6 sameFlow[1,3,4]
+     6 checkFlow[s2,s3]
+                                   1             1             = 
+     7 checkFlow[s3,s2]
+                                   1             1             = 
+     8 checkFlow[s2,s4]
+                                   1             1             = 
+     9 checkFlow[s4,s2]
+                                   1             1             = 
+    10 checkFlow[s3,h3]
+                                   1             1             = 
+    11 checkFlow[s3,s4]
+                                   1             1             = 
+    12 checkFlow[s4,s3]
+                                   1             1             = 
+    13 checkFlow[s4,s5]
+                                   1             1             = 
+    14 checkFlow[s5,s4]
+                                   1             1             = 
+    15 checkFlow[s5,h4]
+                                   1             1             = 
+    16 checkFlow[s4,s6]
+                                   1             1             = 
+    17 checkFlow[s6,s4]
+                                   1             1             = 
+    18 checkFlow[s6,h5]
+                                   1             1             = 
+    19 checkFlow[s6,s8]
+                                   1             1             = 
+    20 checkFlow[s8,s6]
+                                   1             1             = 
+    21 checkFlow[s8,h7]
+                                   1             1             = 
+    22 checkFlow[s4,s7]
+                                   1             1             = 
+    23 checkFlow[s7,s4]
+                                   1             1             = 
+    24 checkFlow[s7,h6]
+                                   1             1             = 
+    25 sameFlow[1,s1,h1]
                                    0            -0             = 
-     7 sameFlow[1,4,5]
+    26 sameFlow[1,s2,s1]
                                    0            -0             = 
-     8 sameFlow[2,1,2]
+    27 sameFlow[1,s2,h2]
                                    0            -0             = 
-     9 deliver[1,1,2]
+    28 sameFlow[1,s2,s3]
+                                   0            -0             = 
+    29 sameFlow[1,s3,s2]
+                                   0            -0             = 
+    30 sameFlow[1,s4,s2]
+                                   0            -0             = 
+    31 sameFlow[1,s3,h3]
+                                   0            -0             = 
+    32 sameFlow[1,s3,s4]
+                                   0            -0             = 
+    33 sameFlow[1,s4,s3]
+                                   0            -0             = 
+    34 sameFlow[1,s4,s5]
+                                   0            -0             = 
+    35 sameFlow[1,s5,s4]
+                                   0            -0             = 
+    36 sameFlow[1,s5,h4]
+                                   0            -0             = 
+    37 sameFlow[1,s6,s4]
+                                   0            -0             = 
+    38 sameFlow[1,s6,h5]
+                                   0            -0             = 
+    39 sameFlow[1,s8,s6]
+                                   0            -0             = 
+    40 sameFlow[1,s4,s7]
+                                   0            -0             = 
+    41 sameFlow[1,s7,s4]
+                                   0            -0             = 
+    42 sameFlow[1,s7,h6]
+                                   0            -0             = 
+    43 sameFlow[2,s1,h1]
+                                   0            -0             = 
+    44 sameFlow[2,s1,s2]
+                                   0            -0             = 
+    45 sameFlow[2,s2,s1]
+                                   0            -0             = 
+    46 sameFlow[2,s2,h2]
+                                   0            -0             = 
+    47 sameFlow[2,s3,s2]
+                                   0            -0             = 
+    48 sameFlow[2,s2,s4]
+                                   0            -0             = 
+    49 sameFlow[2,s4,s2]
+                                   0            -0             = 
+    50 sameFlow[2,s3,s4]
+                                   0            -0             = 
+    51 sameFlow[2,s4,s3]
+                                   0            -0             = 
+    52 sameFlow[2,s4,s5]
+                                   0            -0             = 
+    53 sameFlow[2,s5,s4]
+                                   0            -0             = 
+    54 sameFlow[2,s5,h4]
+                                   0            -0             = 
+    55 sameFlow[2,s4,s6]
+                                   0            -0             = 
+    56 sameFlow[2,s6,s4]
+                                   0            -0             = 
+    57 sameFlow[2,s6,h5]
+                                   0            -0             = 
+    58 sameFlow[2,s6,s8]
+                                   0            -0             = 
+    59 sameFlow[2,s8,s6]
+                                   0            -0             = 
+    60 sameFlow[2,s8,h7]
+                                   0            -0             = 
+    61 sameFlow[2,s4,s7]
+                                   0            -0             = 
+    62 sameFlow[2,s7,s4]
+                                   0            -0             = 
+    63 sameFlow[2,s7,h6]
+                                   0            -0             = 
+    64 sameFlow[3,s1,h1]
+                                   0            -0             = 
+    65 sameFlow[3,s1,s2]
+                                   0            -0             = 
+    66 sameFlow[3,s2,s1]
+                                   0            -0             = 
+    67 sameFlow[3,s2,h2]
+                                   0            -0             = 
+    68 sameFlow[3,s2,s3]
+                                   0            -0             = 
+    69 sameFlow[3,s3,s2]
+                                   0            -0             = 
+    70 sameFlow[3,s2,s4]
+                                   0            -0             = 
+    71 sameFlow[3,s4,s2]
+                                   0            -0             = 
+    72 sameFlow[3,s3,h3]
+                                   0            -0             = 
+    73 sameFlow[3,s4,s3]
+                                   0            -0             = 
+    74 sameFlow[3,s4,s5]
+                                   0            -0             = 
+    75 sameFlow[3,s5,s4]
+                                   0            -0             = 
+    76 sameFlow[3,s5,h4]
+                                   0            -0             = 
+    77 sameFlow[3,s6,s4]
+                                   0            -0             = 
+    78 sameFlow[3,s6,s8]
+                                   0            -0             = 
+    79 sameFlow[3,s8,s6]
+                                   0            -0             = 
+    80 sameFlow[3,s8,h7]
+                                   0            -0             = 
+    81 sameFlow[3,s4,s7]
+                                   0            -0             = 
+    82 sameFlow[3,s7,s4]
+                                   0            -0             = 
+    83 sameFlow[3,s7,h6]
+                                   0            -0             = 
+    84 sameFlow[4,s1,h1]
+                                   0            -0             = 
+    85 sameFlow[4,s1,s2]
+                                   0            -0             = 
+    86 sameFlow[4,s2,s1]
+                                   0            -0             = 
+    87 sameFlow[4,s2,s3]
+                                   0            -0             = 
+    88 sameFlow[4,s3,s2]
+                                   0            -0             = 
+    89 sameFlow[4,s2,s4]
+                                   0            -0             = 
+    90 sameFlow[4,s3,h3]
+                                   0            -0             = 
+    91 sameFlow[4,s3,s4]
+                                   0            -0             = 
+    92 sameFlow[4,s4,s3]
+                                   0            -0             = 
+    93 sameFlow[4,s4,s5]
+                                   0            -0             = 
+    94 sameFlow[4,s5,h4]
+                                   0            -0             = 
+    95 sameFlow[4,s4,s6]
+                                   0            -0             = 
+    96 sameFlow[4,s6,s4]
+                                   0            -0             = 
+    97 sameFlow[4,s6,h5]
+                                   0            -0             = 
+    98 sameFlow[4,s6,s8]
+                                   0            -0             = 
+    99 sameFlow[4,s8,s6]
+                                   0            -0             = 
+   100 sameFlow[4,s8,h7]
+                                   0            -0             = 
+   101 sameFlow[4,s4,s7]
+                                   0            -0             = 
+   102 sameFlow[4,s7,s4]
+                                   0            -0             = 
+   103 sameFlow[4,s7,h6]
+                                   0            -0             = 
+   104 sameFlow[5,s1,s2]
+                                   0            -0             = 
+   105 sameFlow[5,s2,h2]
+                                   0            -0             = 
+   106 sameFlow[5,s2,s3]
+                                   0            -0             = 
+   107 sameFlow[5,s3,s2]
+                                   0            -0             = 
+   108 sameFlow[5,s2,s4]
+                                   0            -0             = 
+   109 sameFlow[5,s3,h3]
+                                   0            -0             = 
+   110 sameFlow[5,s3,s4]
+                                   0            -0             = 
+   111 sameFlow[5,s4,s3]
+                                   0            -0             = 
+   112 sameFlow[5,s4,s5]
+                                   0            -0             = 
+   113 sameFlow[5,s5,s4]
+                                   0            -0             = 
+   114 sameFlow[5,s5,h4]
+                                   0            -0             = 
+   115 sameFlow[5,s4,s6]
+                                   0            -0             = 
+   116 sameFlow[5,s6,h5]
+                                   0            -0             = 
+   117 sameFlow[5,s6,s8]
+                                   0            -0             = 
+   118 sameFlow[5,s8,s6]
+                                   0            -0             = 
+   119 sameFlow[5,s8,h7]
+                                   0            -0             = 
+   120 sameFlow[5,s4,s7]
+                                   0            -0             = 
+   121 sameFlow[5,s7,s4]
+                                   0            -0             = 
+   122 sameFlow[5,s7,h6]
+                                   0            -0             = 
+   123 sameFlow[6,s1,h1]
+                                   0            -0             = 
+   124 sameFlow[6,s1,s2]
+                                   0            -0             = 
+   125 sameFlow[6,s2,s1]
+                                   0            -0             = 
+   126 sameFlow[6,s2,h2]
+                                   0            -0             = 
+   127 sameFlow[6,s2,s3]
+                                   0            -0             = 
+   128 sameFlow[6,s3,s2]
+                                   0            -0             = 
+   129 sameFlow[6,s2,s4]
+                                   0            -0             = 
+   130 sameFlow[6,s4,s2]
+                                   0            -0             = 
+   131 sameFlow[6,s3,s4]
+                                   0            -0             = 
+   132 sameFlow[6,s4,s5]
+                                   0            -0             = 
+   133 sameFlow[6,s5,s4]
+                                   0            -0             = 
+   134 sameFlow[6,s5,h4]
+                                   0            -0             = 
+   135 sameFlow[6,s4,s6]
+                                   0            -0             = 
+   136 sameFlow[6,s6,s4]
+                                   0            -0             = 
+   137 sameFlow[6,s6,h5]
+                                   0            -0             = 
+   138 sameFlow[6,s6,s8]
+                                   0            -0             = 
+   139 sameFlow[6,s8,s6]
+                                   0            -0             = 
+   140 sameFlow[6,s8,h7]
+                                   0            -0             = 
+   141 sameFlow[6,s4,s7]
+                                   0            -0             = 
+   142 sameFlow[6,s7,h6]
+                                   0            -0             = 
+   143 sameFlow[7,s1,s2]
+                                   0            -0             = 
+   144 sameFlow[7,s2,h2]
+                                   0            -0             = 
+   145 sameFlow[7,s2,s3]
+                                   0            -0             = 
+   146 sameFlow[7,s3,s2]
+                                   0            -0             = 
+   147 sameFlow[7,s2,s4]
+                                   0            -0             = 
+   148 sameFlow[7,s3,h3]
+                                   0            -0             = 
+   149 sameFlow[7,s3,s4]
+                                   0            -0             = 
+   150 sameFlow[7,s4,s3]
+                                   0            -0             = 
+   151 sameFlow[7,s4,s5]
+                                   0            -0             = 
+   152 sameFlow[7,s5,s4]
+                                   0            -0             = 
+   153 sameFlow[7,s5,h4]
+                                   0            -0             = 
+   154 sameFlow[7,s4,s6]
+                                   0            -0             = 
+   155 sameFlow[7,s6,h5]
+                                   0            -0             = 
+   156 sameFlow[7,s6,s8]
+                                   0            -0             = 
+   157 sameFlow[7,s8,h7]
+                                   0            -0             = 
+   158 sameFlow[7,s4,s7]
+                                   0            -0             = 
+   159 sameFlow[7,s7,s4]
+                                   0            -0             = 
+   160 sameFlow[7,s7,h6]
+                                   0            -0             = 
+   161 sameFlow[8,s1,s2]
+                                   0            -0             = 
+   162 sameFlow[8,s2,h2]
+                                   0            -0             = 
+   163 sameFlow[8,s2,s3]
+                                   0            -0             = 
+   164 sameFlow[8,s2,s4]
+                                   0            -0             = 
+   165 sameFlow[8,s4,s2]
+                                   0            -0             = 
+   166 sameFlow[8,s3,h3]
+                                   0            -0             = 
+   167 sameFlow[8,s3,s4]
+                                   0            -0             = 
+   168 sameFlow[8,s4,s3]
+                                   0            -0             = 
+   169 sameFlow[8,s4,s5]
+                                   0            -0             = 
+   170 sameFlow[8,s5,s4]
+                                   0            -0             = 
+   171 sameFlow[8,s5,h4]
+                                   0            -0             = 
+   172 sameFlow[8,s4,s6]
+                                   0            -0             = 
+   173 sameFlow[8,s6,s4]
+                                   0            -0             = 
+   174 sameFlow[8,s6,h5]
+                                   0            -0             = 
+   175 sameFlow[8,s6,s8]
+                                   0            -0             = 
+   176 sameFlow[8,s8,s6]
+                                   0            -0             = 
+   177 sameFlow[8,s8,h7]
+                                   0            -0             = 
+   178 sameFlow[8,s4,s7]
+                                   0            -0             = 
+   179 sameFlow[8,s7,s4]
+                                   0            -0             = 
+   180 sameFlow[8,s7,h6]
+                                   0            -0             = 
+   181 sameFlow[9,s1,h1]
+                                   0            -0             = 
+   182 sameFlow[9,s1,s2]
+                                   0            -0             = 
+   183 sameFlow[9,s2,s1]
+                                   0            -0             = 
+   184 sameFlow[9,s2,h2]
+                                   0            -0             = 
+   185 sameFlow[9,s2,s3]
+                                   0            -0             = 
+   186 sameFlow[9,s3,s2]
+                                   0            -0             = 
+   187 sameFlow[9,s2,s4]
+                                   0            -0             = 
+   188 sameFlow[9,s4,s2]
+                                   0            -0             = 
+   189 sameFlow[9,s3,h3]
+                                   0            -0             = 
+   190 sameFlow[9,s3,s4]
+                                   0            -0             = 
+   191 sameFlow[9,s4,s3]
+                                   0            -0             = 
+   192 sameFlow[9,s4,s5]
+                                   0            -0             = 
+   193 sameFlow[9,s5,h4]
+                                   0            -0             = 
+   194 sameFlow[9,s6,s4]
+                                   0            -0             = 
+   195 sameFlow[9,s6,s8]
+                                   0            -0             = 
+   196 sameFlow[9,s8,s6]
+                                   0            -0             = 
+   197 sameFlow[9,s8,h7]
+                                   0            -0             = 
+   198 sameFlow[9,s4,s7]
+                                   0            -0             = 
+   199 sameFlow[9,s7,s4]
+                                   0            -0             = 
+   200 sameFlow[9,s7,h6]
+                                   0            -0             = 
+   201 sameFlow[10,s1,h1]
+                                   0            -0             = 
+   202 sameFlow[10,s1,s2]
+                                   0            -0             = 
+   203 sameFlow[10,s2,s1]
+                                   0            -0             = 
+   204 sameFlow[10,s2,h2]
+                                   0            -0             = 
+   205 sameFlow[10,s2,s3]
+                                   0            -0             = 
+   206 sameFlow[10,s3,s2]
+                                   0            -0             = 
+   207 sameFlow[10,s4,s2]
+                                   0            -0             = 
+   208 sameFlow[10,s3,h3]
+                                   0            -0             = 
+   209 sameFlow[10,s3,s4]
+                                   0            -0             = 
+   210 sameFlow[10,s4,s3]
+                                   0            -0             = 
+   211 sameFlow[10,s4,s5]
+                                   0            -0             = 
+   212 sameFlow[10,s5,s4]
+                                   0            -0             = 
+   213 sameFlow[10,s5,h4]
+                                   0            -0             = 
+   214 sameFlow[10,s6,s4]
+                                   0            -0             = 
+   215 sameFlow[10,s6,h5]
+                                   0            -0             = 
+   216 sameFlow[10,s8,s6]
+                                   0            -0             = 
+   217 sameFlow[10,s4,s7]
+                                   0            -0             = 
+   218 sameFlow[10,s7,s4]
+                                   0            -0             = 
+   219 sameFlow[10,s7,h6]
+                                   0            -0             = 
+   220 sameFlow[11,s1,h1]
+                                   0            -0             = 
+   221 sameFlow[11,s1,s2]
+                                   0            -0             = 
+   222 sameFlow[11,s2,s1]
+                                   0            -0             = 
+   223 sameFlow[11,s2,h2]
+                                   0            -0             = 
+   224 sameFlow[11,s2,s3]
+                                   0            -0             = 
+   225 sameFlow[11,s3,s2]
+                                   0            -0             = 
+   226 sameFlow[11,s2,s4]
+                                   0            -0             = 
+   227 sameFlow[11,s4,s2]
+                                   0            -0             = 
+   228 sameFlow[11,s3,h3]
+                                   0            -0             = 
+   229 sameFlow[11,s3,s4]
+                                   0            -0             = 
+   230 sameFlow[11,s4,s3]
+                                   0            -0             = 
+   231 sameFlow[11,s5,s4]
+                                   0            -0             = 
+   232 sameFlow[11,s4,s6]
+                                   0            -0             = 
+   233 sameFlow[11,s6,h5]
+                                   0            -0             = 
+   234 sameFlow[11,s6,s8]
+                                   0            -0             = 
+   235 sameFlow[11,s8,h7]
+                                   0            -0             = 
+   236 sameFlow[11,s4,s7]
+                                   0            -0             = 
+   237 sameFlow[11,s7,s4]
+                                   0            -0             = 
+   238 sameFlow[11,s7,h6]
+                                   0            -0             = 
+   239 sameFlow[12,s1,h1]
+                                   0            -0             = 
+   240 sameFlow[12,s1,s2]
+                                   0            -0             = 
+   241 sameFlow[12,s2,s1]
+                                   0            -0             = 
+   242 sameFlow[12,s2,h2]
+                                   0            -0             = 
+   243 sameFlow[12,s2,s3]
+                                   0            -0             = 
+   244 sameFlow[12,s3,s2]
+                                   0            -0             = 
+   245 sameFlow[12,s2,s4]
+                                   0            -0             = 
+   246 sameFlow[12,s4,s2]
+                                   0            -0             = 
+   247 sameFlow[12,s3,h3]
+                                   0            -0             = 
+   248 sameFlow[12,s3,s4]
+                                   0            -0             = 
+   249 sameFlow[12,s4,s3]
+                                   0            -0             = 
+   250 sameFlow[12,s4,s5]
+                                   0            -0             = 
+   251 sameFlow[12,s5,s4]
+                                   0            -0             = 
+   252 sameFlow[12,s5,h4]
+                                   0            -0             = 
+   253 sameFlow[12,s4,s6]
+                                   0            -0             = 
+   254 sameFlow[12,s6,h5]
+                                   0            -0             = 
+   255 sameFlow[12,s6,s8]
+                                   0            -0             = 
+   256 sameFlow[12,s8,s6]
+                                   0            -0             = 
+   257 sameFlow[12,s8,h7]
+                                   0            -0             = 
+   258 sameFlow[12,s7,s4]
+                                   0            -0             = 
+   259 deliver[1,s1,s2]
                                    1            -0               
-    10 deliver[1,2,3]
+   260 deliver[1,s2,s4]
                                    0            -0               
-    11 deliver[2,2,3]
+   261 deliver[1,s4,s6]
                                    0            -0               
-    12 deliver[2,3,4]
+   262 deliver[1,s6,s8]
+                                   0            -0               
+   263 deliver[1,s8,h7]
+                                   0            -0               
+   264 deliver[2,s2,s3]
                                    1            -0               
-    13 deliver[2,4,5]
+   265 deliver[2,s3,h3]
                                    0            -0               
-    14 receive[1,1,2]
+   266 deliver[3,s3,s4]
+                                   0            -0               
+   267 deliver[3,s4,s6]
+                                   0            -0               
+   268 deliver[3,s6,h5]
+                                   0            -0               
+   269 deliver[4,s5,s4]
+                                   0            -0               
+   270 deliver[4,s4,s2]
+                                   1            -0               
+   271 deliver[4,s2,h2]
+                                   0            -0               
+   272 deliver[5,s6,s4]
+                                   0            -0               
+   273 deliver[5,s4,s2]
+                                   0            -0               
+   274 deliver[5,s2,s1]
+                                   0            -0               
+   275 deliver[5,s1,h1]
+                                   0            -0               
+   276 deliver[6,s7,s4]
+                                   1            -0               
+   277 deliver[6,s4,s3]
+                                   0            -0               
+   278 deliver[6,s3,h3]
+                                   0            -0               
+   279 deliver[7,s8,s6]
+                                   1            -0               
+   280 deliver[7,s6,s4]
+                                   0            -0               
+   281 deliver[7,s4,s2]
+                                   0            -0               
+   282 deliver[7,s2,s1]
+                                   0            -0               
+   283 deliver[7,s1,h1]
+                                   0            -0               
+   284 deliver[8,s3,s2]
+                                   1            -0               
+   285 deliver[8,s2,s1]
+                                   0            -0               
+   286 deliver[8,s1,h1]
+                                   0            -0               
+   287 deliver[9,s5,s4]
+                                   0            -0               
+   288 deliver[9,s4,s6]
+                                   1            -0               
+   289 deliver[9,s6,h5]
+                                   0            -0               
+   290 deliver[10,s2,s4]
+                                   0            -0               
+   291 deliver[10,s4,s6]
+                                   0            -0               
+   292 deliver[10,s6,s8]
+                                   1            -0               
+   293 deliver[10,s8,h7]
+                                   0            -0               
+   294 deliver[11,s8,s6]
+                                   0            -0               
+   295 deliver[11,s6,s4]
+                                   0            -0               
+   296 deliver[11,s4,s5]
+                                   1            -0               
+   297 deliver[11,s5,h4]
+                                   0            -0               
+   298 deliver[12,s6,s4]
+                                   0            -0               
+   299 deliver[12,s4,s7]
+                                   1            -0               
+   300 deliver[12,s7,h6]
+                                   0            -0               
+   301 receive[1,s1,s2]
                                   -2                          -0 
-    15 receive[1,2,3]
+   302 receive[1,s2,s4]
                                   -1                          -0 
-    16 receive[2,2,3]
+   303 receive[1,s4,s6]
                                    0                          -0 
-    17 receive[2,3,4]
+   304 receive[1,s6,s8]
+                                   0                          -0 
+   305 receive[1,s8,h7]
+                                   0                          -0 
+   306 receive[2,s2,s3]
                                   -2                          -0 
-    18 receive[2,4,5]
+   307 receive[2,s3,h3]
                                   -1                          -0 
-    19 weight1[1,1,2]
+   308 receive[3,s3,s4]
+                                  -1                          -0 
+   309 receive[3,s4,s6]
+                                   0                          -0 
+   310 receive[3,s6,h5]
+                                   0                          -0 
+   311 receive[4,s5,s4]
+                                  -1                          -0 
+   312 receive[4,s4,s2]
+                                  -2                          -0 
+   313 receive[4,s2,h2]
+                                  -1                          -0 
+   314 receive[5,s6,s4]
+                                   0                          -0 
+   315 receive[5,s4,s2]
+                                   0                          -0 
+   316 receive[5,s2,s1]
+                                   0                          -0 
+   317 receive[5,s1,h1]
+                                   0                          -0 
+   318 receive[6,s7,s4]
+                                  -2                          -0 
+   319 receive[6,s4,s3]
+                                  -1                          -0 
+   320 receive[6,s3,h3]
+                                   0                          -0 
+   321 receive[7,s8,s6]
+                                  -2                          -0 
+   322 receive[7,s6,s4]
+                                  -1                          -0 
+   323 receive[7,s4,s2]
+                                   0                          -0 
+   324 receive[7,s2,s1]
+                                   0                          -0 
+   325 receive[7,s1,h1]
+                                   0                          -0 
+   326 receive[8,s3,s2]
+                                  -2                          -0 
+   327 receive[8,s2,s1]
+                                  -1                          -0 
+   328 receive[8,s1,h1]
+                                  -2                          -0 
+   329 receive[9,s5,s4]
+                                   0                          -0 
+   330 receive[9,s4,s6]
+                                  -2                          -0 
+   331 receive[9,s6,h5]
+                                  -1                          -0 
+   332 receive[10,s2,s4]
+                                   0                          -0 
+   333 receive[10,s4,s6]
+                                   0                          -0 
+   334 receive[10,s6,s8]
+                                  -2                          -0 
+   335 receive[10,s8,h7]
+                                  -1                          -0 
+   336 receive[11,s8,s6]
+                                   0                          -0 
+   337 receive[11,s6,s4]
+                                   0                          -0 
+   338 receive[11,s4,s5]
+                                  -2                          -0 
+   339 receive[11,s5,h4]
+                                  -1                          -0 
+   340 receive[12,s6,s4]
+                                   0                          -0 
+   341 receive[12,s4,s7]
+                                  -2                          -0 
+   342 receive[12,s7,h6]
+                                  -1                          -0 
+   343 weight1[1,s1,s2]
                                    0            -0               
-    20 weight1[1,2,3]
+   344 weight1[1,s2,s4]
                                    0            -0               
-    21 weight1[2,2,3]
+   345 weight1[1,s4,s6]
                                    0            -0               
-    22 weight1[2,3,4]
+   346 weight1[1,s6,s8]
                                    0            -0               
-    23 weight1[2,4,5]
+   347 weight1[1,s8,h7]
                                    0            -0               
-    24 weight2[1,1,2]
+   348 weight1[2,s2,s3]
+                                   0            -0               
+   349 weight1[2,s3,h3]
+                                   0            -0               
+   350 weight1[3,s3,s4]
+                                   0            -0               
+   351 weight1[3,s4,s6]
+                                   0            -0               
+   352 weight1[3,s6,h5]
+                                   0            -0               
+   353 weight1[4,s5,s4]
+                                   0            -0               
+   354 weight1[4,s4,s2]
+                                   0            -0               
+   355 weight1[4,s2,h2]
+                                   0            -0               
+   356 weight1[5,s6,s4]
+                                   0            -0               
+   357 weight1[5,s4,s2]
+                                   0            -0               
+   358 weight1[5,s2,s1]
+                                   0            -0               
+   359 weight1[5,s1,h1]
+                                   0            -0               
+   360 weight1[6,s7,s4]
+                                   0            -0               
+   361 weight1[6,s4,s3]
+                                   0            -0               
+   362 weight1[6,s3,h3]
+                                   0            -0               
+   363 weight1[7,s8,s6]
+                                   0            -0               
+   364 weight1[7,s6,s4]
+                                   0            -0               
+   365 weight1[7,s4,s2]
+                                   0            -0               
+   366 weight1[7,s2,s1]
+                                   0            -0               
+   367 weight1[7,s1,h1]
+                                   0            -0               
+   368 weight1[8,s3,s2]
+                                   0            -0               
+   369 weight1[8,s2,s1]
+                                   0            -0               
+   370 weight1[8,s1,h1]
+                                   0            -0               
+   371 weight1[9,s5,s4]
+                                   0            -0               
+   372 weight1[9,s4,s6]
+                                   0            -0               
+   373 weight1[9,s6,h5]
+                                   0            -0               
+   374 weight1[10,s2,s4]
+                                   0            -0               
+   375 weight1[10,s4,s6]
+                                   0            -0               
+   376 weight1[10,s6,s8]
+                                   0            -0               
+   377 weight1[10,s8,h7]
+                                   0            -0               
+   378 weight1[11,s8,s6]
+                                   0            -0               
+   379 weight1[11,s6,s4]
+                                   0            -0               
+   380 weight1[11,s4,s5]
+                                   0            -0               
+   381 weight1[11,s5,h4]
+                                   0            -0               
+   382 weight1[12,s6,s4]
+                                   0            -0               
+   383 weight1[12,s4,s7]
+                                   0            -0               
+   384 weight1[12,s7,h6]
+                                   0            -0               
+   385 weight2[1,s1,s2]
                                    1            -0               
-    25 weight2[1,2,3]
+   386 weight2[1,s2,s4]
                                    0            -0               
-    26 weight2[2,2,3]
+   387 weight2[1,s4,s6]
                                    0            -0               
-    27 weight2[2,3,4]
+   388 weight2[1,s6,s8]
+                                   0            -0               
+   389 weight2[1,s8,h7]
+                                   0            -0               
+   390 weight2[2,s2,s3]
                                    1            -0               
-    28 weight2[2,4,5]
+   391 weight2[2,s3,h3]
                                    0            -0               
-    29 bindWeight1[1,1,2]
+   392 weight2[3,s3,s4]
+                                   0            -0               
+   393 weight2[3,s4,s6]
+                                   0            -0               
+   394 weight2[3,s6,h5]
+                                   0            -0               
+   395 weight2[4,s5,s4]
+                                   0            -0               
+   396 weight2[4,s4,s2]
+                                   1            -0               
+   397 weight2[4,s2,h2]
+                                   0            -0               
+   398 weight2[5,s6,s4]
+                                   0            -0               
+   399 weight2[5,s4,s2]
+                                   0            -0               
+   400 weight2[5,s2,s1]
+                                   0            -0               
+   401 weight2[5,s1,h1]
+                                   0            -0               
+   402 weight2[6,s7,s4]
+                                   1            -0               
+   403 weight2[6,s4,s3]
+                                   0            -0               
+   404 weight2[6,s3,h3]
+                                   0            -0               
+   405 weight2[7,s8,s6]
+                                   1            -0               
+   406 weight2[7,s6,s4]
+                                   0            -0               
+   407 weight2[7,s4,s2]
+                                   0            -0               
+   408 weight2[7,s2,s1]
+                                   0            -0               
+   409 weight2[7,s1,h1]
+                                   0            -0               
+   410 weight2[8,s3,s2]
+                                   1            -0               
+   411 weight2[8,s2,s1]
+                                   0            -0               
+   412 weight2[8,s1,h1]
+                                   0            -0               
+   413 weight2[9,s5,s4]
+                                   0            -0               
+   414 weight2[9,s4,s6]
+                                   1            -0               
+   415 weight2[9,s6,h5]
+                                   0            -0               
+   416 weight2[10,s2,s4]
+                                   0            -0               
+   417 weight2[10,s4,s6]
+                                   0            -0               
+   418 weight2[10,s6,s8]
+                                   1            -0               
+   419 weight2[10,s8,h7]
+                                   0            -0               
+   420 weight2[11,s8,s6]
+                                   0            -0               
+   421 weight2[11,s6,s4]
+                                   0            -0               
+   422 weight2[11,s4,s5]
+                                   1            -0               
+   423 weight2[11,s5,h4]
+                                   0            -0               
+   424 weight2[12,s6,s4]
+                                   0            -0               
+   425 weight2[12,s4,s7]
+                                   1            -0               
+   426 weight2[12,s7,h6]
+                                   0            -0               
+   427 bindWeight1[1,s1,s2]
                                    3                           3 
-    30 bindWeight1[1,2,3]
+   428 bindWeight1[1,s2,s4]
                                   -1                           3 
-    31 bindWeight1[2,2,3]
+   429 bindWeight1[1,s4,s6]
                                    0                           3 
-    32 bindWeight1[2,3,4]
+   430 bindWeight1[1,s6,s8]
+                                   0                           3 
+   431 bindWeight1[1,s8,h7]
+                                   0                           3 
+   432 bindWeight1[2,s2,s3]
                                    3                           3 
-    33 bindWeight1[2,4,5]
+   433 bindWeight1[2,s3,h3]
                                   -1                           3 
-    34 bindWeight2[1,1,2]
+   434 bindWeight1[3,s3,s4]
+                                  -1                           3 
+   435 bindWeight1[3,s4,s6]
+                                   0                           3 
+   436 bindWeight1[3,s6,h5]
+                                   0                           3 
+   437 bindWeight1[4,s5,s4]
+                                  -1                           3 
+   438 bindWeight1[4,s4,s2]
+                                   3                           3 
+   439 bindWeight1[4,s2,h2]
+                                  -1                           3 
+   440 bindWeight1[5,s6,s4]
+                                   0                           3 
+   441 bindWeight1[5,s4,s2]
+                                   0                           3 
+   442 bindWeight1[5,s2,s1]
+                                   0                           3 
+   443 bindWeight1[5,s1,h1]
+                                   0                           3 
+   444 bindWeight1[6,s7,s4]
+                                   3                           3 
+   445 bindWeight1[6,s4,s3]
+                                  -1                           3 
+   446 bindWeight1[6,s3,h3]
+                                   0                           3 
+   447 bindWeight1[7,s8,s6]
+                                   3                           3 
+   448 bindWeight1[7,s6,s4]
+                                  -1                           3 
+   449 bindWeight1[7,s4,s2]
+                                   0                           3 
+   450 bindWeight1[7,s2,s1]
+                                   0                           3 
+   451 bindWeight1[7,s1,h1]
+                                   0                           3 
+   452 bindWeight1[8,s3,s2]
+                                   3                           3 
+   453 bindWeight1[8,s2,s1]
+                                  -1                           3 
+   454 bindWeight1[8,s1,h1]
+                                   0                           3 
+   455 bindWeight1[9,s5,s4]
+                                   0                           3 
+   456 bindWeight1[9,s4,s6]
+                                   3                           3 
+   457 bindWeight1[9,s6,h5]
+                                  -1                           3 
+   458 bindWeight1[10,s2,s4]
+                                   0                           3 
+   459 bindWeight1[10,s4,s6]
+                                   0                           3 
+   460 bindWeight1[10,s6,s8]
+                                   3                           3 
+   461 bindWeight1[10,s8,h7]
+                                  -1                           3 
+   462 bindWeight1[11,s8,s6]
+                                   0                           3 
+   463 bindWeight1[11,s6,s4]
+                                   0                           3 
+   464 bindWeight1[11,s4,s5]
+                                   3                           3 
+   465 bindWeight1[11,s5,h4]
+                                  -1                           3 
+   466 bindWeight1[12,s6,s4]
+                                   0                           3 
+   467 bindWeight1[12,s4,s7]
+                                   3                           3 
+   468 bindWeight1[12,s7,h6]
+                                  -1                           3 
+   469 bindWeight2[1,s1,s2]
                                   -1            -1               
-    35 bindWeight2[1,2,3]
+   470 bindWeight2[1,s2,s4]
                                   -1            -1               
-    36 bindWeight2[2,2,3]
+   471 bindWeight2[1,s4,s6]
                                    0            -1               
-    37 bindWeight2[2,3,4]
+   472 bindWeight2[1,s6,s8]
+                                   0            -1               
+   473 bindWeight2[1,s8,h7]
+                                   0            -1               
+   474 bindWeight2[2,s2,s3]
                                   -1            -1               
-    38 bindWeight2[2,4,5]
+   475 bindWeight2[2,s3,h3]
                                   -1            -1               
-    39 dispatchLast[1,2,3]
+   476 bindWeight2[3,s3,s4]
+                                  -1            -1               
+   477 bindWeight2[3,s4,s6]
+                                   0            -1               
+   478 bindWeight2[3,s6,h5]
+                                   0            -1               
+   479 bindWeight2[4,s5,s4]
+                                  -1            -1               
+   480 bindWeight2[4,s4,s2]
+                                  -1            -1               
+   481 bindWeight2[4,s2,h2]
+                                  -1            -1               
+   482 bindWeight2[5,s6,s4]
+                                   0            -1               
+   483 bindWeight2[5,s4,s2]
+                                   0            -1               
+   484 bindWeight2[5,s2,s1]
+                                   0            -1               
+   485 bindWeight2[5,s1,h1]
+                                   0            -1               
+   486 bindWeight2[6,s7,s4]
+                                  -1            -1               
+   487 bindWeight2[6,s4,s3]
+                                  -1            -1               
+   488 bindWeight2[6,s3,h3]
+                                   0            -1               
+   489 bindWeight2[7,s8,s6]
+                                  -1            -1               
+   490 bindWeight2[7,s6,s4]
+                                  -1            -1               
+   491 bindWeight2[7,s4,s2]
+                                   0            -1               
+   492 bindWeight2[7,s2,s1]
+                                   0            -1               
+   493 bindWeight2[7,s1,h1]
+                                   0            -1               
+   494 bindWeight2[8,s3,s2]
+                                  -1            -1               
+   495 bindWeight2[8,s2,s1]
+                                  -1            -1               
+   496 bindWeight2[8,s1,h1]
+                                   0            -1               
+   497 bindWeight2[9,s5,s4]
+                                   0            -1               
+   498 bindWeight2[9,s4,s6]
+                                  -1            -1               
+   499 bindWeight2[9,s6,h5]
+                                  -1            -1               
+   500 bindWeight2[10,s2,s4]
+                                   0            -1               
+   501 bindWeight2[10,s4,s6]
+                                   0            -1               
+   502 bindWeight2[10,s6,s8]
+                                  -1            -1               
+   503 bindWeight2[10,s8,h7]
+                                  -1            -1               
+   504 bindWeight2[11,s8,s6]
+                                   0            -1               
+   505 bindWeight2[11,s6,s4]
+                                   0            -1               
+   506 bindWeight2[11,s4,s5]
+                                  -1            -1               
+   507 bindWeight2[11,s5,h4]
+                                  -1            -1               
+   508 bindWeight2[12,s6,s4]
+                                   0            -1               
+   509 bindWeight2[12,s4,s7]
+                                  -1            -1               
+   510 bindWeight2[12,s7,h6]
+                                  -1            -1               
+   511 dispatchLast[1,s8,h7]
                                    0            -0               
-    40 dispatchLast[2,4,5]
+   512 dispatchLast[2,s3,h3]
+                                   0            -0               
+   513 dispatchLast[3,s6,h5]
+                                   0            -0               
+   514 dispatchLast[4,s2,h2]
+                                   0            -0               
+   515 dispatchLast[5,s1,h1]
+                                   0            -0               
+   516 dispatchLast[6,s3,h3]
+                                   0            -0               
+   517 dispatchLast[7,s1,h1]
+                                   0            -0               
+   518 dispatchLast[8,s1,h1]
+                                   0            -0               
+   519 dispatchLast[9,s6,h5]
+                                   0            -0               
+   520 dispatchLast[10,s8,h7]
+                                   0            -0               
+   521 dispatchLast[11,s5,h4]
+                                   0            -0               
+   522 dispatchLast[12,s7,h6]
                                    0            -0               
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 C[1,1]                      0             0               
-     2 C[1,2]                      1             0               
-     3 C[2,2]                      0             0               
-     4 C[2,3]                      0             0               
-     5 C[2,4]                      1             0               
-     6 C[1,3]                      0             0               
-     7 C[2,5]                      0             0               
-     8 Y[1,1]       *              0             0             1 
-     9 Y[1,2]       *              1             0             1 
-    10 Y[1,3]       *              0             0             1 
-    11 Y[1,4]       *              0             0             1 
-    12 Y[1,5]       *              0             0             1 
-    13 Y[2,1]       *              0             0             1 
-    14 Y[2,2]       *              0             0             1 
-    15 Y[2,3]       *              0             0             1 
-    16 Y[2,4]       *              1             0             1 
-    17 Y[2,5]       *              0             0             1 
-    18 X[1,2,1]     *              1             0             1 
-    19 X[1,2,2]     *              0             0             1 
-    20 X[2,3,1]     *              1             0             1 
-    21 X[2,3,2]     *              0             0             1 
-    22 X[3,4,1]     *              0             0             1 
-    23 X[3,4,2]     *              1             0             1 
-    24 X[4,5,1]     *              0             0             1 
-    25 X[4,5,2]     *              1             0             1 
+     1 C[1,s1]                     0             0               
+     2 C[1,s2]                     1             0               
+     3 C[1,s4]                     0             0               
+     4 C[1,s6]                     0             0               
+     5 C[1,s8]                     0             0               
+     6 C[2,s2]                     0             0               
+     7 C[2,s3]                     1             0               
+     8 C[3,s3]                     1             0               
+     9 C[3,s4]                     0             0               
+    10 C[3,s6]                     0             0               
+    11 C[4,s5]                     1             0               
+    12 C[4,s4]                     0             0               
+    13 C[4,s2]                     1             0               
+    14 C[5,s6]                     0             0               
+    15 C[5,s4]                     0             0               
+    16 C[5,s2]                     0             0               
+    17 C[5,s1]                     0             0               
+    18 C[6,s7]                     0             0               
+    19 C[6,s4]                     1             0               
+    20 C[6,s3]                     0             0               
+    21 C[7,s8]                     0             0               
+    22 C[7,s6]                     1             0               
+    23 C[7,s4]                     0             0               
+    24 C[7,s2]                     0             0               
+    25 C[7,s1]                     0             0               
+    26 C[8,s3]                     0             0               
+    27 C[8,s2]                     1             0               
+    28 C[8,s1]                     0             0               
+    29 C[9,s5]                     0             0               
+    30 C[9,s4]                     0             0               
+    31 C[9,s6]                     1             0               
+    32 C[10,s2]                    0             0               
+    33 C[10,s4]                    0             0               
+    34 C[10,s6]                    0             0               
+    35 C[10,s8]                    1             0               
+    36 C[11,s8]                    0             0               
+    37 C[11,s6]                    0             0               
+    38 C[11,s4]                    0             0               
+    39 C[11,s5]                    1             0               
+    40 C[12,s6]                    0             0               
+    41 C[12,s4]                    0             0               
+    42 C[12,s7]                    1             0               
+    43 C[1,h7]                     0             0               
+    44 C[2,h3]                     0             0               
+    45 C[3,h5]                     0             0               
+    46 C[4,h2]                     0             0               
+    47 C[5,h1]                     0             0               
+    48 C[6,h3]                     0             0               
+    49 C[7,h1]                     0             0               
+    50 C[8,h1]                     0             0               
+    51 C[9,h5]                     0             0               
+    52 C[10,h7]                    0             0               
+    53 C[11,h4]                    0             0               
+    54 C[12,h6]                    0             0               
+    55 Y[1,h1]      *              0             0             1 
+    56 Y[1,h2]      *              0             0             1 
+    57 Y[1,h3]      *              0             0             1 
+    58 Y[1,h4]      *              0             0             1 
+    59 Y[1,h5]      *              0             0             1 
+    60 Y[1,h6]      *              0             0             1 
+    61 Y[1,h7]      *              0             0             1 
+    62 Y[1,s1]      *              0             0             1 
+    63 Y[1,s2]      *              1             0             1 
+    64 Y[1,s3]      *              0             0             1 
+    65 Y[1,s4]      *              0             0             1 
+    66 Y[1,s5]      *              0             0             1 
+    67 Y[1,s6]      *              0             0             1 
+    68 Y[1,s7]      *              0             0             1 
+    69 Y[1,s8]      *              0             0             1 
+    70 Y[2,h1]      *              0             0             1 
+    71 Y[2,h2]      *              0             0             1 
+    72 Y[2,h3]      *              0             0             1 
+    73 Y[2,h4]      *              0             0             1 
+    74 Y[2,h5]      *              0             0             1 
+    75 Y[2,h6]      *              0             0             1 
+    76 Y[2,h7]      *              0             0             1 
+    77 Y[2,s1]      *              0             0             1 
+    78 Y[2,s2]      *              0             0             1 
+    79 Y[2,s3]      *              1             0             1 
+    80 Y[2,s4]      *              0             0             1 
+    81 Y[2,s5]      *              0             0             1 
+    82 Y[2,s6]      *              0             0             1 
+    83 Y[2,s7]      *              0             0             1 
+    84 Y[2,s8]      *              0             0             1 
+    85 Y[3,h1]      *              0             0             1 
+    86 Y[3,h2]      *              0             0             1 
+    87 Y[3,h3]      *              0             0             1 
+    88 Y[3,h4]      *              0             0             1 
+    89 Y[3,h5]      *              0             0             1 
+    90 Y[3,h6]      *              0             0             1 
+    91 Y[3,h7]      *              0             0             1 
+    92 Y[3,s1]      *              0             0             1 
+    93 Y[3,s2]      *              0             0             1 
+    94 Y[3,s3]      *              1             0             1 
+    95 Y[3,s4]      *              0             0             1 
+    96 Y[3,s5]      *              0             0             1 
+    97 Y[3,s6]      *              0             0             1 
+    98 Y[3,s7]      *              0             0             1 
+    99 Y[3,s8]      *              0             0             1 
+   100 Y[4,h1]      *              0             0             1 
+   101 Y[4,h2]      *              0             0             1 
+   102 Y[4,h3]      *              0             0             1 
+   103 Y[4,h4]      *              0             0             1 
+   104 Y[4,h5]      *              0             0             1 
+   105 Y[4,h6]      *              0             0             1 
+   106 Y[4,h7]      *              0             0             1 
+   107 Y[4,s1]      *              0             0             1 
+   108 Y[4,s2]      *              1             0             1 
+   109 Y[4,s3]      *              0             0             1 
+   110 Y[4,s4]      *              0             0             1 
+   111 Y[4,s5]      *              1             0             1 
+   112 Y[4,s6]      *              0             0             1 
+   113 Y[4,s7]      *              0             0             1 
+   114 Y[4,s8]      *              0             0             1 
+   115 Y[5,h1]      *              0             0             1 
+   116 Y[5,h2]      *              0             0             1 
+   117 Y[5,h3]      *              0             0             1 
+   118 Y[5,h4]      *              0             0             1 
+   119 Y[5,h5]      *              0             0             1 
+   120 Y[5,h6]      *              0             0             1 
+   121 Y[5,h7]      *              0             0             1 
+   122 Y[5,s1]      *              0             0             1 
+   123 Y[5,s2]      *              0             0             1 
+   124 Y[5,s3]      *              0             0             1 
+   125 Y[5,s4]      *              0             0             1 
+   126 Y[5,s5]      *              0             0             1 
+   127 Y[5,s6]      *              0             0             1 
+   128 Y[5,s7]      *              0             0             1 
+   129 Y[5,s8]      *              0             0             1 
+   130 Y[6,h1]      *              0             0             1 
+   131 Y[6,h2]      *              0             0             1 
+   132 Y[6,h3]      *              0             0             1 
+   133 Y[6,h4]      *              0             0             1 
+   134 Y[6,h5]      *              0             0             1 
+   135 Y[6,h6]      *              0             0             1 
+   136 Y[6,h7]      *              0             0             1 
+   137 Y[6,s1]      *              0             0             1 
+   138 Y[6,s2]      *              0             0             1 
+   139 Y[6,s3]      *              0             0             1 
+   140 Y[6,s4]      *              1             0             1 
+   141 Y[6,s5]      *              0             0             1 
+   142 Y[6,s6]      *              0             0             1 
+   143 Y[6,s7]      *              0             0             1 
+   144 Y[6,s8]      *              0             0             1 
+   145 Y[7,h1]      *              0             0             1 
+   146 Y[7,h2]      *              0             0             1 
+   147 Y[7,h3]      *              0             0             1 
+   148 Y[7,h4]      *              0             0             1 
+   149 Y[7,h5]      *              0             0             1 
+   150 Y[7,h6]      *              0             0             1 
+   151 Y[7,h7]      *              0             0             1 
+   152 Y[7,s1]      *              0             0             1 
+   153 Y[7,s2]      *              0             0             1 
+   154 Y[7,s3]      *              0             0             1 
+   155 Y[7,s4]      *              0             0             1 
+   156 Y[7,s5]      *              0             0             1 
+   157 Y[7,s6]      *              1             0             1 
+   158 Y[7,s7]      *              0             0             1 
+   159 Y[7,s8]      *              0             0             1 
+   160 Y[8,h1]      *              0             0             1 
+   161 Y[8,h2]      *              0             0             1 
+   162 Y[8,h3]      *              0             0             1 
+   163 Y[8,h4]      *              0             0             1 
+   164 Y[8,h5]      *              0             0             1 
+   165 Y[8,h6]      *              0             0             1 
+   166 Y[8,h7]      *              0             0             1 
+   167 Y[8,s1]      *              1             0             1 
+   168 Y[8,s2]      *              1             0             1 
+   169 Y[8,s3]      *              0             0             1 
+   170 Y[8,s4]      *              0             0             1 
+   171 Y[8,s5]      *              0             0             1 
+   172 Y[8,s6]      *              0             0             1 
+   173 Y[8,s7]      *              0             0             1 
+   174 Y[8,s8]      *              0             0             1 
+   175 Y[9,h1]      *              0             0             1 
+   176 Y[9,h2]      *              0             0             1 
+   177 Y[9,h3]      *              0             0             1 
+   178 Y[9,h4]      *              0             0             1 
+   179 Y[9,h5]      *              0             0             1 
+   180 Y[9,h6]      *              0             0             1 
+   181 Y[9,h7]      *              0             0             1 
+   182 Y[9,s1]      *              0             0             1 
+   183 Y[9,s2]      *              0             0             1 
+   184 Y[9,s3]      *              0             0             1 
+   185 Y[9,s4]      *              0             0             1 
+   186 Y[9,s5]      *              0             0             1 
+   187 Y[9,s6]      *              1             0             1 
+   188 Y[9,s7]      *              0             0             1 
+   189 Y[9,s8]      *              0             0             1 
+   190 Y[10,h1]     *              0             0             1 
+   191 Y[10,h2]     *              0             0             1 
+   192 Y[10,h3]     *              0             0             1 
+   193 Y[10,h4]     *              0             0             1 
+   194 Y[10,h5]     *              0             0             1 
+   195 Y[10,h6]     *              0             0             1 
+   196 Y[10,h7]     *              0             0             1 
+   197 Y[10,s1]     *              0             0             1 
+   198 Y[10,s2]     *              0             0             1 
+   199 Y[10,s3]     *              0             0             1 
+   200 Y[10,s4]     *              0             0             1 
+   201 Y[10,s5]     *              0             0             1 
+   202 Y[10,s6]     *              0             0             1 
+   203 Y[10,s7]     *              0             0             1 
+   204 Y[10,s8]     *              1             0             1 
+   205 Y[11,h1]     *              0             0             1 
+   206 Y[11,h2]     *              0             0             1 
+   207 Y[11,h3]     *              0             0             1 
+   208 Y[11,h4]     *              0             0             1 
+   209 Y[11,h5]     *              0             0             1 
+   210 Y[11,h6]     *              0             0             1 
+   211 Y[11,h7]     *              0             0             1 
+   212 Y[11,s1]     *              0             0             1 
+   213 Y[11,s2]     *              0             0             1 
+   214 Y[11,s3]     *              0             0             1 
+   215 Y[11,s4]     *              0             0             1 
+   216 Y[11,s5]     *              1             0             1 
+   217 Y[11,s6]     *              0             0             1 
+   218 Y[11,s7]     *              0             0             1 
+   219 Y[11,s8]     *              0             0             1 
+   220 Y[12,h1]     *              0             0             1 
+   221 Y[12,h2]     *              0             0             1 
+   222 Y[12,h3]     *              0             0             1 
+   223 Y[12,h4]     *              0             0             1 
+   224 Y[12,h5]     *              0             0             1 
+   225 Y[12,h6]     *              0             0             1 
+   226 Y[12,h7]     *              0             0             1 
+   227 Y[12,s1]     *              0             0             1 
+   228 Y[12,s2]     *              0             0             1 
+   229 Y[12,s3]     *              0             0             1 
+   230 Y[12,s4]     *              0             0             1 
+   231 Y[12,s5]     *              0             0             1 
+   232 Y[12,s6]     *              0             0             1 
+   233 Y[12,s7]     *              1             0             1 
+   234 Y[12,s8]     *              0             0             1 
+   235 X[s1,h1,1]   *              0             0             1 
+   236 X[s1,h1,2]   *              0             0             1 
+   237 X[s1,h1,3]   *              0             0             1 
+   238 X[s1,h1,4]   *              0             0             1 
+   239 X[s1,h1,5]   *              0             0             1 
+   240 X[s1,h1,6]   *              0             0             1 
+   241 X[s1,h1,7]   *              0             0             1 
+   242 X[s1,h1,8]   *              1             0             1 
+   243 X[s1,h1,9]   *              0             0             1 
+   244 X[s1,h1,10]  *              0             0             1 
+   245 X[s1,h1,11]  *              0             0             1 
+   246 X[s1,h1,12]  *              0             0             1 
+   247 X[s1,s2,1]   *              1             0             1 
+   248 X[s1,s2,2]   *              0             0             1 
+   249 X[s1,s2,3]   *              0             0             1 
+   250 X[s1,s2,4]   *              0             0             1 
+   251 X[s1,s2,5]   *              0             0             1 
+   252 X[s1,s2,6]   *              0             0             1 
+   253 X[s1,s2,7]   *              0             0             1 
+   254 X[s1,s2,8]   *              0             0             1 
+   255 X[s1,s2,9]   *              0             0             1 
+   256 X[s1,s2,10]  *              0             0             1 
+   257 X[s1,s2,11]  *              0             0             1 
+   258 X[s1,s2,12]  *              0             0             1 
+   259 X[s2,s1,1]   *              0             0             1 
+   260 X[s2,s1,2]   *              0             0             1 
+   261 X[s2,s1,3]   *              0             0             1 
+   262 X[s2,s1,4]   *              0             0             1 
+   263 X[s2,s1,5]   *              0             0             1 
+   264 X[s2,s1,6]   *              0             0             1 
+   265 X[s2,s1,7]   *              0             0             1 
+   266 X[s2,s1,8]   *              1             0             1 
+   267 X[s2,s1,9]   *              0             0             1 
+   268 X[s2,s1,10]  *              0             0             1 
+   269 X[s2,s1,11]  *              0             0             1 
+   270 X[s2,s1,12]  *              0             0             1 
+   271 X[s2,h2,1]   *              0             0             1 
+   272 X[s2,h2,2]   *              0             0             1 
+   273 X[s2,h2,3]   *              0             0             1 
+   274 X[s2,h2,4]   *              1             0             1 
+   275 X[s2,h2,5]   *              0             0             1 
+   276 X[s2,h2,6]   *              0             0             1 
+   277 X[s2,h2,7]   *              0             0             1 
+   278 X[s2,h2,8]   *              0             0             1 
+   279 X[s2,h2,9]   *              0             0             1 
+   280 X[s2,h2,10]  *              0             0             1 
+   281 X[s2,h2,11]  *              0             0             1 
+   282 X[s2,h2,12]  *              0             0             1 
+   283 X[s2,s3,1]   *              0             0             1 
+   284 X[s2,s3,2]   *              1             0             1 
+   285 X[s2,s3,3]   *              0             0             1 
+   286 X[s2,s3,4]   *              0             0             1 
+   287 X[s2,s3,5]   *              0             0             1 
+   288 X[s2,s3,6]   *              0             0             1 
+   289 X[s2,s3,7]   *              0             0             1 
+   290 X[s2,s3,8]   *              0             0             1 
+   291 X[s2,s3,9]   *              0             0             1 
+   292 X[s2,s3,10]  *              0             0             1 
+   293 X[s2,s3,11]  *              0             0             1 
+   294 X[s2,s3,12]  *              0             0             1 
+   295 X[s3,s2,1]   *              0             0             1 
+   296 X[s3,s2,2]   *              0             0             1 
+   297 X[s3,s2,3]   *              0             0             1 
+   298 X[s3,s2,4]   *              0             0             1 
+   299 X[s3,s2,5]   *              0             0             1 
+   300 X[s3,s2,6]   *              0             0             1 
+   301 X[s3,s2,7]   *              0             0             1 
+   302 X[s3,s2,8]   *              1             0             1 
+   303 X[s3,s2,9]   *              0             0             1 
+   304 X[s3,s2,10]  *              0             0             1 
+   305 X[s3,s2,11]  *              0             0             1 
+   306 X[s3,s2,12]  *              0             0             1 
+   307 X[s2,s4,1]   *              1             0             1 
+   308 X[s2,s4,2]   *              0             0             1 
+   309 X[s2,s4,3]   *              0             0             1 
+   310 X[s2,s4,4]   *              0             0             1 
+   311 X[s2,s4,5]   *              0             0             1 
+   312 X[s2,s4,6]   *              0             0             1 
+   313 X[s2,s4,7]   *              0             0             1 
+   314 X[s2,s4,8]   *              0             0             1 
+   315 X[s2,s4,9]   *              0             0             1 
+   316 X[s2,s4,10]  *              0             0             1 
+   317 X[s2,s4,11]  *              0             0             1 
+   318 X[s2,s4,12]  *              0             0             1 
+   319 X[s4,s2,1]   *              0             0             1 
+   320 X[s4,s2,2]   *              0             0             1 
+   321 X[s4,s2,3]   *              0             0             1 
+   322 X[s4,s2,4]   *              1             0             1 
+   323 X[s4,s2,5]   *              0             0             1 
+   324 X[s4,s2,6]   *              0             0             1 
+   325 X[s4,s2,7]   *              0             0             1 
+   326 X[s4,s2,8]   *              0             0             1 
+   327 X[s4,s2,9]   *              0             0             1 
+   328 X[s4,s2,10]  *              0             0             1 
+   329 X[s4,s2,11]  *              0             0             1 
+   330 X[s4,s2,12]  *              0             0             1 
+   331 X[s3,h3,1]   *              0             0             1 
+   332 X[s3,h3,2]   *              1             0             1 
+   333 X[s3,h3,3]   *              0             0             1 
+   334 X[s3,h3,4]   *              0             0             1 
+   335 X[s3,h3,5]   *              0             0             1 
+   336 X[s3,h3,6]   *              0             0             1 
+   337 X[s3,h3,7]   *              0             0             1 
+   338 X[s3,h3,8]   *              0             0             1 
+   339 X[s3,h3,9]   *              0             0             1 
+   340 X[s3,h3,10]  *              0             0             1 
+   341 X[s3,h3,11]  *              0             0             1 
+   342 X[s3,h3,12]  *              0             0             1 
+   343 X[s3,s4,1]   *              0             0             1 
+   344 X[s3,s4,2]   *              0             0             1 
+   345 X[s3,s4,3]   *              1             0             1 
+   346 X[s3,s4,4]   *              0             0             1 
+   347 X[s3,s4,5]   *              0             0             1 
+   348 X[s3,s4,6]   *              0             0             1 
+   349 X[s3,s4,7]   *              0             0             1 
+   350 X[s3,s4,8]   *              0             0             1 
+   351 X[s3,s4,9]   *              0             0             1 
+   352 X[s3,s4,10]  *              0             0             1 
+   353 X[s3,s4,11]  *              0             0             1 
+   354 X[s3,s4,12]  *              0             0             1 
+   355 X[s4,s3,1]   *              0             0             1 
+   356 X[s4,s3,2]   *              0             0             1 
+   357 X[s4,s3,3]   *              0             0             1 
+   358 X[s4,s3,4]   *              0             0             1 
+   359 X[s4,s3,5]   *              0             0             1 
+   360 X[s4,s3,6]   *              1             0             1 
+   361 X[s4,s3,7]   *              0             0             1 
+   362 X[s4,s3,8]   *              0             0             1 
+   363 X[s4,s3,9]   *              0             0             1 
+   364 X[s4,s3,10]  *              0             0             1 
+   365 X[s4,s3,11]  *              0             0             1 
+   366 X[s4,s3,12]  *              0             0             1 
+   367 X[s4,s5,1]   *              0             0             1 
+   368 X[s4,s5,2]   *              0             0             1 
+   369 X[s4,s5,3]   *              0             0             1 
+   370 X[s4,s5,4]   *              0             0             1 
+   371 X[s4,s5,5]   *              0             0             1 
+   372 X[s4,s5,6]   *              0             0             1 
+   373 X[s4,s5,7]   *              0             0             1 
+   374 X[s4,s5,8]   *              0             0             1 
+   375 X[s4,s5,9]   *              0             0             1 
+   376 X[s4,s5,10]  *              0             0             1 
+   377 X[s4,s5,11]  *              1             0             1 
+   378 X[s4,s5,12]  *              0             0             1 
+   379 X[s5,s4,1]   *              0             0             1 
+   380 X[s5,s4,2]   *              0             0             1 
+   381 X[s5,s4,3]   *              0             0             1 
+   382 X[s5,s4,4]   *              1             0             1 
+   383 X[s5,s4,5]   *              0             0             1 
+   384 X[s5,s4,6]   *              0             0             1 
+   385 X[s5,s4,7]   *              0             0             1 
+   386 X[s5,s4,8]   *              0             0             1 
+   387 X[s5,s4,9]   *              0             0             1 
+   388 X[s5,s4,10]  *              0             0             1 
+   389 X[s5,s4,11]  *              0             0             1 
+   390 X[s5,s4,12]  *              0             0             1 
+   391 X[s5,h4,1]   *              0             0             1 
+   392 X[s5,h4,2]   *              0             0             1 
+   393 X[s5,h4,3]   *              0             0             1 
+   394 X[s5,h4,4]   *              0             0             1 
+   395 X[s5,h4,5]   *              0             0             1 
+   396 X[s5,h4,6]   *              0             0             1 
+   397 X[s5,h4,7]   *              0             0             1 
+   398 X[s5,h4,8]   *              0             0             1 
+   399 X[s5,h4,9]   *              0             0             1 
+   400 X[s5,h4,10]  *              0             0             1 
+   401 X[s5,h4,11]  *              1             0             1 
+   402 X[s5,h4,12]  *              0             0             1 
+   403 X[s4,s6,1]   *              0             0             1 
+   404 X[s4,s6,2]   *              0             0             1 
+   405 X[s4,s6,3]   *              0             0             1 
+   406 X[s4,s6,4]   *              0             0             1 
+   407 X[s4,s6,5]   *              0             0             1 
+   408 X[s4,s6,6]   *              0             0             1 
+   409 X[s4,s6,7]   *              0             0             1 
+   410 X[s4,s6,8]   *              0             0             1 
+   411 X[s4,s6,9]   *              1             0             1 
+   412 X[s4,s6,10]  *              0             0             1 
+   413 X[s4,s6,11]  *              0             0             1 
+   414 X[s4,s6,12]  *              0             0             1 
+   415 X[s6,s4,1]   *              0             0             1 
+   416 X[s6,s4,2]   *              0             0             1 
+   417 X[s6,s4,3]   *              0             0             1 
+   418 X[s6,s4,4]   *              0             0             1 
+   419 X[s6,s4,5]   *              0             0             1 
+   420 X[s6,s4,6]   *              0             0             1 
+   421 X[s6,s4,7]   *              1             0             1 
+   422 X[s6,s4,8]   *              0             0             1 
+   423 X[s6,s4,9]   *              0             0             1 
+   424 X[s6,s4,10]  *              0             0             1 
+   425 X[s6,s4,11]  *              0             0             1 
+   426 X[s6,s4,12]  *              0             0             1 
+   427 X[s6,h5,1]   *              0             0             1 
+   428 X[s6,h5,2]   *              0             0             1 
+   429 X[s6,h5,3]   *              0             0             1 
+   430 X[s6,h5,4]   *              0             0             1 
+   431 X[s6,h5,5]   *              0             0             1 
+   432 X[s6,h5,6]   *              0             0             1 
+   433 X[s6,h5,7]   *              0             0             1 
+   434 X[s6,h5,8]   *              0             0             1 
+   435 X[s6,h5,9]   *              1             0             1 
+   436 X[s6,h5,10]  *              0             0             1 
+   437 X[s6,h5,11]  *              0             0             1 
+   438 X[s6,h5,12]  *              0             0             1 
+   439 X[s6,s8,1]   *              0             0             1 
+   440 X[s6,s8,2]   *              0             0             1 
+   441 X[s6,s8,3]   *              0             0             1 
+   442 X[s6,s8,4]   *              0             0             1 
+   443 X[s6,s8,5]   *              0             0             1 
+   444 X[s6,s8,6]   *              0             0             1 
+   445 X[s6,s8,7]   *              0             0             1 
+   446 X[s6,s8,8]   *              0             0             1 
+   447 X[s6,s8,9]   *              0             0             1 
+   448 X[s6,s8,10]  *              1             0             1 
+   449 X[s6,s8,11]  *              0             0             1 
+   450 X[s6,s8,12]  *              0             0             1 
+   451 X[s8,s6,1]   *              0             0             1 
+   452 X[s8,s6,2]   *              0             0             1 
+   453 X[s8,s6,3]   *              0             0             1 
+   454 X[s8,s6,4]   *              0             0             1 
+   455 X[s8,s6,5]   *              0             0             1 
+   456 X[s8,s6,6]   *              0             0             1 
+   457 X[s8,s6,7]   *              1             0             1 
+   458 X[s8,s6,8]   *              0             0             1 
+   459 X[s8,s6,9]   *              0             0             1 
+   460 X[s8,s6,10]  *              0             0             1 
+   461 X[s8,s6,11]  *              0             0             1 
+   462 X[s8,s6,12]  *              0             0             1 
+   463 X[s8,h7,1]   *              0             0             1 
+   464 X[s8,h7,2]   *              0             0             1 
+   465 X[s8,h7,3]   *              0             0             1 
+   466 X[s8,h7,4]   *              0             0             1 
+   467 X[s8,h7,5]   *              0             0             1 
+   468 X[s8,h7,6]   *              0             0             1 
+   469 X[s8,h7,7]   *              0             0             1 
+   470 X[s8,h7,8]   *              0             0             1 
+   471 X[s8,h7,9]   *              0             0             1 
+   472 X[s8,h7,10]  *              1             0             1 
+   473 X[s8,h7,11]  *              0             0             1 
+   474 X[s8,h7,12]  *              0             0             1 
+   475 X[s4,s7,1]   *              0             0             1 
+   476 X[s4,s7,2]   *              0             0             1 
+   477 X[s4,s7,3]   *              0             0             1 
+   478 X[s4,s7,4]   *              0             0             1 
+   479 X[s4,s7,5]   *              0             0             1 
+   480 X[s4,s7,6]   *              0             0             1 
+   481 X[s4,s7,7]   *              0             0             1 
+   482 X[s4,s7,8]   *              0             0             1 
+   483 X[s4,s7,9]   *              0             0             1 
+   484 X[s4,s7,10]  *              0             0             1 
+   485 X[s4,s7,11]  *              0             0             1 
+   486 X[s4,s7,12]  *              1             0             1 
+   487 X[s7,s4,1]   *              0             0             1 
+   488 X[s7,s4,2]   *              0             0             1 
+   489 X[s7,s4,3]   *              0             0             1 
+   490 X[s7,s4,4]   *              0             0             1 
+   491 X[s7,s4,5]   *              0             0             1 
+   492 X[s7,s4,6]   *              1             0             1 
+   493 X[s7,s4,7]   *              0             0             1 
+   494 X[s7,s4,8]   *              0             0             1 
+   495 X[s7,s4,9]   *              0             0             1 
+   496 X[s7,s4,10]  *              0             0             1 
+   497 X[s7,s4,11]  *              0             0             1 
+   498 X[s7,s4,12]  *              0             0             1 
+   499 X[s7,h6,1]   *              0             0             1 
+   500 X[s7,h6,2]   *              0             0             1 
+   501 X[s7,h6,3]   *              0             0             1 
+   502 X[s7,h6,4]   *              0             0             1 
+   503 X[s7,h6,5]   *              0             0             1 
+   504 X[s7,h6,6]   *              0             0             1 
+   505 X[s7,h6,7]   *              0             0             1 
+   506 X[s7,h6,8]   *              0             0             1 
+   507 X[s7,h6,9]   *              0             0             1 
+   508 X[s7,h6,10]  *              0             0             1 
+   509 X[s7,h6,11]  *              0             0             1 
+   510 X[s7,h6,12]  *              1             0             1 
 
 Integer feasibility conditions:
 
@@ -121,8 +1570,8 @@ KKT.PE: max.abs.err = 0.00e+00 on row 0
         max.rel.err = 0.00e+00 on row 0
         High quality
 
-KKT.PB: max.abs.err = 0.00e+00 on row 0
-        max.rel.err = 0.00e+00 on row 0
+KKT.PB: max.abs.err = 2.11e-15 on row 413
+        max.rel.err = 2.11e-15 on row 413
         High quality
 
 End of output
