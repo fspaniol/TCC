@@ -62,4 +62,10 @@ s.t. bindWeight2{s in S, (u,v) in F[s]}: C[s,v] >= C[s,u] + 1 - (1 - X[u,v,s]) *
 s.t. dispatchLast{s in S, (u,v) in Last[s]}: Y[s,u] >= X[u,v,s];
 # Dispatch the last node
 
+solve;
+
+
+display{s in S, (u,v) in F[s]: X[u,v,s] = 1}: X[u,v,s];
+display{s in S, (u,v) in F[s]: Y[s,u] = 1}: Y[s,u];
+
 end;
