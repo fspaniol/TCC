@@ -69,8 +69,8 @@ solve;
 # display{s in S, (u,v) in F[s]: Y[s,u] = 1}: Y[s,u];
 display V;
 display S;
-display{s in S, (u,v) in F[s]}: Y[s,u];
-display{s in S, (u,v) in F[s]}: X[u,v,s];
+display{s in S, (u,v) in F[s]: X[u,v,s] = 1}: X[u,v,s];
+display{s in S, (u,v) in F[s]: Y[s,u] = 1}: Y[s,u];
 display{s in S, (u,v) in F[s]}: C[s,u];
 
 end;
