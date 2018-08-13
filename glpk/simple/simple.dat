@@ -1,0 +1,30 @@
+data;
+
+set V := 1 2 3 4 5;
+# Set that defines the routers present at a network
+
+set A := 1 2
+		2 3
+		3 4
+		4 5
+		;
+# Set that defines what archs are in a network
+
+set S := 1 2;
+# Set that defines the flows in a network
+
+set F[1] := 1 2 
+			2 3;
+set F[2] := 2 3
+			3 4
+			4 5;
+# Sets that define the flows
+
+set Last[1] := 2 3;
+set Last[2] := 4 5;
+# Set last indicates what is the last link in every flow
+
+param q := 2;
+# Parameter that defines the limit of weight for each flow
+
+end;

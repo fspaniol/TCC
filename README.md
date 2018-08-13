@@ -4,4 +4,17 @@
 
 ## Current status:
 
-Trying to implement the INTO problem on GLPK, having trouble when a flow has been carrying and not dispatching, it's not increasing the weight 
+Have to parse the output of CPLEX
+
+## Executing `execute.sh`
+
+To execute the `Execute` shell script, simple call it and pass the test name, for example:
+
+`./execute.sh simple`
+
+It will call the conversion from GLPK to CPLEX and then call CPLEX and write the solution to the `simple` test folder, in `glpk/simple`.
+
+## Having to do:
+
+Need to implement the parser that gets the XML from the solution and then print out the solution groups. 
+This will make the visualization of solutions much easier
