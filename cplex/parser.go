@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"strconv"
+	"strings"
 )
 
 type CPLEXSolution struct {
@@ -57,7 +59,29 @@ type CPLEXSolution struct {
 	} `xml:"variables"`
 }
 
+type x struct {
+	a   int
+	b   int
+	k   int
+	val int
+}
+
+type y struct {
+	a   int
+	k   int
+	val int
+}
+
+type c struct {
+	a   int
+	k   int
+	val int
+}
+
 func main() {
+	arrX := make([]x, 0)
+	arrY := make([]y, 0)
+	arrC := make([]c, 0)
 	var v CPLEXSolution
 	d, err := ioutil.ReadFile(fmt.Sprintf("glpk/%s/%s.sol", os.Args[1], os.Args[1]))
 	if err != nil {
@@ -72,6 +96,46 @@ func main() {
 	}
 
 	for _, k := range v.Variables.Variable {
-		fmt.Printf("Variable: %v\n", k)
+		switch k.Name[0] {
+		case 'C':
+			val1, _ := strconv.Atoi(strings.Split(k.Name[2:len(k.Name)-1], ",")[1])
+			val2, _ := strconv.Atoi(strings.Split(k.Name[2:len(k.Name)-1], ",")[0])
+			val3, _ := strconv.Atoi(k.Value)
+			cc := c{
+				a:   val1,
+				k:   val2,
+				val: val3,
+			}
+
+			arrC = append(arrC, cc)
+		case 'X':
+			val1, _ := strconv.Atoi(strings.Split(k.Name[2:len(k.Name)-1], ",")[0])
+			val2, _ := strconv.Atoi(strings.Split(k.Name[2:len(k.Name)-1], ",")[1])
+			val3, _ := strconv.Atoi(strings.Split(k.Name[2:len(k.Name)-1], ",")[2])
+			val4, _ := strconv.Atoi(k.Value)
+			xx := x{
+				a:   val1,
+				b:   val2,
+				k:   val3,
+				val: val4,
+			}
+
+			arrX = append(arrX, xx)
+		case 'Y':
+			val1, _ := strconv.Atoi(strings.Split(k.Name[2:len(k.Name)-1], ",")[1])
+			val2, _ := strconv.Atoi(strings.Split(k.Name[2:len(k.Name)-1], ",")[0])
+			val3, _ := strconv.Atoi(k.Value)
+			yy := y{
+				a:   val1,
+				k:   val2,
+				val: val3,
+			}
+
+			arrY = append(arrY, yy)
+		}
 	}
+
+	fmt.Printf("%+v\n", arrX)
+	fmt.Printf("%+v\n", arrY)
+	fmt.Printf("%+v\n", arrC)
 }
