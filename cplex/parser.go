@@ -4,6 +4,7 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io/ioutil"
+	"os"
 )
 
 type CPLEXSolution struct {
@@ -58,15 +59,15 @@ type CPLEXSolution struct {
 
 func main() {
 	var v CPLEXSolution
-	d, err := ioutil.ReadFile("../glpk/simple/simple.sol")
+	d, err := ioutil.ReadFile(fmt.Sprintf("glpk/%s/%s.sol", os.Args[1], os.Args[1]))
 	if err != nil {
-		fmt.Println("Deu ruim")
+		fmt.Println(err)
 		return
 	}
 
 	err = xml.Unmarshal(d, &v)
 	if err != nil {
-		fmt.Printf("error: %v", err)
+		fmt.Println(err)
 		return
 	}
 
