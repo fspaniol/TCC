@@ -4,6 +4,7 @@ import (
 	"container/list"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 
@@ -93,7 +94,12 @@ func handleY(name string, value string) {
 }
 
 func output() {
+	var keys []int
 	for i := range groups {
+		keys = append(keys, i)
+	}
+	sort.Ints(keys)
+	for _, i := range keys {
 		fmt.Printf("Flow %v: ", i)
 		reorganizeX(i)
 		j := groups[i].Front()
