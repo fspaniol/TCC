@@ -16,5 +16,7 @@ It will call the conversion from GLPK to CPLEX and then call CPLEX and write the
 
 ## Having to do:
 
-Need to implement the parser that gets the XML from the solution and then print out the solution groups. 
-This will make the visualization of solutions much easier
+I could print the solutions as JSON so that it can be easier for someone to read
+Talk to jonatas regarding what format he would rather have
+
+Have to split the groups regarding where to dispatch
