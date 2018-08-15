@@ -16,7 +16,11 @@ type x struct {
 }
 
 var (
+	// groups maps the flows to their own list of execution
 	groups map[int]*list.List
+
+	// breaks maps whether a flow gets broken in a node
+	breaks map[int]map[string]bool
 )
 
 func handleX(name string, value string) {
@@ -53,6 +57,40 @@ func handleX(name string, value string) {
 	}
 }
 
+func handleY(name string, value string) {
+	val, _ := strconv.Atoi(value)
+	if val == 1 {
+		arr := strings.Split(name[2:len(name)-1], ",")
+		src := arr[1]
+		flow, _ := strconv.Atoi(arr[0])
+
+		if breaks[flow] == nil {
+			breaks[flow] = make(map[string]bool)
+		}
+
+		breaks[flow][src] = true
+	}
+}
+
+func output() {
+	for i := range groups {
+		fmt.Printf("Flow %v: ", i)
+		j := groups[i].Front()
+		for j != nil {
+			elem := j.Value.(x)
+			fmt.Printf("%v ", j.Value)
+			// This means that it delivers on such node
+			if breaks[i][elem.src] {
+				fmt.Println()
+				if j.Next() != nil {
+					fmt.Printf("Flow %v: ", i)
+				}
+			}
+			j = j.Next()
+		}
+	}
+}
+
 func main() {
 	sol, err := parser.Transform(fmt.Sprintf("glpk/%s/%s.sol", os.Args[1], os.Args[1]))
 	if err != nil {
@@ -60,21 +98,16 @@ func main() {
 		return
 	}
 	groups = make(map[int]*list.List)
+	breaks = make(map[int]map[string]bool)
 
 	for _, v := range sol.Variables.Variable {
 		switch v.Name[0] {
 		case 'X':
 			handleX(v.Name, v.Value)
+		case 'Y':
+			handleY(v.Name, v.Value)
 		}
 	}
 
-	for i := range groups {
-		fmt.Printf("Flow %v: ", i)
-		j := groups[i].Front()
-		for j != nil {
-			fmt.Printf("%v ", j.Value)
-			j = j.Next()
-		}
-		fmt.Println()
-	}
+	output()
 }

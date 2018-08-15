@@ -6,7 +6,7 @@
 first=$SECONDS
 
 # Generate the linear file
-glpsol -m glpk/into.mod -d glpk/$1/$1.dat --wlp glpk/$1/$1.lp --check
+#glpsol -m glpk/into.mod -d glpk/$1/$1.dat --wlp glpk/$1/$1.lp --check
 
 # Execute cplex and put the output into the file folder
 # cplex/cplex -c "READ glpk/$1/$1.lp" "OPTIMIZE" "WRITE glpk/$1/$1.sol"
