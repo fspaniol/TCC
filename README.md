@@ -14,9 +14,7 @@ To execute the `Execute` shell script, simple call it and pass the test name, fo
 
 It will call the conversion from GLPK to CPLEX and then call CPLEX and write the solution to the `simple` test folder, in `glpk/simple`.
 
-## Having to do:
+## TODO:
 
 I could print the solutions as JSON so that it can be easier for someone to read
 Talk to jonatas regarding what format he would rather have
-
-Have to split the groups regarding where to dispatch
