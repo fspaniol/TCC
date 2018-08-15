@@ -24,8 +24,8 @@ var (
 )
 
 func handleX(name string, value string) {
-	val, _ := strconv.Atoi(value)
-	if val == 1 {
+	if value != "0" {
+		fmt.Println("I'm in X, the value is ", value)
 		arr := strings.Split(name[2:len(name)-1], ",")
 		src := arr[0]
 		dst := arr[1]
@@ -58,8 +58,8 @@ func handleX(name string, value string) {
 }
 
 func handleY(name string, value string) {
-	val, _ := strconv.Atoi(value)
-	if val == 1 {
+	if value != "0" {
+		fmt.Println("I'm in Y, the value is ", value)
 		arr := strings.Split(name[2:len(name)-1], ",")
 		src := arr[1]
 		flow, _ := strconv.Atoi(arr[0])

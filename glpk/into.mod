@@ -23,10 +23,10 @@ set A within (V cross V);
 var C{S,V} >= 0;
 # Control the weight that each route is handling
 
-var Y{S,V}, binary;
+var Y{S,V} >=0, binary;
 # Check whether route k dispatches on node V
 
-var X{A,S} binary;
+var X{A,S} >=0, binary;
 # Check whether arch A is handled by route K
 
 param q;
