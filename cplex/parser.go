@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"../parser"
+	"github.com/fspaniol/TCC/parser"
 )
 
 type x struct {
@@ -24,8 +24,7 @@ var (
 )
 
 func handleX(name string, value string) {
-	if value != "0" {
-		fmt.Println("I'm in X, the value is ", value)
+	if value != "0" && value != "-0" {
 		arr := strings.Split(name[2:len(name)-1], ",")
 		src := arr[0]
 		dst := arr[1]
@@ -34,6 +33,7 @@ func handleX(name string, value string) {
 			src: src,
 			dst: dst,
 		}
+
 		if groups[flow] == nil {
 			groups[flow] = list.New()
 		}
@@ -57,9 +57,29 @@ func handleX(name string, value string) {
 	}
 }
 
+func reorganizeX(flow int) {
+	i := groups[flow].Front()
+	for i != nil {
+		j := i.Next()
+		elemI := i.Value.(x)
+		for j != nil {
+			elemJ := j.Value.(x)
+			if elemJ.dst == elemI.src {
+				groups[flow].MoveBefore(j, i)
+				break
+			}
+			j = j.Next()
+		}
+		if j == nil {
+			i = i.Next()
+		} else {
+			i = groups[flow].Front()
+		}
+	}
+}
+
 func handleY(name string, value string) {
-	if value != "0" {
-		fmt.Println("I'm in Y, the value is ", value)
+	if value != "0" && value != "-0" {
 		arr := strings.Split(name[2:len(name)-1], ",")
 		src := arr[1]
 		flow, _ := strconv.Atoi(arr[0])
@@ -75,6 +95,7 @@ func handleY(name string, value string) {
 func output() {
 	for i := range groups {
 		fmt.Printf("Flow %v: ", i)
+		reorganizeX(i)
 		j := groups[i].Front()
 		for j != nil {
 			elem := j.Value.(x)
