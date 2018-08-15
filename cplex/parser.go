@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fspaniol/TCC/parser"
+	"../parser"
 )
 
 type x struct {
@@ -92,7 +92,7 @@ func output() {
 }
 
 func main() {
-	sol, err := parser.Transform(fmt.Sprintf("glpk/%s/%s.sol", os.Args[1], os.Args[1]))
+	sol, err := parser.Transform(fmt.Sprintf("networks/%s/%s.sol", os.Args[1], os.Args[1]))
 	if err != nil {
 		fmt.Println(err)
 		return

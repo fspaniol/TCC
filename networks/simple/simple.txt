@@ -1,4 +1,4 @@
 Number of groups: 2
 Flow 1: {1 2} {2 3} 
 Flow 2: {3 4} {4 5} 
-Time taken running everything: 0 seconds
+Time taken running everything: 1 seconds
