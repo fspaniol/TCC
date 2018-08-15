@@ -25,7 +25,7 @@ var (
 )
 
 func handleX(name string, value string) {
-	if value != "0" && value != "-0" {
+	if value != "0" && value != "-0" && value[0] != '5' {
 		arr := strings.Split(name[2:len(name)-1], ",")
 		src := arr[0]
 		dst := arr[1]
@@ -80,7 +80,7 @@ func reorganizeX(flow int) {
 }
 
 func handleY(name string, value string) {
-	if value != "0" && value != "-0" {
+	if value != "0" && value != "-0" && value[0] != '5' {
 		arr := strings.Split(name[2:len(name)-1], ",")
 		src := arr[1]
 		flow, _ := strconv.Atoi(arr[0])
