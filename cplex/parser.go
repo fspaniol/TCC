@@ -109,5 +109,6 @@ func main() {
 		}
 	}
 
+	fmt.Printf("Number of groups: %v\n", sol.Header.ObjectiveValue)
 	output()
 }
