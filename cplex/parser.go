@@ -103,24 +103,23 @@ func output() {
 		keys = append(keys, i)
 	}
 	sort.Ints(keys)
-	//for _, i := range keys {
-	i := 61
-	fmt.Printf("Flow %v: ", i)
-	reorganizeX(i)
-	j := groups[i].Front()
-	for j != nil {
-		elem := j.Value.(x)
-		fmt.Printf("%v ", j.Value)
-		// This means that it delivers on such node
-		if breaks[i][elem.src] {
-			fmt.Println()
-			if j.Next() != nil {
-				fmt.Printf("Flow %v: ", i)
+	for _, i := range keys {
+		fmt.Printf("Flow %v: ", i)
+		reorganizeX(i)
+		j := groups[i].Front()
+		for j != nil {
+			elem := j.Value.(x)
+			fmt.Printf("%v ", j.Value)
+			// This means that it delivers on such node
+			if breaks[i][elem.src] {
+				fmt.Println()
+				if j.Next() != nil {
+					fmt.Printf("Flow %v: ", i)
+				}
 			}
+			j = j.Next()
 		}
-		j = j.Next()
 	}
-	//}
 }
 
 func main() {
