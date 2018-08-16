@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fspaniol/TCC/parser"
+	"../parser"
 )
 
 type x struct {
