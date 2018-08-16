@@ -96,3 +96,4 @@ Flow 2073: {102 17} {17 66} {66 170}
 Flow 2091: {103 33} {33 45} 
 Flow 2137: {104 90} {90 21} {21 84} {84 188} 
 Time taken running everything: 5427 seconds
+Time taken running everything: 767 seconds
