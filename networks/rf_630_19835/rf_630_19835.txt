@@ -143508,3 +143508,4 @@ set Last[19835] := 314 629;
 param q := 5;
 
 end;
+Time taken running everything: 0 seconds
