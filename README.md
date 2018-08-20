@@ -21,6 +21,13 @@ Talk to jonatas regarding what format he would rather have
 
 Write the validator, meaning that such a solution would be a suitable one
 
-Write a table with the test that were executed, their run time, node size, flow size, solution, etc...
+Transform the Data Parser from CPLEX into a public library
 
-Get all inputs from Jonatas e insert them into the git repository
+Write a table with the tests that were executed, their run time, node size, flow size, solution, etc...
+
+## Validator
+
+Make sure that every flow is getting dispatches by, and only one.
+Make sure that whenever there's a break, the group is being dispatched.
+Make sure that the weight doesn't surpass the limit.
+
