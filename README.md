@@ -31,3 +31,9 @@ Make sure that every flow is getting dispatches by, and only one.
 Make sure that whenever there's a break, the group is being dispatched.
 Make sure that the weight doesn't surpass the limit.
 
+## TODO
+
+Rerun the parser
+Add the time run
+Add the gap
+Keep the time ran
