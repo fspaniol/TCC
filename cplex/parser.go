@@ -3,6 +3,7 @@ package main
 import (
 	"container/list"
 	"fmt"
+	"math"
 	"os"
 	"sort"
 	"strconv"
@@ -25,7 +26,9 @@ var (
 )
 
 func handleX(name string, value string) {
-	if value != "0" && value != "-0" && value[0] != '5' {
+	valueFloat, _ := strconv.ParseFloat(value, 32)
+	val := math.Round(valueFloat)
+	if val == 1 {
 		arr := strings.Split(name[2:len(name)-1], ",")
 		src := arr[0]
 		dst := arr[1]
@@ -84,7 +87,9 @@ func reorganizeX(flow int) {
 }
 
 func handleY(name string, value string) {
-	if value != "0" && value != "-0" && value[0] != '5' {
+	valueFloat, _ := strconv.ParseFloat(value, 32)
+	val := math.Round(valueFloat)
+	if val == 1 {
 		arr := strings.Split(name[2:len(name)-1], ",")
 		src := arr[1]
 		flow, _ := strconv.Atoi(arr[0])
