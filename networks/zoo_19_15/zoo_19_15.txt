@@ -1,1 +1,10 @@
-Time taken running everything: 0 seconds
+Number of groups: 8
+Flow 2: {1 4} {4 5} {5 6} {6 16} 
+Flow 3: {4 1} 
+Flow 4: {5 15} 
+Flow 7: {4 8} {8 9} {9 19} 
+Flow 8: {7 4} {4 14} 
+Flow 9: {8 1} {1 11} 
+Flow 13: {8 4} {4 7} {7 17} 
+Flow 15: {9 8} 
+Time taken running everything: 1 seconds

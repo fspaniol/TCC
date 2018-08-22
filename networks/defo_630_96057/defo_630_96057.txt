@@ -1,1 +1,2 @@
-Time taken running everything: 0 seconds
+open networks/defo_630_96057/defo_630_96057.sol: no such file or directory
+Time taken running everything: 1327 seconds

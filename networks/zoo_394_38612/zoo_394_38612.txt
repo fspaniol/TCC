@@ -1,1 +1,2 @@
-Time taken running everything: 0 seconds
+open networks/zoo_394_38612/zoo_394_38612.sol: no such file or directory
+Time taken running everything: 5616 seconds

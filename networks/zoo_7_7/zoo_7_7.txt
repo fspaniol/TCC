@@ -1,1 +1,6 @@
+Number of groups: 4
+Flow 1: {1 2} {2 6} 
+Flow 3: {2 1} {1 5} 
+Flow 4: {2 3} {3 7} 
+Flow 7: {4 1} {1 3} 
 Time taken running everything: 0 seconds
