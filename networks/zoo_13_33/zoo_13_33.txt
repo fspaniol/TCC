@@ -1,1 +1,8 @@
+Number of groups: 6
+Flow 2: {1 2} {2 3} {3 10} 
+Flow 14: {3 2} {2 4} {4 5} {5 12} 
+Flow 22: {5 4} {4 11} 
+Flow 23: {4 2} {2 6} {6 13} 
+Flow 24: {6 2} {2 1} {1 8} 
+Flow 30: {7 2} {2 9} 
 Time taken running everything: 0 seconds

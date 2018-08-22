@@ -1,0 +1,104 @@
+
+Log started (V12.5.0.0) Sat Aug 18 17:29:16 2018
+
+File 'rf1221_read_hard.0004.lp' not found.
+No file read.
+File 'rf1221_read_hard.0004.lp' not found.
+No file read.
+
+Log started (V12.5.0.0) Sat Aug 18 17:30:03 2018
+
+
+Problem 'test.lp' read.
+Read time = 2.15 sec. (87.22 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 563894 rows and 855033 columns.
+MIP Presolve modified 112305 coefficients.
+Aggregator did 2215 substitutions.
+Reduced MIP has 51635 rows, 33801 columns, and 173918 nonzeros.
+Reduced MIP has 21792 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 1.63 sec. (866.52 ticks)
+Found incumbent of value 259.000000 after 2.02 sec. (1126.19 ticks)
+Probing time = 0.04 sec. (8.29 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 38122 coefficients.
+Reduced MIP has 51635 rows, 33801 columns, and 173918 nonzeros.
+Reduced MIP has 21792 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.22 sec. (156.08 ticks)
+Probing time = 0.03 sec. (7.32 ticks)
+Clique table members: 18626.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 2.21 sec. (1157.74 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          259.0000       63.0000       23   75.68%
+      0     0       64.4461   532      259.0000       64.4461       23   75.12%
+*     0+    0                          117.0000       64.4461     8324   44.92%
+      0     0       69.2833   509      117.0000     Cuts: 780     8324   40.78%
+      0     0       70.8125   542      117.0000     Cuts: 636    22025   39.48%
+      0     0       71.7308   515      117.0000     Cuts: 595    33509   38.69%
+*     0+    0                          103.0000       71.7308    33509   30.36%
+
+GUB cover cuts applied:  517
+Clique cuts applied:  2
+Cover cuts applied:  26
+Implied bound cuts applied:  3
+Flow cuts applied:  599
+Mixed integer rounding cuts applied:  1103
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  45
+
+Root node processing (before b&c):
+  Real time             =   64.94 sec. (27186.34 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =   64.94 sec. (27186.34 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Aborted, integer feasible:  Objective =  1.0300000000e+02
+Current MIP best bound =  7.1730814155e+01 (gap = 31.2692, 30.36%)
+Solution time =   67.29 sec.  Iterations = 36502  Nodes = 0 (1)
+Deterministic time = 28520.16 ticks  (423.82 ticks/sec)
+
+
+Log started (V12.5.0.0) Sat Aug 18 17:34:35 2018
+
+New value for time limit in seconds: 3600
+New value for time limit in seconds: 1
+
+Problem 'test.lp' read.
+Read time = 2.16 sec. (87.22 ticks)
+Presolve time = 1.05 sec. (465.33 ticks)
+
+
+MIP - Time limit exceeded, no integer solution.
+Current MIP best bound =  0.0000000000e+00 (gap is infinite)
+Solution time =    1.09 sec.  Iterations = 0  Nodes = 0
+Deterministic time = 489.52 ticks  (450.92 ticks/sec)
+
+
+Log started (V12.5.0.0) Sat Aug 18 17:36:32 2018
+
+
+Problem 'test.lp' read.
+Read time = 2.16 sec. (87.22 ticks)
+New value for time limit in seconds: 1
+Presolve time = 1.05 sec. (465.33 ticks)
+
+
+MIP - Time limit exceeded, no integer solution.
+Current MIP best bound =  0.0000000000e+00 (gap is infinite)
+Solution time =    1.08 sec.  Iterations = 0  Nodes = 0
+Deterministic time = 489.52 ticks  (453.86 ticks/sec)
+
+
+CPLEX Error  1217: No solution exists.
+No file written.

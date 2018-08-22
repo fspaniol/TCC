@@ -1,1 +1,44 @@
-Time taken running everything: 0 seconds
+Number of groups: 42
+Flow 1: {1 7} 
+Flow 2: {1 5} 
+Flow 4: {2 7} 
+Flow 8: {2 5} {5 17} 
+Flow 10: {3 7} 
+Flow 15: {3 5} {5 20} 
+Flow 16: {4 7} 
+Flow 18: {4 5} {5 8} {8 11} {11 34} 
+Flow 20: {7 1} 
+Flow 21: {7 4} 
+Flow 22: {7 5} {5 28} 
+Flow 23: {7 8} {8 31} 
+Flow 25: {7 15} 
+Flow 26: {7 16} 
+Flow 27: {7 17} {17 40} 
+Flow 28: {7 18} {18 41} 
+Flow 29: {7 20} {20 43} 
+Flow 30: {7 21} {21 44} 
+Flow 31: {7 22} {22 45} 
+Flow 35: {8 15} 
+Flow 40: {8 7} 
+Flow 42: {11 15} {15 38} 
+Flow 46: {11 8} {8 5} {5 22} 
+Flow 47: {12 15} {15 7} 
+Flow 48: {15 8} 
+Flow 50: {14 7} 
+Flow 52: {14 5} 
+Flow 53: {16 5} {5 1} {1 24} 
+Flow 56: {16 7} {7 30} 
+Flow 62: {17 7} 
+Flow 64: {17 5} 
+Flow 68: {18 7} 
+Flow 72: {18 5} {5 16} {16 39} 
+Flow 80: {19 7} 
+Flow 86: {19 5} {5 21} 
+Flow 88: {20 7} 
+Flow 90: {20 5} 
+Flow 91: {21 5} {5 4} {4 27} 
+Flow 92: {21 7} 
+Flow 97: {22 7} 
+Flow 100: {22 5} {5 15} 
+Flow 102: {23 7} 
+Time taken running everything: 1 seconds

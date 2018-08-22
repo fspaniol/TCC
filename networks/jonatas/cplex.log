@@ -1,0 +1,165 @@
+
+Log started (V12.5.0.0) Sat Aug 18 17:28:08 2018
+
+
+Problem 'jonatas.lp' read.
+Read time = 0.82 sec. (31.49 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 229525 rows and 337332 columns.
+MIP Presolve modified 17950 coefficients.
+Aggregator did 225 substitutions.
+Reduced MIP has 10075 rows, 5741 columns, and 30899 nonzeros.
+Reduced MIP has 3443 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.37 sec. (275.55 ticks)
+Found incumbent of value 1135.000000 after 0.46 sec. (322.84 ticks)
+Probing time = 0.01 sec. (1.69 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          1133.000000
+Tried aggregator 1 time.
+MIP Presolve eliminated 8 rows and 5 columns.
+MIP Presolve modified 5309 coefficients.
+Reduced MIP has 10067 rows, 5736 columns, and 30879 nonzeros.
+Reduced MIP has 3441 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.03 sec. (22.05 ticks)
+Probing time = 0.00 sec. (1.60 ticks)
+Clique table members: 2725.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.31 sec. (220.59 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         1133.0000      165.0000       22   85.44%
+      0     0      170.9605  1098     1133.0000      170.9605       22   84.91%
+*     0+    0                          991.0000      170.9605     2074   82.75%
+      0     0      309.4039   682      991.0000    Cuts: 2505     2074   68.78%
+*     0+    0                          420.0000      309.4039     2074   26.33%
+      0     0      342.4021   576      420.0000     Cuts: 885     3049   18.48%
+*     0+    0                          401.0000      342.4021     3049   14.61%
+      0     0      355.4548   509      401.0000     Cuts: 617     3736   11.36%
+*     0+    0                          397.0000      355.4548     3736   10.46%
+*     0+    0                          389.0000      355.4548     3736    8.62%
+*     0+    0                          387.0000      355.4548     3736    8.15%
+      0     0      361.6096   415      387.0000     Cuts: 402     4214    6.56%
+      0     0      366.5125   329      387.0000     Cuts: 381     4507    5.29%
+      0     0      374.6901   279      387.0000     Cuts: 188     4790    3.18%
+      0     0      376.8003   193      387.0000     Cuts: 136     4936    2.64%
+      0     0      378.1597   129      387.0000     Cuts: 100     4985    2.28%
+*     0+    0                          380.0000      378.1597     4985    0.48%
+*     0+    0                          379.0000      378.1597     4985    0.22%
+      0     0        cutoff            379.0000      378.1597     4985    0.22%
+Elapsed time = 2.45 sec. (1539.80 ticks, tree = 0.00 MB, solutions = 9)
+
+GUB cover cuts applied:  435
+Clique cuts applied:  96
+Cover cuts applied:  212
+Implied bound cuts applied:  43
+Flow cuts applied:  932
+Mixed integer rounding cuts applied:  1316
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  97
+
+Root node processing (before b&c):
+  Real time             =    1.96 sec. (1191.55 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    1.96 sec. (1191.55 ticks)
+
+Solution pool: 9 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  3.7900000000e+02
+Solution time =    2.50 sec.  Iterations = 4985  Nodes = 0
+Deterministic time = 1567.72 ticks  (627.44 ticks/sec)
+
+
+Solution pool: 9 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  3.7900000000e+02
+Solution time =    0.03 sec.  Iterations = 4985  Nodes = 0
+Deterministic time = 10.81 ticks  (404.71 ticks/sec)
+
+
+Log started (V12.5.0.0) Sat Aug 18 17:28:54 2018
+
+
+Problem 'jonatas.lp' read.
+Read time = 0.82 sec. (31.49 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 229525 rows and 337332 columns.
+MIP Presolve modified 17950 coefficients.
+Aggregator did 225 substitutions.
+Reduced MIP has 10075 rows, 5741 columns, and 30899 nonzeros.
+Reduced MIP has 3443 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.37 sec. (275.55 ticks)
+Found incumbent of value 1135.000000 after 0.44 sec. (322.84 ticks)
+Probing time = 0.01 sec. (1.69 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          1133.000000
+Tried aggregator 1 time.
+MIP Presolve eliminated 8 rows and 5 columns.
+MIP Presolve modified 5309 coefficients.
+Reduced MIP has 10067 rows, 5736 columns, and 30879 nonzeros.
+Reduced MIP has 3441 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.03 sec. (22.05 ticks)
+Probing time = 0.00 sec. (1.60 ticks)
+Clique table members: 2725.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.31 sec. (220.59 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         1133.0000      165.0000       22   85.44%
+      0     0      170.9605  1098     1133.0000      170.9605       22   84.91%
+*     0+    0                          991.0000      170.9605     2074   82.75%
+      0     0      309.4039   682      991.0000    Cuts: 2505     2074   68.78%
+*     0+    0                          420.0000      309.4039     2074   26.33%
+      0     0      342.4021   576      420.0000     Cuts: 885     3049   18.48%
+*     0+    0                          401.0000      342.4021     3049   14.61%
+      0     0      355.4548   509      401.0000     Cuts: 617     3736   11.36%
+*     0+    0                          397.0000      355.4548     3736   10.46%
+*     0+    0                          389.0000      355.4548     3736    8.62%
+*     0+    0                          387.0000      355.4548     3736    8.15%
+      0     0      361.6096   415      387.0000     Cuts: 402     4214    6.56%
+      0     0      366.5125   329      387.0000     Cuts: 381     4507    5.29%
+      0     0      374.6901   279      387.0000     Cuts: 188     4790    3.18%
+      0     0      376.8003   193      387.0000     Cuts: 136     4936    2.64%
+      0     0      378.1597   129      387.0000     Cuts: 100     4985    2.28%
+*     0+    0                          380.0000      378.1597     4985    0.48%
+*     0+    0                          379.0000      378.1597     4985    0.22%
+      0     0        cutoff            379.0000      378.1597     4985    0.22%
+Elapsed time = 2.43 sec. (1539.80 ticks, tree = 0.00 MB, solutions = 9)
+
+GUB cover cuts applied:  435
+Clique cuts applied:  96
+Cover cuts applied:  212
+Implied bound cuts applied:  43
+Flow cuts applied:  932
+Mixed integer rounding cuts applied:  1316
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  97
+
+Root node processing (before b&c):
+  Real time             =    1.96 sec. (1191.55 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    1.96 sec. (1191.55 ticks)
+
+Solution pool: 9 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  3.7900000000e+02
+Solution time =    2.48 sec.  Iterations = 4985  Nodes = 0
+Deterministic time = 1567.72 ticks  (632.99 ticks/sec)
+

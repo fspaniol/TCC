@@ -1,1 +1,9 @@
+Number of groups: 7
+Flow 1: {1 4} {4 2} {2 15} 
+Flow 5: {2 4} {4 3} {3 16} 
+Flow 7: {4 5} {5 18} 
+Flow 13: {3 4} {4 6} {6 19} 
+Flow 21: {5 4} {4 1} {1 14} 
+Flow 29: {6 4} {4 7} {7 20} 
+Flow 32: {7 4} {4 17} 
 Time taken running everything: 0 seconds
