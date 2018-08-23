@@ -33,7 +33,9 @@ Make sure that the weight doesn't surpass the limit.
 
 ## TODO
 
-Rerun the parser
-Add the time run
-Add the gap
-Keep the time ran
+Parse all the links
+Check if all of them are kept
+Check if all C's are lower than the limit
+Check that if a flow doesn't match the next one, then Y is dispatched
+
+After that, modify the script to print the output, with counting the number of links and create the script that creates table in MarkDown
