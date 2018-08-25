@@ -1,0 +1,57 @@
+
+Log started (V12.6.2.0) Thu Aug 23 19:54:28 2018
+
+New value for variables to include in .sol and .mst files: 3
+Tried aggregator 3 times.
+MIP Presolve eliminated 3078657 rows and 4277116 columns.
+MIP Presolve modified 414005 coefficients.
+Aggregator did 7616 substitutions.
+Reduced MIP has 191919 rows, 125293 columns, and 648293 nonzeros.
+Reduced MIP has 81014 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 9.22 sec. (4255.92 ticks)
+Found incumbent of value 405.000000 after 12.03 sec. (5576.00 ticks)
+Probing time = 0.38 sec. (43.77 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 140208 coefficients.
+Reduced MIP has 191919 rows, 125293 columns, and 648293 nonzeros.
+Reduced MIP has 81014 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 1.49 sec. (718.30 ticks)
+Probing time = 0.17 sec. (36.28 ticks)
+Clique table members: 292836.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 20.01 sec. (6639.20 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          405.0000       87.0000            78.52%
+      0     0       87.0000   895      405.0000       87.0000       18   78.52%
+
+GUB cover cuts applied:  326
+Clique cuts applied:  2
+Cover cuts applied:  17
+Implied bound cuts applied:  2
+Flow cuts applied:  286
+Mixed integer rounding cuts applied:  543
+Gomory fractional cuts applied:  36
+
+Root node processing (before b&c):
+  Real time             =  600.52 sec. (184227.11 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  600.52 sec. (184227.11 ticks)
+
+Solution pool: 1 solution saved.
+
+MIP - Time limit exceeded, integer feasible:  Objective =  4.0500000000e+02
+Current MIP best bound =  8.7000000000e+01 (gap = 318, 78.52%)
+Solution time =  600.53 sec.  Iterations = 77278  Nodes = 0 (1)
+Deterministic time = 184239.72 ticks  (306.79 ticks/sec)
+
+
+Incumbent solution written to file 'networks/defo_174_7527/defo_174_7527.sol'.
