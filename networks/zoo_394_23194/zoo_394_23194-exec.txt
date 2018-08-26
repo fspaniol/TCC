@@ -1,0 +1,60 @@
+
+Log started (V12.6.2.0) Sat Aug 25 22:45:21 2018
+
+New value for variables to include in .sol and .mst files: 3
+Presolve has eliminated 15470426 rows and 23747522 columns...
+Presolve has improved bounds 606174 times...
+Tried aggregator 3 times.
+Aggregator has done 23370 substitutions...
+MIP Presolve eliminated 15493614 rows and 23747522 columns.
+MIP Presolve modified 2461072 coefficients.
+Aggregator did 23370 substitutions.
+Reduced MIP has 1249215 rows, 781531 columns, and 4236073 nonzeros.
+Reduced MIP has 513226 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 56.50 sec. (23159.96 ticks)
+Found incumbent of value 664.000000 after 77.52 sec. (30707.56 ticks)
+Probing time = 3.12 sec. (253.98 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 828105 coefficients.
+Reduced MIP has 1249215 rows, 781531 columns, and 4236073 nonzeros.
+Reduced MIP has 513226 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 11.07 sec. (4038.54 ticks)
+Probing time = 1.65 sec. (211.42 ticks)
+Clique table members: 1755828.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 316.89 sec. (69981.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          664.0000      186.0000            71.99%
+      0     0      186.1792   776      664.0000      186.1792   132376   71.96%
+
+GUB cover cuts applied:  419
+Cover cuts applied:  22
+Implied bound cuts applied:  6
+Flow cuts applied:  195
+Mixed integer rounding cuts applied:  540
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  97
+
+Root node processing (before b&c):
+  Real time             =  603.20 sec. (155778.49 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  603.20 sec. (155778.49 ticks)
+
+Solution pool: 1 solution saved.
+
+MIP - Time limit exceeded, integer feasible:  Objective =  6.6400000000e+02
+Current MIP best bound =  1.8617922547e+02 (gap = 477.821, 71.96%)
+Solution time =  603.36 sec.  Iterations = 201134  Nodes = 0 (1)
+Deterministic time = 155848.74 ticks  (258.30 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_394_23194/zoo_394_23194.sol'.

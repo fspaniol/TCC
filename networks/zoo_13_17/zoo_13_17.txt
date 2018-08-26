@@ -4,4 +4,4 @@ Flow 4: {2 3} {3 5} {5 6} {6 13}
 Flow 8: {3 2} {2 1} {1 8} 
 Flow 14: {7 4} {4 1} {1 2} {2 9} 
 Flow 15: {7 6} {6 5} {5 3} {3 10} 
-Time taken running everything: 1 seconds
+Time taken running everything: 0 seconds

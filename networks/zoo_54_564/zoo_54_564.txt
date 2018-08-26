@@ -26,4 +26,4 @@ Flow 542: {26 25} {25 27} {27 54}
 Flow 551: {24 21} {21 18} {18 9} {9 10} {10 37} 
 Flow 558: {25 19} {19 46} 
 Flow 564: {27 25} {25 26} {26 53} 
-Time taken running everything: 5 seconds
+Time taken running everything: 3 seconds

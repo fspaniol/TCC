@@ -534,4 +534,4 @@ Flow 21805: {88 52}
 Flow 21933: {149 145} 
 Flow 21948: {149 43} 
 Flow 21986: {149 134} 
-Time taken running everything: 1636 seconds
+Time taken running everything: 1339 seconds

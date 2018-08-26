@@ -1,0 +1,79 @@
+
+Log started (V12.6.2.0) Sun Aug 26 10:37:44 2018
+
+New value for variables to include in .sol and .mst files: 3
+Tried aggregator 3 times.
+MIP Presolve eliminated 11436 rows and 15985 columns.
+MIP Presolve modified 5783 coefficients.
+Aggregator did 182 substitutions.
+Reduced MIP has 2681 rows, 1800 columns, and 8860 nonzeros.
+Reduced MIP has 1137 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.04 sec. (27.39 ticks)
+Found incumbent of value 64.000000 after 0.05 sec. (38.10 ticks)
+Probing time = 0.01 sec. (2.84 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 5 coefficients.
+Reduced MIP has 2681 rows, 1800 columns, and 8860 nonzeros.
+Reduced MIP has 1137 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (5.35 ticks)
+Probing time = 0.01 sec. (2.78 ticks)
+Clique table members: 3431.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.02 sec. (14.07 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           64.0000       17.0000            73.44%
+      0     0       17.0000    63       64.0000       17.0000      530   73.44%
+*     0+    0                           31.0000       17.0000            45.16%
+      0     0       17.0000    88       31.0000      Cuts: 48      758   45.16%
+*     0+    0                           28.0000       17.0000            39.29%
+      0     0       17.3333    54       28.0000     Cuts: 154     1162   38.10%
+      0     0       17.3333    71       28.0000      Cuts: 62     1360   38.10%
+*     0+    0                           24.0000       17.3333            27.78%
+*     0+    0                           23.0000       17.3333            24.64%
+*     0+    0                           22.0000       17.3333            21.21%
+*     0+    0                           21.0000       17.3333            17.46%
+      0     2       17.3333    62       21.0000       17.3333     1360   17.46%
+Elapsed time = 0.48 sec. (325.50 ticks, tree = 0.00 MB, solutions = 7)
+*     4+    4                           20.0000       17.3333            13.33%
+     33    22       17.3710   102       20.0000       17.3333     6876   13.33%
+     34    23       18.2500    69       20.0000       17.3333     6929   13.33%
+     35    24       18.0000    49       20.0000       17.3333     7024   13.33%
+     36    23    infeasible             20.0000       17.3333     7029   13.33%
+     37    24       18.0000    86       20.0000       17.3333     7061   13.33%
+     38    25       18.0000    56       20.0000       17.3333     7076   13.33%
+     39    26       18.0000    67       20.0000       17.3333     7132   13.33%
+     40    27       17.4000    83       20.0000       17.3333     7141   13.33%
+     41    28       18.0000    47       20.0000       17.3333     7158   13.33%
+    401   230       18.2835   100       20.0000       18.0000    39268   10.00%
+Elapsed time = 2.01 sec. (1280.53 ticks, tree = 0.42 MB, solutions = 8)
+
+GUB cover cuts applied:  47
+Cover cuts applied:  110
+Implied bound cuts applied:  20
+Flow cuts applied:  39
+Mixed integer rounding cuts applied:  74
+Lift and project cuts applied:  4
+Gomory fractional cuts applied:  17
+
+Root node processing (before b&c):
+  Real time             =    0.48 sec. (325.43 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    2.26 sec. (1371.96 ticks)
+  Sync time (average)   =    0.45 sec.
+  Wait time (average)   =    0.48 sec.
+                          ------------
+Total (root+branch&cut) =    2.74 sec. (1697.38 ticks)
+
+Solution pool: 8 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.0000000000e+01
+Solution time =    2.74 sec.  Iterations = 63311  Nodes = 765
+Deterministic time = 1697.43 ticks  (619.76 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_43_168/zoo_43_168.sol'.

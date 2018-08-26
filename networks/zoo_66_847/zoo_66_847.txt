@@ -32,4 +32,4 @@ Flow 748: {31 33} {33 24} {24 25} {25 58}
 Flow 760: {11 14} {14 7} {7 6} {6 5} {5 38} 
 Flow 797: {12 11} {11 44} 
 Flow 844: {33 31} {31 30} {30 29} {29 62} 
-Time taken running everything: 10 seconds
+Time taken running everything: 7 seconds

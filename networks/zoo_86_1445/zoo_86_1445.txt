@@ -40,4 +40,4 @@ Flow 1110: {33 32} {32 75}
 Flow 1199: {14 7} {7 8} {8 6} {6 49} 
 Flow 1356: {41 42} {42 43} {43 13} {13 56} 
 Flow 1382: {3 4} {4 1} {1 17} {17 60} 
-Time taken running everything: 21 seconds
+Time taken running everything: 16 seconds

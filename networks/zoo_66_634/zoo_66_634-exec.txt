@@ -1,0 +1,84 @@
+
+Log started (V12.6.2.0) Sun Aug 26 10:50:49 2018
+
+New value for variables to include in .sol and .mst files: 3
+Tried aggregator 3 times.
+MIP Presolve eliminated 77365 rows and 111667 columns.
+MIP Presolve modified 23717 coefficients.
+Aggregator did 668 substitutions.
+Reduced MIP has 10026 rows, 6820 columns, and 33485 nonzeros.
+Reduced MIP has 4321 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.22 sec. (144.73 ticks)
+Found incumbent of value 118.000000 after 0.31 sec. (198.29 ticks)
+Probing time = 0.04 sec. (5.33 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 4 rows and 3 columns.
+MIP Presolve modified 8097 coefficients.
+Reduced MIP has 10022 rows, 6817 columns, and 33475 nonzeros.
+Reduced MIP has 4320 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.05 sec. (30.48 ticks)
+Probing time = 0.02 sec. (4.77 ticks)
+Clique table members: 22484.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.09 sec. (59.36 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          117.0000       32.0000            72.65%
+      0     0       32.0000    92      117.0000       32.0000     1506   72.65%
+*     0+    0                           57.0000       32.0000            43.86%
+      0     0       32.5000   185       57.0000     Cuts: 214     3579   42.98%
+      0     0       32.5000   219       57.0000     Cuts: 268     5235   42.98%
+      0     0       32.7500   168       57.0000      Cuts: 71     6727   42.54%
+*     0+    0                           44.0000       32.7500            25.57%
+*     0+    0                           41.0000       32.7500            20.12%
+*     0+    0                           40.0000       32.7500            18.12%
+      0     0       33.0714   181       40.0000     Cuts: 196     8202   17.32%
+      0     0       33.4464   161       40.0000     Cuts: 213     9454   16.38%
+      0     0       34.6250    91       40.0000     Cuts: 164    10349   13.44%
+      0     0       34.8015   112       40.0000      Cuts: 69    11192   13.00%
+      0     0       34.9643   113       40.0000      Cuts: 85    11994   12.59%
+      0     0       34.9935   133       40.0000      Cuts: 93    13222   12.52%
+      0     0       35.0312   119       40.0000      Cuts: 90    14316   12.42%
+      0     0       35.3375   223       40.0000     Cuts: 117    16328   11.66%
+      0     0       35.4892   213       40.0000     Cuts: 180    16762   11.28%
+      0     0       35.5516   211       40.0000     Cuts: 145    17192   11.12%
+      0     0       35.8592   243       40.0000     Cuts: 135    17793   10.35%
+      0     0       36.3026   178       40.0000     Cuts: 137    18597    9.24%
+      0     0       37.4000    84       40.0000      Cuts: 89    19202    6.50%
+      0     0       37.5588   128       40.0000      Cuts: 65    19939    6.10%
+      0     0       38.0000    19       40.0000      Cuts: 50    19970    5.00%
+*     0+    0                           39.0000       38.0000             2.56%
+*     0+    0                           38.0000       38.0000             0.00%
+      0     0        cutoff             38.0000       38.0000    19970    0.00%
+Elapsed time = 9.22 sec. (4718.39 ticks, tree = 0.00 MB, solutions = 7)
+
+GUB cover cuts applied:  417
+Clique cuts applied:  1
+Cover cuts applied:  20
+Flow cuts applied:  438
+Mixed integer rounding cuts applied:  755
+Zero-half cuts applied:  9
+Lift and project cuts applied:  14
+Gomory fractional cuts applied:  23
+
+Root node processing (before b&c):
+  Real time             =    9.24 sec. (4726.53 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    9.24 sec. (4726.53 ticks)
+
+Solution pool: 7 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  3.8000000000e+01
+Solution time =    9.24 sec.  Iterations = 19970  Nodes = 0
+Deterministic time = 4726.87 ticks  (511.44 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_66_634/zoo_66_634.sol'.

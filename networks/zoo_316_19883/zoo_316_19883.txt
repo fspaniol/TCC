@@ -524,4 +524,4 @@ Flow 19854: {50 136}
 Flow 19864: {136 137} 
 Flow 19871: {144 302} 
 Flow 19880: {157 156} 
-Time taken running everything: 1267 seconds
+Time taken running everything: 1017 seconds

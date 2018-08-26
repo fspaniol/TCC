@@ -7,9 +7,9 @@ Flow 16: {16 17} {17 36}
 Flow 20: {7 26} 
 Flow 21: {4 1} {1 7} {7 8} {8 27} 
 Flow 23: {4 17} {17 15} {15 13} {13 12} {12 31} 
+Flow 27: {17 16} {16 35} 
 Flow 32: {7 1} {1 11} {11 30} 
 Flow 45: {11 3} {3 16} {16 14} {14 33} 
 Flow 50: {15 17} {17 4} {4 23} 
-Flow 55: {15 14} {14 16} {16 35} 
-Flow 67: {17 16} {16 3} {3 22} 
-Time taken running everything: 0 seconds
+Flow 52: {15 14} {14 16} {16 3} {3 22} 
+Time taken running everything: 1 seconds

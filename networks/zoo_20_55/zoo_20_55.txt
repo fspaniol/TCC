@@ -9,4 +9,4 @@ Flow 34: {6 4} {4 8} {8 18}
 Flow 38: {7 4} {4 10} {10 20} 
 Flow 42: {8 4} {4 5} {5 15} 
 Flow 51: {9 10} 
-Time taken running everything: 0 seconds
+Time taken running everything: 1 seconds

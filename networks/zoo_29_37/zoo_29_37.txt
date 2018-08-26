@@ -10,4 +10,4 @@ Flow 27: {5 14} {14 29}
 Flow 28: {14 1} {1 16} 
 Flow 33: {11 10} {10 9} {9 6} {6 5} {5 20} 
 Flow 34: {12 13} {13 14} 
-Time taken running everything: 1 seconds
+Time taken running everything: 0 seconds

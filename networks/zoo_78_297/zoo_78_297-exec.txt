@@ -1,0 +1,81 @@
+
+Log started (V12.6.2.0) Sun Aug 26 11:21:40 2018
+
+New value for variables to include in .sol and .mst files: 3
+Tried aggregator 3 times.
+MIP Presolve eliminated 29716 rows and 42423 columns.
+MIP Presolve modified 15960 coefficients.
+Aggregator did 322 substitutions.
+Reduced MIP has 7917 rows, 5100 columns, and 26506 nonzeros.
+Reduced MIP has 3290 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.11 sec. (73.81 ticks)
+Found incumbent of value 96.000000 after 0.16 sec. (104.80 ticks)
+Probing time = 0.03 sec. (4.79 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 4 coefficients.
+Reduced MIP has 7917 rows, 5100 columns, and 26506 nonzeros.
+Reduced MIP has 3290 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.03 sec. (15.54 ticks)
+Probing time = 0.01 sec. (4.51 ticks)
+Clique table members: 17487.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.34 sec. (239.28 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           96.0000       23.0000            76.04%
+      0     0       23.8720   200       96.0000       23.8720       25   75.13%
+*     0+    0                           37.0000       23.8720            35.48%
+      0     0       25.4827   199       37.0000     Cuts: 346     2483   31.13%
+      0     0       26.5047   210       37.0000     Cuts: 293     4265   28.37%
+      0     0       27.1700   215       37.0000     Cuts: 247     5329   26.57%
+*     0+    0                           34.0000       27.1700            20.09%
+*     0+    0                           33.0000       27.1700            17.67%
+      0     0       27.4333   209       33.0000     Cuts: 227     6433   16.87%
+      0     0       28.5144   217       33.0000     Cuts: 183     7560   13.59%
+      0     0       28.7821   203       33.0000     Cuts: 176     8572   12.78%
+      0     0       28.9348   224       33.0000     Cuts: 164     8843   12.32%
+      0     0       28.9671   229       33.0000     Cuts: 144     9553   12.22%
+      0     0       29.1632   201       33.0000     Cuts: 134    10299   11.63%
+      0     0       29.4799    86       33.0000     Cuts: 118    10548   10.67%
+      0     0       29.5611    41       33.0000      Cuts: 65    10613   10.42%
+*     0+    0                           32.0000       29.5611             7.62%
+      0     0       29.7417    99       32.0000      Cuts: 36    11290    7.06%
+      0     0       29.9977   135       32.0000      Cuts: 72    11739    6.26%
+      0     0       30.0720   168       32.0000      Cuts: 65    12257    6.03%
+      0     0       30.2261   168       32.0000     Cuts: 123    12713    5.54%
+      0     0       30.3333   137       32.0000      Cuts: 83    12864    5.21%
+      0     0       30.9533   111       32.0000      Cuts: 30    13074    3.27%
+      0     0        cutoff             32.0000       30.9533    13075    3.27%
+Elapsed time = 5.99 sec. (3387.09 ticks, tree = 0.00 MB, solutions = 5)
+
+GUB cover cuts applied:  299
+Clique cuts applied:  1
+Cover cuts applied:  29
+Implied bound cuts applied:  20
+Flow cuts applied:  374
+Mixed integer rounding cuts applied:  776
+Zero-half cuts applied:  7
+Lift and project cuts applied:  4
+Gomory fractional cuts applied:  8
+
+Root node processing (before b&c):
+  Real time             =    5.99 sec. (3389.76 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.01 sec. (1.78 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    6.00 sec. (3391.54 ticks)
+
+Solution pool: 5 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  3.2000000000e+01
+Solution time =    6.00 sec.  Iterations = 13075  Nodes = 0
+Deterministic time = 3391.68 ticks  (564.86 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_78_297/zoo_78_297.sol'.

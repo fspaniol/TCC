@@ -1,0 +1,71 @@
+
+Log started (V12.6.2.0) Sat Aug 25 15:49:30 2018
+
+New value for variables to include in .sol and .mst files: 3
+Tried aggregator 3 times.
+MIP Presolve eliminated 2607 rows and 3439 columns.
+MIP Presolve modified 1727 coefficients.
+Aggregator did 74 substitutions.
+Reduced MIP has 760 rows, 522 columns, and 2453 nonzeros.
+Reduced MIP has 322 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (7.66 ticks)
+Found incumbent of value 36.000000 after 0.02 sec. (10.42 ticks)
+Probing fixed 0 vars, tightened 98 bounds.
+Probing time = 0.00 sec. (1.49 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 99 coefficients.
+Reduced MIP has 760 rows, 522 columns, and 2453 nonzeros.
+Reduced MIP has 322 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.43 ticks)
+Probing fixed 0 vars, tightened 34 bounds.
+Probing time = 0.00 sec. (1.45 ticks)
+Clique table members: 1259.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (2.16 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           36.0000       10.0000            72.22%
+      0     0       10.0000    20       36.0000       10.0000      114   72.22%
+      0     0       10.3333    64       36.0000      Cuts: 61      276   71.30%
+*     0+    0                           20.0000       10.3333            48.33%
+      0     0       11.0000    62       20.0000     Cuts: 118      486   45.00%
+*     0+    0                           18.0000       11.0000            38.89%
+      0     0       11.0000    42       18.0000      Cuts: 65      587   38.89%
+*     0+    0                           14.0000       11.0000            21.43%
+      0     0       11.1458    47       14.0000      Cuts: 43      647   20.39%
+      0     0       11.3078    33       14.0000      Cuts: 16      686   19.23%
+      0     0       11.6000    28       14.0000      Cuts: 30      710   17.14%
+*     0+    0                           13.0000       11.6000            10.77%
+*     0+    0                           12.0000       11.6000             3.33%
+      0     0        cutoff             12.0000       11.6000      710    3.33%
+Elapsed time = 0.12 sec. (63.04 ticks, tree = 0.00 MB, solutions = 6)
+
+GUB cover cuts applied:  53
+Clique cuts applied:  2
+Cover cuts applied:  4
+Flow cuts applied:  49
+Mixed integer rounding cuts applied:  79
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  9
+
+Root node processing (before b&c):
+  Real time             =    0.12 sec. (63.30 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.12 sec. (63.30 ticks)
+
+Solution pool: 6 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2000000000e+01
+Solution time =    0.12 sec.  Iterations = 710  Nodes = 0
+Deterministic time = 63.31 ticks  (521.14 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_26_65/zoo_26_65.sol'.

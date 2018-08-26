@@ -20,4 +20,4 @@ Flow 76: {21 20}
 Flow 84: {19 18} {18 17} {17 16} {16 1} {1 23} 
 Flow 86: {10 2} {2 4} {4 26} 
 Flow 88: {22 21} {21 14} {14 13} 
-Time taken running everything: 1 seconds
+Time taken running everything: 0 seconds

@@ -24,4 +24,4 @@ Flow 519: {22 2} {2 15} {15 40}
 Flow 534: {8 7} {7 6} {6 31} 
 Flow 536: {23 8} {8 33} 
 Flow 557: {24 25} {25 5} {5 30} 
-Time taken running everything: 5 seconds
+Time taken running everything: 3 seconds

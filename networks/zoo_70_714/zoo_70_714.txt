@@ -30,4 +30,4 @@ Flow 659: {33 32} {32 31} {31 66}
 Flow 677: {34 35} {35 31} {31 21} {21 56} 
 Flow 683: {26 8} {8 3} {3 27} {27 62} 
 Flow 713: {35 34} {34 33} {33 68} 
-Time taken running everything: 9 seconds
+Time taken running everything: 6 seconds

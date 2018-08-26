@@ -37,4 +37,4 @@ Flow 281: {38 37} {37 3} {3 5} {5 30} {30 70}
 Flow 295: {39 3} {3 43} 
 Flow 304: {40 31} {31 4} {4 6} {6 24} 
 Flow 312: {40 39} {39 79} 
-Time taken running everything: 5 seconds
+Time taken running everything: 4 seconds

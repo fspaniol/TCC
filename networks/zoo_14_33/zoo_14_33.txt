@@ -6,4 +6,4 @@ Flow 16: {5 6} {6 7} {7 14}
 Flow 23: {7 4} {4 11} 
 Flow 29: {4 1} {1 2} {2 9} 
 Flow 30: {6 5} {5 3} {3 10} 
-Time taken running everything: 1 seconds
+Time taken running everything: 0 seconds

@@ -7,4 +7,4 @@ Flow 37: {6 1} {1 4} {4 9} {9 21}
 Flow 42: {4 1} {1 5} {5 17} 
 Flow 46: {8 7} {7 4} {4 16} 
 Flow 53: {9 4} {4 7} {7 19} 
-Time taken running everything: 1 seconds
+Time taken running everything: 0 seconds

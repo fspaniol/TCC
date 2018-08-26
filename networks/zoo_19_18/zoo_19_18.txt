@@ -9,4 +9,4 @@ Flow 10: {3 1} {1 4} {4 16}
 Flow 12: {6 1} {1 13} 
 Flow 16: {8 7} {7 4} 
 Flow 18: {10 4} {4 1} 
-Time taken running everything: 0 seconds
+Time taken running everything: 1 seconds

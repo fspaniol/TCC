@@ -5,4 +5,4 @@ Flow 3: {3 2}
 Flow 4: {5 1} 
 Flow 5: {5 2} {2 8} 
 Flow 6: {5 3} {3 9} 
-Time taken running everything: 1 seconds
+Time taken running everything: 0 seconds

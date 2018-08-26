@@ -1,0 +1,80 @@
+
+Log started (V12.6.2.0) Sun Aug 26 13:04:19 2018
+
+New value for variables to include in .sol and .mst files: 3
+Tried aggregator 3 times.
+MIP Presolve eliminated 47562 rows and 72930 columns.
+MIP Presolve modified 20113 coefficients.
+Aggregator did 422 substitutions.
+Reduced MIP has 9249 rows, 6025 columns, and 30959 nonzeros.
+Reduced MIP has 3868 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.14 sec. (101.98 ticks)
+Found incumbent of value 116.000000 after 0.21 sec. (148.73 ticks)
+Probing time = 0.04 sec. (5.28 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 12 rows and 8 columns.
+MIP Presolve modified 6817 coefficients.
+Reduced MIP has 9237 rows, 6017 columns, and 30929 nonzeros.
+Reduced MIP has 3865 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.05 sec. (27.87 ticks)
+Probing time = 0.02 sec. (4.83 ticks)
+Clique table members: 20573.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.24 sec. (157.72 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          113.0000       34.0000            69.91%
+      0     0       34.1951   148      113.0000       34.1951     2728   69.74%
+*     0+    0                           59.0000       34.1951            42.04%
+*     0+    0                           47.0000       34.1951            27.24%
+      0     0       36.4250   229       47.0000     Cuts: 275     9339   22.50%
+      0     0       37.6078   207       47.0000     Cuts: 342    12638   19.98%
+      0     0       38.2218   166       47.0000     Cuts: 201    14191   18.68%
+*     0+    0                           43.0000       38.2218            11.11%
+*     0+    0                           42.0000       38.2218             9.00%
+      0     0       38.7178   170       42.0000     Cuts: 178    16185    7.81%
+      0     0       38.7469   169       42.0000     Cuts: 143    18221    7.75%
+      0     0       38.8310    60       42.0000     Cuts: 117    18982    7.55%
+      0     0       38.8370   120       42.0000      Cuts: 46    19256    7.53%
+      0     0       38.9028    74       42.0000      Cuts: 62    19296    7.37%
+      0     0       39.0820    61       42.0000      Cuts: 39    19423    6.95%
+      0     0       39.2774   161       42.0000      Cuts: 31    19828    6.48%
+      0     0       39.4365   111       42.0000     Cuts: 100    20047    6.10%
+      0     0       39.8598   152       42.0000      Cuts: 41    20871    5.10%
+      0     0       39.9560    90       42.0000      Cuts: 93    21293    4.87%
+      0     0       39.9870   107       42.0000      Cuts: 50    21408    4.79%
+      0     0       40.3268    92       42.0000      Cuts: 41    21548    3.98%
+*     0+    0                           41.0000       40.3268             1.64%
+      0     0        cutoff             41.0000       40.3268    21548    1.64%
+Elapsed time = 6.82 sec. (3815.38 ticks, tree = 0.00 MB, solutions = 6)
+
+GUB cover cuts applied:  195
+Clique cuts applied:  1
+Cover cuts applied:  15
+Implied bound cuts applied:  1
+Flow cuts applied:  308
+Mixed integer rounding cuts applied:  643
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  11
+
+Root node processing (before b&c):
+  Real time             =    6.82 sec. (3820.29 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    6.82 sec. (3820.29 ticks)
+
+Solution pool: 6 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  4.1000000000e+01
+Solution time =    6.83 sec.  Iterations = 21548  Nodes = 0
+Deterministic time = 3820.52 ticks  (559.48 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_96_396/zoo_96_396.sol'.

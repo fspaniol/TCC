@@ -7,4 +7,4 @@ Flow 8: {7 4} {4 14}
 Flow 9: {8 1} {1 11} 
 Flow 13: {8 4} {4 7} {7 17} 
 Flow 15: {9 8} 
-Time taken running everything: 1 seconds
+Time taken running everything: 0 seconds

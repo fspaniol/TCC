@@ -1,0 +1,79 @@
+
+Log started (V12.6.2.0) Sun Aug 26 10:45:53 2018
+
+New value for variables to include in .sol and .mst files: 3
+Tried aggregator 3 times.
+MIP Presolve eliminated 66245 rows and 101935 columns.
+MIP Presolve modified 25495 coefficients.
+Aggregator did 748 substitutions.
+Reduced MIP has 10545 rows, 7271 columns, and 35310 nonzeros.
+Reduced MIP has 4597 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.22 sec. (137.75 ticks)
+Found incumbent of value 88.000000 after 0.30 sec. (194.27 ticks)
+Probing time = 0.04 sec. (5.49 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 8740 coefficients.
+Reduced MIP has 10545 rows, 7271 columns, and 35310 nonzeros.
+Reduced MIP has 4597 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.06 sec. (33.56 ticks)
+Probing time = 0.02 sec. (4.98 ticks)
+Clique table members: 23741.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.12 sec. (85.81 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           88.0000       30.0000            65.91%
+      0     0       30.0000    78       88.0000       30.0000     1758   65.91%
+*     0+    0                           44.0000       30.0000            31.82%
+      0     0       30.0000    76       44.0000      Cuts: 26     2083   31.82%
+      0     0       30.0000    98       44.0000     Cuts: 120     2491   31.82%
+*     0+    0                           35.0000       30.0000            14.29%
+      0     0       30.0000    60       35.0000      Cuts: 11     2585   14.29%
+      0     0       30.0000    68       35.0000      Cuts: 68     2854   14.29%
+*     0+    0                           34.0000       30.0000            11.76%
+*     0+    0                           32.0000       30.0000             6.25%
+      0     2       30.0000    28       32.0000       30.0000     2854    6.25%
+Elapsed time = 2.80 sec. (1925.30 ticks, tree = 0.00 MB, solutions = 5)
+     12    14       30.0000    45       32.0000       30.0000     3029    6.25%
+     13    15       30.0000    23       32.0000       30.0000     3032    6.25%
+     14    16       30.0000    38       32.0000       30.0000     3039    6.25%
+     15    17       30.0000    22       32.0000       30.0000     3042    6.25%
+     16    18       30.0000    42       32.0000       30.0000     3067    6.25%
+     17    19       30.0000    42       32.0000       30.0000     3095    6.25%
+     18    20       30.0000    33       32.0000       30.0000     3097    6.25%
+     19    21       30.0000    41       32.0000       30.0000     3132    6.25%
+     20    22       30.0000    47       32.0000       30.0000     3150    6.25%
+*   324+  303                           31.0000       30.0000             3.23%
+    434   232       30.0000    22       31.0000       30.0000    12431    3.23%
+Elapsed time = 4.20 sec. (2881.60 ticks, tree = 0.45 MB, solutions = 6)
+*   436   205      integral     0       30.0000       30.0000    12533    0.00%
+
+GUB cover cuts applied:  52
+Cover cuts applied:  18
+Implied bound cuts applied:  3
+Flow cuts applied:  48
+Mixed integer rounding cuts applied:  69
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  15
+
+Root node processing (before b&c):
+  Real time             =    2.80 sec. (1927.13 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    1.50 sec. (1020.33 ticks)
+  Sync time (average)   =    0.44 sec.
+  Wait time (average)   =    0.46 sec.
+                          ------------
+Total (root+branch&cut) =    4.29 sec. (2947.46 ticks)
+
+Solution pool: 7 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  3.0000000000e+01
+Solution time =    4.29 sec.  Iterations = 13042  Nodes = 483
+Deterministic time = 2947.78 ticks  (686.50 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_60_720/zoo_60_720.sol'.

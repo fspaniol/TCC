@@ -15,4 +15,4 @@ Flow 39: {7 2} {2 20}
 Flow 54: {14 16} {16 13} 
 Flow 59: {17 13} 
 Flow 61: {18 13} 
-Time taken running everything: 1 seconds
+Time taken running everything: 0 seconds

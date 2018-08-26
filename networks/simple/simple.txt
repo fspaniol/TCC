@@ -1,2 +1,2 @@
 open networks/simple/simple.sol: no such file or directory
-Time taken running everything: 1 seconds
+Time taken running everything: 0 seconds

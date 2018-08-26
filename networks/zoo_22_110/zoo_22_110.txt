@@ -10,4 +10,4 @@ Flow 68: {7 10} {10 9} {9 20}
 Flow 76: {8 10} {10 6} {6 17} 
 Flow 88: {9 10} {10 8} {8 19} 
 Flow 102: {11 10} {10 2} {2 13} 
-Time taken running everything: 1 seconds
+Time taken running everything: 0 seconds

@@ -40,4 +40,4 @@ Flow 158: {31 2} {2 38}
 Flow 186: {32 13} {13 33} {33 14} {14 50} 
 Flow 204: {34 30} {30 16} {16 52} 
 Flow 223: {15 31} {31 34} {34 70} 
-Time taken running everything: 2 seconds
+Time taken running everything: 1 seconds

@@ -23,4 +23,4 @@ Flow 333: {13 34}
 Flow 349: {18 11} {11 10} {10 9} {9 30} 
 Flow 356: {11 16} {16 37} 
 Flow 364: {2 4} 
-Time taken running everything: 6 seconds
+Time taken running everything: 4 seconds

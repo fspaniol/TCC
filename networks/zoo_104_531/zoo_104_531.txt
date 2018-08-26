@@ -69,4 +69,4 @@ Flow 491: {49 51} {51 103}
 Flow 503: {51 49} {49 1} {1 53} 
 Flow 519: {52 3} {3 21} {21 73} 
 Flow 526: {52 46} {46 16} {16 45} {45 97} 
-Time taken running everything: 9 seconds
+Time taken running everything: 6 seconds
