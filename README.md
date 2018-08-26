@@ -27,15 +27,17 @@ Write a table with the tests that were executed, their run time, node size, flow
 
 ## Validator
 
+Implemented inside cplex/parse.go
+
 Make sure that every flow is getting dispatches by, and only one.
 Make sure that whenever there's a break, the group is being dispatched.
 Make sure that the weight doesn't surpass the limit.
 
 ## TODO
-
-Parse all the links
-Check if all of them are kept
-Check if all C's are lower than the limit
-Check that if a flow doesn't match the next one, then Y is dispatched
-
 After that, modify the script to print the output, with counting the number of links and create the script that creates table in MarkDown
+
+Print the output in JSON
+
+## Bugs
+
+Not really a bug, but, when a flow is entirely fetched, their weights can be whatever value, although never more than the max set by us.
