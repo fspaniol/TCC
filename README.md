@@ -35,7 +35,6 @@ Make sure that the weight doesn't surpass the limit.
 
 ## TODO
 After that, modify the script to print the output, with counting the number of links and create the script that creates table in MarkDown
-
 Print the output in JSON
 
 ## Bugs

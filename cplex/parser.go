@@ -34,6 +34,9 @@ var (
 
 	// flag that controls whether its the first C
 	first bool
+
+	// flag that controls if bugs were found
+	clean = true
 )
 
 func handleX(name string, value string) {
@@ -132,6 +135,7 @@ func handleC(name string, value string) {
 		src := arr[1]
 
 		if val > maxWeight {
+			clean = false
 			fmt.Printf("Bug Found! Flow %v has weight %v at node %v, which is higher than the max value %v", flow, val, src, maxWeight)
 		}
 
@@ -152,13 +156,14 @@ func handleC(name string, value string) {
 				if i.Prev() == nil {
 					//fmt.Printf("Might not be a bug! The current weight for node %v on flow %v is %v, it should be 0\n", src, flow, val)
 				} else {
-					fmt.Printf("Bug Found! The current weight for node %v on flow %v is %v, it should be 0\n", src, flow, val)
+					fmt.Printf("Possible Bug Found! The current weight for node %v on flow %v is %v, it should be 0\n", src, flow, val)
 				}
 			}
 
 		} else {
 			// the weight should be the last one plus one
 			if val != i.Prev().Value.(link).weight+1 {
+				clean = false
 				fmt.Printf("Bug Found! The weight for %v on flow %v should be %v, it currently is %v\n", src, flow, i.Prev().Value.(link).weight+1, val)
 			}
 
@@ -223,7 +228,8 @@ func checkAllNodes() {
 	for i, k := range links {
 		for j, l := range k {
 			if l != 1 {
-				fmt.Printf("Link (%v,%v) was covered by %v flows\n", i, j, l)
+				clean = false
+				fmt.Printf("Bug Found! Link (%v,%v) was covered by %v flows\n", i, j, l)
 			}
 		}
 	}
@@ -237,6 +243,7 @@ func checkDispatches() {
 			// Check if there's a break in flow, that there needs to be a dispatch
 			if node.Value.(link).dst != node.Next().Value.(link).src {
 				if !breaks[k][node.Value.(link).src] {
+					clean = false
 					fmt.Printf("Bug Found! Node %v of flow %v is not dispatching!\n", node.Value.(link).src, k)
 				}
 			}
@@ -245,6 +252,7 @@ func checkDispatches() {
 
 		// the last one of the group has to be dispatched
 		if !breaks[k][node.Value.(link).src] {
+			clean = false
 			fmt.Printf("Bug Found! The last node of flow %v is not dispatching!\n", k)
 		}
 	}
@@ -256,6 +264,7 @@ func main() {
 		fmt.Println(err)
 		return
 	}
+
 	groups = make(map[int]*list.List)
 	breaks = make(map[int]map[string]bool)
 	links = make(map[string]map[string]int)
@@ -277,8 +286,12 @@ func main() {
 	checkAllNodes()
 	checkDispatches()
 
-	valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
+	if clean {
+		fmt.Println("OKAY")
+	}
+
+	/*valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
 	val := math.Round(valueFloat)
 	fmt.Printf("Number of groups: %v\n", val)
-	output()
+	output()*/
 }
