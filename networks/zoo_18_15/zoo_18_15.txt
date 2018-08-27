@@ -1,17 +1,18 @@
+OKAY
 Number of groups: 15
-Flow 1: {1 4} 
-Flow 2: {1 5} 
-Flow 3: {1 6} {6 15} 
-Flow 4: {1 7} 
-Flow 5: {1 9} 
-Flow 6: {5 1} 
-Flow 7: {5 4} 
-Flow 8: {5 7} {7 16} 
-Flow 9: {5 9} {9 18} 
-Flow 10: {6 1} {1 10} 
-Flow 11: {6 4} {4 13} 
-Flow 12: {6 5} {5 14} 
-Flow 13: {6 7} 
-Flow 14: {6 8} {8 17} 
-Flow 15: {6 9} 
+Flow 1: {1 4 0} 
+Flow 2: {1 5 0} 
+Flow 3: {1 6 0} {6 15 1} 
+Flow 4: {1 7 0} 
+Flow 5: {1 9 0} 
+Flow 6: {5 1 0} 
+Flow 7: {5 4 0} 
+Flow 8: {5 7 0} {7 16 1} 
+Flow 9: {5 9 0} {9 18 1} 
+Flow 10: {6 1 0} {1 10 1} 
+Flow 11: {6 4 0} {4 13 1} 
+Flow 12: {6 5 0} {5 14 1} 
+Flow 13: {6 7 0} 
+Flow 14: {6 8 0} {8 17 1} 
+Flow 15: {6 9 0} 
 Time taken running everything: 0 seconds

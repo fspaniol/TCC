@@ -1,2 +1,2 @@
 open networks/rf_630_98910/rf_630_98910.sol: no such file or directory
-Time taken running everything: 796 seconds
+Time taken running everything: 1 seconds

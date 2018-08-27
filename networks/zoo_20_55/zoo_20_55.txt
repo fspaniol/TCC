@@ -1,12 +1,13 @@
+OKAY
 Number of groups: 10
-Flow 1: {1 10} {10 4} {4 2} {2 12} 
-Flow 8: {2 4} {4 3} {3 13} 
-Flow 13: {3 4} {4 14} 
-Flow 18: {10 1} {1 11} 
-Flow 22: {4 6} {6 16} 
-Flow 29: {5 4} {4 7} {7 17} 
-Flow 34: {6 4} {4 8} {8 18} 
-Flow 38: {7 4} {4 10} {10 20} 
-Flow 42: {8 4} {4 5} {5 15} 
-Flow 51: {9 10} 
-Time taken running everything: 1 seconds
+Flow 1: {1 10 0} {10 4 1} {4 2 2} {2 12 3} 
+Flow 8: {2 4 0} {4 3 1} {3 13 2} 
+Flow 13: {3 4 0} {4 14 1} 
+Flow 18: {10 1 0} {1 11 1} 
+Flow 22: {4 6 0} {6 16 1} 
+Flow 29: {5 4 0} {4 7 1} {7 17 2} 
+Flow 34: {6 4 0} {4 8 1} {8 18 2} 
+Flow 38: {7 4 0} {4 10 1} {10 20 2} 
+Flow 42: {8 4 0} {4 5 1} {5 15 2} 
+Flow 51: {9 10 0} 
+Time taken running everything: 0 seconds

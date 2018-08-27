@@ -1,7 +1,8 @@
+OKAY
 Number of groups: 5
-Flow 1: {1 2} {2 8} 
-Flow 2: {2 4} {4 10} 
-Flow 3: {4 2} {2 1} {1 7} 
-Flow 5: {4 6} {6 12} 
-Flow 6: {6 2} 
-Time taken running everything: 0 seconds
+Flow 1: {1 2 0} {2 8 1} 
+Flow 2: {2 4 0} {4 10 1} 
+Flow 3: {4 2 0} {2 1 1} {1 7 2} 
+Flow 5: {4 6 0} {6 12 1} 
+Flow 6: {6 2 0} 
+Time taken running everything: 1 seconds

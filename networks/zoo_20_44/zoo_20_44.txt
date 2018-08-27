@@ -1,9 +1,10 @@
+OKAY
 Number of groups: 7
-Flow 1: {1 10} {10 3} {3 14} 
-Flow 7: {2 10} {10 6} {6 17} 
-Flow 12: {4 10} {10 7} {7 18} 
-Flow 17: {6 10} {10 5} {5 16} 
-Flow 26: {8 10} {10 9} {9 20} 
-Flow 29: {9 10} {10 4} {4 15} 
-Flow 40: {11 10} {10 2} {2 13} 
-Time taken running everything: 0 seconds
+Flow 1: {1 10 0} {10 3 1} {3 14 2} 
+Flow 7: {2 10 0} {10 6 1} {6 17 2} 
+Flow 12: {4 10 0} {10 7 1} {7 18 2} 
+Flow 17: {6 10 0} {10 5 1} {5 16 2} 
+Flow 26: {8 10 0} {10 9 1} {9 20 2} 
+Flow 29: {9 10 0} {10 4 1} {4 15 2} 
+Flow 40: {11 10 0} {10 2 1} {2 13 2} 
+Time taken running everything: 1 seconds
