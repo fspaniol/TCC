@@ -37,4 +37,4 @@ gap=0
 
 # Format of the table
 # "| TEST NAME | NODE COUNT | LINK COUNT | FLOW COUNT | TIME RAN | SOLUTION FOUND | GAP |"
-echo "|$1|$nodes|$links|$flows|$time_ran|$sol|$gap|"
+echo "|$(echo $1 | sed 's/_/\\_/g')|$nodes|$links|$flows|$time_ran|$sol|$gap|"
