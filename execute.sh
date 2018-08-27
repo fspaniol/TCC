@@ -14,17 +14,27 @@
 # Execute cplex and put the output into the file folder
 #cplex/cplex -c "READ networks/$1/$1.lp" "SET timelimit 600" "SET threads 4" "SET logfile networks/$1/$1-exec.txt" "SET output writelevel 3" "OPTIMIZE" "WRITE networks/$1/$1.sol"
 
-
 sed -n '/set A := /,/;/p' networks/$1/$1.dat | tr -d "setA:=;" > networks/$1/$1-links.txt
+links=$(wc -l < networks/$1/$1-links.txt | sed -e 's/^[ \t]*//')
+nodes="$(cut -d'_' -f2 <<<$1)"
+flows="$(cut -d'_' -f3 <<<$1)"
+time_ran=0
+sol=100
+gap=0
 
 # Execute the parser and put the output into the file folder as well
 #go run cplex/parser.go $1 > networks/$1/$1.txt
 
 # Find bugs
-echo $1
-go run cplex/parser.go $1
+#echo $1
+#go run cplex/parser.go $1
 
 # Get the final time and write output to the file
 #second=$SECONDS
 #elapsed=`expr $second - $first`
 #echo "Time taken running everything:" $elapsed "seconds" >> networks/$1/$1.txt
+
+
+# Format of the table
+# "| TEST NAME | NODE COUNT | LINK COUNT | FLOW COUNT | TIME RAN | SOLUTION FOUND | GAP |"
+echo "|$1|$nodes|$links|$flows|$time_ran|$sol|$gap|"

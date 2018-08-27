@@ -14,16 +14,6 @@ To execute the `Execute` shell script, simple call it and pass the test name, fo
 
 It will call the conversion from GLPK to CPLEX and then call CPLEX and write the solution to the `simple` test folder, in `glpk/simple`.
 
-## TODO:
-
-I could print the solutions as JSON so that it can be easier for someone to read
-Talk to jonatas regarding what format he would rather have
-
-Write the validator, meaning that such a solution would be a suitable one
-
-Transform the Data Parser from CPLEX into a public library
-
-Write a table with the tests that were executed, their run time, node size, flow size, solution, etc...
 
 ## Validator
 
@@ -36,6 +26,9 @@ Make sure that the weight doesn't surpass the limit.
 ## TODO
 After that, modify the script to print the output, with counting the number of links and create the script that creates table in MarkDown
 Print the output in JSON
+Transform the Data Parser from CPLEX into a public library
+
+Write a table with the tests that were executed, their run time, node size, flow size, solution, etc...
 
 ## Bugs
 
