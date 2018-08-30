@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fspaniol/TCC/parser"
+	"../parser"
 )
 
 type link struct {
@@ -283,12 +283,12 @@ func main() {
 		}
 	}
 
-	checkAllNodes()
-	checkDispatches()
+	//checkAllNodes()
+	//checkDispatches()
 
-	if clean {
-		fmt.Println("OKAY")
-	}
+	//if clean {
+	//	fmt.Println("OKAY")
+	//}
 
 	valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
 	val := math.Round(valueFloat)
