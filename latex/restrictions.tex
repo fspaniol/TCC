@@ -16,6 +16,12 @@ Make sure that a group only dispatches if it collects in that arch. \\
         &X_{ak} \geq Y_{ku} & \forall k \in K, \forall a = (u,v) \in A \\
 \end{align*}
 
+Make sure that if a flow is not collecting a given node, the weight when it arrives there, its 0. \\
+
+\begin{align*}
+    &X_{ak} \geq C_{ku} & \forall k \in K, \forall a = (u,v) \in A \\
+\end{align*}
+
 The next two restrictions make sure of the following: \\
 
 \begin{itemize}
@@ -30,4 +36,27 @@ The next two restrictions make sure of the following: \\
 
 \begin{align*}
         &(-Y_{ku} + X_{ak}) * Q \geq C_{kv} & \forall k \in K, \forall a = (u,v) \in A \\
+\end{align*}
+
+The next two restrictions make sure of the following: \\
+
+\begin{itemize}
+    \item If $X_{ak}$ equals 1 and $Y_{ku}$ equals 0, $C_{kv}$ has to be $C_{ku}$ plus 1. \\
+    \item If $X_{ak}$ equals 1 and $Y_{ku}$ equals 1, $C_{kv}$ has to be 0. \\
+    \item If $X_{ak}$ equals 0, $C_{kv}$ has to be 0. \\
+\end{itemize}
+
+\begin{align*}
+    &C_{kv} \leq C_{ku} + 1 + (1 - X_{ak}) * Q + Y_{ku} * Q & \forall k \in K, \forall a = (u,v) \in A \\
+\end{align*}
+
+\begin{align*}
+     &C_{kv} \geq C_{ku} + 1 - (1 - X_{ak}) * Q - Y_{ku} * Q & \forall k \in K, \forall a = (u,v) \in A \\
+\end{align*}
+
+        
+Make sure that if a link that belongs to a node which is last in its flow is collected, dispatch it. \\
+
+\begin{align*}
+    &Y_{ku} \geq X_{ak} & \forall k \in K, \forall a = (u,v) \in L \\
 \end{align*}
