@@ -27,7 +27,6 @@ Make sure that the weight doesn't surpass the limit.
 Print the output in JSON
 Transform the Data Parser from CPLEX into a public library
 Get the results from lower bound
-Review and send the math model in PDF
 Execute all test in one hour to get final results
 Parse results from branch and bound
 Remember to delete all the exec files before running, otherwise they will be appended
