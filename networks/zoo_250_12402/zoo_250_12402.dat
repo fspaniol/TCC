@@ -161634,6 +161634,6 @@ set Last[12400] := 122 247;
 set Last[12401] := 123 248;
 set Last[12402] := 124 249;
 
-param q := 5;
+#param q := 5;
 
 end;

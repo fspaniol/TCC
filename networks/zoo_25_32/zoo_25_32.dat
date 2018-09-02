@@ -186,6 +186,6 @@ set Last[30] := 8 21;
 set Last[31] := 10 23;
 set Last[32] := 12 25;
 
-param q := 5;
+#param q := 5;
 
 end;

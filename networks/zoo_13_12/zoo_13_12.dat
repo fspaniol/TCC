@@ -75,6 +75,6 @@ set Last[10] := 3 11;
 set Last[11] := 1 9;
 set Last[12] := 3 11;
 
-param q := 5;
+#param q := 5;
 
 end;

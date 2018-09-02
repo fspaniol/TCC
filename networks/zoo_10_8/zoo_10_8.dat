@@ -54,6 +54,6 @@ set Last[6] := 1 6;
 set Last[7] := 2 7;
 set Last[8] := 4 9;
 
-param q := 5;
+#param q := 5;
 
 end;
