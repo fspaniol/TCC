@@ -1,0 +1,27 @@
+
+Log started (V12.6.2.0) Sun Sep  2 17:17:57 2018
+
+New value for variables to include in .sol and .mst files: 3
+Tried aggregator 2 times.
+MIP Presolve eliminated 9902812 rows and 15617931 columns.
+Aggregator did 15445 substitutions.
+All rows and columns eliminated.
+Presolve time = 17.53 sec. (8433.69 ticks)
+
+Root node processing (before b&c):
+  Real time             =   21.66 sec. (9963.16 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =   21.66 sec. (9963.16 ticks)
+
+Solution pool: 1 solution saved.
+
+MIP - Integer optimal solution:  Objective =  1.7500000000e+02
+Solution time =   21.67 sec.  Iterations = 0  Nodes = 0
+Deterministic time = 10007.88 ticks  (461.93 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_394_15448/zoo_394_15448-lower.sol'.

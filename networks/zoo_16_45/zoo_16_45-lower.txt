@@ -1,0 +1,9 @@
+Number of groups: 7
+Flow 6: {1 8 0} {8 16 1} 
+Flow 7: {2 3 0} {3 6 1} {6 1 2} {1 9 3} 
+Flow 15: {3 4 0} {4 5 1} {5 13 2} 
+Flow 26: {4 3 0} {3 11 1} 
+Flow 28: {5 1 0} {1 7 1} {7 15 2} 
+Flow 39: {7 1 0} {1 5 1} {5 4 2} {4 12 3} 
+Flow 41: {8 1 0} {1 6 1} {6 3 2} {3 2 3} {2 10 4} 
+Time taken running everything: 1 seconds
