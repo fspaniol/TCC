@@ -24,11 +24,13 @@ Make sure that whenever there's a break, the group is being dispatched.
 Make sure that the weight doesn't surpass the limit.
 
 ## TODO
-After that, modify the script to print the output, with counting the number of links and create the script that creates table in MarkDown
 Print the output in JSON
 Transform the Data Parser from CPLEX into a public library
-
-Write a table with the tests that were executed, their run time, node size, flow size, solution, etc...
+Get the results from lower bound
+Execute all test in one hour to get final results
+Parse results from branch and bound
+Remember to delete all the exec files before running, otherwise they will be appended
+Generate the new model with vehicle routing
 
 ## Bugs
 

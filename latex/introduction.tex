@@ -1,0 +1,9 @@
+In-band telemetry is a technique which allows Network Administrators to gather information regarding the state in which the network is currently in. There are multiple information that could help improve and decipher what is happening in the network, for instance, one could get the average size of the output queue on each of the router interfaces, how many packets are passing by at a given interval, etc. \\
+
+To gather this information, a flow passing by a router can create what we call telemetry headers and fill the information from a given router in such packets and eventually send them to an external controller. The problem is: such operations can be costly in a network and instead of helping the network, it will damage it even further. \\
+
+Our aim in this work is to present and solve the In-band Network Telemetry Optimization Problem. Whose goal is to minimize the collection of such information. \\
+
+In summary, our goal is to minimize the amount of creations and delivery of telemetry headers, while still gathering information from all router interfaces which are being used by some given flow and respecting the capacity of routers that a packet can gather without delivering it. \\
+
+Some restrictions: a flow which has an open telemetry header and passes by a router, has to gather it's information, a telemetry header can only carry information of Q routers in sequence, this value is passed as a parameter to our problem, a router interface can only be covered by a flow which passes by it and, lastly, a router interface has to be covered by 1 flow, not more, not less. \\
