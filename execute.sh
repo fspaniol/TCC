@@ -6,7 +6,7 @@
 first=$SECONDS
 
 # Generate the linear file
-glpsol -m glpk/into-lower-bound.mod -d networks/$1/$1.dat --wlp networks/$1/$1-lower.lp --check
+glpsol -m glpk/into-lower.mod -d networks/$1/$1.dat --wlp networks/$1/$1-lower.lp --check
 
 # Execute cplex and put the output into the file folder
 cplex/cplex -c "READ networks/$1/$1-lower.lp" "SET timelimit 3600" "SET threads 4" "SET logfile networks/$1/$1-exec-lower.txt" "SET output writelevel 3" "OPTIMIZE" "WRITE networks/$1/$1-lower.sol" "y"
