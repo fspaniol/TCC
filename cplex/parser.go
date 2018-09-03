@@ -282,15 +282,15 @@ func main() {
 		}
 	}
 
-	checkAllNodes()
-	checkDispatches()
+	//checkAllNodes()
+	//checkDispatches()
 
-	if clean {
-		fmt.Println("OKAY")
-	}
+	//if clean {
+	//	fmt.Println("OKAY")
+	//}
 
-	//valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
-	//val := math.Round(valueFloat)
-	//fmt.Printf("Number of groups: %v\n", val)
-	//output()
+	valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
+	val := math.Round(valueFloat)
+	fmt.Printf("Number of groups: %v\n", val)
+	output()
 }
