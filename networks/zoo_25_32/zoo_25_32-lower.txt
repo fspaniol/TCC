@@ -1,12 +1,11 @@
-Number of groups: 10
-Flow 2: {4 6 0} {6 7 1} {7 20 2} 
-Flow 4: {5 6 0} {6 4 1} {4 17 2} 
-Flow 13: {6 8 0} {8 9 1} {9 22 2} 
-Flow 14: {6 10 0} {10 23 1} 
-Flow 16: {11 12 0} {12 25 1} 
-Flow 24: {10 6 0} {6 19 1} 
-Flow 25: {10 8 0} {8 11 1} {11 24 2} 
-Flow 27: {8 6 0} {6 5 1} {5 18 2} 
-Flow 30: {11 8 0} {8 21 1} 
-Flow 31: {8 10 0} 
-Time taken running everything: 0 seconds
+Number of groups: 9
+Flow 1: {4 6 0} {6 19 0} 
+Flow 2: {6 7 0} {7 20 0} 
+Flow 3: {6 8 0} {8 11 0} {11 24 0} 
+Flow 4: {6 4 0} {4 17 0} 
+Flow 4: {5 6 0} Flow 8: {11 12 0} {12 25 0} 
+Flow 10: {6 5 0} {5 18 0} 
+Flow 12: {8 21 0} 
+Flow 13: {8 9 0} {9 22 0} 
+Flow 14: {6 10 0} {10 23 0} 
+Flow 17: {8 6 0} Flow 21: {8 10 0} Flow 24: {10 6 0} Flow 25: {10 8 0} Flow 26: {11 8 0} Time taken running everything: 0 seconds

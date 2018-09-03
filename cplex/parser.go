@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"../parser"
+	"github.com/fspaniol/TCC/parser"
 )
 
 type link struct {
@@ -259,7 +259,7 @@ func checkDispatches() {
 }
 
 func main() {
-	sol, err := parser.Transform(fmt.Sprintf("networks/%s/%s.sol", os.Args[1], os.Args[1]))
+	sol, err := parser.Transform(fmt.Sprintf("networks/%s/%s-lower.sol", os.Args[1], os.Args[1]))
 	if err != nil {
 		fmt.Println(err)
 		return

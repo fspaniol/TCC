@@ -29,7 +29,6 @@ Transform the Data Parser from CPLEX into a public library
 Get the results from lower bound
 Execute all test in one hour to get final results
 Parse results from branch and bound
-Remember to delete all the exec files before running, otherwise they will be appended
 Generate the new model with vehicle routing
 
 ## Bugs

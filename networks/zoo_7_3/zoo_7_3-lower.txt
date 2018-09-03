@@ -1,5 +1,4 @@
-Number of groups: 3
-Flow 1: {1 3 0} {3 7 1} 
-Flow 2: {2 1 0} {1 5 1} 
-Flow 3: {2 3 0} 
-Time taken running everything: 0 seconds
+Number of groups: 2
+Flow 1: {1 3 0} {3 7 0} 
+Flow 2: {2 1 0} {1 5 0} 
+Flow 3: {2 3 0} Time taken running everything: 0 seconds

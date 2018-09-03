@@ -1,6 +1,6 @@
 Number of groups: 4
-Flow 1: {2 1 0} {1 6 1} 
-Flow 2: {1 5 0} {5 10 1} 
-Flow 4: {4 1 0} {1 2 1} {2 7 2} 
-Flow 8: {5 1 0} {1 4 1} {4 9 2} 
-Time taken running everything: 0 seconds
+Flow 1: {2 1 0} {1 6 0} 
+Flow 2: {1 5 0} {5 10 0} 
+Flow 3: {4 1 0} Flow 4: {1 2 0} {2 7 0} 
+Flow 6: {5 1 0} Flow 8: {1 4 0} {4 9 0} 
+Time taken running everything: 1 seconds

@@ -1,2 +1,0 @@
-open networks/rf1221_real_hard.0004/rf1221_real_hard.0004.sol: no such file or directory
-Time taken running everything: 0 seconds
