@@ -41,4 +41,9 @@ s.t. deliver{s in S, (u,v) in F[s]}: X[u,v,s] >= Y[s,u];
 s.t. dispatchLast{s in S, (u,v) in Last[s]}: Y[s,u] >= X[u,v,s];
 # Dispatch the last node
 
+s.t. break{s in S, (u,v) in F[s], (v,z) in F[s]}: Y[s,u] >= X[u,v,s] - X[v,z,s];
+# Need to dispatch in case the next one is not selected
+
 solve;
+
+end;
