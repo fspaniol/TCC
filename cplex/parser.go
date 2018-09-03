@@ -39,43 +39,39 @@ var (
 	clean = true
 )
 
-func handleX(name string, value string) {
-	valueFloat, _ := strconv.ParseFloat(value, 32)
-	val := math.Round(valueFloat)
-	if val == 1 {
-		arr := strings.Split(name[2:len(name)-1], ",")
-		src := arr[0]
-		dst := arr[1]
-		flow, _ := strconv.Atoi(arr[2])
-		newLink := link{
-			src:    src,
-			dst:    dst,
-			weight: 0,
-		}
+func handleX(name string) {
+	arr := strings.Split(name[2:len(name)-1], ",")
+	src := arr[0]
+	dst := arr[1]
+	flow, _ := strconv.Atoi(arr[2])
+	newLink := link{
+		src:    src,
+		dst:    dst,
+		weight: 0,
+	}
 
-		// Update the struct saying that such node is covered
-		links[src][dst]++
+	// Update the struct saying that such node is covered
+	links[src][dst]++
 
-		if groups[flow] == nil {
-			groups[flow] = list.New()
-		}
-		i := groups[flow].Front()
-		for i != nil {
-			elem := i.Value.(link)
-			if newLink.src == elem.dst {
-				groups[flow].InsertAfter(newLink, i)
+	if groups[flow] == nil {
+		groups[flow] = list.New()
+	}
+	i := groups[flow].Front()
+	for i != nil {
+		elem := i.Value.(link)
+		if newLink.src == elem.dst {
+			groups[flow].InsertAfter(newLink, i)
+			break
+		} else {
+			if newLink.dst == elem.src {
+				groups[flow].InsertBefore(newLink, i)
 				break
-			} else {
-				if newLink.dst == elem.src {
-					groups[flow].InsertBefore(newLink, i)
-					break
-				}
 			}
-			i = i.Next()
 		}
-		if i == nil {
-			groups[flow].PushBack(newLink)
-		}
+		i = i.Next()
+	}
+	if i == nil {
+		groups[flow].PushBack(newLink)
 	}
 }
 
@@ -104,20 +100,16 @@ func reorganizeX(flow int) {
 	}
 }
 
-func handleY(name string, value string) {
-	valueFloat, _ := strconv.ParseFloat(value, 32)
-	val := math.Round(valueFloat)
-	if val == 1 {
-		arr := strings.Split(name[2:len(name)-1], ",")
-		src := arr[1]
-		flow, _ := strconv.Atoi(arr[0])
+func handleY(name string) {
+	arr := strings.Split(name[2:len(name)-1], ",")
+	src := arr[1]
+	flow, _ := strconv.Atoi(arr[0])
 
-		if breaks[flow] == nil {
-			breaks[flow] = make(map[string]bool)
-		}
-
-		breaks[flow][src] = true
+	if breaks[flow] == nil {
+		breaks[flow] = make(map[string]bool)
 	}
+
+	breaks[flow][src] = true
 }
 
 func handleC(name string, value string) {
@@ -275,23 +267,30 @@ func main() {
 	for _, v := range sol.Variables.Variable {
 		switch v.Name[0] {
 		case 'X':
-			handleX(v.Name, v.Value)
+			handleX(v.Name)
 		case 'Y':
-			handleY(v.Name, v.Value)
+			handleY(v.Name)
 		case 'C':
 			handleC(v.Name, v.Value)
 		}
 	}
 
-	//checkAllNodes()
-	//checkDispatches()
+	if first == true {
+		first = false
+		for i := range groups {
+			reorganizeX(i)
+		}
+	}
 
-	//if clean {
-	//	fmt.Println("OKAY")
-	//}
+	checkAllNodes()
+	checkDispatches()
 
-	valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
-	val := math.Round(valueFloat)
-	fmt.Printf("Number of groups: %v\n", val)
-	output()
+	if clean {
+		fmt.Println("OKAY")
+	}
+
+	//valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
+	//val := math.Round(valueFloat)
+	//fmt.Printf("Number of groups: %v\n", val)
+	//output()
 }
