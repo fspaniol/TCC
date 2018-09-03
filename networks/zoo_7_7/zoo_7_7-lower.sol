@@ -4,7 +4,7 @@
    problemName="networks/zoo_7_7/zoo_7_7-lower.lp"
    solutionName="incumbent"
    solutionIndex="-1"
-   objectiveValue="3"
+   objectiveValue="4"
    solutionTypeValue="3"
    solutionTypeString="primal"
    solutionStatusValue="101"
@@ -13,7 +13,7 @@
    primalFeasible="1"
    dualFeasible="1"
    MIPNodes="0"
-   MIPIterations="0"
+   MIPIterations="4"
    writeLevel="3"/>
  <quality
    epInt="1.0000000000000001e-05"
@@ -24,15 +24,16 @@
    maxSlack="1"/>
  <variables>
   <variable name="Y(1,2)" index="1" value="1"/>
-  <variable name="Y(2,3)" index="9" value="1"/>
   <variable name="Y(3,1)" index="14" value="1"/>
+  <variable name="Y(4,3)" index="23" value="1"/>
+  <variable name="Y(7,1)" index="42" value="1"/>
   <variable name="X(1,2,1)" index="49" value="1"/>
-  <variable name="X(1,3,2)" index="57" value="1"/>
+  <variable name="X(1,3,7)" index="62" value="1"/>
   <variable name="X(1,5,3)" index="65" value="1"/>
   <variable name="X(2,1,3)" index="72" value="1"/>
   <variable name="X(2,3,4)" index="80" value="1"/>
   <variable name="X(2,6,1)" index="84" value="1"/>
-  <variable name="X(3,7,2)" index="92" value="1"/>
-  <variable name="X(4,1,5)" index="102" value="1"/>
+  <variable name="X(3,7,4)" index="94" value="1"/>
+  <variable name="X(4,1,7)" index="104" value="1"/>
  </variables>
 </CPLEXSolution>

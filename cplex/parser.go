@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fspaniol/TCC/parser"
+	"../parser"
 )
 
 type link struct {

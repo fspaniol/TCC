@@ -4,7 +4,7 @@
    problemName="networks/zoo_7_5/zoo_7_5-lower.lp"
    solutionName="incumbent"
    solutionIndex="-1"
-   objectiveValue="3"
+   objectiveValue="4"
    solutionTypeValue="3"
    solutionTypeString="primal"
    solutionStatusValue="101"
@@ -24,6 +24,7 @@
    maxSlack="1"/>
  <variables>
   <variable name="Y(1,1)" index="0" value="1"/>
+  <variable name="Y(2,3)" index="9" value="1"/>
   <variable name="Y(3,2)" index="15" value="1"/>
   <variable name="Y(5,3)" index="30" value="1"/>
   <variable name="X(1,3,5)" index="39" value="1"/>
@@ -33,6 +34,6 @@
   <variable name="X(3,1,2)" index="56" value="1"/>
   <variable name="X(3,2,3)" index="62" value="1"/>
   <variable name="X(3,7,5)" index="69" value="1"/>
-  <variable name="X(4,1,4)" index="73" value="1"/>
+  <variable name="X(4,1,5)" index="74" value="1"/>
  </variables>
 </CPLEXSolution>
