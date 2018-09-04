@@ -1,0 +1,14 @@
+To define a lower boundary, we realized that to achieve our goal, we had to collect all the links with the least amount of groups possible, therefore, only ignoring our restrictions that related to weight. Therefore, our formulation for definining the lower boundary for the test cases follow:
+
+\subsection{Formulation}
+
+\begin{align*}
+    \mathbf{min} &\sum_{k\in K} \sum_{u \in V} {Y_{ku}} \\
+   \mathbf{s.t}  &\sum_{k \in K}{X_{ak}=1} & \forall a \in A\\
+        &X_{af} = 0 & \forall a \in A - f,  \forall f \in F\\
+        &X_{ak} \geq Y_{ku} & \forall k \in K, \forall a = (u,v) \in A \\
+        &Y_{ku} \geq X_{ak} & \forall k \in K, \forall a = (u,v) \in L \\
+        &Y_{ku} \geq X_{ak} - X_{bk} & \forall k \in K, \forall a = (u,v) \in A, \forall b = (v,x) \in A \\
+        &X_{ak} \in \{0,1\} \\
+        &Y_{ku} \in \{0,1\}
+\end{align*}
