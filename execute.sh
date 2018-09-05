@@ -17,27 +17,27 @@
 #go run cplex/parser.go $1 >networks/$1/$1.txt
 
 # Find bugs
-#go run cplex/parser.go $1
+go run cplex/parser.go $1
 
 # Get the final time and write output to the file
 #second=$SECONDS
 #elapsed=$(expr $second - $first)
 #echo "Time taken running everything:" $elapsed "seconds" >>networks/$1/$1-lower.txt
 
-links=$(wc -l <networks/$1/$1-links.txt | sed -e 's/^[ \t]*//')
-nodes="$(cut -d'_' -f2 <<<$1)"
-flows="$(cut -d'_' -f3 <<<$1)"
-sol=$(cat networks/$1/$1.txt | grep "Number" | awk '{print $NF}')
-time_ran=$(cat networks/$1/$1-exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
-gap=$(cat networks/$1/$1-exec.txt | grep "(gap =" | awk '{print $NF}' | tr -d ")")
-lower=$(cat networks/$1/$1-lower.txt | grep "Number" | awk '{print $NF}')
-branch=0
-proportion=$(bc <<<"scale=2; $sol/$lower")
+# links=$(wc -l <networks/$1/$1-links.txt | sed -e 's/^[ \t]*//')
+# nodes="$(cut -d'_' -f2 <<<$1)"
+# flows="$(cut -d'_' -f3 <<<$1)"
+# sol=$(cat networks/$1/$1.txt | grep "Number" | awk '{print $NF}')
+# time_ran=$(cat networks/$1/$1-exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
+# gap=$(cat networks/$1/$1-exec.txt | grep "(gap =" | awk '{print $NF}' | tr -d ")")
+# lower=$(cat networks/$1/$1-lower.txt | grep "Number" | awk '{print $NF}')
+# branch=0
+# proportion=$(bc <<<"scale=2; $sol/$lower")
 
-if [ "$gap" == "" ] && [ "$sol" != "" ]; then
-	gap="0.00%"
-fi
+# if [ "$gap" == "" ] && [ "$sol" != "" ]; then
+# 	gap="0.00%"
+# fi
 
-# # Format of the table
-# # "| TEST NAME | NODE COUNT | LINK COUNT | FLOW COUNT | TIME RAN | SOLUTION FOUND | LOWER BOUND | GAP | PROPORTION |"
-echo "|$(echo $1 | sed 's/_/\\_/g')|$nodes|$links|$flows|$time_ran|$sol|$lower|$gap|$branch|$proportion|"
+# # # Format of the table
+# # # "| TEST NAME | NODE COUNT | LINK COUNT | FLOW COUNT | TIME RAN | SOLUTION FOUND | LOWER BOUND | GAP | PROPORTION |"
+# echo "|$(echo $1 | sed 's/_/\\_/g')|$nodes|$links|$flows|$time_ran|$sol|$lower|$gap|$branch|$proportion|"
