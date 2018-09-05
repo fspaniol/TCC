@@ -4,7 +4,7 @@
    problemName="networks/zoo_17_29/zoo_17_29-lower.lp"
    solutionName="incumbent"
    solutionIndex="-1"
-   objectiveValue="7"
+   objectiveValue="29"
    solutionTypeValue="3"
    solutionTypeString="primal"
    solutionStatusValue="101"
@@ -27,9 +27,31 @@
   <variable name="Y(2,4)" index="19" value="1"/>
   <variable name="Y(3,5)" index="36" value="1"/>
   <variable name="Y(4,8)" index="55" value="1"/>
+  <variable name="Y(5,3)" index="66" value="1"/>
   <variable name="Y(6,1)" index="80" value="1"/>
+  <variable name="Y(7,4)" index="99" value="1"/>
+  <variable name="Y(8,4)" index="115" value="1"/>
   <variable name="Y(9,6)" index="133" value="1"/>
   <variable name="Y(10,7)" index="150" value="1"/>
+  <variable name="Y(11,4)" index="163" value="1"/>
+  <variable name="Y(12,5)" index="180" value="1"/>
+  <variable name="Y(13,5)" index="196" value="1"/>
+  <variable name="Y(14,5)" index="212" value="1"/>
+  <variable name="Y(15,6)" index="229" value="1"/>
+  <variable name="Y(16,6)" index="245" value="1"/>
+  <variable name="Y(17,6)" index="261" value="1"/>
+  <variable name="Y(18,6)" index="277" value="1"/>
+  <variable name="Y(19,7)" index="294" value="1"/>
+  <variable name="Y(20,7)" index="310" value="1"/>
+  <variable name="Y(21,7)" index="326" value="1"/>
+  <variable name="Y(22,7)" index="342" value="1"/>
+  <variable name="Y(23,8)" index="359" value="1"/>
+  <variable name="Y(24,8)" index="375" value="1"/>
+  <variable name="Y(25,8)" index="391" value="1"/>
+  <variable name="Y(26,9)" index="408" value="1"/>
+  <variable name="Y(27,9)" index="424" value="1"/>
+  <variable name="Y(28,9)" index="440" value="1"/>
+  <variable name="Y(29,9)" index="456" value="1"/>
   <variable name="X(1,10,6)" index="469" value="1"/>
   <variable name="X(2,3,1)" index="493" value="1"/>
   <variable name="X(2,4,2)" index="523" value="1"/>

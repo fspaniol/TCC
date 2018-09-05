@@ -4,7 +4,7 @@
    problemName="networks/zoo_18_15/zoo_18_15-lower.lp"
    solutionName="incumbent"
    solutionIndex="-1"
-   objectiveValue="7"
+   objectiveValue="15"
    solutionTypeValue="3"
    solutionTypeString="primal"
    solutionStatusValue="101"
@@ -29,7 +29,15 @@
   <variable name="Y(4,7)" index="46" value="1"/>
   <variable name="Y(5,9)" index="62" value="1"/>
   <variable name="Y(6,1)" index="70" value="1"/>
+  <variable name="Y(7,5)" index="86" value="1"/>
+  <variable name="Y(8,5)" index="100" value="1"/>
+  <variable name="Y(9,5)" index="114" value="1"/>
+  <variable name="Y(10,6)" index="129" value="1"/>
+  <variable name="Y(11,6)" index="143" value="1"/>
+  <variable name="Y(12,6)" index="157" value="1"/>
+  <variable name="Y(13,6)" index="171" value="1"/>
   <variable name="Y(14,8)" index="187" value="1"/>
+  <variable name="Y(15,6)" index="199" value="1"/>
   <variable name="X(1,4,1)" index="210" value="1"/>
   <variable name="X(1,5,2)" index="226" value="1"/>
   <variable name="X(1,6,3)" index="242" value="1"/>

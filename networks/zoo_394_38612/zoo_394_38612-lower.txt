@@ -1,2 +1,2 @@
 open networks/zoo_394_38612/zoo_394_38612-lower.sol: no such file or directory
-Time taken running everything: 1 seconds
+Time taken running everything: 5109 seconds

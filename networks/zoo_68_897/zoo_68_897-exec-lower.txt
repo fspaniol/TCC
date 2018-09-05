@@ -1,27 +1,50 @@
 
-Log started (V12.6.2.0) Mon Sep  3 03:44:34 2018
+Log started (V12.6.2.0) Wed Sep  5 05:10:36 2018
 
 New value for variables to include in .sol and .mst files: 3
-Tried aggregator 2 times.
-MIP Presolve eliminated 116740 rows and 175812 columns.
-Aggregator did 897 substitutions.
-All rows and columns eliminated.
-Presolve time = 0.13 sec. (98.78 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 113699 rows and 169083 columns.
+MIP Presolve modified 11 coefficients.
+Aggregator did 914 substitutions.
+Reduced MIP has 5943 rows, 6712 columns, and 18438 nonzeros.
+Reduced MIP has 6712 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.21 sec. (144.55 ticks)
+Found incumbent of value 130.000000 after 0.28 sec. (182.37 ticks)
+Probing time = 0.02 sec. (4.40 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 5943 rows, 6712 columns, and 18438 nonzeros.
+Reduced MIP has 6712 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (13.03 ticks)
+Probing time = 0.01 sec. (4.07 ticks)
+Clique table members: 14204.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.22 sec. (161.42 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          130.0000        1.0000            99.23%
+*     0+    0                           84.0000        1.0000            98.81%
+*     0+    0                           75.0000        1.0000            98.67%
+*     0     0      integral     0       36.0000       36.0000     2452    0.00%
+Elapsed time = 0.60 sec. (388.25 ticks, tree = 0.00 MB, solutions = 4)
 
 Root node processing (before b&c):
-  Real time             =    0.17 sec. (116.42 ticks)
+  Real time             =    0.61 sec. (396.72 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.17 sec. (116.42 ticks)
+Total (root+branch&cut) =    0.61 sec. (396.72 ticks)
 
-Solution pool: 1 solution saved.
+Solution pool: 4 solutions saved.
 
-MIP - Integer optimal solution:  Objective =  3.3000000000e+01
-Solution time =    0.17 sec.  Iterations = 0  Nodes = 0
-Deterministic time = 116.92 ticks  (695.90 ticks/sec)
+MIP - Integer optimal solution:  Objective =  3.6000000000e+01
+Solution time =    0.61 sec.  Iterations = 2452  Nodes = 0
+Deterministic time = 397.22 ticks  (650.96 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_68_897/zoo_68_897-lower.sol'.

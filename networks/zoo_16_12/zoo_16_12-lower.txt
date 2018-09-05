@@ -1,7 +1,7 @@
 Number of groups: 5
 Flow 1: {1 6 0} {6 14 0} 
-Flow 2: {3 4 0} {4 12 0} 
 Flow 3: {4 5 0} {5 13 0} 
-Flow 4: {3 6 0} Flow 5: {6 8 0} {8 16 0} 
+Flow 5: {3 6 0} {6 8 0} {8 16 0} 
 Flow 6: {4 3 0} {3 11 0} 
-Flow 10: {6 3 0} Time taken running everything: 0 seconds
+Flow 10: {6 3 0} {3 4 0} {4 12 0} 
+Time taken running everything: 0 seconds

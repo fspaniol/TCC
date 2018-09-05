@@ -13,7 +13,7 @@
    primalFeasible="1"
    dualFeasible="1"
    MIPNodes="0"
-   MIPIterations="0"
+   MIPIterations="2"
    writeLevel="3"/>
  <quality
    epInt="1.0000000000000001e-05"
@@ -33,9 +33,9 @@
   <variable name="X(1,6,1)" index="88" value="1"/>
   <variable name="X(2,1,1)" index="96" value="1"/>
   <variable name="X(2,7,4)" index="107" value="1"/>
-  <variable name="X(4,1,3)" index="114" value="1"/>
+  <variable name="X(4,1,4)" index="115" value="1"/>
   <variable name="X(4,9,8)" index="127" value="1"/>
-  <variable name="X(5,1,6)" index="133" value="1"/>
+  <variable name="X(5,1,8)" index="135" value="1"/>
   <variable name="X(5,10,2)" index="137" value="1"/>
  </variables>
 </CPLEXSolution>

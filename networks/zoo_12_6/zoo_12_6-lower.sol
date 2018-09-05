@@ -4,7 +4,7 @@
    problemName="networks/zoo_12_6/zoo_12_6-lower.lp"
    solutionName="incumbent"
    solutionIndex="-1"
-   objectiveValue="4"
+   objectiveValue="5"
    solutionTypeValue="3"
    solutionTypeString="primal"
    solutionStatusValue="101"
@@ -27,6 +27,7 @@
   <variable name="Y(2,4)" index="10" value="1"/>
   <variable name="Y(3,1)" index="16" value="1"/>
   <variable name="Y(5,6)" index="35" value="1"/>
+  <variable name="Y(6,6)" index="43" value="1"/>
   <variable name="X(1,2,1)" index="48" value="1"/>
   <variable name="X(1,7,3)" index="56" value="1"/>
   <variable name="X(2,1,3)" index="62" value="1"/>

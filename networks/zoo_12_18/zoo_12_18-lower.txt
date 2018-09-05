@@ -1,6 +1,7 @@
-Number of groups: 4
-Flow 1: {1 2 0} {2 8 0} 
+Number of groups: 5
 Flow 2: {1 6 0} {6 5 0} {5 11 0} 
-Flow 3: {6 12 0} 
 Flow 4: {2 1 0} {1 7 0} 
-Flow 7: {3 2 0} Flow 9: {4 3 0} Flow 11: {4 5 0} Flow 12: {5 6 0} Flow 13: {6 1 0} Flow 14: {5 4 0} Time taken running everything: 0 seconds
+Flow 12: {4 5 0} {5 6 0} {6 12 0} 
+Flow 14: {5 4 0} {4 3 0} {3 2 0} 
+Flow 17: {6 1 0} {1 2 0} {2 8 0} 
+Time taken running everything: 0 seconds

@@ -1,9 +1,9 @@
 Number of groups: 7
-Flow 1: {1 2 0} {2 9 0} 
-Flow 2: {2 3 0} {3 10 0} 
-Flow 3: {1 4 0} {4 11 0} 
-Flow 4: {3 5 0} {5 12 0} 
-Flow 5: {4 7 0} {7 6 0} {6 13 0} 
-Flow 6: {7 14 0} 
-Flow 7: {2 1 0} {1 8 0} 
-Flow 11: {5 6 0} Flow 13: {3 2 0} Flow 18: {6 7 0} Flow 19: {4 1 0} Flow 22: {6 5 0} Flow 25: {5 3 0} Flow 28: {7 4 0} Time taken running everything: 1 seconds
+Flow 5: {1 4 0} {4 7 0} {7 6 0} {6 13 0} 
+Flow 8: {2 3 0} {3 10 0} 
+Flow 18: {3 5 0} {5 6 0} {6 7 0} {7 14 0} 
+Flow 20: {4 1 0} {1 2 0} {2 9 0} 
+Flow 25: {5 3 0} {3 2 0} {2 1 0} {1 8 0} 
+Flow 35: {6 5 0} {5 12 0} 
+Flow 40: {7 4 0} {4 11 0} 
+Time taken running everything: 0 seconds

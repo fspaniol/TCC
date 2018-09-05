@@ -1,32 +1,5 @@
 
-Log started (V12.6.2.0) Mon Sep  3 03:45:48 2018
-
-New value for variables to include in .sol and .mst files: 3
-Tried aggregator 2 times.
-MIP Presolve eliminated 29992 rows and 50190 columns.
-Aggregator did 288 substitutions.
-All rows and columns eliminated.
-Presolve time = 0.03 sec. (26.79 ticks)
-
-Root node processing (before b&c):
-  Real time             =    0.04 sec. (31.61 ticks)
-Parallel b&c, 4 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
-                          ------------
-Total (root+branch&cut) =    0.04 sec. (31.61 ticks)
-
-Solution pool: 1 solution saved.
-
-MIP - Integer optimal solution:  Objective =  3.5000000000e+01
-Solution time =    0.04 sec.  Iterations = 0  Nodes = 0
-Deterministic time = 31.75 ticks  (776.81 ticks/sec)
-
-
-Incumbent solution written to file 'networks/zoo_76_282/zoo_76_282-lower.sol'.
-
-Log started (V12.6.2.0) Mon Sep  3 20:10:04 2018
+Log started (V12.6.2.0) Wed Sep  5 05:12:05 2018
 
 New value for variables to include in .sol and .mst files: 3
 Tried aggregator 2 times.
@@ -54,7 +27,7 @@ Root relaxation solution time = 0.01 sec. (5.88 ticks)
 *     0+    0                          103.0000       10.0000            90.29%
 *     0+    0                           62.0000       10.0000            83.87%
 *     0     0      integral     0       54.0000       54.0000      467    0.00%
-Elapsed time = 0.09 sec. (61.51 ticks, tree = 0.00 MB, solutions = 3)
+Elapsed time = 0.10 sec. (61.51 ticks, tree = 0.00 MB, solutions = 3)
 
 Root node processing (before b&c):
   Real time             =    0.10 sec. (63.59 ticks)
@@ -69,7 +42,7 @@ Solution pool: 3 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  5.4000000000e+01
 Solution time =    0.10 sec.  Iterations = 467  Nodes = 0
-Deterministic time = 63.74 ticks  (648.61 ticks/sec)
+Deterministic time = 63.74 ticks  (640.40 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_76_282/zoo_76_282-lower.sol'.

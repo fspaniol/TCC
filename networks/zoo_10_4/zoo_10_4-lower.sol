@@ -13,7 +13,7 @@
    primalFeasible="1"
    dualFeasible="1"
    MIPNodes="0"
-   MIPIterations="0"
+   MIPIterations="1"
    writeLevel="3"/>
  <quality
    epInt="1.0000000000000001e-05"
@@ -24,13 +24,13 @@
    maxSlack="1"/>
  <variables>
   <variable name="Y(1,2)" index="1" value="1"/>
-  <variable name="Y(2,4)" index="9" value="1"/>
   <variable name="Y(3,5)" index="17" value="1"/>
+  <variable name="Y(4,4)" index="23" value="1"/>
   <variable name="X(1,2,1)" index="28" value="1"/>
-  <variable name="X(1,4,2)" index="33" value="1"/>
+  <variable name="X(1,4,4)" index="35" value="1"/>
   <variable name="X(1,5,3)" index="38" value="1"/>
   <variable name="X(2,7,1)" index="40" value="1"/>
-  <variable name="X(4,9,2)" index="45" value="1"/>
+  <variable name="X(4,9,4)" index="47" value="1"/>
   <variable name="X(5,1,4)" index="51" value="1"/>
   <variable name="X(5,10,3)" index="54" value="1"/>
  </variables>

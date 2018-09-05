@@ -1,32 +1,5 @@
 
-Log started (V12.6.2.0) Mon Sep  3 03:45:33 2018
-
-New value for variables to include in .sol and .mst files: 3
-Tried aggregator 2 times.
-MIP Presolve eliminated 127200 rows and 184569 columns.
-Aggregator did 799 substitutions.
-All rows and columns eliminated.
-Presolve time = 0.14 sec. (105.19 ticks)
-
-Root node processing (before b&c):
-  Real time             =    0.18 sec. (124.01 ticks)
-Parallel b&c, 4 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
-                          ------------
-Total (root+branch&cut) =    0.18 sec. (124.01 ticks)
-
-Solution pool: 1 solution saved.
-
-MIP - Integer optimal solution:  Objective =  3.6000000000e+01
-Solution time =    0.18 sec.  Iterations = 0  Nodes = 0
-Deterministic time = 124.54 ticks  (693.37 ticks/sec)
-
-
-Incumbent solution written to file 'networks/zoo_74_799/zoo_74_799-lower.sol'.
-
-Log started (V12.6.2.0) Mon Sep  3 20:09:46 2018
+Log started (V12.6.2.0) Wed Sep  5 05:11:47 2018
 
 New value for variables to include in .sol and .mst files: 3
 Tried aggregator 2 times.
@@ -34,7 +7,7 @@ MIP Presolve eliminated 125186 rows and 180042 columns.
 Aggregator did 867 substitutions.
 Reduced MIP has 3814 rows, 4459 columns, and 12201 nonzeros.
 Reduced MIP has 4459 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.17 sec. (116.64 ticks)
+Presolve time = 0.18 sec. (116.64 ticks)
 Found incumbent of value 157.000000 after 0.25 sec. (153.30 ticks)
 Probing time = 0.01 sec. (3.59 ticks)
 Tried aggregator 1 time.
@@ -70,7 +43,7 @@ Solution pool: 4 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  6.6000000000e+01
 Solution time =    0.38 sec.  Iterations = 1527  Nodes = 0
-Deterministic time = 230.77 ticks  (612.28 ticks/sec)
+Deterministic time = 230.77 ticks  (609.47 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_74_799/zoo_74_799-lower.sol'.
