@@ -251,7 +251,7 @@ func checkDispatches() {
 }
 
 func main() {
-	sol, err := parser.Transform(fmt.Sprintf("networks/%s/%s-lower.sol", os.Args[1], os.Args[1]))
+	sol, err := parser.Transform(fmt.Sprintf("networks/%s/%s.sol", os.Args[1], os.Args[1]))
 	if err != nil {
 		fmt.Println(err)
 		return
