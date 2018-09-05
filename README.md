@@ -14,6 +14,10 @@ To execute the `Execute` shell script, simple call it and pass the test name, fo
 
 It will call the conversion from GLPK to CPLEX and then call CPLEX and write the solution to the `simple` test folder, in `glpk/simple`.
 
+## Execute all
+
+The script `execute_all` will execute everything you need for all tests inside the `networks` folder
+
 
 ## Validator
 
@@ -28,8 +32,10 @@ Print the output in JSON
 Transform the Data Parser from CPLEX into a public library
 Get the results from lower bound
 Execute all test in one hour to get final results
-Parse results from branch and bound
+Parse results from branch and cut
 Generate the new model with vehicle routing
+
+Modify original model to only use two variables, in the hopes of speeding up the process
 
 ## Bugs
 
