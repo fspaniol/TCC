@@ -12852,6 +12852,6 @@ set Last[1982] := 53 111;
 set Last[1983] := 54 112;
 set Last[1984] := 57 115;
 
-#param q := 5;
+param q := 5;
 
 end;

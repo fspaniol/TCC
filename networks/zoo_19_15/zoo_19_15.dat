@@ -93,6 +93,6 @@ set Last[13] := 7 17;
 set Last[14] := 9 19;
 set Last[15] := 4 14;
 
-#param q := 5;
+param q := 5;
 
 end;

@@ -386,6 +386,6 @@ set Last[70] := 6 15;
 set Last[71] := 7 16;
 set Last[72] := 8 17;
 
-#param q := 5;
+param q := 5;
 
 end;

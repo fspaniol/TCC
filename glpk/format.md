@@ -63,7 +63,7 @@ set Last[3] := 2 1;
 Param q states the total capacity of each flow, it will determine how many items a route can gather before having to dispatch due to it being full, e.g.:
 
 ```
-#param q := 5;
+param q := 5;
 ```
 
 ## End
@@ -101,7 +101,7 @@ set Last[1] := 2 3;
 set Last[2] := 4 5;
 # Set last indicates what is the last link in every flow
 
-#param q := 10;
+param q := 10;
 # Parameter that defines the limit of weight for each flow
 
 #param last [1] 1 2 [2] 4 5;

@@ -9931,6 +9931,6 @@ set Last[1258] := 33 69;
 set Last[1259] := 34 70;
 set Last[1260] := 35 71;
 
-#param q := 5;
+param q := 5;
 
 end;

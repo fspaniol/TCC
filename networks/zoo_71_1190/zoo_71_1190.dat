@@ -10000,6 +10000,6 @@ set Last[1188] := 32 68;
 set Last[1189] := 33 69;
 set Last[1190] := 34 70;
 
-#param q := 5;
+param q := 5;
 
 end;
