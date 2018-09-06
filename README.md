@@ -34,7 +34,7 @@ Execute all test in one hour to get final results
 Parse results from branch and cut
 Generate the new model with vehicle routing
 
-Modify original model to only use two variables, in the hopes of speeding up the process
+Move the dat files to inside their own folders and then we can remove the prefixes, so it becomes clearer
 
 ## Bugs
 
