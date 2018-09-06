@@ -30,7 +30,6 @@ Make sure that the weight doesn't surpass the limit.
 ## TODO
 Print the output in JSON
 Transform the Data Parser from CPLEX into a public library
-Get the results from lower bound
 Execute all test in one hour to get final results
 Parse results from branch and cut
 Generate the new model with vehicle routing
