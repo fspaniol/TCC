@@ -24,6 +24,6 @@ set F[3] := 2 3
 #set Last[2] := 1 5;
 #set Last[3] := 3 7;
 
-param q := 2;
+param q := 5;
 
 end;
