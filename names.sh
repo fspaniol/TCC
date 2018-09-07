@@ -14,7 +14,15 @@
 #     mv $file "${dir}/zoo_${nodes}_${flows}.dat"
 # done
 
-for f in networks/*/*.dat; do
-    echo $f
-    sed -i 'd/param q*/' $f
+for f in networks/defo*/; do
+    pushd $f
+    mkdir lower
+    mkdir standard
+    mv *lower* lower/
+    mv * standard/
+    pushd standard/
+    mv lower/ ../
+    mv *.dat ../
+    popd
+    popd
 done
