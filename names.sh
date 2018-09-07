@@ -14,19 +14,11 @@
 #     mv $file "${dir}/zoo_${nodes}_${flows}.dat"
 # done
 
-for f in networks/*/; do
+for f in networks/rf*/; do
     pushd $f/standard/
-    mv *links* ../links.txt
-    mv *exec* exec.txt
-    mv *sol solution.sol
-    mv $f.txt groups.txt
+    mv rf* groups.txt
     popd
     pushd $f/lower/
-    mv *exec* exec.txt
-    mv *sol solution.sol
-    mv $f*.txt groups.txt
-    popd
-    pushd $f
-    mv *.dat input.dat
+    mv rf* groups.txt
     popd
 done
