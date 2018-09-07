@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"../parser"
+	"github.com/fspaniol/cplexparser"
 )
 
 type link struct {
