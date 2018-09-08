@@ -25,13 +25,13 @@
 #echo "Time taken running everything:" $elapsed "seconds" >>networks/$1/standard/groups.txt
 
 links=$(wc -l <networks/$1/links.txt | sed -e 's/^[ \t]*//')
-nodes="$(cut -d'_' -f2 <<<$1)"
+nodes="$(expr $(sed '3q;d' networks/$1/input.dat | tr -cd ' ' | wc -m) - 2)"
 flows="$(cut -d'_' -f3 <<<$1)"
 sol=$(cat networks/$1/standard/groups.txt | grep "Number" | awk '{print $NF}')
 time_ran=$(cat networks/$1/standard/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
 gap=$(cat networks/$1/standard/exec.txt | grep "(gap =" | awk '{print $NF}' | tr -d ")")
 lower=$(cat networks/$1/lower/groups.txt | grep "Number" | awk '{print $NF}')
-iterations=$(cat networks/$1/standard/exec.txt | grep "Iterations" | awk '{print $(NF-4)}')
+iterations=$(cat networks/$1/standard/exec.txt | grep "Iterations" | awk '{print $8}')
 proportion=$(bc <<<"scale=2; $sol/$lower")
 
 if [ "$gap" == "" ] && [ "$sol" != "" ]; then
