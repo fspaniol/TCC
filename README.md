@@ -32,4 +32,4 @@ Print the output in JSON
 
 Execute all test in one hour to get final results
 
-Generate the new model with vehicle routing
+Compare the implementations between VRP and INTO
