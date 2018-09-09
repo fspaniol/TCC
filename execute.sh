@@ -11,7 +11,7 @@ mkdir networks/$1/vrp
 glpsol -m glpk/vrp.mod -d networks/$1/input.dat --wlp networks/$1/vrp/model.lp --check
 
 # Execute cplex and put the output into the file folder
-cplex/cplex -c "READ networks/$1/vrp/model.lp" "SET timelimit 600" "SET threads 4" "SET logfile networks/$1/vrp/exec.txt" "SET output writelevel 3" "OPTIMIZE" "WRITE networks/$1/vrp/solution.sol" "y"
+/opt/cplex/cplex/bin/x86-64_sles10_4\.1/cplex -c "READ networks/$1/vrp/model.lp" "SET timelimit 600" "SET threads 4" "SET logfile networks/$1/vrp/exec.txt" "SET output writelevel 3" "OPTIMIZE" "WRITE networks/$1/vrp/solution.sol" "y"
 
 #sed -n '/set A := /,/;/p' networks/$1/input.dat | tr -d "setA:=;" >networks/$1/links.txt
 
