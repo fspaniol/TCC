@@ -33,3 +33,6 @@ Print the output in JSON
 Execute all test in one hour to get final results
 
 Compare the implementations between VRP and INTO
+
+Prepare validator for new model
+Create pre-processing for vrp
