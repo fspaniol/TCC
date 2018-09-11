@@ -11,13 +11,13 @@ set S;
 set V;
 # Set that defines what routers are in a network
 
-set F{s in S} within (V cross V);
+set F{s in S}, dimen 2;
 # All flows in an environment
 
-set Last{s in S} within (V cross V);
+set Last{s in S}, dimen 2;
 # All flows in an environment
 
-set A within (V cross V);
+set A, dimen 2;
 # Set of archs in a network
 
 var C{S,V} >= 0;
