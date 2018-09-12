@@ -1,0 +1,48 @@
+
+Log started (V12.5.0.0) Wed Sep 12 06:20:55 2018
+
+New value for writelevel: 3
+Aggregator has done 2290078 substitutions...
+Aggregator has done 2316271 substitutions...
+Tried aggregator 2 times.
+MIP Presolve eliminated 3680054 rows and 6002560 columns.
+Aggregator did 2322506 substitutions.
+Reduced MIP has 205591 rows, 616026 columns, and 1437394 nonzeros.
+Reduced MIP has 616026 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 38.61 sec. (25400.32 ticks)
+Probing time = 0.44 sec. (141.82 ticks)
+Tried aggregator 1 time.
+Presolve time = 1.88 sec. (806.09 ticks)
+Probing time = 0.48 sec. (141.82 ticks)
+Clique table members: 46978.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 11.68 sec. (4769.73 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       27.0000   345                     27.0000       14         
+*     0+    0                           38.0000       27.0000       14   28.95%
+*     0+    0                           27.0000       27.0000       14    0.00%
+      0     0        cutoff             27.0000       27.0000       14    0.00%
+Elapsed time = 321.74 sec. (180117.62 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =  274.82 sec. (150835.83 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  274.82 sec. (150835.83 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.7000000000e+01
+Solution time =  322.44 sec.  Iterations = 14  Nodes = 0
+Deterministic time = 180439.17 ticks  (559.60 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_54_564/vrp/solution.sol'.

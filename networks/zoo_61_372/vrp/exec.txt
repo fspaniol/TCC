@@ -1,0 +1,52 @@
+
+Log started (V12.5.0.0) Wed Sep 12 14:07:02 2018
+
+New value for writelevel: 3
+Aggregator has done 1629068 substitutions...
+Tried aggregator 2 times.
+MIP Presolve eliminated 2889341 rows and 4526158 columns.
+Aggregator did 1636817 substitutions.
+Reduced MIP has 191464 rows, 573573 columns, and 1338337 nonzeros.
+Reduced MIP has 573573 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 24.04 sec. (14303.13 ticks)
+Probing time = 0.40 sec. (132.47 ticks)
+Tried aggregator 1 time.
+Presolve time = 1.70 sec. (730.47 ticks)
+Probing time = 0.43 sec. (132.47 ticks)
+Clique table members: 34034.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 16.70 sec. (6901.31 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           73.0000        0.0000       14  100.00%
+*     0+    0                           68.0000        0.0000       14  100.00%
+      0     0       24.0000   414       68.0000       24.0000       14   64.71%
+*     0+    0                           33.0000       24.0000      161   27.27%
+      0     0       24.0000   381       33.0000       Cuts: 4      161   27.27%
+      0     0       24.0000   397       33.0000       Cuts: 3      289   27.27%
+
+Implied bound cuts applied:  3
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =  568.84 sec. (248354.79 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  568.84 sec. (248354.79 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Time limit exceeded, integer feasible:  Objective =  3.3000000000e+01
+Current MIP best bound =  2.4000000000e+01 (gap = 9, 27.27%)
+Solution time =  600.85 sec.  Iterations = 289  Nodes = 0 (1)
+Deterministic time = 266485.27 ticks  (443.51 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_61_372/vrp/solution.sol'.

@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Tue Sep 11 21:43:12 2018
+Log started (V12.5.0.0) Wed Sep 12 02:17:01 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -7,75 +7,53 @@ MIP Presolve eliminated 357184 rows and 571520 columns.
 Aggregator did 214336 substitutions.
 Reduced MIP has 23936 rows, 71232 columns, and 166208 nonzeros.
 Reduced MIP has 71232 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 1.99 sec. (1009.69 ticks)
-Found incumbent of value 42.000000 after 2.44 sec. (1328.01 ticks)
-Probing time = 0.12 sec. (22.26 ticks)
+Presolve time = 2.01 sec. (1015.21 ticks)
+Found incumbent of value 42.000000 after 2.54 sec. (1434.20 ticks)
+Probing time = 0.04 sec. (17.64 ticks)
 Tried aggregator 1 time.
-Presolve time = 0.14 sec. (90.85 ticks)
-Probing time = 0.14 sec. (22.26 ticks)
-Clique table members: 169707.
+Presolve time = 0.15 sec. (95.04 ticks)
+Probing time = 0.04 sec. (17.64 ticks)
+Clique table members: 6080.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 0.94 sec. (612.96 ticks)
+Root relaxation solution time = 0.87 sec. (605.20 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           42.0000        0.0000       14  100.00%
-*     0+    0                           41.0000        0.0000       14  100.00%
-      0     0       24.0000   147       41.0000       24.0000       14   41.46%
-*     0+    0                           25.0000       24.0000       17    4.00%
-      0     0       24.0000   205       25.0000       Cuts: 3       17    4.00%
+*     0+    0                           42.0000        0.0000       10  100.00%
+*     0+    0                           41.0000        0.0000       10  100.00%
+      0     0       24.0000   223       41.0000       24.0000       10   41.46%
+*     0+    0                           30.0000       24.0000       10   20.00%
+      0     0       24.0000   189       30.0000       Cuts: 5       19   20.00%
+*     0+    0                           25.0000       24.0000       19    4.00%
 
 Repeating presolve.
-Tried aggregator 2 times.
-MIP Presolve eliminated 4800 rows and 33344 columns.
-Aggregator did 4736 substitutions.
-Reduced MIP has 14400 rows, 33152 columns, and 97472 nonzeros.
-Reduced MIP has 33152 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.15 sec. (94.94 ticks)
-Probing fixed 640 vars, tightened 0 bounds.
-Probing time = 1.43 sec. (498.83 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 576 rows and 1152 columns.
-Reduced MIP has 13824 rows, 32000 columns, and 94016 nonzeros.
-Reduced MIP has 32000 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.08 sec. (56.34 ticks)
-Probing time = 0.04 sec. (7.95 ticks)
-Tried aggregator 1 time.
-Presolve time = 0.08 sec. (52.94 ticks)
-Represolve time = 2.00 sec. (804.53 ticks)
-Probing time = 0.04 sec. (7.95 ticks)
-Clique table members: 44396.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 0.44 sec. (395.22 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-*     0+    0                           25.0000       24.0000       32    4.00%
-      0     0        cutoff             25.0000       25.0000       32    0.00%
-
-Implied bound cuts applied:  1
-Gomory fractional cuts applied:  1
+Tried aggregator 4 times.
+MIP Presolve eliminated 4863 rows and 37032 columns.
+MIP Presolve modified 512 coefficients.
+Aggregator did 8942 substitutions.
+Reduced MIP has 10131 rows, 25258 columns, and 77272 nonzeros.
+Reduced MIP has 25258 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.50 sec. (335.00 ticks)
+Represolve time = 0.87 sec. (501.26 ticks)
 
 Root node processing (before b&c):
-  Real time             =    7.93 sec. (4630.38 ticks)
+  Real time             =    7.69 sec. (4687.49 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    7.93 sec. (4630.38 ticks)
+Total (root+branch&cut) =    7.69 sec. (4687.49 ticks)
 
-Solution pool: 3 solutions saved.
+Solution pool: 4 solutions saved.
 
-MIP - Integer optimal solution:  Objective =  2.5000000000e+01
-Solution time =   10.73 sec.  Iterations = 32  Nodes = 0
-Deterministic time = 6109.59 ticks  (569.35 ticks/sec)
+MIP - Integer unbounded:  Objective =  2.5000000000e+01
+Current MIP best bound is infinite.
+Solution time =   10.49 sec.  Iterations = 0  Nodes = 0
+Deterministic time = 6271.35 ticks  (597.98 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_43_93/vrp/solution.sol'.

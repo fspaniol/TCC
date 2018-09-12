@@ -13,7 +13,7 @@
    primalFeasible="1"
    dualFeasible="1"
    MIPNodes="0"
-   MIPIterations="1087"
+   MIPIterations="1078"
    writeLevel="3"/>
  <quality
    epInt="1e-05"
@@ -23,38 +23,38 @@
    maxX="1"
    maxSlack="5"/>
  <variables>
-  <variable name="X(0,1,4,3)" index="128" value="1"/>
-  <variable name="X(0,2,19,11)" index="1564" value="1"/>
-  <variable name="X(0,3,3,14)" index="1693" value="1"/>
-  <variable name="X(0,4,6,31)" index="2634" value="1"/>
-  <variable name="X(0,5,7,30)" index="3473" value="1"/>
-  <variable name="X(0,6,11,33)" index="4442" value="1"/>
-  <variable name="X(0,7,1,41)" index="4828" value="1"/>
-  <variable name="X(1,4,4,3)" index="11213" value="1"/>
-  <variable name="X(1,14,6,31)" index="12545" value="1"/>
-  <variable name="X(2,4,19,11)" index="12976" value="1"/>
-  <variable name="X(2,15,3,14)" index="13815" value="1"/>
-  <variable name="X(3,4,3,14)" index="14613" value="1"/>
-  <variable name="X(3,16,11,33)" index="15780" value="1"/>
-  <variable name="X(4,1,6,31)" index="16535" value="1"/>
-  <variable name="X(4,2,3,14)" index="17007" value="1"/>
-  <variable name="X(4,3,11,33)" index="18174" value="1"/>
-  <variable name="X(4,5,1,41)" index="19114" value="1"/>
-  <variable name="X(4,6,19,11)" index="19360" value="1"/>
-  <variable name="X(4,7,7,30)" index="20507" value="1"/>
-  <variable name="X(4,17,4,3)" index="20789" value="1"/>
-  <variable name="X(5,4,7,30)" index="22103" value="1"/>
-  <variable name="X(5,18,1,41)" index="23104" value="1"/>
-  <variable name="X(6,4,11,33)" index="23760" value="1"/>
-  <variable name="X(6,19,19,11)" index="24148" value="1"/>
-  <variable name="X(7,4,1,41)" index="25498" value="1"/>
-  <variable name="X(7,20,7,30)" index="26093" value="1"/>
-  <variable name="X(18,0,1,41)" index="26905" value="1"/>
-  <variable name="X(15,0,3,14)" index="27700" value="1"/>
-  <variable name="X(17,0,4,3)" index="28136" value="1"/>
-  <variable name="X(14,0,6,31)" index="29701" value="1"/>
-  <variable name="X(20,0,7,30)" index="30281" value="1"/>
-  <variable name="X(16,0,11,33)" index="32671" value="1"/>
-  <variable name="X(19,0,19,11)" index="37070" value="1"/>
+  <variable name="X(0,1,1,5)" index="4" value="1"/>
+  <variable name="X(0,2,2,7)" index="846" value="1"/>
+  <variable name="X(0,3,18,16)" index="2325" value="1"/>
+  <variable name="X(0,4,5,21)" index="2582" value="1"/>
+  <variable name="X(0,5,6,26)" index="3427" value="1"/>
+  <variable name="X(0,6,16,36)" index="4655" value="1"/>
+  <variable name="X(0,7,7,40)" index="5079" value="1"/>
+  <variable name="X(1,4,1,5)" index="11248" value="1"/>
+  <variable name="X(1,14,2,7)" index="12085" value="1"/>
+  <variable name="X(2,4,2,7)" index="12883" value="1"/>
+  <variable name="X(2,15,6,26)" index="14046" value="1"/>
+  <variable name="X(3,4,18,16)" index="14666" value="1"/>
+  <variable name="X(3,16,5,21)" index="15546" value="1"/>
+  <variable name="X(4,1,2,7)" index="16075" value="1"/>
+  <variable name="X(4,2,6,26)" index="17238" value="1"/>
+  <variable name="X(4,3,5,21)" index="17940" value="1"/>
+  <variable name="X(4,5,18,16)" index="18656" value="1"/>
+  <variable name="X(4,6,1,5)" index="19228" value="1"/>
+  <variable name="X(4,7,16,36)" index="20630" value="1"/>
+  <variable name="X(4,17,7,40)" index="21495" value="1"/>
+  <variable name="X(5,4,6,26)" index="22026" value="1"/>
+  <variable name="X(5,18,18,16)" index="22646" value="1"/>
+  <variable name="X(6,4,16,36)" index="23822" value="1"/>
+  <variable name="X(6,19,1,5)" index="24016" value="1"/>
+  <variable name="X(7,4,7,40)" index="25485" value="1"/>
+  <variable name="X(7,20,16,36)" index="26216" value="1"/>
+  <variable name="X(19,0,1,5)" index="26402" value="1"/>
+  <variable name="X(14,0,2,7)" index="27013" value="1"/>
+  <variable name="X(16,0,5,21)" index="28975" value="1"/>
+  <variable name="X(15,0,6,26)" index="29632" value="1"/>
+  <variable name="X(17,0,7,40)" index="30418" value="1"/>
+  <variable name="X(20,0,16,36)" index="35657" value="1"/>
+  <variable name="X(18,0,18,16)" index="36551" value="1"/>
  </variables>
 </CPLEXSolution>

@@ -1,0 +1,48 @@
+
+Log started (V12.5.0.0) Wed Sep 12 05:31:27 2018
+
+New value for writelevel: 3
+Aggregator has done 2670555 substitutions...
+Aggregator has done 2694330 substitutions...
+Aggregator has done 2717846 substitutions...
+Tried aggregator 2 times.
+MIP Presolve eliminated 4942080 rows and 7661160 columns.
+Aggregator did 2719080 substitutions.
+Reduced MIP has 323190 rows, 968760 columns, and 2260440 nonzeros.
+Reduced MIP has 968760 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 51.30 sec. (34501.50 ticks)
+Probing time = 0.91 sec. (229.81 ticks)
+Tried aggregator 1 time.
+Presolve time = 3.01 sec. (1219.04 ticks)
+Probing time = 1.06 sec. (229.81 ticks)
+Clique table members: 58680.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 65.47 sec. (24574.52 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           68.0000        0.0000       12  100.00%
+      0     0       29.0000   451       68.0000       29.0000       12   57.35%
+*     0+    0                           44.0000       29.0000       12   34.09%
+
+Root node processing (before b&c):
+  Real time             =  535.96 sec. (237389.45 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  535.96 sec. (237389.45 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Time limit exceeded, integer feasible:  Objective =  4.4000000000e+01
+Current MIP best bound =  2.9000000000e+01 (gap = 15, 34.09%)
+Solution time =  601.75 sec.  Iterations = 12  Nodes = 0 (1)
+Deterministic time = 277627.43 ticks  (461.36 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_52_650/vrp/solution.sol'.

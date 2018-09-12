@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Tue Sep 11 21:02:14 2018
+Log started (V12.5.0.0) Wed Sep 12 01:25:50 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -7,47 +7,51 @@ MIP Presolve eliminated 609786 rows and 974187 columns.
 Aggregator did 364401 substitutions.
 Reduced MIP has 56430 rows, 168777 columns, and 393813 nonzeros.
 Reduced MIP has 168777 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 4.26 sec. (2413.54 ticks)
-Found incumbent of value 36.000000 after 5.47 sec. (3205.13 ticks)
-Probing time = 0.31 sec. (53.80 ticks)
+Presolve time = 4.32 sec. (2438.75 ticks)
+Found incumbent of value 57.000000 after 5.16 sec. (2913.93 ticks)
+Probing time = 0.10 sec. (40.25 ticks)
 Tried aggregator 1 time.
-Presolve time = 0.40 sec. (213.29 ticks)
-Probing time = 0.36 sec. (53.80 ticks)
-Clique table members: 418152.
+Presolve time = 0.43 sec. (234.04 ticks)
+Probing time = 0.11 sec. (40.25 ticks)
+Clique table members: 11799.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 1.92 sec. (1084.54 ticks)
+Root relaxation solution time = 2.82 sec. (1631.94 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           36.0000        0.0000       16  100.00%
-*     0+    0                           35.0000        0.0000       16  100.00%
-      0     0       17.0000    97       35.0000       17.0000       16   51.43%
-*     0+    0                           20.0000       17.0000       24   15.00%
-      0     0       17.0000   194       20.0000      Fract: 5       24   15.00%
-*     0+    0                           17.0000       17.0000       35    0.00%
-      0     0        cutoff             17.0000       17.0000       35    0.00%
-Elapsed time = 31.02 sec. (18317.59 ticks, tree = 0.00 MB, solutions = 4)
+*     0+    0                           57.0000        0.0000       11  100.00%
+      0     0       17.0000   306       57.0000       17.0000       11   70.18%
+*     0+    0                           27.0000       17.0000       11   37.04%
+*     0+    0                           19.0000       17.0000       17   10.53%
+      0     0       17.0000   300       19.0000   Impl Bds: 2       17   10.53%
+      0     2       17.0000   300       19.0000       17.0000       17   10.53%
+Elapsed time = 91.30 sec. (44422.49 ticks, tree = 0.01 MB, solutions = 3)
+      1     3       17.0000   247       19.0000       17.0000      196   10.53%
+      2     4       17.0000   180       19.0000       17.0000     1436   10.53%
+*     3+    3                           18.0000       17.0000     1502    5.56%
+      5     5        cutoff             18.0000       17.0000     3001    5.56%
+*     7+    5                           17.0000       17.0000     3114    0.00%
 
-Implied bound cuts applied:  1
-Gomory fractional cuts applied:  7
+Implied bound cuts applied:  3
+Gomory fractional cuts applied:  2
 
 Root node processing (before b&c):
-  Real time             =   24.71 sec. (14821.44 ticks)
+  Real time             =   85.08 sec. (41064.40 ticks)
 Parallel b&c, 4 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
+  Real time             =    8.12 sec. (4765.84 ticks)
+  Sync time (average)   =    0.01 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =   24.71 sec. (14821.44 ticks)
+Total (root+branch&cut) =   93.20 sec. (45830.24 ticks)
 
-Solution pool: 4 solutions saved.
+Solution pool: 5 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  1.7000000000e+01
-Solution time =   31.18 sec.  Iterations = 35  Nodes = 0
-Deterministic time = 18392.55 ticks  (589.85 ticks/sec)
+Solution time =   99.08 sec.  Iterations = 3460  Nodes = 9
+Deterministic time = 49112.24 ticks  (495.69 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_38_205/vrp/solution.sol'.

@@ -13,7 +13,7 @@
    primalFeasible="1"
    dualFeasible="1"
    MIPNodes="0"
-   MIPIterations="124"
+   MIPIterations="112"
    writeLevel="3"/>
  <quality
    epInt="1e-05"

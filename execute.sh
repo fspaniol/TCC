@@ -7,6 +7,8 @@
 
 mkdir networks/$1/vrp
 
+rm networks/$1/vrp/exec.txt
+
 # Generate the linear file
 glpsol -m glpk/vrp.mod -d networks/$1/input.dat --wlp networks/$1/vrp/model.lp --check
 

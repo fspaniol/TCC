@@ -13,7 +13,7 @@
    primalFeasible="1"
    dualFeasible="1"
    MIPNodes="0"
-   MIPIterations="528"
+   MIPIterations="551"
    writeLevel="3"/>
  <quality
    epInt="1e-05"
@@ -23,41 +23,41 @@
    maxX="1"
    maxSlack="5"/>
  <variables>
-  <variable name="X(0,2,18,5)" index="855" value="1"/>
-  <variable name="X(0,3,5,10)" index="1021" value="1"/>
-  <variable name="X(0,4,13,8)" index="1663" value="1"/>
-  <variable name="X(0,5,10,12)" index="2058" value="1"/>
+  <variable name="X(0,2,2,5)" index="487" value="1"/>
+  <variable name="X(0,3,19,6)" index="1339" value="1"/>
+  <variable name="X(0,4,11,16)" index="1625" value="1"/>
+  <variable name="X(0,5,6,12)" index="1966" value="1"/>
   <variable name="X(0,5,14,13)" index="2151" value="1"/>
-  <variable name="X(0,6,2,18)" index="2340" value="1"/>
-  <variable name="X(0,7,16,20)" index="3124" value="1"/>
-  <variable name="X(0,8,20,23)" index="3679" value="1"/>
-  <variable name="X(1,5,20,23)" index="6899" value="1"/>
-  <variable name="X(1,6,16,20)" index="7295" value="1"/>
-  <variable name="X(1,8,2,18)" index="7701" value="1"/>
-  <variable name="X(1,9,10,12)" index="8049" value="1"/>
-  <variable name="X(2,3,18,5)" index="8377" value="1"/>
-  <variable name="X(3,4,18,5)" index="8837" value="1"/>
-  <variable name="X(3,6,5,10)" index="9384" value="1"/>
-  <variable name="X(3,11,16,20)" index="10055" value="1"/>
+  <variable name="X(0,6,17,18)" index="2685" value="1"/>
+  <variable name="X(0,7,20,20)" index="3216" value="1"/>
+  <variable name="X(0,8,12,23)" index="3495" value="1"/>
+  <variable name="X(1,5,12,23)" index="6891" value="1"/>
+  <variable name="X(1,6,20,20)" index="7299" value="1"/>
+  <variable name="X(1,8,17,18)" index="7716" value="1"/>
+  <variable name="X(1,9,6,12)" index="8045" value="1"/>
+  <variable name="X(2,3,2,5)" index="8361" value="1"/>
+  <variable name="X(3,4,2,5)" index="8821" value="1"/>
+  <variable name="X(3,6,19,6)" index="9318" value="1"/>
+  <variable name="X(3,11,20,20)" index="10059" value="1"/>
   <variable name="X(4,3,14,13)" index="10373" value="1"/>
-  <variable name="X(4,5,18,5)" index="10677" value="1"/>
-  <variable name="X(4,12,13,8)" index="11192" value="1"/>
-  <variable name="X(5,1,10,12)" index="11729" value="1"/>
+  <variable name="X(4,5,2,5)" index="10661" value="1"/>
+  <variable name="X(4,12,11,16)" index="11350" value="1"/>
+  <variable name="X(5,1,6,12)" index="11725" value="1"/>
   <variable name="X(5,4,14,13)" index="12213" value="1"/>
-  <variable name="X(5,13,20,23)" index="12879" value="1"/>
-  <variable name="X(6,1,2,18)" index="13221" value="1"/>
-  <variable name="X(6,3,16,20)" index="13735" value="1"/>
-  <variable name="X(6,14,5,10)" index="13984" value="1"/>
-  <variable name="X(7,1,16,20)" index="14655" value="1"/>
-  <variable name="X(8,1,20,23)" index="15179" value="1"/>
-  <variable name="X(8,16,2,18)" index="15521" value="1"/>
-  <variable name="X(16,0,2,18)" index="16213" value="1"/>
-  <variable name="X(14,0,5,10)" index="17066" value="1"/>
-  <variable name="X(9,0,10,12)" index="18700" value="1"/>
-  <variable name="X(12,0,13,8)" index="19612" value="1"/>
+  <variable name="X(5,13,2,5)" index="12501" value="1"/>
+  <variable name="X(6,1,17,18)" index="13236" value="1"/>
+  <variable name="X(6,3,20,20)" index="13739" value="1"/>
+  <variable name="X(6,14,19,6)" index="13918" value="1"/>
+  <variable name="X(7,1,20,20)" index="14659" value="1"/>
+  <variable name="X(8,1,12,23)" index="15171" value="1"/>
+  <variable name="X(8,16,17,18)" index="15536" value="1"/>
+  <variable name="X(13,0,2,5)" index="16029" value="1"/>
+  <variable name="X(9,0,6,12)" index="17412" value="1"/>
+  <variable name="X(12,0,11,16)" index="19080" value="1"/>
+  <variable name="X(5,0,12,23)" index="19494" value="1"/>
   <variable name="X(3,0,14,13)" index="19996" value="1"/>
-  <variable name="X(11,0,16,20)" index="20745" value="1"/>
-  <variable name="X(5,0,18,5)" index="21174" value="1"/>
-  <variable name="X(13,0,20,23)" index="22077" value="1"/>
+  <variable name="X(16,0,17,18)" index="21043" value="1"/>
+  <variable name="X(14,0,19,6)" index="21518" value="1"/>
+  <variable name="X(11,0,20,20)" index="22033" value="1"/>
  </variables>
 </CPLEXSolution>
