@@ -37,7 +37,7 @@ param q;
 minimize groups: sum{v in V, k in K, s in S} X[0,v,k,s];
 # amount of telemetry submitions
 
-s.t. checkFlow{(u,v) in A}: sum{s in S} sum{k in K} X[u,v,k,s] >= 1;
+s.t. checkFlow{(u,v) in A}: sum{s in S} sum{k in K} X[u,v,k,s] = 1;
 # check if all archs are being covered by a route
 
 s.t. keepFlow{k in K, s in S, v in V}: sum{(a,v) in (F[s] union (Z cross {v}))} X[a,v,k,s] = sum{(v,b) in (F[s] union ({v} cross Z))} X[v,b,k,s];
