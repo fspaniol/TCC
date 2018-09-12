@@ -1,0 +1,51 @@
+
+Log started (V12.5.0.0) Tue Sep 11 23:47:28 2018
+
+New value for writelevel: 3
+Aggregator has done 1684815 substitutions...
+Tried aggregator 2 times.
+MIP Presolve eliminated 2699543 rows and 4399087 columns.
+Aggregator did 1699544 substitutions.
+Reduced MIP has 152537 rows, 456918 columns, and 1066142 nonzeros.
+Reduced MIP has 456918 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 25.56 sec. (16666.83 ticks)
+Found incumbent of value 77.000000 after 28.54 sec. (18072.22 ticks)
+Probing time = 0.89 sec. (135.92 ticks)
+Tried aggregator 1 time.
+Presolve time = 1.32 sec. (571.73 ticks)
+Probing time = 0.97 sec. (135.92 ticks)
+Clique table members: 1044284.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 5.90 sec. (2858.79 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           77.0000        0.0000       18  100.00%
+      0     0       25.0000   264       77.0000       25.0000       18   67.53%
+*     0+    0                           25.0000       25.0000      131    0.00%
+      0     0        cutoff             25.0000       25.0000      131    0.00%
+Elapsed time = 129.56 sec. (65600.53 ticks, tree = 0.00 MB, solutions = 2)
+
+Implied bound cuts applied:  4
+Gomory fractional cuts applied:  5
+
+Root node processing (before b&c):
+  Real time             =   98.37 sec. (46714.44 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =   98.37 sec. (46714.44 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.5000000000e+01
+Solution time =  130.10 sec.  Iterations = 131  Nodes = 0
+Deterministic time = 65837.27 ticks  (506.06 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_50_481/vrp/solution.sol'.

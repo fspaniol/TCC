@@ -1,0 +1,51 @@
+
+Log started (V12.5.0.0) Tue Sep 11 20:21:01 2018
+
+New value for writelevel: 3
+Tried aggregator 2 times.
+MIP Presolve eliminated 280508 rows and 455032 columns.
+Aggregator did 174524 substitutions.
+Reduced MIP has 24334 rows, 72588 columns, and 169372 nonzeros.
+Reduced MIP has 72588 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 1.74 sec. (981.72 ticks)
+Found incumbent of value 25.000000 after 2.19 sec. (1276.57 ticks)
+Probing time = 0.12 sec. (24.37 ticks)
+Tried aggregator 1 time.
+Presolve time = 0.15 sec. (90.83 ticks)
+Probing time = 0.14 sec. (24.37 ticks)
+Clique table members: 185152.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 1.16 sec. (829.39 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           25.0000        0.0000       14  100.00%
+      0     0       15.0000   177       25.0000       15.0000       14   40.00%
+*     0+    0                           18.0000       15.0000       14   16.67%
+*     0+    0                           15.0000       15.0000       15    0.00%
+      0     0        cutoff             15.0000       15.0000       15    0.00%
+Elapsed time = 7.96 sec. (4705.18 ticks, tree = 0.00 MB, solutions = 3)
+
+Implied bound cuts applied:  1
+Zero-half cuts applied:  4
+
+Root node processing (before b&c):
+  Real time             =    5.45 sec. (3299.79 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    5.45 sec. (3299.79 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.5000000000e+01
+Solution time =    8.03 sec.  Iterations = 15  Nodes = 0
+Deterministic time = 4735.40 ticks  (589.71 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_31_144/vrp/solution.sol'.

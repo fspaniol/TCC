@@ -1,0 +1,48 @@
+
+Log started (V12.5.0.0) Tue Sep 11 20:12:30 2018
+
+New value for writelevel: 3
+Tried aggregator 2 times.
+MIP Presolve eliminated 43134 rows and 73164 columns.
+Aggregator did 30030 substitutions.
+Reduced MIP has 5616 rows, 16614 columns, and 38766 nonzeros.
+Reduced MIP has 16614 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.24 sec. (140.25 ticks)
+Found incumbent of value 16.000000 after 0.33 sec. (203.58 ticks)
+Probing time = 0.03 sec. (6.73 ticks)
+Tried aggregator 1 time.
+Presolve time = 0.03 sec. (20.51 ticks)
+Probing time = 0.03 sec. (6.73 ticks)
+Clique table members: 49770.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.18 sec. (159.63 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           16.0000        0.0000       10  100.00%
+      0     0        9.0000    67       16.0000        9.0000       10   43.75%
+*     0+    0                           14.0000        9.0000       10   35.71%
+*     0+    0                            9.0000        9.0000       10    0.00%
+      0     0        cutoff              9.0000        9.0000       10    0.00%
+Elapsed time = 1.06 sec. (741.17 ticks, tree = 0.00 MB, solutions = 3)
+
+Root node processing (before b&c):
+  Real time             =    0.67 sec. (506.37 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.67 sec. (506.37 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  9.0000000000e+00
+Solution time =    1.07 sec.  Iterations = 10  Nodes = 0
+Deterministic time = 746.37 ticks  (694.35 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_20_72/vrp/solution.sol'.

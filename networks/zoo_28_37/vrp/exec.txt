@@ -1,0 +1,45 @@
+
+Log started (V12.5.0.0) Tue Sep 11 20:15:52 2018
+
+New value for writelevel: 3
+Tried aggregator 2 times.
+MIP Presolve eliminated 34272 rows and 63808 columns.
+Aggregator did 29536 substitutions.
+Reduced MIP has 3712 rows, 10848 columns, and 25312 nonzeros.
+Reduced MIP has 10848 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.19 sec. (106.30 ticks)
+Found incumbent of value 21.000000 after 0.25 sec. (148.48 ticks)
+Probing time = 0.02 sec. (4.23 ticks)
+Tried aggregator 1 time.
+Presolve time = 0.02 sec. (13.05 ticks)
+Probing time = 0.02 sec. (4.23 ticks)
+Clique table members: 31136.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.09 sec. (81.81 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           21.0000        0.0000     2060  100.00%
+*     0     0      integral     0       14.0000       14.0000     2060    0.00%
+Elapsed time = 0.43 sec. (269.09 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.14 sec. (100.11 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.14 sec. (100.11 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.4000000000e+01
+Solution time =    0.44 sec.  Iterations = 2060  Nodes = 0
+Deterministic time = 272.90 ticks  (623.99 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_28_37/vrp/solution.sol'.

@@ -1,0 +1,49 @@
+
+Log started (V12.5.0.0) Tue Sep 11 23:20:38 2018
+
+New value for writelevel: 3
+Aggregator has done 2202193 substitutions...
+Aggregator has done 2232242 substitutions...
+Tried aggregator 2 times.
+MIP Presolve eliminated 4471752 rows and 6709008 columns.
+Aggregator did 2237256 substitutions.
+Reduced MIP has 200652 rows, 601128 columns, and 1402632 nonzeros.
+Reduced MIP has 601128 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 38.19 sec. (24832.52 ticks)
+Found incumbent of value 55.000000 after 43.82 sec. (27423.42 ticks)
+Probing time = 1.16 sec. (173.07 ticks)
+Tried aggregator 1 time.
+Presolve time = 1.79 sec. (756.52 ticks)
+Probing time = 1.31 sec. (173.07 ticks)
+Clique table members: 1324546.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 20.38 sec. (8733.17 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           55.0000        0.0000       19  100.00%
+      0     0       28.0000   397       55.0000       28.0000       19   49.09%
+*     0+    0                           28.0000       28.0000       19    0.00%
+      0     0        cutoff             28.0000       28.0000       19    0.00%
+Elapsed time = 227.35 sec. (122006.57 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =  179.99 sec. (93510.82 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  179.99 sec. (93510.82 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.8000000000e+01
+Solution time =  228.14 sec.  Iterations = 19  Nodes = 0
+Deterministic time = 122349.69 ticks  (536.29 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_48_552/vrp/solution.sol'.

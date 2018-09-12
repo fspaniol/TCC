@@ -1,0 +1,107 @@
+
+Log started (V12.5.0.0) Tue Sep 11 23:26:00 2018
+
+New value for writelevel: 3
+Tried aggregator 2 times.
+MIP Presolve eliminated 1212895 rows and 2005310 columns.
+Aggregator did 792415 substitutions.
+Reduced MIP has 66284 rows, 198195 columns, and 462455 nonzeros.
+Reduced MIP has 198195 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 8.79 sec. (5104.04 ticks)
+Found incumbent of value 48.000000 after 10.30 sec. (6005.69 ticks)
+Probing time = 0.36 sec. (59.74 ticks)
+Tried aggregator 1 time.
+Presolve time = 0.50 sec. (262.51 ticks)
+Probing time = 0.40 sec. (59.74 ticks)
+Clique table members: 455065.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 2.99 sec. (1604.41 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           48.0000        0.0000       15  100.00%
+      0     0       27.0000    14       48.0000       27.0000       15   43.75%
+*     0+    0                           28.0000       27.0000       15    3.57%
+
+Repeating presolve.
+Tried aggregator 2 times.
+MIP Presolve eliminated 21026 rows and 108115 columns.
+Aggregator did 11678 substitutions.
+Reduced MIP has 33580 rows, 78402 columns, and 223599 nonzeros.
+Reduced MIP has 78402 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.51 sec. (301.17 ticks)
+Probing fixed 365 vars, tightened 0 bounds.
+Probing time = 1.98 sec. (557.05 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 292 rows and 584 columns.
+Reduced MIP has 33288 rows, 77818 columns, and 221847 nonzeros.
+Reduced MIP has 77818 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.24 sec. (156.43 ticks)
+Represolve time = 3.16 sec. (1196.43 ticks)
+Probing time = 0.12 sec. (18.71 ticks)
+Clique table members: 108916.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 1.64 sec. (1495.48 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           28.0000       27.0000       31    3.57%
+      0     0       27.0000   133       28.0000       27.0000       31    3.57%
+      0     2       27.0000   111       28.0000       27.0000      119    3.57%
+Elapsed time = 31.70 sec. (14760.82 ticks, tree = 0.01 MB, solutions = 2)
+      7     9       27.0000   148       28.0000       27.0000      176    3.57%
+     17    19       27.0000    60       28.0000       27.0000      569    3.57%
+     33    33       27.0000    78       28.0000       27.0000     1572    3.57%
+     64    48       27.0000    12       28.0000       27.0000     2477    3.57%
+     93    49       27.0000    26       28.0000       27.0000     3849    3.57%
+    133    53       27.0000    12       28.0000       27.0000     5247    3.57%
+    180    38    infeasible             28.0000       27.0000     6153    3.57%
+    230    58       27.0000    24       28.0000       27.0000     7061    3.57%
+    279    73       27.0000    12       28.0000       27.0000     8151    3.57%
+    454    80       27.0000    26       28.0000       27.0000    12482    3.57%
+Elapsed time = 39.91 sec. (19183.69 ticks, tree = 0.56 MB, solutions = 2)
+    563    65       27.0000    17       28.0000       27.0000    15520    3.57%
+    737    77    infeasible             28.0000       27.0000    18791    3.57%
+    989    53       27.0000    45       28.0000       27.0000    22426    3.57%
+   1218    54    infeasible             28.0000       27.0000    25292    3.57%
+   1401    77       27.0000    12       28.0000       27.0000    28212    3.57%
+   1643    59       27.0000    12       28.0000       27.0000    31173    3.57%
+   1828    62    infeasible             28.0000       27.0000    35033    3.57%
+   2078    38       27.0000    27       28.0000       27.0000    38305    3.57%
+   2227    57       27.0000    21       28.0000       27.0000    40090    3.57%
+   2494    30       27.0000    42       28.0000       27.0000    42939    3.57%
+Elapsed time = 61.80 sec. (29386.89 ticks, tree = 0.35 MB, solutions = 2)
+   2721    51       27.0000    12       28.0000       27.0000    45524    3.57%
+   2880    50    infeasible             28.0000       27.0000    49510    3.57%
+   3061    57       27.0000    17       28.0000       27.0000    52812    3.57%
+   3274    68       27.0000    12       28.0000       27.0000    56553    3.57%
+   3496    54       27.0000    12       28.0000       27.0000    60226    3.57%
+   3702    24       27.0000    24       28.0000       27.0000    63474    3.57%
+   3903    29       27.0000    52       28.0000       27.0000    67212    3.57%
+   4115    45       27.0000    27       28.0000       27.0000    70723    3.57%
+   4332    62       27.0000    12       28.0000       27.0000    74270    3.57%
+   4592    40       27.0000    17       28.0000       27.0000    77503    3.57%
+Elapsed time = 83.80 sec. (39693.16 ticks, tree = 0.30 MB, solutions = 2)
+   4834    46       27.0000    17       28.0000       27.0000    80645    3.57%
+   5008    60       27.0000    25       28.0000       27.0000    83888    3.57%
+   5223    63       27.0000    55       28.0000       27.0000    87082    3.57%
+   5433    55       27.0000    48       28.0000       27.0000    90480    3.57%
+   5664    74       27.0000    23       28.0000       27.0000    93553    3.57%
+   5934    72       27.0000    29       28.0000       27.0000    97331    3.57%
+   6115   103       27.0000    67       28.0000       27.0000    99578    3.57%
+   6236    84       27.0000    35       28.0000       27.0000   101107    3.57%
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.8000000000e+01
+Solution time =  101.50 sec.  Iterations = 101107  Nodes = 6240
+Deterministic time = 47830.67 ticks  (471.22 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_50_240/vrp/solution.sol'.

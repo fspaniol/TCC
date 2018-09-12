@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
 <CPLEXSolution version="1.2">
  <header
-   problemName="networks/zoo_40_152//vrp/model.lp"
+   problemName="networks/zoo_40_152/vrp/model.lp"
    solutionName="incumbent"
    solutionIndex="-1"
    objectiveValue="23"

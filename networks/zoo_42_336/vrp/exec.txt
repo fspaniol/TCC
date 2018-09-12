@@ -1,0 +1,50 @@
+
+Log started (V12.5.0.0) Tue Sep 11 21:19:36 2018
+
+New value for writelevel: 3
+Tried aggregator 2 times.
+MIP Presolve eliminated 1773975 rows and 2716350 columns.
+Aggregator did 942375 substitutions.
+Reduced MIP has 116250 rows, 348075 columns, and 812175 nonzeros.
+Reduced MIP has 348075 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 13.19 sec. (7889.90 ticks)
+Found incumbent of value 45.000000 after 15.91 sec. (9304.18 ticks)
+Probing time = 0.67 sec. (104.34 ticks)
+Tried aggregator 1 time.
+Presolve time = 0.90 sec. (430.33 ticks)
+Probing time = 0.75 sec. (104.34 ticks)
+Clique table members: 807979.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 6.86 sec. (3421.23 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           45.0000        0.0000       20  100.00%
+      0     0       24.0000   287       45.0000       24.0000       20   46.67%
+*     0+    0                           24.0000       24.0000       30    0.00%
+      0     0        cutoff             24.0000       24.0000       30    0.00%
+Elapsed time = 123.17 sec. (63331.69 ticks, tree = 0.00 MB, solutions = 2)
+
+Implied bound cuts applied:  3
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =  105.40 sec. (53417.21 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  105.40 sec. (53417.21 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  2.4000000000e+01
+Solution time =  123.51 sec.  Iterations = 30  Nodes = 0
+Deterministic time = 63476.47 ticks  (513.92 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_42_336/vrp/solution.sol'.

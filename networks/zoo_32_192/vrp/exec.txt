@@ -1,0 +1,51 @@
+
+Log started (V12.5.0.0) Tue Sep 11 20:22:48 2018
+
+New value for writelevel: 3
+Tried aggregator 2 times.
+MIP Presolve eliminated 542245 rows and 841610 columns.
+Aggregator did 299365 substitutions.
+Reduced MIP has 38720 rows, 115665 columns, and 269885 nonzeros.
+Reduced MIP has 115665 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 3.39 sec. (1918.33 ticks)
+Found incumbent of value 35.000000 after 4.15 sec. (2392.13 ticks)
+Probing time = 0.20 sec. (37.16 ticks)
+Tried aggregator 1 time.
+Presolve time = 0.25 sec. (152.58 ticks)
+Probing time = 0.23 sec. (37.16 ticks)
+Clique table members: 282415.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 1.92 sec. (1218.45 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           35.0000        0.0000       15  100.00%
+      0     0       19.0000   132       35.0000       19.0000       15   45.71%
+*     0+    0                           19.0000       19.0000       18    0.00%
+      0     0        cutoff             19.0000       19.0000       18    0.00%
+Elapsed time = 12.81 sec. (7997.61 ticks, tree = 0.00 MB, solutions = 2)
+
+Implied bound cuts applied:  1
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    8.11 sec. (5389.94 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    8.11 sec. (5389.94 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.9000000000e+01
+Solution time =   12.91 sec.  Iterations = 18  Nodes = 0
+Deterministic time = 8043.11 ticks  (622.83 ticks/sec)
+
+
+Incumbent solution written to file 'networks/zoo_32_192/vrp/solution.sol'.
