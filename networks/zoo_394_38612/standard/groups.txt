@@ -1,2 +1,1 @@
-open networks/zoo_394_38612/zoo_394_38612.sol: no such file or directory
-Time taken running everything: 1 seconds
+open networks/zoo_394_38612/standard/solution.sol: no such file or directory

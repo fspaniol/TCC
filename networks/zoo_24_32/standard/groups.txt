@@ -1,4 +1,3 @@
-OKAY
 Number of groups: 13
 Flow 1: {1 11 0} 
 Flow 2: {2 3 0} {3 11 1} 
@@ -13,4 +12,3 @@ Flow 20: {9 11 0}
 Flow 22: {10 11 0} {11 24 1} 
 Flow 30: {12 11 0} {11 6 1} {6 19 2} 
 Flow 32: {13 11 0} 
-Time taken running everything: 0 seconds

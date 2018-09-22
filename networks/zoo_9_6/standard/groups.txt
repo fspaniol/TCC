@@ -1,7 +1,7 @@
 Number of groups: 6
 Flow 1: {2 1 0} 
-Flow 2: {3 1 0} {1 7 1} 
+Flow 2: {3 1 0} 
 Flow 3: {3 2 0} 
-Flow 4: {5 1 0} 
+Flow 4: {5 1 0} {1 7 1} 
 Flow 5: {5 2 0} {2 8 1} 
 Flow 6: {5 3 0} {3 9 1} 
