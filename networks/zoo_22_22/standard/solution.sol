@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
 <CPLEXSolution version="1.2">
  <header
-   problemName="networks/zoo_22_22/zoo_22_22.lp"
+   problemName="networks/zoo_22_22/standard/model.lp"
    solutionName="incumbent"
    solutionIndex="-1"
    objectiveValue="16"
@@ -13,11 +13,11 @@
    primalFeasible="1"
    dualFeasible="1"
    MIPNodes="0"
-   MIPIterations="37"
+   MIPIterations="36"
    writeLevel="3"/>
  <quality
-   epInt="1.0000000000000001e-05"
-   epRHS="9.9999999999999995e-07"
+   epInt="1e-05"
+   epRHS="1e-06"
    maxIntInfeas="0"
    maxPrimalInfeas="0"
    maxX="2"
@@ -25,8 +25,8 @@
  <variables>
   <variable name="Y(1,1)" index="0" value="1"/>
   <variable name="Y(2,2)" index="23" value="1"/>
-  <variable name="Y(3,3)" index="46" value="1"/>
-  <variable name="Y(4,10)" index="75" value="1"/>
+  <variable name="Y(3,10)" index="53" value="1"/>
+  <variable name="Y(4,5)" index="70" value="1"/>
   <variable name="Y(5,7)" index="94" value="1"/>
   <variable name="Y(6,8)" index="117" value="1"/>
   <variable name="Y(7,2)" index="133" value="1"/>
@@ -65,10 +65,10 @@
   <variable name="X(10,8,21)" index="1010" value="1"/>
   <variable name="X(10,9,18)" index="1029" value="1"/>
   <variable name="X(10,11,19)" index="1052" value="1"/>
-  <variable name="X(10,21,4)" index="1059" value="1"/>
+  <variable name="X(10,21,3)" index="1058" value="1"/>
   <variable name="X(11,10,21)" index="1098" value="1"/>
   <variable name="X(11,22,19)" index="1118" value="1"/>
-  <variable name="C(4,10)" index="1129" value="1"/>
+  <variable name="C(3,10)" index="1127" value="1"/>
   <variable name="C(7,10)" index="1135" value="1"/>
   <variable name="C(7,2)" index="1136" value="2"/>
   <variable name="C(10,1)" index="1143" value="1"/>

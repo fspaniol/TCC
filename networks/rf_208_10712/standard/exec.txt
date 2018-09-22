@@ -1,68 +1,79 @@
 
-Log started (V12.6.2.0) Fri Aug 24 06:31:39 2018
+Log started (V12.5.0.0) Sat Sep 15 23:16:50 2018
 
-New value for variables to include in .sol and .mst files: 3
+New value for writelevel: 3
 Tried aggregator 3 times.
 MIP Presolve eliminated 4391936 rows and 6466660 columns.
 MIP Presolve modified 566910 coefficients.
 Aggregator did 10816 substitutions.
 Reduced MIP has 260508 rows, 171018 columns, and 880206 nonzeros.
 Reduced MIP has 110404 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 13.49 sec. (6172.85 ticks)
-Found incumbent of value 406.000000 after 17.67 sec. (7927.36 ticks)
-Probing time = 0.58 sec. (58.38 ticks)
+Presolve time = 12.91 sec. (5851.15 ticks)
+Found incumbent of value 406.000000 after 15.62 sec. (7219.52 ticks)
+Probing time = 0.26 sec. (39.17 ticks)
 Tried aggregator 1 time.
 MIP Presolve modified 192514 coefficients.
 Reduced MIP has 260508 rows, 171018 columns, and 880206 nonzeros.
 Reduced MIP has 110404 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 2.09 sec. (903.91 ticks)
-Probing time = 0.25 sec. (48.54 ticks)
-Clique table members: 395884.
+Presolve time = 1.46 sec. (769.40 ticks)
+Probing time = 0.16 sec. (34.18 ticks)
+Clique table members: 90623.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 25.16 sec. (8367.27 ticks)
+Root relaxation solution time = 24.23 sec. (8187.51 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                          406.0000      104.0000            74.38%
+*     0+    0                          406.0000      104.0000       19   74.38%
       0     0      108.2000   663      406.0000      108.2000       19   73.35%
-*     0+    0                          215.0000      108.2000            49.67%
-      0     0      111.1875   799      215.0000     Cuts: 947    28159   48.28%
-      0     0      111.5625   832      215.0000    Cuts: 1015    50654   48.11%
-*     0+    0                          204.0000      111.5625            45.31%
-      0     0      112.3125   822      204.0000     Cuts: 940    74663   44.94%
-*     0+    0                          178.0000      112.3125            36.90%
-*     0+    0                          176.0000      112.3125            36.19%
-*     0+    0                          173.0000      112.3125            35.08%
-*     0+    0                          167.0000      112.3125            32.75%
-*     0+    0                          166.0000      112.3125            32.34%
-*     0+    0                          165.0000      112.3125            31.93%
+*     0+    0                          214.0000      108.2000    24851   49.44%
+      0     0      111.1875   743      214.0000     Cuts: 951    24851   48.04%
+      0     0      111.4375   787      214.0000     Cuts: 984    47367   47.93%
+      0     0      112.3125   824      214.0000     Cuts: 963    69716   47.52%
+*     0+    0                          163.0000      112.3125    69716   31.10%
+*     0+    0                          161.0000      112.3125    69716   30.24%
+*     0+    0                          160.0000      112.3125    69716   29.80%
+*     0+    0                          159.0000      112.3125    69716   29.36%
+*     0+    0                          158.0000      112.3125    69716   28.92%
+      0     0      112.9957   816      158.0000     Cuts: 936   104100   28.48%
+      0     0      114.4124   776      158.0000     Cuts: 912   124181   27.59%
+      0     0      116.4999   832      158.0000     Cuts: 843   140192   26.27%
+*     0+    0                          156.0000      116.4999   172383   25.32%
+      0     0      116.4999   828      156.0000     Cuts: 880   172383   25.32%
+*     0+    0                          151.0000      116.4999   172383   22.85%
+*     0+    0                          149.0000      116.4999   172383   21.81%
+      0     0      116.4999   819      149.0000     Cuts: 858   221395   21.81%
+      0     0      116.7999   907      149.0000     Cuts: 888   244592   21.61%
+      0     0      116.8843   888      149.0000     Cuts: 890   317274   21.55%
+      0     0      119.6475   907      149.0000     Cuts: 863   367458   19.70%
+      0     0      119.6677   849      149.0000     Cuts: 885   407827   19.69%
+      0     0      119.8916   872      149.0000     Cuts: 769   461554   19.54%
 
-GUB cover cuts applied:  953
-Cover cuts applied:  13
-Implied bound cuts applied:  11
-Flow cuts applied:  924
-Mixed integer rounding cuts applied:  1675
-Lift and project cuts applied:  1
-Gomory fractional cuts applied:  85
+GUB cover cuts applied:  2757
+Cover cuts applied:  28
+Implied bound cuts applied:  8
+Flow cuts applied:  2965
+Mixed integer rounding cuts applied:  5476
+Zero-half cuts applied:  4
+Gomory fractional cuts applied:  58
 
 Root node processing (before b&c):
-  Real time             =  601.29 sec. (203100.68 ticks)
+  Real time             = 3583.15 sec. (1082148.42 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =  601.29 sec. (203100.68 ticks)
+Total (root+branch&cut) = 3583.15 sec. (1082148.42 ticks)
 
-Solution pool: 9 solutions saved.
+Solution pool: 10 solutions saved.
 
-MIP - Time limit exceeded, integer feasible:  Objective =  1.6500000000e+02
-Current MIP best bound =  1.1231250000e+02 (gap = 52.6875, 31.93%)
-Solution time =  601.34 sec.  Iterations = 97239  Nodes = 0 (1)
-Deterministic time = 203119.70 ticks  (337.78 ticks/sec)
+MIP - Time limit exceeded, integer feasible:  Objective =  1.4900000000e+02
+Current MIP best bound =  1.1989161536e+02 (gap = 29.1084, 19.54%)
+Solution time = 3601.40 sec.  Iterations = 463410  Nodes = 0 (1)
+Deterministic time = 1090613.22 ticks  (302.83 ticks/sec)
 
 
-Incumbent solution written to file 'networks/rf_208_10712/rf_208_10712.sol'.
+Incumbent solution written to file 'networks/rf_208_10712/standard/solution.sol'.

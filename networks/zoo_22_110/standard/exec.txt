@@ -1,63 +1,55 @@
 
-Log started (V12.6.2.0) Sat Aug 25 12:56:50 2018
+Log started (V12.5.0.0) Wed Sep 19 13:07:21 2018
 
-New value for variables to include in .sol and .mst files: 3
+New value for writelevel: 3
 Tried aggregator 3 times.
 MIP Presolve eliminated 3850 rows and 5320 columns.
 MIP Presolve modified 2680 coefficients.
 Aggregator did 121 substitutions.
 Reduced MIP has 1130 rows, 809 columns, and 3708 nonzeros.
 Reduced MIP has 499 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.02 sec. (11.91 ticks)
-Found incumbent of value 31.000000 after 0.02 sec. (16.14 ticks)
-Probing fixed 0 vars, tightened 155 bounds.
-Probing time = 0.01 sec. (3.08 ticks)
+Presolve time = 0.01 sec. (11.39 ticks)
+Found incumbent of value 31.000000 after 0.02 sec. (14.76 ticks)
+Probing time = 0.00 sec. (0.59 ticks)
 Tried aggregator 1 time.
-MIP Presolve modified 155 coefficients.
-Reduced MIP has 1130 rows, 809 columns, and 3708 nonzeros.
-Reduced MIP has 499 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (2.21 ticks)
-Probing fixed 0 vars, tightened 45 bounds.
-Probing time = 0.01 sec. (3.00 ticks)
-Clique table members: 2599.
+Presolve time = 0.00 sec. (1.61 ticks)
+Probing time = 0.00 sec. (0.59 ticks)
+Clique table members: 1239.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 0.01 sec. (3.91 ticks)
+Root relaxation solution time = 0.00 sec. (3.83 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           31.0000       11.0000            64.52%
-      0     0       11.0000    19       31.0000       11.0000      167   64.52%
-      0     0       11.0000    24       31.0000      Cuts: 15      199   64.52%
-*     0+    0                           13.0000       11.0000            15.38%
-      0     0       11.0000    22       13.0000       Cuts: 4      207   15.38%
-*     0+    0                           12.0000       11.0000             8.33%
-*     0+    0                           11.0000       11.0000             0.00%
-      0     0        cutoff             11.0000       11.0000      207    0.00%
-Elapsed time = 0.13 sec. (85.70 ticks, tree = 0.00 MB, solutions = 4)
+*     0+    0                           31.0000       11.0000      194   64.52%
+      0     0       11.0000    18       31.0000       11.0000      194   64.52%
+      0     0       11.0000    17       31.0000       Cuts: 3      199   64.52%
+      0     0       11.0000     5       31.0000      Cuts: 28      225   64.52%
+*     0+    0                           11.0000       11.0000      225    0.00%
+      0     0        cutoff             11.0000       11.0000      225    0.00%
+Elapsed time = 0.08 sec. (63.56 ticks, tree = 0.00 MB, solutions = 2)
 
-GUB cover cuts applied:  5
-Flow cuts applied:  3
-Mixed integer rounding cuts applied:  5
-Lift and project cuts applied:  1
-Gomory fractional cuts applied:  4
+GUB cover cuts applied:  7
+Flow cuts applied:  5
+Mixed integer rounding cuts applied:  7
+Gomory fractional cuts applied:  8
 
 Root node processing (before b&c):
-  Real time             =    0.13 sec. (86.01 ticks)
+  Real time             =    0.05 sec. (46.29 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.13 sec. (86.01 ticks)
+Total (root+branch&cut) =    0.05 sec. (46.29 ticks)
 
-Solution pool: 4 solutions saved.
+Solution pool: 2 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  1.1000000000e+01
-Solution time =    0.13 sec.  Iterations = 207  Nodes = 0
-Deterministic time = 86.03 ticks  (647.05 ticks/sec)
+Solution time =    0.08 sec.  Iterations = 225  Nodes = 0
+Deterministic time = 63.79 ticks  (788.17 ticks/sec)
 
 
-Incumbent solution written to file 'networks/zoo_22_110/zoo_22_110.sol'.
+Incumbent solution written to file 'networks/zoo_22_110/standard/solution.sol'.

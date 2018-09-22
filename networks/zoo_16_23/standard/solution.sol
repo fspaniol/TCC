@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
 <CPLEXSolution version="1.2">
  <header
-   problemName="networks/zoo_16_23/zoo_16_23.lp"
+   problemName="networks/zoo_16_23/standard/model.lp"
    solutionName="incumbent"
    solutionIndex="-1"
    objectiveValue="8"
@@ -16,10 +16,10 @@
    MIPIterations="109"
    writeLevel="3"/>
  <quality
-   epInt="1.0000000000000001e-05"
-   epRHS="9.9999999999999995e-07"
+   epInt="1e-05"
+   epRHS="1e-06"
    maxIntInfeas="0"
-   maxPrimalInfeas="1.7763568394002505e-15"
+   maxPrimalInfeas="0"
    maxX="2"
    maxSlack="8"/>
  <variables>
@@ -57,7 +57,7 @@
   <variable name="C(11,8)" index="813" value="2"/>
   <variable name="C(12,1)" index="815" value="1"/>
   <variable name="C(13,4)" index="817" value="1"/>
-  <variable name="C(13,3)" index="818" value="1.9999999999999978"/>
+  <variable name="C(13,3)" index="818" value="2"/>
   <variable name="C(16,4)" index="825" value="1"/>
   <variable name="C(20,1)" index="835" value="1"/>
   <variable name="C(20,6)" index="836" value="2"/>

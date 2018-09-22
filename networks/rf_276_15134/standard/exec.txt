@@ -1,7 +1,7 @@
 
-Log started (V12.6.2.0) Fri Aug 24 07:46:36 2018
+Log started (V12.5.0.0) Sun Sep 16 04:51:16 2018
 
-New value for variables to include in .sol and .mst files: 3
+New value for writelevel: 3
 Aggregator has done 15160 substitutions...
 Tried aggregator 3 times.
 MIP Presolve eliminated 12470508 rows and 16329560 columns.
@@ -9,49 +9,59 @@ MIP Presolve modified 779443 coefficients.
 Aggregator did 15291 substitutions.
 Reduced MIP has 356400 rows, 234482 columns, and 1203129 nonzeros.
 Reduced MIP has 151209 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 32.60 sec. (14900.95 ticks)
-Found incumbent of value 820.000000 after 40.48 sec. (18022.34 ticks)
-Probing time = 0.78 sec. (77.24 ticks)
+Presolve time = 30.29 sec. (14099.91 ticks)
+Found incumbent of value 820.000000 after 34.77 sec. (16357.51 ticks)
+Probing time = 0.35 sec. (52.39 ticks)
 Tried aggregator 1 time.
 MIP Presolve modified 264735 coefficients.
 Reduced MIP has 356400 rows, 234482 columns, and 1203129 nonzeros.
 Reduced MIP has 151209 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 3.13 sec. (1348.89 ticks)
-Probing time = 0.34 sec. (63.56 ticks)
-Clique table members: 520226.
+Presolve time = 2.23 sec. (1166.02 ticks)
+Probing time = 0.23 sec. (45.57 ticks)
+Clique table members: 126741.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 70.87 sec. (20498.95 ticks)
+Root relaxation solution time = 65.80 sec. (20270.65 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                          820.0000      131.0000            84.02%
+*     0+    0                          820.0000      131.0000       25   84.02%
       0     0      164.0000  1712      820.0000      164.0000       25   80.00%
+*     0+    0                          420.0000      164.0000   279924   60.95%
+      0     0      193.5648  1694      420.0000    Cuts: 2133   279924   53.91%
+      0     0      204.5236  1792      420.0000    Cuts: 1969   378983   51.30%
+*     0+    0                          413.0000      204.5236   452028   50.48%
+      0     0      214.7963  1691      413.0000    Cuts: 1954   452028   47.99%
+*     0+    0                          372.0000      214.7963   452028   42.26%
+*     0+    0                          368.0000      214.7963   452028   41.63%
+*     0+    0                          366.0000      214.7963   452028   41.31%
 
-GUB cover cuts applied:  669
-Clique cuts applied:  22
-Cover cuts applied:  46
-Flow cuts applied:  408
-Mixed integer rounding cuts applied:  912
-Gomory fractional cuts applied:  55
+GUB cover cuts applied:  2276
+Clique cuts applied:  11
+Cover cuts applied:  68
+Implied bound cuts applied:  5
+Flow cuts applied:  1639
+Mixed integer rounding cuts applied:  3255
+Zero-half cuts applied:  3
+Gomory fractional cuts applied:  79
 
 Root node processing (before b&c):
-  Real time             =  601.56 sec. (172340.78 ticks)
+  Real time             = 3563.37 sec. (999800.88 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =  601.56 sec. (172340.78 ticks)
+Total (root+branch&cut) = 3563.37 sec. (999800.88 ticks)
 
-Solution pool: 1 solution saved.
+Solution pool: 6 solutions saved.
 
-MIP - Time limit exceeded, integer feasible:  Objective =  8.2000000000e+02
-Current MIP best bound =  1.6400000000e+02 (gap = 656, 80.00%)
-Solution time =  601.61 sec.  Iterations = 77906  Nodes = 0 (1)
-Deterministic time = 172388.22 ticks  (286.54 ticks/sec)
+MIP - Time limit exceeded, integer feasible:  Objective =  3.6599999999e+02
+Current MIP best bound =  2.1479634981e+02 (gap = 151.204, 41.31%)
+Solution time = 3602.54 sec.  Iterations = 480179  Nodes = 0 (1)
+Deterministic time = 1018246.03 ticks  (282.65 ticks/sec)
 
 
-Incumbent solution written to file 'networks/rf_276_15134/rf_276_15134.sol'.
+Incumbent solution written to file 'networks/rf_276_15134/standard/solution.sol'.

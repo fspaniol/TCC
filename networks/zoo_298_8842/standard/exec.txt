@@ -1,61 +1,61 @@
 
-Log started (V12.6.2.0) Sat Aug 25 17:58:40 2018
+Log started (V12.5.0.0) Thu Sep 20 13:11:54 2018
 
-New value for variables to include in .sol and .mst files: 3
+New value for writelevel: 3
 Tried aggregator 3 times.
 MIP Presolve eliminated 4500594 rows and 6829535 columns.
 MIP Presolve modified 757875 coefficients.
 Aggregator did 8982 substitutions.
 Reduced MIP has 376221 rows, 237753 columns, and 1274103 nonzeros.
 Reduced MIP has 155505 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 15.28 sec. (6785.60 ticks)
-Found incumbent of value 505.000000 after 21.01 sec. (9147.23 ticks)
-Probing time = 0.80 sec. (80.04 ticks)
+Presolve time = 14.58 sec. (6445.21 ticks)
+Found incumbent of value 505.000000 after 18.42 sec. (8348.60 ticks)
+Probing time = 0.35 sec. (53.83 ticks)
 Tried aggregator 1 time.
 MIP Presolve modified 255564 coefficients.
 Reduced MIP has 376221 rows, 237753 columns, and 1274103 nonzeros.
 Reduced MIP has 155505 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 3.07 sec. (1324.16 ticks)
-Probing time = 0.36 sec. (67.12 ticks)
-Clique table members: 542315.
+Presolve time = 2.17 sec. (1131.80 ticks)
+Probing time = 0.22 sec. (46.18 ticks)
+Clique table members: 118098.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 77.57 sec. (19439.09 ticks)
+Root relaxation solution time = 78.31 sec. (22073.68 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                          505.0000      136.0000            73.07%
-      0     0      136.5847   670      505.0000      136.5847    63714   72.95%
-*     0+    0                          261.0000      136.5847            47.67%
-      0     0      138.3935  1024      261.0000    Cuts: 1098   124958   46.98%
+*     0+    0                          505.0000      136.0000       30   73.07%
+      0     0      136.5847  1386      505.0000      136.5847       30   72.95%
+      0     0      138.4053  1092      505.0000    Cuts: 1970    82028   72.59%
+*     0+    0                          214.0000      138.4053   200651   35.32%
+      0     0      140.1787  1103      214.0000    Cuts: 1383   200651   34.50%
 
-GUB cover cuts applied:  578
-Clique cuts applied:  2
-Cover cuts applied:  25
-Implied bound cuts applied:  11
-Flow cuts applied:  492
-Mixed integer rounding cuts applied:  942
-Zero-half cuts applied:  3
-Lift and project cuts applied:  1
-Gomory fractional cuts applied:  77
+GUB cover cuts applied:  783
+Clique cuts applied:  1
+Cover cuts applied:  13
+Implied bound cuts applied:  35
+Flow cuts applied:  1200
+Mixed integer rounding cuts applied:  2466
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  31
 
 Root node processing (before b&c):
-  Real time             =  600.88 sec. (145430.10 ticks)
+  Real time             = 3579.48 sec. (1041663.84 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =  600.88 sec. (145430.10 ticks)
+Total (root+branch&cut) = 3579.48 sec. (1041663.84 ticks)
 
 Solution pool: 2 solutions saved.
 
-MIP - Time limit exceeded, integer feasible:  Objective =  2.6100000000e+02
-Current MIP best bound =  1.3839346020e+02 (gap = 122.607, 46.98%)
-Solution time =  600.91 sec.  Iterations = 170098  Nodes = 0 (1)
-Deterministic time = 145450.34 ticks  (242.05 ticks/sec)
+MIP - Time limit exceeded, integer feasible:  Objective =  2.1400000000e+02
+Current MIP best bound =  1.4017865975e+02 (gap = 73.8213, 34.50%)
+Solution time = 3601.07 sec.  Iterations = 311069  Nodes = 0 (1)
+Deterministic time = 1051510.24 ticks  (292.00 ticks/sec)
 
 
-Incumbent solution written to file 'networks/zoo_298_8842/zoo_298_8842.sol'.
+Incumbent solution written to file 'networks/zoo_298_8842/standard/solution.sol'.

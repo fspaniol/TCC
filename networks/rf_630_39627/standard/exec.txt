@@ -1,6 +1,7 @@
 
-Log started (V12.6.2.0) Fri Aug 24 18:25:36 2018
+Log started (V12.5.0.0) Sun Sep 16 23:06:49 2018
 
-New value for variables to include in .sol and .mst files: 3
+New value for writelevel: 3
 No problem exists.
 No problem exists.
+No file written.

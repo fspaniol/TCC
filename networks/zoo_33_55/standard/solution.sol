@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
 <CPLEXSolution version="1.2">
  <header
-   problemName="networks/zoo_33_55/zoo_33_55.lp"
+   problemName="networks/zoo_33_55/standard/model.lp"
    solutionName="incumbent"
    solutionIndex="-1"
    objectiveValue="28"
@@ -13,11 +13,11 @@
    primalFeasible="1"
    dualFeasible="1"
    MIPNodes="0"
-   MIPIterations="230"
+   MIPIterations="232"
    writeLevel="3"/>
  <quality
-   epInt="1.0000000000000001e-05"
-   epRHS="9.9999999999999995e-07"
+   epInt="1e-05"
+   epRHS="1e-06"
    maxIntInfeas="0"
    maxPrimalInfeas="0"
    maxX="4"

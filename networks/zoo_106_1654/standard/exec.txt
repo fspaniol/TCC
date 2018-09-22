@@ -1,158 +1,161 @@
 
-Log started (V12.6.2.0) Fri Aug 24 20:24:18 2018
+Log started (V12.5.0.0) Mon Sep 17 02:56:52 2018
 
-New value for variables to include in .sol and .mst files: 3
+New value for writelevel: 3
 Tried aggregator 3 times.
 MIP Presolve eliminated 365544 rows and 510631 columns.
 MIP Presolve modified 79774 coefficients.
 Aggregator did 1707 substitutions.
 Reduced MIP has 36038 rows, 23788 columns, and 121203 nonzeros.
 Reduced MIP has 15288 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 1.01 sec. (591.34 ticks)
-Found incumbent of value 217.000000 after 1.39 sec. (803.39 ticks)
-Probing time = 0.09 sec. (10.83 ticks)
+Presolve time = 0.90 sec. (562.66 ticks)
+Found incumbent of value 217.000000 after 1.15 sec. (734.39 ticks)
+Probing time = 0.02 sec. (6.00 ticks)
 Tried aggregator 1 time.
 MIP Presolve modified 27132 coefficients.
 Reduced MIP has 36038 rows, 23788 columns, and 121203 nonzeros.
 Reduced MIP has 15288 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.20 sec. (120.64 ticks)
-Probing time = 0.03 sec. (9.20 ticks)
-Clique table members: 68974.
+Presolve time = 0.15 sec. (102.11 ticks)
+Probing time = 0.02 sec. (5.30 ticks)
+Clique table members: 13343.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 1.35 sec. (778.72 ticks)
+Root relaxation solution time = 1.26 sec. (756.72 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                          217.0000       48.0000            77.88%
+*     0+    0                          217.0000       48.0000       17   77.88%
       0     0       48.0000   470      217.0000       48.0000       17   77.88%
-*     0+    0                          104.0000       48.0000            53.85%
-      0     0       50.1250   458      104.0000     Cuts: 649     9406   51.80%
-      0     0       51.1467   499      104.0000     Cuts: 608    22974   50.82%
-      0     0       52.7042   551      104.0000     Cuts: 630    32064   49.32%
-*     0+    0                           86.0000       52.7042            38.72%
-*     0+    0                           84.0000       52.7042            37.26%
-*     0+    0                           81.0000       52.7042            34.93%
-*     0+    0                           80.0000       52.7042            34.12%
-      0     0       53.8910   533       80.0000     Cuts: 636    35371   32.64%
-      0     0       54.6174   562       80.0000     Cuts: 508    41676   31.73%
-      0     0       55.2326   546       80.0000     Cuts: 538    48996   30.96%
-*     0+    0                           78.0000       55.2326            29.19%
-      0     0       55.5741   532       78.0000     Cuts: 450    53317   28.75%
-*     0+    0                           77.0000       55.5741            27.83%
-*     0+    0                           76.0000       55.5741            26.88%
-*     0+    0                           75.0000       55.5741            25.90%
-      0     0       55.9481   585       75.0000     Cuts: 411    55832   25.40%
-      0     0       56.6375   518       75.0000     Cuts: 365    58656   24.48%
-      0     0       57.4742   531       75.0000     Cuts: 356    61900   23.37%
-      0     0       58.1667   559       75.0000     Cuts: 362    64785   22.44%
-      0     0       58.6690   536       75.0000     Cuts: 354    67683   21.77%
-*     0+    0                           74.0000       58.6690            20.72%
-      0     0       59.3594   495       74.0000     Cuts: 291    70385   19.78%
-*     0+    0                           72.0000       59.3594            17.56%
-*     0+    0                           71.0000       59.3594            16.40%
-      0     0       60.0176   484       71.0000     Cuts: 256    74367   15.47%
-      0     0       60.1299   426       71.0000     Cuts: 305    79006   15.31%
-      0     0       60.4238   499       71.0000     Cuts: 255    81407   14.90%
-      0     0       60.6318   539       71.0000     Cuts: 238    84360   14.60%
-      0     0       61.2762   456       71.0000     Cuts: 212    87045   13.70%
-      0     0       61.7292   433       71.0000     Cuts: 182    89233   13.06%
-      0     0       62.4294   405       71.0000     Cuts: 204    92220   12.07%
-      0     0       62.6050   375       71.0000     Cuts: 147    96475   11.82%
-      0     0       62.6902   403       71.0000     Cuts: 129    97629   11.70%
-      0     0       62.7101   418       71.0000     Cuts: 122    99195   11.68%
-      0     0       63.3529   387       71.0000     Cuts: 128   101043   10.77%
-      0     0       63.4036   398       71.0000     Cuts: 130   102439   10.70%
-      0     0       63.6319   295       71.0000     Cuts: 127   103682   10.38%
-      0     0       63.7321   418       71.0000      Cuts: 78   104967   10.24%
-      0     0       63.8578   375       71.0000     Cuts: 131   108990   10.06%
-      0     0       64.0558   370       71.0000      Cuts: 72   111623    9.78%
-      0     0       64.1754   304       71.0000     Cuts: 180   114784    9.61%
-      0     0       64.3183   327       71.0000      Cuts: 96   115518    9.41%
-      0     0       64.5690   337       71.0000      Cuts: 72   118436    9.06%
-      0     0       64.6631   352       71.0000     Cuts: 145   120683    8.93%
-      0     0       64.6776   301       71.0000     Cuts: 112   120961    8.90%
-      0     0       64.8159   336       71.0000      Cuts: 85   123789    8.71%
-      0     0       65.3855   359       71.0000     Cuts: 113   135520    7.91%
-      0     0       65.4649   309       71.0000     Cuts: 119   139392    7.80%
-      0     0       65.9702   264       71.0000     Cuts: 105   143671    7.08%
-      0     0       66.5833   198       71.0000      Cuts: 69   145606    6.22%
-      0     0       66.5833   114       71.0000      Cuts: 90   147345    6.22%
-      0     0       66.6071    57       71.0000      Cuts: 54   148946    6.19%
-*     0+    0                           68.0000       66.6071             2.05%
-      0     0       66.6221   105       68.0000      Cuts: 28   149937    2.03%
+      0     0       50.1250   499      217.0000     Cuts: 649    10643   76.90%
+*     0+    0                          118.0000       50.1250    23364   57.52%
+      0     0       51.1314   495      118.0000     Cuts: 658    23364   56.67%
+      0     0       52.7763   552      118.0000     Cuts: 586    32170   55.27%
+*     0+    0                           84.0000       52.7763    32170   37.17%
+*     0+    0                           83.0000       52.7763    32170   36.41%
+      0     0       53.6251   505       83.0000     Cuts: 588    36980   35.39%
+      0     0       54.2880   512       83.0000     Cuts: 509    42439   34.59%
+      0     0       55.0444   568       83.0000     Cuts: 484    46747   33.68%
+      0     0       55.6024   581       83.0000     Cuts: 442    50215   33.01%
+*     0+    0                           80.0000       55.6024    54529   30.50%
+      0     0       56.2753   552       80.0000     Cuts: 444    54529   29.66%
+*     0+    0                           78.0000       56.2753    54529   27.85%
+*     0+    0                           75.0000       56.2753    54529   24.97%
+*     0+    0                           72.0000       56.2753    54529   21.84%
+      0     0       56.9510   533       72.0000     Cuts: 390    59375   20.90%
+      0     0       57.8574   556       72.0000     Cuts: 368    61723   19.64%
+      0     0       58.0455   528       72.0000     Cuts: 371    63657   19.38%
+      0     0       58.6002   536       72.0000     Cuts: 273    66374   18.61%
+      0     0       59.2080   527       72.0000     Cuts: 279    69219   17.77%
+      0     0       59.4777   529       72.0000     Cuts: 269    71164   17.39%
+      0     0       59.7774   520       72.0000     Cuts: 281    74013   16.98%
+      0     0       60.1413   533       72.0000     Cuts: 250    77281   16.47%
+      0     0       60.9389   481       72.0000     Cuts: 246    79529   15.36%
+      0     0       61.3023   443       72.0000     Cuts: 235    82021   14.86%
+      0     0       61.7175   444       72.0000     Cuts: 185    83985   14.28%
+      0     0       61.9897   425       72.0000     Cuts: 175    86041   13.90%
+      0     0       62.5848   370       72.0000     Cuts: 163    89262   13.08%
+      0     0       62.7396   450       72.0000     Cuts: 126    93474   12.86%
+      0     0       62.7941   404       72.0000     Cuts: 165    96086   12.79%
+      0     0       63.5030   404       72.0000     Cuts: 152    97954   11.80%
+      0     0       63.6679   426       72.0000     Cuts: 140    99212   11.57%
+      0     0       63.8303   403       72.0000     Cuts: 159   100646   11.35%
+      0     0       63.9142   374       72.0000     Cuts: 104   101707   11.23%
+      0     0       64.0052   365       72.0000     Cuts: 120   103318   11.10%
+      0     0       64.1448   426       72.0000      Cuts: 99   105523   10.91%
+      0     0       64.2554   406       72.0000     Cuts: 113   108709   10.76%
+      0     0       64.3396   230       72.0000     Cuts: 113   110998   10.64%
+      0     0       64.5331   394       72.0000      Cuts: 62   112516   10.37%
+      0     0       64.9524   375       72.0000      Cuts: 95   118359    9.79%
+      0     0       65.2027   399       72.0000     Cuts: 164   127630    9.44%
+      0     0       65.2192   375       72.0000     Cuts: 159   136957    9.42%
+      0     0       65.3285   358       72.0000     Cuts: 114   140103    9.27%
+      0     0       66.0208   347       72.0000     Cuts: 158   145178    8.30%
+      0     0       66.0446   292       72.0000     Cuts: 110   147559    8.27%
+      0     0       66.6221   198       72.0000      Cuts: 95   151368    7.47%
+      0     0       66.6221   181       72.0000      Cuts: 93   151904    7.47%
+*     0+    0                           69.0000       66.6221   151904    3.45%
+*     0+    0                           68.0000       66.6221   151904    2.03%
 
 Repeating presolve.
 Tried aggregator 4 times.
-MIP Presolve eliminated 18855 rows and 9297 columns.
-MIP Presolve added 14 rows and 0 columns.
-MIP Presolve modified 24787 coefficients.
-Aggregator did 2372 substitutions.
-Reduced MIP has 14825 rows, 12119 columns, and 48418 nonzeros.
-Reduced MIP has 8222 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.43 sec. (253.40 ticks)
-Probing fixed 261 vars, tightened 657 bounds.
-Probing changed sense of 7 constraints.
-Probing time = 0.65 sec. (167.93 ticks)
+MIP Presolve eliminated 21833 rows and 10700 columns.
+MIP Presolve modified 31165 coefficients.
+Aggregator did 3506 substitutions.
+Reduced MIP has 10698 rows, 9582 columns, and 37803 nonzeros.
+Reduced MIP has 7075 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.41 sec. (254.70 ticks)
+Probing fixed 649 vars, tightened 691 bounds.
+Probing changed sense of 26 constraints.
+Probing time = 0.91 sec. (316.19 ticks)
+Cover probing fixed 0 vars, tightened 1 bounds.
 Tried aggregator 4 times.
-MIP Presolve eliminated 1168 rows and 847 columns.
-MIP Presolve modified 1658 coefficients.
-Aggregator did 268 substitutions.
-Reduced MIP has 13389 rows, 11004 columns, and 44093 nonzeros.
-Reduced MIP has 7586 binaries, 764 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.26 sec. (148.34 ticks)
-Probing fixed 0 vars, tightened 4 bounds.
-Probing time = 0.10 sec. (27.96 ticks)
-Tried aggregator 3 times.
-MIP Presolve eliminated 5 rows and 24 columns.
-MIP Presolve modified 253 coefficients.
-Aggregator did 24 substitutions.
-Reduced MIP has 13360 rows, 10956 columns, and 44004 nonzeros.
-Reduced MIP has 7555 binaries, 883 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.20 sec. (110.46 ticks)
-Represolve time = 2.15 sec. (1096.25 ticks)
-Probing time = 0.02 sec. (7.72 ticks)
-Clique table members: 29208.
+MIP Presolve eliminated 1845 rows and 1558 columns.
+MIP Presolve modified 1370 coefficients.
+Aggregator did 233 substitutions.
+Reduced MIP has 8615 rows, 7791 columns, and 30765 nonzeros.
+Reduced MIP has 5872 binaries, 127 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.18 sec. (106.58 ticks)
+Probing fixed 315 vars, tightened 250 bounds.
+Probing time = 0.58 sec. (201.31 ticks)
+Tried aggregator 4 times.
+MIP Presolve eliminated 542 rows and 492 columns.
+MIP Presolve modified 321 coefficients.
+Aggregator did 39 substitutions.
+Reduced MIP has 8034 rows, 7260 columns, and 28649 nonzeros.
+Reduced MIP has 5469 binaries, 240 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.14 sec. (84.47 ticks)
+Probing time = 0.01 sec. (2.82 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 0 rows and 2 columns.
+Aggregator did 2 substitutions.
+Reduced MIP has 8032 rows, 7256 columns, and 28642 nonzeros.
+Reduced MIP has 5466 binaries, 246 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.03 sec. (22.63 ticks)
+Represolve time = 2.68 sec. (1472.94 ticks)
+Probing time = 0.01 sec. (2.90 ticks)
+Clique table members: 22475.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 0.87 sec. (497.19 ticks)
+Root relaxation solution time = 0.50 sec. (296.80 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           68.0000       66.6221             2.03%
-      0     0       66.6221   489       68.0000       66.6221   149937    2.03%
-      0     0       66.6221   177       68.0000      Cuts: 45   151219    2.03%
-      0     0        cutoff             68.0000                 151249    0.00%
-Elapsed time = 250.44 sec. (112449.36 ticks, tree = 0.00 MB, solutions = 14)
+*     0+    0                           68.0000       66.6221   156078    2.03%
+      0     0       66.6221   335       68.0000       66.6221   156078    2.03%
+      0     2       66.6221   335       68.0000       66.6221   156078    2.03%
+Elapsed time = 265.81 sec. (113407.20 ticks, tree = 0.01 MB, solutions = 10)
+      3     5       66.6221   281       68.0000       66.6221   157657    2.03%
+     19    11        cutoff             68.0000       66.6221   160110    2.03%
+     46    18       66.6786   189       68.0000       66.6221   164065    2.03%
+     73    11       66.6786   181       68.0000       66.6221   166720    2.03%
+     85     5       66.6786   141       68.0000       66.6786   167924    1.94%
 
-GUB cover cuts applied:  1359
-Clique cuts applied:  16
-Cover cuts applied:  46
-Implied bound cuts applied:  1
-Flow cuts applied:  1057
-Mixed integer rounding cuts applied:  1738
-Zero-half cuts applied:  29
-Lift and project cuts applied:  11
-Gomory fractional cuts applied:  22
+GUB cover cuts applied:  1120
+Cover cuts applied:  43
+Implied bound cuts applied:  4
+Flow cuts applied:  763
+Mixed integer rounding cuts applied:  1181
+Zero-half cuts applied:  4
+Gomory fractional cuts applied:  7
 
 Root node processing (before b&c):
-  Real time             =  250.53 sec. (112504.07 ticks)
+  Real time             =  264.44 sec. (112548.06 ticks)
 Parallel b&c, 4 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
+  Real time             =    2.64 sec. (1580.64 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =  250.53 sec. (112504.07 ticks)
+Total (root+branch&cut) =  267.08 sec. (114128.70 ticks)
 
-Solution pool: 14 solutions saved.
+Solution pool: 10 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  6.8000000000e+01
-Solution time =  250.53 sec.  Iterations = 151249  Nodes = 0
-Deterministic time = 112505.61 ticks  (449.06 ticks/sec)
+Solution time =  268.45 sec.  Iterations = 168194  Nodes = 91
+Deterministic time = 115002.30 ticks  (428.40 ticks/sec)
 
 
-Incumbent solution written to file 'networks/zoo_106_1654/zoo_106_1654.sol'.
+Incumbent solution written to file 'networks/zoo_106_1654/standard/solution.sol'.

@@ -1,31 +1,49 @@
 
-Log started (V12.6.2.0) Sat Aug 25 12:56:50 2018
+Log started (V12.5.0.0) Wed Sep 19 13:07:21 2018
 
-New value for variables to include in .sol and .mst files: 3
+New value for writelevel: 3
 Tried aggregator 3 times.
 MIP Presolve eliminated 778 rows and 1078 columns.
 MIP Presolve modified 336 coefficients.
 Aggregator did 17 substitutions.
 Reduced MIP has 134 rows, 97 columns, and 380 nonzeros.
 Reduced MIP has 49 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (1.62 ticks)
-Found incumbent of value 29.000000 after 0.01 sec. (2.10 ticks)
-Probing fixed 0 vars, tightened 9 bounds.
-Probing time = 0.00 sec. (0.10 ticks)
+Presolve time = 0.00 sec. (1.55 ticks)
+Found incumbent of value 29.000000 after 0.00 sec. (1.92 ticks)
+Probing fixed 0 vars, tightened 10 bounds.
+Probing time = 0.00 sec. (0.07 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            28.000000
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            27.000000
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            26.000000
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            25.000000
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            24.000000
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            23.000000
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            22.000000
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            21.000000
 Tried aggregator 1 time.
 MIP Presolve eliminated 32 rows and 24 columns.
-MIP Presolve modified 9 coefficients.
+MIP Presolve modified 10 coefficients.
 Reduced MIP has 102 rows, 73 columns, and 300 nonzeros.
 Reduced MIP has 41 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.21 ticks)
-Probing fixed 0 vars, tightened 3 bounds.
-Probing time = 0.00 sec. (0.09 ticks)
-Tried aggregator 1 time.
-MIP Presolve modified 11 coefficients.
-Reduced MIP has 102 rows, 73 columns, and 300 nonzeros.
-Reduced MIP has 41 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.24 ticks)
-Probing time = 0.00 sec. (0.09 ticks)
+Presolve time = 0.00 sec. (0.15 ticks)
+Probing fixed 0 vars, tightened 2 bounds.
+Probing time = 0.00 sec. (0.07 ticks)
 Clique table members: 105.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
@@ -35,33 +53,32 @@ Root relaxation solution time = 0.00 sec. (0.20 ticks)
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                           21.0000       11.0000            47.62%
+*     0+    0                           21.0000       11.0000       20   47.62%
       0     0       13.0000     7       21.0000       13.0000       20   38.10%
-*     0+    0                           16.0000       13.0000            18.75%
-      0     0        cutoff             16.0000                     37    0.00%
-Elapsed time = 0.02 sec. (12.13 ticks, tree = 0.00 MB, solutions = 2)
+*     0+    0                           16.0000       13.0000       20   18.75%
+      0     0        cutoff             16.0000                     36    0.00%
+Elapsed time = 0.01 sec. (11.36 ticks, tree = 0.00 MB, solutions = 2)
 
 GUB cover cuts applied:  2
-Clique cuts applied:  11
+Clique cuts applied:  13
 Flow cuts applied:  3
 Mixed integer rounding cuts applied:  2
-Lift and project cuts applied:  1
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-  Real time             =    0.02 sec. (12.17 ticks)
+  Real time             =    0.00 sec. (0.94 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    0.02 sec. (12.17 ticks)
+Total (root+branch&cut) =    0.00 sec. (0.94 ticks)
 
 Solution pool: 2 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  1.6000000000e+01
-Solution time =    0.02 sec.  Iterations = 37  Nodes = 0
-Deterministic time = 12.17 ticks  (542.53 ticks/sec)
+Solution time =    0.01 sec.  Iterations = 36  Nodes = 0
+Deterministic time = 11.40 ticks  (764.05 ticks/sec)
 
 
-Incumbent solution written to file 'networks/zoo_22_22/zoo_22_22.sol'.
+Incumbent solution written to file 'networks/zoo_22_22/standard/solution.sol'.

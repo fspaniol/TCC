@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
 <CPLEXSolution version="1.2">
  <header
-   problemName="networks/zoo_32_48/zoo_32_48.lp"
+   problemName="networks/zoo_32_48/standard/model.lp"
    solutionName="incumbent"
    solutionIndex="-1"
    objectiveValue="14"
@@ -13,20 +13,20 @@
    primalFeasible="1"
    dualFeasible="1"
    MIPNodes="0"
-   MIPIterations="458"
+   MIPIterations="475"
    writeLevel="3"/>
  <quality
-   epInt="1.0000000000000001e-05"
-   epRHS="9.9999999999999995e-07"
-   maxIntInfeas="0"
-   maxPrimalInfeas="0"
+   epInt="1e-05"
+   epRHS="1e-06"
+   maxIntInfeas="6.66133814775094e-16"
+   maxPrimalInfeas="4.44089209850063e-15"
    maxX="4"
    maxSlack="10"/>
  <variables>
   <variable name="Y(1,4)" index="2" value="1"/>
   <variable name="Y(5,13)" index="115" value="1"/>
   <variable name="Y(6,14)" index="142" value="1"/>
-  <variable name="Y(9,16)" index="222" value="1"/>
+  <variable name="Y(9,1)" index="208" value="1"/>
   <variable name="Y(10,1)" index="234" value="1"/>
   <variable name="Y(14,6)" index="342" value="1"/>
   <variable name="Y(18,15)" index="455" value="1"/>
@@ -35,7 +35,7 @@
   <variable name="Y(25,12)" index="634" value="1"/>
   <variable name="Y(29,3)" index="729" value="1"/>
   <variable name="Y(34,4)" index="860" value="1"/>
-  <variable name="Y(38,14)" index="974" value="1"/>
+  <variable name="Y(38,16)" index="976" value="1"/>
   <variable name="Y(48,14)" index="1234" value="1"/>
   <variable name="X(1,4,1)" index="1248" value="1"/>
   <variable name="X(1,16,9)" index="1304" value="1"/>
@@ -74,14 +74,13 @@
   <variable name="X(14,30,6)" index="2885" value="1"/>
   <variable name="X(15,14,48)" index="2975" value="1"/>
   <variable name="X(15,31,18)" index="2993" value="1"/>
-  <variable name="X(16,32,9)" index="3032" value="1"/>
+  <variable name="X(16,32,38)" index="3061" value="1"/>
   <variable name="C(1,4)" index="3073" value="1"/>
   <variable name="C(5,13)" index="3086" value="1"/>
   <variable name="C(6,7)" index="3088" value="1"/>
   <variable name="C(6,14)" index="3089" value="2"/>
   <variable name="C(9,4)" index="3096" value="1"/>
   <variable name="C(9,1)" index="3097" value="2"/>
-  <variable name="C(9,16)" index="3098" value="3"/>
   <variable name="C(14,6)" index="3113" value="1"/>
   <variable name="C(18,15)" index="3125" value="1"/>
   <variable name="C(22,4)" index="3134" value="1"/>
@@ -98,6 +97,7 @@
   <variable name="C(34,4)" index="3182" value="4"/>
   <variable name="C(38,13)" index="3198" value="1"/>
   <variable name="C(38,14)" index="3199" value="2"/>
+  <variable name="C(38,16)" index="3200" value="3"/>
   <variable name="C(48,14)" index="3234" value="1"/>
  </variables>
 </CPLEXSolution>

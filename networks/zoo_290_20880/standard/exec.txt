@@ -1,62 +1,85 @@
 
-Log started (V12.6.2.0) Sat Aug 25 16:23:56 2018
+Log started (V12.5.0.0) Thu Sep 20 05:42:08 2018
 
-New value for variables to include in .sol and .mst files: 3
-Aggregator has done 1 substitutions...
+New value for writelevel: 3
+Aggregator has done 20882 substitutions...
 Tried aggregator 3 times.
 MIP Presolve eliminated 10878484 rows and 16417958 columns.
 MIP Presolve modified 2080622 coefficients.
 Aggregator did 21027 substitutions.
 Reduced MIP has 1049556 rows, 658597 columns, and 3558586 nonzeros.
 Reduced MIP has 432055 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 41.65 sec. (16981.78 ticks)
-Found incumbent of value 517.000000 after 58.19 sec. (23099.66 ticks)
-Probing time = 2.69 sec. (216.56 ticks)
+Presolve time = 38.54 sec. (16136.42 ticks)
+Found incumbent of value 517.000000 after 49.51 sec. (21070.25 ticks)
+Probing time = 1.13 sec. (148.21 ticks)
 Tried aggregator 1 time.
 MIP Presolve modified 700496 coefficients.
 Reduced MIP has 1049556 rows, 658597 columns, and 3558586 nonzeros.
 Reduced MIP has 432055 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 9.00 sec. (3404.38 ticks)
-Probing time = 1.17 sec. (181.10 ticks)
-Clique table members: 1517716.
+Presolve time = 6.08 sec. (2872.00 ticks)
+Probing time = 0.70 sec. (127.46 ticks)
+Clique table members: 340414.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 68.08 sec. (18806.05 ticks)
+Root relaxation solution time = 54.30 sec. (15487.66 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                          517.0000      145.0000            71.95%
-      0     0      145.0000   364      517.0000      145.0000    61158   71.95%
-*     0+    0                          353.0000      145.0000            58.92%
-      0     0      145.5000   845      353.0000     Cuts: 893   124668   58.78%
-      0     0      145.7500   917      353.0000     Cuts: 900   171805   58.71%
+*     0+    0                          517.0000      145.0000    54506   71.95%
+      0     0      145.0000   358      517.0000      145.0000    54506   71.95%
+      0     0      145.5000   814      517.0000     Cuts: 893   137382   71.86%
+      0     0      146.5000   932      517.0000     Cuts: 880   189996   71.66%
+*     0+    0                          439.0000      146.5000   234473   66.63%
+      0     0      147.0000   870      439.0000     Cuts: 904   234473   66.51%
+*     0+    0                          196.0000      147.0000   234473   25.00%
+*     0+    0                          194.0000      147.0000   234473   24.23%
+*     0+    0                          191.0000      147.0000   234473   23.04%
+*     0+    0                          187.0000      147.0000   234473   21.39%
+*     0+    0                          186.0000      147.0000   234473   20.97%
+*     0+    0                          185.0000      147.0000   234473   20.54%
+      0     0      147.2500   885      185.0000     Cuts: 856   280228   20.41%
+      0     0      147.2500   979      185.0000     Cuts: 793   326432   20.41%
+      0     0      147.5000   780      185.0000     Cuts: 348   376193   20.27%
+      0     0      147.7500   703      185.0000     Cuts: 792   417347   20.14%
+      0     0      147.7500   765      185.0000     Cuts: 689   444314   20.14%
+Heuristic still looking.
+Heuristic still looking.
+Heuristic still looking.
+*     0+    0                          181.0000      147.7500   444314   18.37%
+*     0+    0                          179.0000      147.7500   444314   17.46%
+*     0+    0                          173.0000      147.7500   444314   14.60%
+*     0+    0                          168.0000      147.7500   444314   12.05%
+*     0+    0                          167.0000      147.7500   444314   11.53%
+      0     2      147.7500   491      167.0000      147.7500   444314   11.53%
+Elapsed time = 3572.98 sec. (618765.70 ticks, tree = 0.01 MB, solutions = 13)
+      2     4      148.5000   482      167.0000      147.7500   444318   11.53%
+      3     5      147.7500   486      167.0000      147.7500   444319   11.53%
 
-GUB cover cuts applied:  1009
-Cover cuts applied:  35
-Implied bound cuts applied:  4
-Flow cuts applied:  301
-Mixed integer rounding cuts applied:  1076
-Zero-half cuts applied:  1
-Lift and project cuts applied:  11
-Gomory fractional cuts applied:  146
+GUB cover cuts applied:  2029
+Cover cuts applied:  27
+Implied bound cuts applied:  15
+Flow cuts applied:  915
+Mixed integer rounding cuts applied:  2435
+Zero-half cuts applied:  2
+Gomory fractional cuts applied:  86
 
 Root node processing (before b&c):
-  Real time             =  601.46 sec. (146408.13 ticks)
+  Real time             = 3324.74 sec. (576359.10 ticks)
 Parallel b&c, 4 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
+  Real time             =  337.98 sec. (20147.27 ticks)
+  Sync time (average)   =    0.01 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =  601.46 sec. (146408.13 ticks)
+Total (root+branch&cut) = 3662.72 sec. (596506.37 ticks)
 
-Solution pool: 2 solutions saved.
+Solution pool: 13 solutions saved.
 
-MIP - Time limit exceeded, integer feasible:  Objective =  3.5300000000e+02
-Current MIP best bound =  1.4575000000e+02 (gap = 207.25, 58.71%)
-Solution time =  601.57 sec.  Iterations = 202711  Nodes = 0 (1)
-Deterministic time = 146457.05 ticks  (243.46 ticks/sec)
+MIP - Time limit exceeded, integer feasible:  Objective =  1.6700000000e+02
+Current MIP best bound =  1.4775000000e+02 (gap = 19.25, 11.53%)
+Solution time = 3804.75 sec.  Iterations = 444321  Nodes = 4 (5)
+Deterministic time = 621902.31 ticks  (163.45 ticks/sec)
 
 
-Incumbent solution written to file 'networks/zoo_290_20880/zoo_290_20880.sol'.
+Incumbent solution written to file 'networks/zoo_290_20880/standard/solution.sol'.

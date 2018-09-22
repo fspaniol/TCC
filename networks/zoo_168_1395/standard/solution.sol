@@ -1,192 +1,190 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
 <CPLEXSolution version="1.2">
  <header
-   problemName="networks/zoo_168_1395/zoo_168_1395.lp"
+   problemName="networks/zoo_168_1395/standard/model.lp"
    solutionName="incumbent"
    solutionIndex="-1"
-   objectiveValue="79"
+   objectiveValue="77"
    solutionTypeValue="3"
    solutionTypeString="primal"
-   solutionStatusValue="107"
-   solutionStatusString="time limit exceeded"
+   solutionStatusValue="101"
+   solutionStatusString="integer optimal solution"
    solutionMethodString="mip"
    primalFeasible="1"
-   dualFeasible="0"
-   MIPNodes="0"
-   MIPIterations="219883"
+   dualFeasible="1"
+   MIPNodes="283"
+   MIPIterations="1065852"
    writeLevel="3"/>
  <quality
-   epInt="1.0000000000000001e-05"
-   epRHS="9.9999999999999995e-07"
+   epInt="1e-05"
+   epRHS="1e-06"
    maxIntInfeas="0"
-   maxPrimalInfeas="1.000000082740371e-09"
+   maxPrimalInfeas="0"
    maxX="4"
    maxSlack="10"/>
  <variables>
-  <variable name="Y(5,9)" index="624" value="1"/>
-  <variable name="Y(35,1)" index="5236" value="1"/>
-  <variable name="Y(74,42)" index="11283" value="1"/>
-  <variable name="Y(77,46)" index="11749" value="1"/>
+  <variable name="Y(16,36)" index="2345" value="1"/>
+  <variable name="Y(91,76)" index="13935" value="1"/>
+  <variable name="Y(94,80)" index="14400" value="1"/>
+  <variable name="Y(187,9)" index="28652" value="1"/>
   <variable name="Y(197,21)" index="30204" value="1"/>
-  <variable name="Y(230,16)" index="35281" value="1"/>
-  <variable name="Y(239,56)" index="36707" value="1"/>
+  <variable name="Y(230,59)" index="35324" value="1"/>
   <variable name="Y(272,38)" index="41771" value="1"/>
+  <variable name="Y(279,46)" index="42857" value="1"/>
+  <variable name="Y(292,64)" index="44877" value="1"/>
   <variable name="Y(293,65)" index="45032" value="1"/>
-  <variable name="Y(343,26)" index="52693" value="1"/>
+  <variable name="Y(297,74)" index="45657" value="1"/>
+  <variable name="Y(335,7)" index="51442" value="1"/>
   <variable name="Y(365,3)" index="56058" value="1"/>
   <variable name="Y(366,4)" index="56213" value="1"/>
   <variable name="Y(385,27)" index="59162" value="1"/>
-  <variable name="Y(386,14)" index="59303" value="1"/>
-  <variable name="Y(398,43)" index="61180" value="1"/>
   <variable name="Y(405,50)" index="62265" value="1"/>
+  <variable name="Y(407,52)" index="62575" value="1"/>
   <variable name="Y(411,57)" index="63196" value="1"/>
-  <variable name="Y(416,63)" index="63972" value="1"/>
-  <variable name="Y(417,64)" index="64127" value="1"/>
+  <variable name="Y(415,62)" index="63817" value="1"/>
   <variable name="Y(419,66)" index="64437" value="1"/>
+  <variable name="Y(420,67)" index="64592" value="1"/>
   <variable name="Y(424,71)" index="65212" value="1"/>
   <variable name="Y(432,81)" index="66453" value="1"/>
-  <variable name="Y(443,61)" index="68128" value="1"/>
+  <variable name="Y(434,84)" index="66763" value="1"/>
   <variable name="Y(468,6)" index="71923" value="1"/>
-  <variable name="Y(480,76)" index="73841" value="1"/>
-  <variable name="Y(486,7)" index="74696" value="1"/>
   <variable name="Y(496,32)" index="76261" value="1"/>
-  <variable name="Y(550,60)" index="84605" value="1"/>
-  <variable name="Y(569,20)" index="87491" value="1"/>
-  <variable name="Y(639,59)" index="98310" value="1"/>
+  <variable name="Y(502,45)" index="77198" value="1"/>
+  <variable name="Y(547,53)" index="84136" value="1"/>
   <variable name="Y(640,61)" index="98466" value="1"/>
-  <variable name="Y(650,13)" index="99958" value="1"/>
   <variable name="Y(660,33)" index="101518" value="1"/>
-  <variable name="Y(681,40)" index="104759" value="1"/>
-  <variable name="Y(691,11)" index="106270" value="1"/>
-  <variable name="Y(692,12)" index="106425" value="1"/>
+  <variable name="Y(673,60)" index="103547" value="1"/>
+  <variable name="Y(684,40)" index="105221" value="1"/>
+  <variable name="Y(685,2)" index="105337" value="1"/>
   <variable name="Y(696,17)" index="107046" value="1"/>
-  <variable name="Y(702,31)" index="107984" value="1"/>
-  <variable name="Y(710,45)" index="109230" value="1"/>
+  <variable name="Y(762,14)" index="117207" value="1"/>
   <variable name="Y(779,19)" index="119830" value="1"/>
-  <variable name="Y(806,35)" index="124004" value="1"/>
-  <variable name="Y(815,54)" index="125409" value="1"/>
+  <variable name="Y(813,51)" index="125098" value="1"/>
+  <variable name="Y(823,79)" index="126665" value="1"/>
+  <variable name="Y(860,18)" index="132303" value="1"/>
   <variable name="Y(866,24)" index="133233" value="1"/>
-  <variable name="Y(871,34)" index="134013" value="1"/>
-  <variable name="Y(885,48)" index="136183" value="1"/>
-  <variable name="Y(888,52)" index="136649" value="1"/>
-  <variable name="Y(894,62)" index="137583" value="1"/>
-  <variable name="Y(899,67)" index="138358" value="1"/>
+  <variable name="Y(879,42)" index="135253" value="1"/>
+  <variable name="Y(880,43)" index="135408" value="1"/>
+  <variable name="Y(895,63)" index="137738" value="1"/>
   <variable name="Y(901,69)" index="138668" value="1"/>
-  <variable name="Y(904,74)" index="139135" value="1"/>
-  <variable name="Y(928,36)" index="142793" value="1"/>
-  <variable name="Y(941,72)" index="144831" value="1"/>
-  <variable name="Y(983,41)" index="151268" value="1"/>
-  <variable name="Y(1005,5)" index="154620" value="1"/>
-  <variable name="Y(1017,44)" index="156507" value="1"/>
-  <variable name="Y(1021,53)" index="157132" value="1"/>
-  <variable name="Y(1045,18)" index="160793" value="1"/>
+  <variable name="Y(905,75)" index="139290" value="1"/>
+  <variable name="Y(914,5)" index="140606" value="1"/>
+  <variable name="Y(924,26)" index="142167" value="1"/>
+  <variable name="Y(929,39)" index="142950" value="1"/>
+  <variable name="Y(930,44)" index="143109" value="1"/>
+  <variable name="Y(936,54)" index="144043" value="1"/>
+  <variable name="Y(969,22)" index="149093" value="1"/>
+  <variable name="Y(979,37)" index="150648" value="1"/>
+  <variable name="Y(982,40)" index="151113" value="1"/>
+  <variable name="Y(1008,11)" index="155088" value="1"/>
+  <variable name="Y(1016,60)" index="156369" value="1"/>
+  <variable name="Y(1025,72)" index="157767" value="1"/>
+  <variable name="Y(1048,35)" index="161272" value="1"/>
   <variable name="Y(1053,47)" index="162054" value="1"/>
-  <variable name="Y(1062,78)" index="163470" value="1"/>
-  <variable name="Y(1069,10)" index="164481" value="1"/>
+  <variable name="Y(1073,16)" index="165103" value="1"/>
   <variable name="Y(1098,15)" index="168952" value="1"/>
-  <variable name="Y(1121,39)" index="172518" value="1"/>
-  <variable name="Y(1147,23)" index="176506" value="1"/>
-  <variable name="Y(1203,2)" index="185109" value="1"/>
-  <variable name="Y(1225,51)" index="188546" value="1"/>
-  <variable name="Y(1269,79)" index="195349" value="1"/>
-  <variable name="Y(1270,80)" index="195504" value="1"/>
+  <variable name="Y(1125,59)" index="173154" value="1"/>
+  <variable name="Y(1138,12)" index="175109" value="1"/>
+  <variable name="Y(1145,20)" index="176195" value="1"/>
+  <variable name="Y(1150,31)" index="176976" value="1"/>
+  <variable name="Y(1153,34)" index="177441" value="1"/>
+  <variable name="Y(1244,13)" index="191434" value="1"/>
+  <variable name="Y(1268,78)" index="195194" value="1"/>
   <variable name="Y(1308,70)" index="201347" value="1"/>
-  <variable name="Y(1327,20)" index="204223" value="1"/>
-  <variable name="Y(1329,22)" index="204533" value="1"/>
-  <variable name="Y(1339,37)" index="206088" value="1"/>
-  <variable name="Y(1342,40)" index="206553" value="1"/>
+  <variable name="Y(1318,10)" index="202827" value="1"/>
+  <variable name="Y(1330,23)" index="204688" value="1"/>
+  <variable name="Y(1343,41)" index="206708" value="1"/>
+  <variable name="Y(1349,48)" index="207639" value="1"/>
   <variable name="Y(1350,49)" index="207794" value="1"/>
   <variable name="Y(1359,68)" index="209199" value="1"/>
-  <variable name="Y(1363,75)" index="209822" value="1"/>
   <variable name="Y(1367,82)" index="210444" value="1"/>
-  <variable name="Y(1368,84)" index="210599" value="1"/>
-  <variable name="Y(1385,14)" index="213149" value="1"/>
-  <variable name="Y(1393,79)" index="214445" value="1"/>
-  <variable name="X(1,44,1017)" index="215846" value="1"/>
-  <variable name="X(1,45,35)" index="216259" value="1"/>
-  <variable name="X(2,45,1017)" index="218636" value="1"/>
-  <variable name="X(2,46,702)" index="219716" value="1"/>
-  <variable name="X(2,72,941)" index="221350" value="1"/>
-  <variable name="X(2,86,1203)" index="223007" value="1"/>
-  <variable name="X(3,4,928)" index="224127" value="1"/>
+  <variable name="Y(1389,56)" index="213807" value="1"/>
+  <variable name="Y(1394,78)" index="214598" value="1"/>
+  <variable name="X(1,44,880)" index="215709" value="1"/>
+  <variable name="X(1,45,685)" index="216909" value="1"/>
+  <variable name="X(2,45,502)" index="218121" value="1"/>
+  <variable name="X(2,46,1150)" index="220164" value="1"/>
+  <variable name="X(2,72,1025)" index="221434" value="1"/>
+  <variable name="X(2,86,685)" index="222489" value="1"/>
+  <variable name="X(3,4,936)" index="224135" value="1"/>
   <variable name="X(3,57,411)" index="225005" value="1"/>
   <variable name="X(3,87,365)" index="226354" value="1"/>
-  <variable name="X(4,3,365)" index="227749" value="1"/>
-  <variable name="X(4,54,928)" index="229707" value="1"/>
+  <variable name="X(4,3,411)" index="227795" value="1"/>
+  <variable name="X(4,54,936)" index="229715" value="1"/>
   <variable name="X(4,88,366)" index="230540" value="1"/>
-  <variable name="X(5,11,1069)" index="232638" value="1"/>
+  <variable name="X(5,11,1318)" index="232887" value="1"/>
   <variable name="X(5,66,866)" index="233830" value="1"/>
-  <variable name="X(5,89,1005)" index="235364" value="1"/>
+  <variable name="X(5,89,914)" index="235273" value="1"/>
   <variable name="X(6,26,866)" index="236620" value="1"/>
   <variable name="X(6,28,385)" index="237534" value="1"/>
-  <variable name="X(6,53,443)" index="238987" value="1"/>
-  <variable name="X(6,66,1069)" index="241008" value="1"/>
+  <variable name="X(6,53,1138)" index="239682" value="1"/>
+  <variable name="X(6,66,419)" index="240358" value="1"/>
   <variable name="X(6,90,468)" index="241802" value="1"/>
   <variable name="X(7,55,197)" index="242926" value="1"/>
-  <variable name="X(7,72,1203)" index="245327" value="1"/>
-  <variable name="X(7,91,486)" index="246005" value="1"/>
-  <variable name="X(8,30,5)" index="246919" value="1"/>
-  <variable name="X(8,31,77)" index="248386" value="1"/>
-  <variable name="X(9,10,691)" index="250395" value="1"/>
-  <variable name="X(9,76,480)" index="251579" value="1"/>
-  <variable name="X(9,93,5)" index="252499" value="1"/>
-  <variable name="X(10,9,480)" index="254369" value="1"/>
-  <variable name="X(10,11,691)" index="255975" value="1"/>
-  <variable name="X(10,94,1069)" index="257748" value="1"/>
-  <variable name="X(11,5,1005)" index="259079" value="1"/>
-  <variable name="X(11,10,1069)" index="260538" value="1"/>
-  <variable name="X(11,56,1339)" index="262203" value="1"/>
-  <variable name="X(11,95,691)" index="262950" value="1"/>
-  <variable name="X(12,56,239)" index="263893" value="1"/>
-  <variable name="X(12,61,871)" index="265920" value="1"/>
-  <variable name="X(12,96,692)" index="267136" value="1"/>
-  <variable name="X(13,60,1121)" index="268960" value="1"/>
-  <variable name="X(13,67,1005)" index="270239" value="1"/>
-  <variable name="X(13,97,650)" index="271279" value="1"/>
-  <variable name="X(14,37,1339)" index="273363" value="1"/>
-  <variable name="X(14,56,692)" index="274111" value="1"/>
-  <variable name="X(14,76,386)" index="275200" value="1"/>
-  <variable name="X(14,98,1385)" index="277594" value="1"/>
+  <variable name="X(7,72,502)" index="244626" value="1"/>
+  <variable name="X(7,91,335)" index="245854" value="1"/>
+  <variable name="X(8,30,762)" index="247676" value="1"/>
+  <variable name="X(8,31,279)" index="248588" value="1"/>
+  <variable name="X(9,10,914)" index="250618" value="1"/>
+  <variable name="X(9,76,91)" index="251190" value="1"/>
+  <variable name="X(9,93,187)" index="252681" value="1"/>
+  <variable name="X(10,9,91)" index="253980" value="1"/>
+  <variable name="X(10,11,914)" index="256198" value="1"/>
+  <variable name="X(10,94,1318)" index="257997" value="1"/>
+  <variable name="X(11,5,914)" index="258988" value="1"/>
+  <variable name="X(11,10,1318)" index="260787" value="1"/>
+  <variable name="X(11,56,1244)" index="262108" value="1"/>
+  <variable name="X(11,95,1008)" index="263267" value="1"/>
+  <variable name="X(12,56,979)" index="264633" value="1"/>
+  <variable name="X(12,61,929)" index="265978" value="1"/>
+  <variable name="X(12,96,1138)" index="267582" value="1"/>
+  <variable name="X(13,60,1125)" index="268964" value="1"/>
+  <variable name="X(13,67,420)" index="269654" value="1"/>
+  <variable name="X(13,97,1244)" index="271873" value="1"/>
+  <variable name="X(14,37,979)" index="273003" value="1"/>
+  <variable name="X(14,56,1389)" index="274808" value="1"/>
+  <variable name="X(14,76,187)" index="275001" value="1"/>
+  <variable name="X(14,98,762)" index="276971" value="1"/>
   <variable name="X(15,20,1098)" index="278702" value="1"/>
-  <variable name="X(15,59,639)" index="279638" value="1"/>
+  <variable name="X(15,59,1125)" index="280124" value="1"/>
   <variable name="X(16,20,272)" index="280666" value="1"/>
   <variable name="X(16,59,293)" index="282082" value="1"/>
-  <variable name="X(16,100,230)" index="283414" value="1"/>
+  <variable name="X(16,100,1073)" index="284257" value="1"/>
   <variable name="X(17,19,779)" index="285358" value="1"/>
-  <variable name="X(17,64,417)" index="286391" value="1"/>
+  <variable name="X(17,64,292)" index="286266" value="1"/>
   <variable name="X(17,101,696)" index="288065" value="1"/>
-  <variable name="X(18,50,405)" index="289169" value="1"/>
-  <variable name="X(18,79,806)" index="290965" value="1"/>
-  <variable name="X(18,102,1045)" index="292599" value="1"/>
+  <variable name="X(18,50,1359)" index="290123" value="1"/>
+  <variable name="X(18,79,823)" index="290982" value="1"/>
+  <variable name="X(18,102,860)" index="292414" value="1"/>
   <variable name="X(19,17,696)" index="293645" value="1"/>
-  <variable name="X(19,22,894)" index="295238" value="1"/>
-  <variable name="X(19,23,1147)" index="296886" value="1"/>
-  <variable name="X(19,32,343)" index="297477" value="1"/>
+  <variable name="X(19,22,969)" index="295313" value="1"/>
+  <variable name="X(19,23,1330)" index="297069" value="1"/>
+  <variable name="X(19,32,924)" index="298058" value="1"/>
   <variable name="X(19,103,779)" index="299308" value="1"/>
-  <variable name="X(20,15,639)" index="300563" value="1"/>
-  <variable name="X(20,16,569)" index="301888" value="1"/>
+  <variable name="X(20,15,1125)" index="301049" value="1"/>
+  <variable name="X(20,16,1073)" index="302392" value="1"/>
   <variable name="X(20,33,660)" index="303374" value="1"/>
-  <variable name="X(20,34,1021)" index="305130" value="1"/>
+  <variable name="X(20,34,547)" index="304656" value="1"/>
   <variable name="X(20,39,272)" index="305776" value="1"/>
-  <variable name="X(20,60,550)" index="307449" value="1"/>
-  <variable name="X(20,104,1327)" index="309621" value="1"/>
+  <variable name="X(20,60,420)" index="307319" value="1"/>
+  <variable name="X(20,104,1145)" index="309439" value="1"/>
   <variable name="X(21,23,696)" index="310385" value="1"/>
   <variable name="X(21,49,1350)" index="312434" value="1"/>
   <variable name="X(21,105,197)" index="312676" value="1"/>
-  <variable name="X(22,19,343)" index="314217" value="1"/>
-  <variable name="X(22,62,894)" index="316163" value="1"/>
-  <variable name="X(22,106,1329)" index="317993" value="1"/>
+  <variable name="X(22,19,1330)" index="315204" value="1"/>
+  <variable name="X(22,62,415)" index="315684" value="1"/>
+  <variable name="X(22,106,969)" index="317633" value="1"/>
   <variable name="X(23,19,696)" index="318755" value="1"/>
   <variable name="X(23,21,1350)" index="320804" value="1"/>
-  <variable name="X(23,107,1147)" index="321996" value="1"/>
-  <variable name="X(24,26,343)" index="322587" value="1"/>
-  <variable name="X(24,32,894)" index="324533" value="1"/>
+  <variable name="X(23,107,1330)" index="322179" value="1"/>
+  <variable name="X(24,26,924)" index="323168" value="1"/>
+  <variable name="X(24,32,969)" index="324608" value="1"/>
   <variable name="X(24,108,866)" index="325900" value="1"/>
   <variable name="X(25,29,468)" index="326897" value="1"/>
   <variable name="X(25,32,496)" index="328320" value="1"/>
-  <variable name="X(26,6,443)" index="329662" value="1"/>
+  <variable name="X(26,6,1138)" index="330357" value="1"/>
   <variable name="X(26,24,866)" index="331480" value="1"/>
-  <variable name="X(26,110,343)" index="332352" value="1"/>
+  <variable name="X(26,110,924)" index="332933" value="1"/>
   <variable name="X(27,28,468)" index="333872" value="1"/>
   <variable name="X(27,29,496)" index="335295" value="1"/>
   <variable name="X(27,111,385)" index="336579" value="1"/>
@@ -194,336 +192,336 @@
   <variable name="X(28,27,385)" index="339369" value="1"/>
   <variable name="X(29,25,496)" index="340875" value="1"/>
   <variable name="X(29,27,468)" index="342242" value="1"/>
-  <variable name="X(30,8,77)" index="343246" value="1"/>
-  <variable name="X(30,76,5)" index="344569" value="1"/>
-  <variable name="X(31,8,5)" index="345964" value="1"/>
-  <variable name="X(31,46,77)" index="347431" value="1"/>
-  <variable name="X(31,115,702)" index="349451" value="1"/>
-  <variable name="X(32,19,894)" index="351038" value="1"/>
-  <variable name="X(32,24,343)" index="351882" value="1"/>
+  <variable name="X(30,8,279)" index="343448" value="1"/>
+  <variable name="X(30,76,762)" index="345326" value="1"/>
+  <variable name="X(31,8,762)" index="346721" value="1"/>
+  <variable name="X(31,46,279)" index="347633" value="1"/>
+  <variable name="X(31,115,1150)" index="349899" value="1"/>
+  <variable name="X(32,19,969)" index="351113" value="1"/>
+  <variable name="X(32,24,924)" index="352463" value="1"/>
   <variable name="X(32,116,496)" index="353430" value="1"/>
-  <variable name="X(33,20,550)" index="354879" value="1"/>
+  <variable name="X(33,20,547)" index="354876" value="1"/>
   <variable name="X(33,117,660)" index="356384" value="1"/>
-  <variable name="X(34,20,1327)" index="358446" value="1"/>
-  <variable name="X(34,61,1021)" index="359535" value="1"/>
-  <variable name="X(34,118,871)" index="360780" value="1"/>
-  <variable name="X(35,80,1393)" index="362697" value="1"/>
+  <variable name="X(34,20,1145)" index="358264" value="1"/>
+  <variable name="X(34,61,547)" index="359061" value="1"/>
+  <variable name="X(34,118,1153)" index="361062" value="1"/>
+  <variable name="X(35,80,1394)" index="362698" value="1"/>
   <variable name="X(35,82,1367)" index="364066" value="1"/>
-  <variable name="X(35,119,806)" index="364900" value="1"/>
-  <variable name="X(36,41,35)" index="365524" value="1"/>
-  <variable name="X(36,54,815)" index="367699" value="1"/>
-  <variable name="X(36,120,928)" index="369207" value="1"/>
-  <variable name="X(37,14,1385)" index="371059" value="1"/>
+  <variable name="X(35,119,1048)" index="365142" value="1"/>
+  <variable name="X(36,41,930)" index="366419" value="1"/>
+  <variable name="X(36,54,411)" index="367295" value="1"/>
+  <variable name="X(36,120,16)" index="368295" value="1"/>
+  <variable name="X(37,14,1389)" index="371063" value="1"/>
   <variable name="X(37,81,432)" index="371501" value="1"/>
-  <variable name="X(37,121,1339)" index="373803" value="1"/>
-  <variable name="X(38,39,639)" index="374498" value="1"/>
+  <variable name="X(37,121,979)" index="373443" value="1"/>
+  <variable name="X(38,39,929)" index="374788" value="1"/>
   <variable name="X(38,61,640)" index="375894" value="1"/>
   <variable name="X(38,122,272)" index="376921" value="1"/>
-  <variable name="X(39,20,639)" index="378683" value="1"/>
+  <variable name="X(39,20,660)" index="378704" value="1"/>
   <variable name="X(39,38,272)" index="379711" value="1"/>
-  <variable name="X(39,60,650)" index="381484" value="1"/>
-  <variable name="X(39,123,1121)" index="383350" value="1"/>
-  <variable name="X(40,41,681)" index="384305" value="1"/>
-  <variable name="X(40,124,1342)" index="386361" value="1"/>
-  <variable name="X(41,36,815)" index="387229" value="1"/>
-  <variable name="X(41,40,1342)" index="389151" value="1"/>
-  <variable name="X(41,42,35)" index="389239" value="1"/>
-  <variable name="X(41,125,983)" index="391582" value="1"/>
-  <variable name="X(42,41,983)" index="392977" value="1"/>
-  <variable name="X(42,43,398)" index="393787" value="1"/>
-  <variable name="X(42,44,35)" index="394819" value="1"/>
-  <variable name="X(42,126,74)" index="396253" value="1"/>
-  <variable name="X(43,127,398)" index="397972" value="1"/>
-  <variable name="X(44,1,35)" index="399004" value="1"/>
-  <variable name="X(44,42,398)" index="400762" value="1"/>
-  <variable name="X(44,128,1017)" index="402776" value="1"/>
-  <variable name="X(45,1,1017)" index="404171" value="1"/>
-  <variable name="X(45,2,941)" index="405490" value="1"/>
-  <variable name="X(45,129,710)" index="406654" value="1"/>
-  <variable name="X(46,2,1017)" index="408356" value="1"/>
-  <variable name="X(46,31,702)" index="409436" value="1"/>
-  <variable name="X(46,130,77)" index="410206" value="1"/>
-  <variable name="X(47,48,885)" index="412409" value="1"/>
+  <variable name="X(39,60,673)" index="381507" value="1"/>
+  <variable name="X(39,123,929)" index="383158" value="1"/>
+  <variable name="X(40,41,684)" index="384308" value="1"/>
+  <variable name="X(40,124,982)" index="386001" value="1"/>
+  <variable name="X(41,36,16)" index="386430" value="1"/>
+  <variable name="X(41,40,982)" index="388791" value="1"/>
+  <variable name="X(41,42,930)" index="390134" value="1"/>
+  <variable name="X(41,125,1343)" index="391942" value="1"/>
+  <variable name="X(42,41,982)" index="392976" value="1"/>
+  <variable name="X(42,43,880)" index="394269" value="1"/>
+  <variable name="X(42,44,930)" index="395714" value="1"/>
+  <variable name="X(42,126,879)" index="397058" value="1"/>
+  <variable name="X(43,127,880)" index="398454" value="1"/>
+  <variable name="X(44,1,685)" index="399654" value="1"/>
+  <variable name="X(44,42,880)" index="401244" value="1"/>
+  <variable name="X(44,128,930)" index="402689" value="1"/>
+  <variable name="X(45,1,880)" index="404034" value="1"/>
+  <variable name="X(45,2,685)" index="405234" value="1"/>
+  <variable name="X(45,129,502)" index="406446" value="1"/>
+  <variable name="X(46,2,1025)" index="408364" value="1"/>
+  <variable name="X(46,31,1150)" index="409884" value="1"/>
+  <variable name="X(46,130,279)" index="410408" value="1"/>
+  <variable name="X(47,48,297)" index="411821" value="1"/>
   <variable name="X(47,70,1308)" index="414227" value="1"/>
   <variable name="X(47,131,1053)" index="415367" value="1"/>
   <variable name="X(48,47,1308)" index="417017" value="1"/>
-  <variable name="X(48,79,904)" index="418008" value="1"/>
-  <variable name="X(48,132,885)" index="419384" value="1"/>
+  <variable name="X(48,79,297)" index="417401" value="1"/>
+  <variable name="X(48,132,1349)" index="419848" value="1"/>
   <variable name="X(49,21,197)" index="420091" value="1"/>
-  <variable name="X(49,55,486)" index="421775" value="1"/>
+  <variable name="X(49,55,335)" index="421624" value="1"/>
   <variable name="X(49,133,1350)" index="424034" value="1"/>
-  <variable name="X(50,18,1045)" index="425124" value="1"/>
+  <variable name="X(50,18,823)" index="424902" value="1"/>
   <variable name="X(50,73,1359)" index="426833" value="1"/>
   <variable name="X(50,134,405)" index="427274" value="1"/>
   <variable name="X(51,63,779)" index="429043" value="1"/>
   <variable name="X(51,71,424)" index="430083" value="1"/>
-  <variable name="X(51,135,1225)" index="432279" value="1"/>
+  <variable name="X(51,135,813)" index="431867" value="1"/>
   <variable name="X(52,68,1359)" index="433808" value="1"/>
-  <variable name="X(52,73,1045)" index="434889" value="1"/>
-  <variable name="X(52,136,888)" index="436127" value="1"/>
+  <variable name="X(52,73,823)" index="434667" value="1"/>
+  <variable name="X(52,136,407)" index="435646" value="1"/>
   <variable name="X(53,6,385)" index="437019" value="1"/>
-  <variable name="X(53,61,443)" index="438472" value="1"/>
-  <variable name="X(53,137,1021)" index="440445" value="1"/>
-  <variable name="X(54,4,366)" index="441185" value="1"/>
-  <variable name="X(54,36,928)" index="443142" value="1"/>
-  <variable name="X(54,138,815)" index="444424" value="1"/>
-  <variable name="X(55,7,486)" index="445490" value="1"/>
+  <variable name="X(53,61,1138)" index="439167" value="1"/>
+  <variable name="X(53,137,547)" index="439971" value="1"/>
+  <variable name="X(54,4,411)" index="441230" value="1"/>
+  <variable name="X(54,36,930)" index="443144" value="1"/>
+  <variable name="X(54,138,936)" index="444545" value="1"/>
+  <variable name="X(55,7,335)" index="445339" value="1"/>
   <variable name="X(55,49,197)" index="446596" value="1"/>
-  <variable name="X(56,11,1005)" index="448799" value="1"/>
-  <variable name="X(56,12,692)" index="449881" value="1"/>
-  <variable name="X(56,14,1339)" index="451923" value="1"/>
-  <variable name="X(56,67,899)" index="452878" value="1"/>
-  <variable name="X(56,140,239)" index="453613" value="1"/>
-  <variable name="X(57,3,928)" index="455697" value="1"/>
-  <variable name="X(57,84,1368)" index="457532" value="1"/>
+  <variable name="X(56,11,1008)" index="448802" value="1"/>
+  <variable name="X(56,12,929)" index="450118" value="1"/>
+  <variable name="X(56,14,979)" index="451563" value="1"/>
+  <variable name="X(56,67,1244)" index="453223" value="1"/>
+  <variable name="X(56,140,1389)" index="454763" value="1"/>
+  <variable name="X(57,3,936)" index="455705" value="1"/>
+  <variable name="X(57,84,434)" index="456598" value="1"/>
   <variable name="X(57,141,411)" index="457970" value="1"/>
   <variable name="X(58,59,1098)" index="460052" value="1"/>
   <variable name="X(58,65,293)" index="460642" value="1"/>
   <variable name="X(59,15,1098)" index="462842" value="1"/>
   <variable name="X(59,16,230)" index="463369" value="1"/>
   <variable name="X(59,58,293)" index="464827" value="1"/>
-  <variable name="X(59,143,639)" index="466568" value="1"/>
-  <variable name="X(60,13,650)" index="467974" value="1"/>
-  <variable name="X(60,20,1021)" index="469740" value="1"/>
-  <variable name="X(60,39,1121)" index="471235" value="1"/>
-  <variable name="X(60,144,550)" index="472059" value="1"/>
-  <variable name="X(61,12,239)" index="473143" value="1"/>
-  <variable name="X(61,34,871)" index="475170" value="1"/>
-  <variable name="X(61,38,443)" index="476137" value="1"/>
-  <variable name="X(61,53,1021)" index="478110" value="1"/>
+  <variable name="X(59,143,1125)" index="467054" value="1"/>
+  <variable name="X(60,13,420)" index="467744" value="1"/>
+  <variable name="X(60,20,1125)" index="469844" value="1"/>
+  <variable name="X(60,39,1016)" index="471130" value="1"/>
+  <variable name="X(60,144,673)" index="472182" value="1"/>
+  <variable name="X(61,12,1138)" index="474042" value="1"/>
+  <variable name="X(61,34,1145)" index="475444" value="1"/>
+  <variable name="X(61,38,929)" index="476623" value="1"/>
+  <variable name="X(61,53,547)" index="477636" value="1"/>
   <variable name="X(61,145,640)" index="479124" value="1"/>
-  <variable name="X(62,22,1329)" index="481208" value="1"/>
+  <variable name="X(62,22,1330)" index="481209" value="1"/>
   <variable name="X(62,70,901)" index="482175" value="1"/>
-  <variable name="X(62,146,894)" index="483563" value="1"/>
+  <variable name="X(62,146,415)" index="483084" value="1"/>
   <variable name="X(63,51,424)" index="484488" value="1"/>
   <variable name="X(63,64,779)" index="486238" value="1"/>
-  <variable name="X(63,147,416)" index="487270" value="1"/>
+  <variable name="X(63,147,895)" index="487749" value="1"/>
   <variable name="X(64,17,779)" index="489028" value="1"/>
-  <variable name="X(64,63,416)" index="490060" value="1"/>
-  <variable name="X(64,148,417)" index="491456" value="1"/>
+  <variable name="X(64,63,424)" index="490068" value="1"/>
+  <variable name="X(64,148,292)" index="491331" value="1"/>
   <variable name="X(65,58,1098)" index="493532" value="1"/>
   <variable name="X(65,149,293)" index="494122" value="1"/>
-  <variable name="X(66,5,1069)" index="496293" value="1"/>
+  <variable name="X(66,5,1318)" index="496542" value="1"/>
   <variable name="X(66,6,866)" index="497485" value="1"/>
   <variable name="X(66,150,419)" index="498433" value="1"/>
-  <variable name="X(67,13,1121)" index="500530" value="1"/>
-  <variable name="X(67,56,1005)" index="501809" value="1"/>
-  <variable name="X(67,151,899)" index="503098" value="1"/>
-  <variable name="X(68,52,888)" index="504482" value="1"/>
-  <variable name="X(68,69,1225)" index="506214" value="1"/>
+  <variable name="X(67,13,1244)" index="500653" value="1"/>
+  <variable name="X(67,56,1008)" index="501812" value="1"/>
+  <variable name="X(67,151,420)" index="502619" value="1"/>
+  <variable name="X(68,52,407)" index="504001" value="1"/>
+  <variable name="X(68,69,813)" index="505802" value="1"/>
   <variable name="X(68,152,1359)" index="507743" value="1"/>
-  <variable name="X(69,68,888)" index="508667" value="1"/>
+  <variable name="X(69,68,407)" index="508186" value="1"/>
   <variable name="X(69,70,1053)" index="510227" value="1"/>
-  <variable name="X(69,71,1225)" index="511794" value="1"/>
+  <variable name="X(69,71,813)" index="511382" value="1"/>
   <variable name="X(69,153,901)" index="512865" value="1"/>
   <variable name="X(70,47,1053)" index="514412" value="1"/>
-  <variable name="X(70,62,1329)" index="516083" value="1"/>
+  <variable name="X(70,62,1330)" index="516084" value="1"/>
   <variable name="X(70,69,901)" index="517050" value="1"/>
   <variable name="X(70,154,1308)" index="518852" value="1"/>
-  <variable name="X(71,51,1225)" index="520164" value="1"/>
+  <variable name="X(71,51,813)" index="519752" value="1"/>
   <variable name="X(71,69,1053)" index="521387" value="1"/>
   <variable name="X(71,155,424)" index="522153" value="1"/>
-  <variable name="X(72,2,1203)" index="524327" value="1"/>
+  <variable name="X(72,2,502)" index="523626" value="1"/>
   <variable name="X(72,7,197)" index="524716" value="1"/>
-  <variable name="X(72,156,941)" index="526855" value="1"/>
-  <variable name="X(73,50,1045)" index="528354" value="1"/>
+  <variable name="X(72,156,1025)" index="526939" value="1"/>
+  <variable name="X(73,50,823)" index="528132" value="1"/>
   <variable name="X(73,52,1359)" index="530063" value="1"/>
-  <variable name="X(74,158,904)" index="531003" value="1"/>
-  <variable name="X(75,74,904)" index="532398" value="1"/>
-  <variable name="X(75,79,1269)" index="534158" value="1"/>
-  <variable name="X(75,159,1363)" index="535647" value="1"/>
-  <variable name="X(76,9,5)" index="535684" value="1"/>
-  <variable name="X(76,14,692)" index="537766" value="1"/>
-  <variable name="X(76,30,77)" index="538546" value="1"/>
-  <variable name="X(76,160,480)" index="540344" value="1"/>
-  <variable name="X(78,79,1393)" index="542652" value="1"/>
-  <variable name="X(78,80,806)" index="543460" value="1"/>
-  <variable name="X(78,162,1062)" index="545111" value="1"/>
-  <variable name="X(79,18,405)" index="545849" value="1"/>
-  <variable name="X(79,48,1393)" index="548232" value="1"/>
-  <variable name="X(79,75,904)" index="549138" value="1"/>
-  <variable name="X(79,78,806)" index="550435" value="1"/>
-  <variable name="X(79,163,1269)" index="552293" value="1"/>
-  <variable name="X(80,35,806)" index="553225" value="1"/>
-  <variable name="X(80,78,1393)" index="555207" value="1"/>
-  <variable name="X(80,164,1270)" index="556479" value="1"/>
-  <variable name="X(81,37,1385)" index="557989" value="1"/>
+  <variable name="X(74,158,297)" index="530396" value="1"/>
+  <variable name="X(75,74,297)" index="531791" value="1"/>
+  <variable name="X(75,79,1268)" index="534157" value="1"/>
+  <variable name="X(75,159,905)" index="535189" value="1"/>
+  <variable name="X(76,9,187)" index="535866" value="1"/>
+  <variable name="X(76,14,762)" index="537836" value="1"/>
+  <variable name="X(76,30,279)" index="538748" value="1"/>
+  <variable name="X(76,160,91)" index="539955" value="1"/>
+  <variable name="X(78,79,1394)" index="542653" value="1"/>
+  <variable name="X(78,80,94)" index="542748" value="1"/>
+  <variable name="X(78,162,1268)" index="545317" value="1"/>
+  <variable name="X(79,18,860)" index="546304" value="1"/>
+  <variable name="X(79,48,1349)" index="548188" value="1"/>
+  <variable name="X(79,75,297)" index="548531" value="1"/>
+  <variable name="X(79,78,1268)" index="550897" value="1"/>
+  <variable name="X(79,163,823)" index="551847" value="1"/>
+  <variable name="X(80,35,1048)" index="553467" value="1"/>
+  <variable name="X(80,78,1394)" index="555208" value="1"/>
+  <variable name="X(80,164,94)" index="555303" value="1"/>
+  <variable name="X(81,37,1389)" index="557993" value="1"/>
   <variable name="X(81,165,432)" index="558431" value="1"/>
-  <variable name="X(82,35,1393)" index="560787" value="1"/>
+  <variable name="X(82,35,1394)" index="560788" value="1"/>
   <variable name="X(82,166,1367)" index="562156" value="1"/>
-  <variable name="X(84,168,1368)" index="563552" value="1"/>
-  <variable name="C(5,8)" index="563618" value="1"/>
-  <variable name="C(5,30)" index="563619" value="2"/>
-  <variable name="C(5,76)" index="563620" value="2.9999999999999996"/>
-  <variable name="C(5,9)" index="563621" value="3.9999999999999996"/>
-  <variable name="C(35,41)" index="563921" value="1"/>
-  <variable name="C(35,42)" index="563922" value="2"/>
-  <variable name="C(35,44)" index="563923" value="3"/>
-  <variable name="C(35,1)" index="563924" value="4"/>
-  <variable name="C(77,30)" index="564261" value="1"/>
-  <variable name="C(77,8)" index="564262" value="2"/>
-  <variable name="C(77,31)" index="564263" value="3"/>
-  <variable name="C(77,46)" index="564264" value="4"/>
+  <variable name="X(84,168,434)" index="562618" value="1"/>
+  <variable name="C(16,36)" index="563738" value="1"/>
+  <variable name="C(91,9)" index="564384" value="1"/>
+  <variable name="C(91,76)" index="564385" value="2"/>
+  <variable name="C(94,80)" index="564421" value="1"/>
+  <variable name="C(187,76)" index="565210" value="1"/>
+  <variable name="C(187,9)" index="565211" value="2"/>
   <variable name="C(197,7)" index="565285" value="1"/>
   <variable name="C(197,55)" index="565286" value="2"/>
   <variable name="C(197,49)" index="565287" value="3"/>
   <variable name="C(197,21)" index="565288" value="4"/>
-  <variable name="C(230,16)" index="565580" value="1"/>
-  <variable name="C(239,12)" index="565681" value="1"/>
-  <variable name="C(239,56)" index="565682" value="2"/>
   <variable name="C(272,20)" index="565974" value="1"/>
   <variable name="C(272,39)" index="565975" value="2"/>
   <variable name="C(272,38)" index="565976" value="3"/>
+  <variable name="C(279,30)" index="566072" value="1"/>
+  <variable name="C(279,8)" index="566073" value="2"/>
+  <variable name="C(279,31)" index="566074" value="3"/>
+  <variable name="C(279,46)" index="566075" value="4"/>
+  <variable name="C(292,64)" index="566211" value="1"/>
   <variable name="C(293,59)" index="566213" value="1"/>
   <variable name="C(293,58)" index="566214" value="2"/>
   <variable name="C(293,65)" index="566215" value="3"/>
-  <variable name="C(343,19)" index="566804" value="1"/>
-  <variable name="C(343,32)" index="566805" value="2"/>
-  <variable name="C(343,24)" index="566806" value="3"/>
-  <variable name="C(343,26)" index="566807" value="4"/>
-  <variable name="C(365,3)" index="567107" value="1"/>
-  <variable name="C(366,4)" index="567127" value="1"/>
+  <variable name="C(297,48)" index="566272" value="1"/>
+  <variable name="C(297,79)" index="566273" value="2"/>
+  <variable name="C(297,75)" index="566274" value="3"/>
+  <variable name="C(297,74)" index="566275" value="4"/>
+  <variable name="C(335,55)" index="566687" value="1"/>
+  <variable name="C(335,7)" index="566688" value="2"/>
   <variable name="C(385,6)" index="567273" value="1"/>
   <variable name="C(385,28)" index="567274" value="2"/>
   <variable name="C(385,27)" index="567275" value="3"/>
-  <variable name="C(398,42)" index="567412" value="1.0000000010000001"/>
-  <variable name="C(398,43)" index="567413" value="2.0000000010000001"/>
-  <variable name="C(405,18)" index="567507" value="1"/>
-  <variable name="C(405,50)" index="567508" value="2"/>
-  <variable name="C(411,57)" index="567586" value="1"/>
-  <variable name="C(416,63)" index="567617" value="1"/>
-  <variable name="C(417,64)" index="567628" value="1"/>
-  <variable name="C(424,51)" index="567695" value="1"/>
-  <variable name="C(424,71)" index="567696" value="2"/>
+  <variable name="C(407,68)" index="567535" value="1"/>
+  <variable name="C(407,52)" index="567536" value="2"/>
+  <variable name="C(411,54)" index="567583" value="1"/>
+  <variable name="C(411,4)" index="567584" value="2"/>
+  <variable name="C(411,3)" index="567585" value="3"/>
+  <variable name="C(411,57)" index="567586" value="4"/>
+  <variable name="C(415,62)" index="567605" value="1"/>
+  <variable name="C(419,66)" index="567639" value="1"/>
+  <variable name="C(420,60)" index="567641" value="1"/>
+  <variable name="C(420,13)" index="567642" value="2"/>
+  <variable name="C(420,67)" index="567643" value="3"/>
+  <variable name="C(424,63)" index="567694" value="1"/>
+  <variable name="C(424,51)" index="567695" value="2"/>
+  <variable name="C(424,71)" index="567696" value="3"/>
   <variable name="C(432,81)" index="567805" value="1"/>
-  <variable name="C(443,6)" index="567920" value="1"/>
-  <variable name="C(443,53)" index="567921" value="2"/>
-  <variable name="C(443,61)" index="567922" value="3"/>
-  <variable name="C(468,29)" index="568127" value="0.99999999999999956"/>
-  <variable name="C(468,27)" index="568128" value="1.9999999999999996"/>
-  <variable name="C(468,28)" index="568129" value="2.9999999999999996"/>
-  <variable name="C(468,6)" index="568130" value="3.9999999999999996"/>
-  <variable name="C(480,9)" index="568231" value="1"/>
-  <variable name="C(480,76)" index="568232" value="2"/>
-  <variable name="C(486,55)" index="568276" value="1"/>
-  <variable name="C(486,7)" index="568277" value="2"/>
-  <variable name="C(496,27)" index="568345" value="1.0000000000000009"/>
-  <variable name="C(496,29)" index="568346" value="2.0000000000000009"/>
-  <variable name="C(496,25)" index="568347" value="3.0000000000000009"/>
-  <variable name="C(496,32)" index="568348" value="4"/>
-  <variable name="C(550,33)" index="568872" value="2"/>
-  <variable name="C(550,20)" index="568873" value="3"/>
-  <variable name="C(550,60)" index="568874" value="4"/>
-  <variable name="C(639,39)" index="569896" value="1"/>
-  <variable name="C(639,20)" index="569897" value="2"/>
-  <variable name="C(639,15)" index="569898" value="3"/>
-  <variable name="C(639,59)" index="569899" value="4"/>
+  <variable name="C(434,84)" index="567847" value="1"/>
+  <variable name="C(468,29)" index="568127" value="1"/>
+  <variable name="C(468,27)" index="568128" value="2"/>
+  <variable name="C(468,28)" index="568129" value="3"/>
+  <variable name="C(468,6)" index="568130" value="4"/>
+  <variable name="C(496,29)" index="568346" value="1"/>
+  <variable name="C(496,25)" index="568347" value="2"/>
+  <variable name="C(496,32)" index="568348" value="3"/>
+  <variable name="C(502,72)" index="568421" value="1"/>
+  <variable name="C(502,2)" index="568422" value="2"/>
+  <variable name="C(502,45)" index="568423" value="3"/>
+  <variable name="C(547,20)" index="568858" value="1"/>
+  <variable name="C(547,34)" index="568859" value="2"/>
+  <variable name="C(547,61)" index="568860" value="3"/>
+  <variable name="C(547,53)" index="568861" value="4"/>
   <variable name="C(640,61)" index="569901" value="1"/>
-  <variable name="C(650,60)" index="569982" value="1"/>
-  <variable name="C(650,13)" index="569983" value="1.9999999999999982"/>
-  <variable name="C(660,33)" index="570065" value="1"/>
-  <variable name="C(691,10)" index="570441" value="1"/>
-  <variable name="C(691,11)" index="570442" value="2"/>
-  <variable name="C(692,14)" index="570453" value="1"/>
-  <variable name="C(692,56)" index="570454" value="2"/>
-  <variable name="C(692,12)" index="570455" value="3"/>
+  <variable name="C(660,20)" index="570064" value="1"/>
+  <variable name="C(660,33)" index="570065" value="2"/>
+  <variable name="C(673,60)" index="570216" value="1"/>
+  <variable name="C(685,1)" index="570367" value="1"/>
+  <variable name="C(685,45)" index="570368" value="2"/>
+  <variable name="C(685,2)" index="570369" value="3"/>
   <variable name="C(696,23)" index="570508" value="1"/>
   <variable name="C(696,19)" index="570509" value="2"/>
   <variable name="C(696,17)" index="570510" value="3"/>
-  <variable name="C(702,46)" index="570586" value="1"/>
-  <variable name="C(702,31)" index="570587" value="2"/>
+  <variable name="C(762,8)" index="571263" value="1"/>
+  <variable name="C(762,30)" index="571264" value="2"/>
+  <variable name="C(762,76)" index="571265" value="3"/>
+  <variable name="C(762,14)" index="571266" value="4"/>
   <variable name="C(779,63)" index="571445" value="1"/>
   <variable name="C(779,64)" index="571446" value="2"/>
   <variable name="C(779,17)" index="571447" value="3"/>
   <variable name="C(779,19)" index="571448" value="4"/>
-  <variable name="C(806,79)" index="571770" value="1"/>
-  <variable name="C(806,78)" index="571771" value="2"/>
-  <variable name="C(806,80)" index="571772" value="3"/>
-  <variable name="C(806,35)" index="571773" value="4"/>
-  <variable name="C(815,36)" index="571897" value="1"/>
-  <variable name="C(815,54)" index="571898" value="2"/>
+  <variable name="C(813,69)" index="571863" value="1"/>
+  <variable name="C(813,71)" index="571864" value="2"/>
+  <variable name="C(813,51)" index="571865" value="3"/>
+  <variable name="C(823,73)" index="571997" value="1"/>
+  <variable name="C(823,50)" index="571998" value="2"/>
+  <variable name="C(823,18)" index="571999" value="3"/>
+  <variable name="C(823,79)" index="572000" value="4"/>
+  <variable name="C(860,18)" index="572304" value="1"/>
   <variable name="C(866,66)" index="572353" value="1"/>
   <variable name="C(866,6)" index="572354" value="2"/>
   <variable name="C(866,26)" index="572355" value="3"/>
   <variable name="C(866,24)" index="572356" value="4"/>
-  <variable name="C(871,61)" index="572385" value="1"/>
-  <variable name="C(871,34)" index="572386" value="2"/>
-  <variable name="C(885,48)" index="572536" value="1"/>
-  <variable name="C(888,68)" index="572575" value="1"/>
-  <variable name="C(888,52)" index="572576" value="2"/>
-  <variable name="C(894,32)" index="572617" value="1"/>
-  <variable name="C(894,19)" index="572618" value="2"/>
-  <variable name="C(894,22)" index="572619" value="3"/>
-  <variable name="C(894,62)" index="572620" value="4"/>
-  <variable name="C(899,67)" index="572658" value="1"/>
+  <variable name="C(880,1)" index="572479" value="1"/>
+  <variable name="C(880,44)" index="572480" value="2"/>
+  <variable name="C(880,42)" index="572481" value="3"/>
+  <variable name="C(880,43)" index="572482" value="4"/>
   <variable name="C(901,70)" index="572684" value="1"/>
   <variable name="C(901,69)" index="572685" value="2"/>
-  <variable name="C(904,79)" index="572721" value="1"/>
-  <variable name="C(904,75)" index="572722" value="2"/>
-  <variable name="C(904,74)" index="572723" value="3"/>
-  <variable name="C(928,3)" index="573127" value="1"/>
-  <variable name="C(928,4)" index="573128" value="2"/>
-  <variable name="C(928,54)" index="573129" value="3"/>
-  <variable name="C(928,36)" index="573130" value="4"/>
-  <variable name="C(941,2)" index="573345" value="1"/>
-  <variable name="C(941,72)" index="573346" value="2"/>
-  <variable name="C(983,41)" index="573791" value="1"/>
-  <variable name="C(1005,67)" index="574086" value="1"/>
-  <variable name="C(1005,56)" index="574087" value="2"/>
-  <variable name="C(1005,11)" index="574088" value="3"/>
-  <variable name="C(1005,5)" index="574089" value="4"/>
-  <variable name="C(1017,2)" index="574206" value="1"/>
-  <variable name="C(1017,45)" index="574207" value="2"/>
-  <variable name="C(1017,1)" index="574208" value="3"/>
-  <variable name="C(1017,44)" index="574209" value="4"/>
-  <variable name="C(1021,20)" index="574251" value="1"/>
-  <variable name="C(1021,34)" index="574252" value="2"/>
-  <variable name="C(1021,61)" index="574253" value="3"/>
-  <variable name="C(1021,53)" index="574254" value="4"/>
-  <variable name="C(1045,73)" index="574453" value="1"/>
-  <variable name="C(1045,50)" index="574454" value="2"/>
-  <variable name="C(1045,18)" index="574455" value="3.0000000000000009"/>
+  <variable name="C(914,10)" index="572861" value="1"/>
+  <variable name="C(914,11)" index="572862" value="2"/>
+  <variable name="C(914,5)" index="572863" value="3"/>
+  <variable name="C(924,32)" index="573054" value="1"/>
+  <variable name="C(924,24)" index="573055" value="2"/>
+  <variable name="C(924,26)" index="573056" value="3"/>
+  <variable name="C(929,12)" index="573149" value="1"/>
+  <variable name="C(929,61)" index="573150" value="2"/>
+  <variable name="C(929,38)" index="573151" value="3"/>
+  <variable name="C(929,39)" index="573152" value="4"/>
+  <variable name="C(930,36)" index="573157" value="1"/>
+  <variable name="C(930,41)" index="573158" value="2"/>
+  <variable name="C(930,42)" index="573159" value="3"/>
+  <variable name="C(930,44)" index="573160" value="4"/>
+  <variable name="C(936,3)" index="573249" value="1"/>
+  <variable name="C(936,4)" index="573250" value="2"/>
+  <variable name="C(936,54)" index="573251" value="3"/>
+  <variable name="C(969,32)" index="573633" value="1"/>
+  <variable name="C(969,19)" index="573634" value="2"/>
+  <variable name="C(969,22)" index="573635" value="3"/>
+  <variable name="C(979,56)" index="573741" value="1"/>
+  <variable name="C(979,14)" index="573742" value="2"/>
+  <variable name="C(979,37)" index="573743" value="3"/>
+  <variable name="C(982,41)" index="573771" value="1"/>
+  <variable name="C(982,40)" index="573772" value="2"/>
+  <variable name="C(1008,56)" index="574112" value="1"/>
+  <variable name="C(1008,11)" index="574113" value="2"/>
+  <variable name="C(1025,2)" index="574277" value="1"/>
+  <variable name="C(1025,72)" index="574278" value="2"/>
+  <variable name="C(1048,35)" index="574475" value="1"/>
   <variable name="C(1053,69)" index="574534" value="1"/>
   <variable name="C(1053,70)" index="574535" value="2"/>
   <variable name="C(1053,47)" index="574536" value="3"/>
-  <variable name="C(1069,66)" index="574691" value="1"/>
-  <variable name="C(1069,5)" index="574692" value="2"/>
-  <variable name="C(1069,11)" index="574693" value="3"/>
-  <variable name="C(1069,10)" index="574694" value="4"/>
+  <variable name="C(1073,16)" index="574741" value="1"/>
   <variable name="C(1098,58)" index="574984" value="1"/>
   <variable name="C(1098,59)" index="574985" value="2"/>
   <variable name="C(1098,15)" index="574986" value="3"/>
-  <variable name="C(1121,13)" index="575155" value="1"/>
-  <variable name="C(1121,60)" index="575156" value="2"/>
-  <variable name="C(1121,39)" index="575157" value="3"/>
-  <variable name="C(1147,23)" index="575396" value="1"/>
-  <variable name="C(1203,72)" index="576040" value="1"/>
-  <variable name="C(1203,2)" index="576041" value="2"/>
-  <variable name="C(1225,69)" index="576332" value="1"/>
-  <variable name="C(1225,71)" index="576333" value="2"/>
-  <variable name="C(1225,51)" index="576334" value="3"/>
-  <variable name="C(1269,79)" index="576924" value="1"/>
+  <variable name="C(1125,60)" index="575177" value="1"/>
+  <variable name="C(1125,20)" index="575178" value="2"/>
+  <variable name="C(1125,15)" index="575179" value="3"/>
+  <variable name="C(1125,59)" index="575180" value="4"/>
+  <variable name="C(1138,6)" index="575307" value="1"/>
+  <variable name="C(1138,53)" index="575308" value="2"/>
+  <variable name="C(1138,61)" index="575309" value="3"/>
+  <variable name="C(1138,12)" index="575310" value="4"/>
+  <variable name="C(1145,34)" index="575382" value="1"/>
+  <variable name="C(1145,20)" index="575383" value="2"/>
+  <variable name="C(1150,46)" index="575424" value="1"/>
+  <variable name="C(1150,31)" index="575425" value="2"/>
+  <variable name="C(1244,56)" index="576599" value="1"/>
+  <variable name="C(1244,67)" index="576600" value="2"/>
+  <variable name="C(1244,13)" index="576601" value="3"/>
+  <variable name="C(1268,79)" index="576921" value="1"/>
+  <variable name="C(1268,78)" index="576922" value="2"/>
   <variable name="C(1308,47)" index="577424" value="1"/>
   <variable name="C(1308,70)" index="577425" value="2"/>
-  <variable name="C(1327,20)" index="577651" value="1"/>
-  <variable name="C(1329,62)" index="577665" value="1"/>
-  <variable name="C(1329,22)" index="577666" value="2"/>
-  <variable name="C(1339,56)" index="577786" value="1"/>
-  <variable name="C(1339,14)" index="577787" value="2"/>
-  <variable name="C(1339,37)" index="577788" value="3"/>
-  <variable name="C(1342,40)" index="577837" value="1"/>
+  <variable name="C(1318,5)" index="577540" value="1"/>
+  <variable name="C(1318,11)" index="577541" value="2"/>
+  <variable name="C(1318,10)" index="577542" value="3"/>
+  <variable name="C(1330,62)" index="577671" value="1"/>
+  <variable name="C(1330,22)" index="577672" value="2"/>
+  <variable name="C(1330,19)" index="577673" value="3"/>
+  <variable name="C(1330,23)" index="577674" value="4"/>
+  <variable name="C(1349,48)" index="577926" value="1"/>
   <variable name="C(1350,21)" index="577935" value="1"/>
   <variable name="C(1350,49)" index="577936" value="2"/>
-  <variable name="C(1359,73)" index="578050" value="1"/>
-  <variable name="C(1359,52)" index="578051" value="2"/>
-  <variable name="C(1359,68)" index="578052" value="3"/>
+  <variable name="C(1359,50)" index="578049" value="1"/>
+  <variable name="C(1359,73)" index="578050" value="2"/>
+  <variable name="C(1359,52)" index="578051" value="3"/>
+  <variable name="C(1359,68)" index="578052" value="4"/>
   <variable name="C(1367,82)" index="578101" value="1"/>
-  <variable name="C(1368,84)" index="578126" value="1"/>
-  <variable name="C(1385,37)" index="578346" value="1"/>
-  <variable name="C(1385,14)" index="578347" value="2"/>
-  <variable name="C(1393,35)" index="578418" value="1"/>
-  <variable name="C(1393,80)" index="578419" value="2"/>
-  <variable name="C(1393,78)" index="578420" value="3"/>
-  <variable name="C(1393,79)" index="578421" value="4"/>
+  <variable name="C(1389,37)" index="578380" value="1"/>
+  <variable name="C(1389,14)" index="578381" value="2"/>
+  <variable name="C(1389,56)" index="578382" value="3"/>
+  <variable name="C(1394,35)" index="578430" value="1"/>
+  <variable name="C(1394,80)" index="578431" value="2"/>
+  <variable name="C(1394,78)" index="578432" value="3"/>
  </variables>
 </CPLEXSolution>
