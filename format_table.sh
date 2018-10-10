@@ -7,15 +7,27 @@ into_sol=$(cat networks/$1/standard/groups.txt | grep "Number" | awk '{print $NF
 vrp_sol=$(cat networks/$1/vrp/groups.txt | grep "Number" | awk '{print $NF}')
 into_time_ran=$(cat networks/$1/standard/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
 vrp_time_ran=$(cat networks/$1/vrp/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
-gap=$(cat networks/$1/standard/exec.txt | grep "(gap =" | awk '{print $NF}' | tr -d ")")
+#gap=$(cat networks/$1/standard/exec.txt | grep "(gap =" | awk '{print $NF}' | tr -d ")")
 lower=$(cat networks/$1/lower/groups.txt | grep "Number" | awk '{print $NF}')
-iterations=$(cat networks/$1/standard/exec.txt | grep "Iterations" | awk '{print $8}')
-proportion=$(bc <<<"scale=2; $into_sol/$lower")
+lower_time_ran=$(cat networks/$1/lower/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
+#iterations=$(cat networks/$1/standard/exec.txt | grep "Iterations" | awk '{print $8}')
+#proportion=$(bc <<<"scale=2; $into_sol/$lower")
 
-if [ "$gap" == "" ] && [ "$into_sol" != "" ]; then
- 	gap="0.00%"
- fi
+#if [ "$gap" == "" ] && [ "$into_sol" != "" ]; then
+# 	gap="0.00%"
+# fi
+
+#val=`expr $links \* $nodes \* $flows`
 
 # # Format of the table
 # # "| TEST NAME | NODE COUNT | LINK COUNT | FLOW COUNT | TIME RAN | SOLUTION FOUND | LOWER BOUND | GAP | PROPORTION | ITERATIONS |"
-echo "|$(echo $1 | sed 's/_/\\_/g')|$nodes|$links|$flows|$into_time_ran|$into_sol|$vrp_time_ran|$vrp_sol|$lower|$gap|$proportion|$iterations|"
+#echo "|$(echo $1 | sed 's/_/\\_/g')|$nodes|$links|$flows|$into_time_ran|$into_sol|$vrp_time_ran|$vrp_sol|$lower|$gap|$proportion|$iterations|"
+
+# if [ "$into_time_ran" != "" ]; then
+# 	echo $val $into_time_ran
+# fi
+
+
+# Latex table
+echo "$(echo $1 | sed 's/_/\\_/g') & $nodes & $links & $flows & $into_sol & $into_time_ran & $vrp_sol & $vrp_time_ran & $lower & $lower_time_ran & 0 & 0 \\\\ \hline "
+
