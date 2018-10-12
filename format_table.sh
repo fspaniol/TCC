@@ -17,17 +17,6 @@ lower_time_ran=$(cat networks/$1/lower/exec.txt | grep "Total (root+branch&cut)"
 # 	gap="0.00%"
 # fi
 
-#val=`expr $links \* $nodes \* $flows`
-
-# # Format of the table
-# # "| TEST NAME | NODE COUNT | LINK COUNT | FLOW COUNT | TIME RAN | SOLUTION FOUND | LOWER BOUND | GAP | PROPORTION | ITERATIONS |"
-#echo "|$(echo $1 | sed 's/_/\\_/g')|$nodes|$links|$flows|$into_time_ran|$into_sol|$vrp_time_ran|$vrp_sol|$lower|$gap|$proportion|$iterations|"
-
-# if [ "$into_time_ran" != "" ]; then
-# 	echo $val $into_time_ran
-# fi
-
-
 # Latex table
 echo "$(echo $1 | sed 's/_/\\_/g') & $nodes & $links & $flows & $into_sol & $into_time_ran & $vrp_sol & $vrp_time_ran & $lower & $lower_time_ran & 0 & 0 \\\\ \hline "
 
