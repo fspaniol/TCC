@@ -6,7 +6,7 @@ echo "\\begin{landscape}"
 echo "\\begin{longtable}{|c|c|c|c|cc|cc|cc|cc|}"
 echo "\\caption{Result table}"
 echo "\\hline"
-echo "Instance Name & \\#nodes & \\#links & \\#flows & Compact fercu                 &      & VRP                           &      & LB1                           &      & LB2                           &      \\\\ \\hline"
+echo "Instance Name & \\#nodes & \\#links & \\#flows & Compact                 &      & VRP                           &      & LB1                           &      & LB2                           &      \\\\ \\hline"
 echo "&         &         &         & \\multicolumn{1}{c|}{Solution} & Time & \\multicolumn{1}{c|}{Solution} & Time & \\multicolumn{1}{c|}{Solution} & Time & \\multicolumn{1}{c|}{Solution} & Time \\\\ \\hline"
 
 for file in ./networks/zoo_??_*/; do

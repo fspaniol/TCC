@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math"
 	"os"
 	"sort"
 	"strconv"
@@ -32,13 +31,14 @@ func main() {
 	for scanner.Scan() {
 		if i == 0 {
 			v, _ := strconv.Atoi(scanner.Text())
-			s.Solution = float32(math.Log(float64(v)))
+			//s.Solution = float32(math.Log(float64(v)))
+			s.Solution = float32(v)
 			i++
 		} else {
 			i--
 			tmp, _ := strconv.ParseFloat(scanner.Text(), 32)
-			//s.Time = float32(tmp / 10)
-			s.Time = float32(math.Log1p(tmp))
+			s.Time = float32(tmp)
+			//s.Time = float32(math.Log1p(tmp))
 			values = append(values, s)
 		}
 	}
