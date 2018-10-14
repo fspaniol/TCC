@@ -26,6 +26,9 @@ var Y{S,V} >=0;
 var X{A,S} >=0;
 # Check whether arch A is handled by route K
 
+param q;
+# Capacity that each flow can carry at one same time
+
 minimize groups: sum{s in S, u in V} Y[s,u];
 # amount of telemetry submitions
 
