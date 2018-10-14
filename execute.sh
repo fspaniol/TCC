@@ -2,13 +2,13 @@
 
 # Usage: just call this script with the name of the test you want to run and then it will create the linear programming file, it will execute cplex and then convert it
 
-rm networks/$1/vrp/exec.txt
+mkdir networks/$1/lower2
 
 # Generate the linear file
-glpsol -m glpk/vrp.mod -d networks/$1/input.dat --wlp networks/$1/vrp/model.lp --check
+glpsol -m glpk/into-lower2.mod -d networks/$1/input.dat --wlp networks/$1/lower2/model.lp --check
 
 # Execute cplex and put the output into the file folder
-/opt/cplex/cplex/bin/x86-64_sles10_4\.1/cplex -c "READ networks/$1/vrp/model.lp" "SET timelimit 3600" "SET threads 4" "SET logfile networks/$1/vrp/exec.txt" "SET output writelevel 3" "OPTIMIZE" "WRITE networks/$1/vrp/solution.sol" "y"
+/opt/cplex/cplex/bin/x86-64_sles10_4\.1/cplex -c "READ networks/$1/lower2/model.lp" "SET timelimit 3600" "SET threads 4" "SET logfile networks/$1/lower2/exec.txt" "SET output writelevel 3" "OPTIMIZE" "WRITE networks/$1/lower2/solution.sol" "y"
 
 # Execute the parser and put the output into the file folder as well
 #go run scripts/into/parser_into.go $1 >networks/$1/standard/groups.txt
