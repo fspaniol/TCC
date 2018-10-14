@@ -259,11 +259,17 @@ func checkDispatches() {
 }
 
 func main() {
-	sol, err := parser.Transform(fmt.Sprintf("networks/%s/standard/solution.sol", os.Args[1]))
+	sol, err := parser.Transform(fmt.Sprintf("networks/%s/lower2/solution.sol", os.Args[1]))
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
+
+	valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
+	val := math.Round(valueFloat)
+	fmt.Printf("Number of groups: %v\n", val)
+
+	return
 
 	groups = make(map[int]*list.List)
 	breaks = make(map[int]map[string]bool)
@@ -290,8 +296,8 @@ func main() {
 	// 	fmt.Println("OKAY")
 	// }
 
-	valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
-	val := math.Round(valueFloat)
+	valueFloat, _ = strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
+	val = math.Round(valueFloat)
 	fmt.Printf("Number of groups: %v\n", val)
 	output()
 }

@@ -5,5 +5,7 @@
 
 for file in ./networks/*/; do
 	name=$(basename $file)
-	source ./execute.sh $name
+
+	go run scripts/into/parser_into.go $name >networks/$name/lower2/groups.txt
+	#source ./format_table.sh $name
 done
