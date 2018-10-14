@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 02:05:22 2018
+Log started (V12.5.0.0) Sun Sep 30 06:32:19 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -7,7 +7,7 @@ MIP Presolve eliminated 1343625 rows and 2063550 columns.
 Aggregator did 719925 substitutions.
 Reduced MIP has 74100 rows, 221625 columns, and 517125 nonzeros.
 Reduced MIP has 221625 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 8.74 sec. (5080.69 ticks)
+Presolve time = 8.75 sec. (5080.69 ticks)
 Found incumbent of value 60.000000 after 11.00 sec. (6647.94 ticks)
 Probing time = 0.13 sec. (53.18 ticks)
 Tried aggregator 1 time.
@@ -17,7 +17,7 @@ Clique table members: 19050.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 3.90 sec. (2030.35 ticks)
+Root relaxation solution time = 3.91 sec. (2030.35 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
@@ -42,7 +42,7 @@ Solution pool: 3 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  2.6000000000e+01
 Solution time =   38.20 sec.  Iterations = 12  Nodes = 0
-Deterministic time = 20360.27 ticks  (532.96 ticks/sec)
+Deterministic time = 20360.27 ticks  (532.98 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_43_252/vrp/solution.sol'.

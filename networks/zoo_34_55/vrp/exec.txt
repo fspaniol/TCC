@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 01:13:44 2018
+Log started (V12.5.0.0) Sun Sep 30 04:24:53 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -37,24 +37,24 @@ MIP Presolve modified 88 coefficients.
 Aggregator did 3124 substitutions.
 Reduced MIP has 8183 rows, 18040 columns, and 50732 nonzeros.
 Reduced MIP has 18040 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.20 sec. (152.33 ticks)
+Presolve time = 0.19 sec. (152.33 ticks)
 Represolve time = 0.27 sec. (186.47 ticks)
 
 Root node processing (before b&c):
-  Real time             =   16.71 sec. (10486.87 ticks)
+  Real time             =   16.69 sec. (10486.87 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =   16.71 sec. (10486.87 ticks)
+Total (root+branch&cut) =   16.69 sec. (10486.87 ticks)
 
 Solution pool: 4 solutions saved.
 
 MIP - Integer unbounded:  Objective =  1.3000000000e+01
 Current MIP best bound is infinite.
-Solution time =   17.47 sec.  Iterations = 0  Nodes = 0
-Deterministic time = 10916.14 ticks  (624.77 ticks/sec)
+Solution time =   17.45 sec.  Iterations = 0  Nodes = 0
+Deterministic time = 10916.14 ticks  (625.49 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_34_55/vrp/solution.sol'.

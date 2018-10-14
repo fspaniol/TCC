@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 01:24:17 2018
+Log started (V12.5.0.0) Sun Sep 30 04:35:25 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -12,7 +12,7 @@ Found incumbent of value 43.000000 after 1.45 sec. (847.29 ticks)
 Probing time = 0.02 sec. (11.12 ticks)
 Tried aggregator 1 time.
 Presolve time = 0.08 sec. (56.65 ticks)
-Probing time = 0.02 sec. (11.12 ticks)
+Probing time = 0.03 sec. (11.12 ticks)
 Clique table members: 4602.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
@@ -28,24 +28,24 @@ Root relaxation solution time = 0.38 sec. (295.56 ticks)
 *     0+    0                           23.0000       20.0000        9   13.04%
 *     0+    0                           20.0000       20.0000       33    0.00%
       0     0        cutoff             20.0000       20.0000       33    0.00%
-Elapsed time = 3.11 sec. (2035.80 ticks, tree = 0.00 MB, solutions = 4)
+Elapsed time = 3.09 sec. (2035.80 ticks, tree = 0.00 MB, solutions = 4)
 
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-  Real time             =    1.55 sec. (1116.52 ticks)
+  Real time             =    1.53 sec. (1116.52 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    1.55 sec. (1116.52 ticks)
+Total (root+branch&cut) =    1.53 sec. (1116.52 ticks)
 
 Solution pool: 4 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  2.0000000000e+01
-Solution time =    3.16 sec.  Iterations = 33  Nodes = 0
-Deterministic time = 2063.41 ticks  (653.68 ticks/sec)
+Solution time =    3.14 sec.  Iterations = 33  Nodes = 0
+Deterministic time = 2063.41 ticks  (656.23 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_37_76/vrp/solution.sol'.

@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 03:00:00 2018
+Log started (V12.5.0.0) Sun Sep 30 07:45:46 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -7,9 +7,9 @@ MIP Presolve eliminated 1462671 rows and 2364158 columns.
 Aggregator did 901487 substitutions.
 Reduced MIP has 70006 rows, 209379 columns, and 488551 nonzeros.
 Reduced MIP has 209379 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 11.00 sec. (6627.81 ticks)
-Found incumbent of value 71.000000 after 12.14 sec. (7295.88 ticks)
-Probing time = 0.13 sec. (49.68 ticks)
+Presolve time = 10.97 sec. (6627.81 ticks)
+Found incumbent of value 71.000000 after 12.10 sec. (7295.88 ticks)
+Probing time = 0.12 sec. (49.68 ticks)
 Tried aggregator 1 time.
 Presolve time = 0.56 sec. (295.13 ticks)
 Probing time = 0.14 sec. (49.68 ticks)
@@ -17,7 +17,7 @@ Clique table members: 21726.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 5.27 sec. (3437.18 ticks)
+Root relaxation solution time = 5.30 sec. (3437.18 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
@@ -29,19 +29,19 @@ Root relaxation solution time = 5.27 sec. (3437.18 ticks)
 Elapsed time = 36.28 sec. (20777.92 ticks, tree = 0.00 MB, solutions = 2)
 
 Root node processing (before b&c):
-  Real time             =   23.37 sec. (13095.34 ticks)
+  Real time             =   23.40 sec. (13095.34 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =   23.37 sec. (13095.34 ticks)
+Total (root+branch&cut) =   23.40 sec. (13095.34 ticks)
 
 Solution pool: 2 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  2.4000000000e+01
 Solution time =   36.52 sec.  Iterations = 10  Nodes = 0
-Deterministic time = 20902.74 ticks  (572.32 ticks/sec)
+Deterministic time = 20902.74 ticks  (572.36 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_45_304/vrp/solution.sol'.

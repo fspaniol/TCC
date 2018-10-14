@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 00:57:38 2018
+Log started (V12.5.0.0) Sat Sep 29 23:13:23 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -17,7 +17,7 @@ Clique table members: 6096.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 0.60 sec. (469.11 ticks)
+Root relaxation solution time = 0.61 sec. (469.11 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
@@ -25,7 +25,7 @@ Root relaxation solution time = 0.60 sec. (469.11 ticks)
 *     0+    0                           35.0000        0.0000       11  100.00%
 *     0+    0                           33.0000        0.0000       11  100.00%
 *     0     0      integral     0       18.0000       18.0000       11    0.00%
-Elapsed time = 2.77 sec. (1745.10 ticks, tree = 0.00 MB, solutions = 3)
+Elapsed time = 2.79 sec. (1745.10 ticks, tree = 0.00 MB, solutions = 3)
 
 Root node processing (before b&c):
   Real time             =    0.81 sec. (581.87 ticks)
@@ -39,8 +39,8 @@ Total (root+branch&cut) =    0.81 sec. (581.87 ticks)
 Solution pool: 3 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  1.8000000000e+01
-Solution time =    2.82 sec.  Iterations = 11  Nodes = 0
-Deterministic time = 1770.71 ticks  (626.96 ticks/sec)
+Solution time =    2.84 sec.  Iterations = 11  Nodes = 0
+Deterministic time = 1770.71 ticks  (624.00 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_26_125/vrp/solution.sol'.

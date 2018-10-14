@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 01:08:12 2018
+Log started (V12.5.0.0) Sun Sep 30 04:19:16 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -26,24 +26,24 @@ Root relaxation solution time = 0.62 sec. (453.66 ticks)
       0     0       33.0000   182       58.0000       33.0000        9   43.10%
 *     0+    0                           33.0000       33.0000       26    0.00%
       0     0        cutoff             33.0000       33.0000       26    0.00%
-Elapsed time = 5.94 sec. (3823.70 ticks, tree = 0.00 MB, solutions = 2)
+Elapsed time = 5.93 sec. (3823.70 ticks, tree = 0.00 MB, solutions = 2)
 
 Gomory fractional cuts applied:  4
 
 Root node processing (before b&c):
-  Real time             =    2.81 sec. (2030.02 ticks)
+  Real time             =    2.79 sec. (2030.02 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    2.81 sec. (2030.02 ticks)
+Total (root+branch&cut) =    2.79 sec. (2030.02 ticks)
 
 Solution pool: 2 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  3.3000000000e+01
-Solution time =    6.02 sec.  Iterations = 26  Nodes = 0
-Deterministic time = 3862.98 ticks  (641.40 ticks/sec)
+Solution time =    6.01 sec.  Iterations = 26  Nodes = 0
+Deterministic time = 3862.98 ticks  (643.13 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_34_109/vrp/solution.sol'.

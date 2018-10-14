@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 00:55:22 2018
+Log started (V12.5.0.0) Mon Sep 24 12:47:15 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -39,7 +39,7 @@ Solution pool: 2 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  5.0000000000e+00
 Solution time =    0.04 sec.  Iterations = 338  Nodes = 0
-Deterministic time = 28.86 ticks  (670.34 ticks/sec)
+Deterministic time = 28.86 ticks  (669.22 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_10_20/vrp/solution.sol'.

@@ -7,13 +7,13 @@
    objectiveValue="35"
    solutionTypeValue="3"
    solutionTypeString="primal"
-   solutionStatusValue="107"
-   solutionStatusString="time limit exceeded"
+   solutionStatusValue="101"
+   solutionStatusString="integer optimal solution"
    solutionMethodString="mip"
    primalFeasible="1"
-   dualFeasible="0"
-   MIPNodes="2"
-   MIPIterations="14335"
+   dualFeasible="1"
+   MIPNodes="3"
+   MIPIterations="21157"
    writeLevel="3"/>
  <quality
    epInt="1e-05"

@@ -12,8 +12,8 @@
    solutionMethodString="mip"
    primalFeasible="1"
    dualFeasible="0"
-   MIPNodes="594"
-   MIPIterations="311849"
+   MIPNodes="3560"
+   MIPIterations="2377125"
    writeLevel="3"/>
  <quality
    epInt="1e-05"

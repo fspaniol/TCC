@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 00:59:56 2018
+Log started (V12.5.0.0) Sun Sep 30 00:21:12 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -7,8 +7,8 @@ MIP Presolve eliminated 211922 rows and 333592 columns.
 Aggregator did 121670 substitutions.
 Reduced MIP has 18860 rows, 56166 columns, and 131054 nonzeros.
 Reduced MIP has 56166 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 1.17 sec. (648.84 ticks)
-Found incumbent of value 36.000000 after 1.54 sec. (904.58 ticks)
+Presolve time = 1.18 sec. (648.84 ticks)
+Found incumbent of value 36.000000 after 1.59 sec. (904.58 ticks)
 Probing time = 0.03 sec. (14.27 ticks)
 Tried aggregator 1 time.
 Presolve time = 0.12 sec. (70.17 ticks)
@@ -26,7 +26,7 @@ Root relaxation solution time = 0.60 sec. (416.50 ticks)
       0     0       14.0000   111       36.0000       14.0000       12   61.11%
 *     0+    0                           14.0000       14.0000       18    0.00%
       0     0        cutoff             14.0000       14.0000       18    0.00%
-Elapsed time = 4.69 sec. (3356.40 ticks, tree = 0.00 MB, solutions = 2)
+Elapsed time = 4.73 sec. (3356.40 ticks, tree = 0.00 MB, solutions = 2)
 
 Implied bound cuts applied:  1
 Gomory fractional cuts applied:  1
@@ -43,8 +43,8 @@ Total (root+branch&cut) =    2.98 sec. (2357.83 ticks)
 Solution pool: 2 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  1.4000000000e+01
-Solution time =    4.73 sec.  Iterations = 18  Nodes = 0
-Deterministic time = 3374.86 ticks  (713.90 ticks/sec)
+Solution time =    4.79 sec.  Iterations = 18  Nodes = 0
+Deterministic time = 3374.86 ticks  (704.28 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_29_109/vrp/solution.sol'.

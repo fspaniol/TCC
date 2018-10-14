@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 02:03:04 2018
+Log started (V12.5.0.0) Sun Sep 30 06:30:01 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -7,8 +7,8 @@ MIP Presolve eliminated 253080 rows and 400824 columns.
 Aggregator did 147744 substitutions.
 Reduced MIP has 20007 rows, 59508 columns, and 138852 nonzeros.
 Reduced MIP has 59508 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 1.33 sec. (708.16 ticks)
-Found incumbent of value 57.000000 after 1.57 sec. (872.26 ticks)
+Presolve time = 1.34 sec. (708.16 ticks)
+Found incumbent of value 57.000000 after 1.58 sec. (872.26 ticks)
 Probing time = 0.03 sec. (15.03 ticks)
 Tried aggregator 1 time.
 Presolve time = 0.12 sec. (77.72 ticks)
@@ -28,22 +28,22 @@ Root relaxation solution time = 0.76 sec. (497.70 ticks)
 *     0+    0                           27.0000       22.0000       11   18.52%
 *     0+    0                           22.0000       22.0000       11    0.00%
       0     0        cutoff             22.0000       22.0000       11    0.00%
-Elapsed time = 4.96 sec. (2866.16 ticks, tree = 0.00 MB, solutions = 4)
+Elapsed time = 4.98 sec. (2866.16 ticks, tree = 0.00 MB, solutions = 4)
 
 Root node processing (before b&c):
-  Real time             =    3.23 sec. (1895.40 ticks)
+  Real time             =    3.24 sec. (1895.40 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =    3.23 sec. (1895.40 ticks)
+Total (root+branch&cut) =    3.24 sec. (1895.40 ticks)
 
 Solution pool: 4 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  2.2000000000e+01
-Solution time =    5.01 sec.  Iterations = 11  Nodes = 0
-Deterministic time = 2896.20 ticks  (577.78 ticks/sec)
+Solution time =    5.03 sec.  Iterations = 11  Nodes = 0
+Deterministic time = 2896.20 ticks  (575.50 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_42_84/vrp/solution.sol'.

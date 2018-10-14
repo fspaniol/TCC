@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 02:03:42 2018
+Log started (V12.5.0.0) Sun Sep 30 06:30:39 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -34,19 +34,19 @@ Implied bound cuts applied:  1
 Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-  Real time             =   26.18 sec. (19765.74 ticks)
+  Real time             =   26.17 sec. (19765.74 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =   26.18 sec. (19765.74 ticks)
+Total (root+branch&cut) =   26.17 sec. (19765.74 ticks)
 
 Solution pool: 4 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  2.0000000000e+01
 Solution time =   32.07 sec.  Iterations = 241  Nodes = 0
-Deterministic time = 23322.05 ticks  (727.19 ticks/sec)
+Deterministic time = 23322.05 ticks  (727.24 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_43_168/vrp/solution.sol'.

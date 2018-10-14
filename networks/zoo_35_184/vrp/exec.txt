@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 01:15:12 2018
+Log started (V12.5.0.0) Sun Sep 30 04:26:21 2018
 
 New value for writelevel: 3
 Tried aggregator 2 times.
@@ -8,7 +8,7 @@ Aggregator did 284100 substitutions.
 Reduced MIP has 38050 rows, 113700 columns, and 265300 nonzeros.
 Reduced MIP has 113700 binaries, 0 generals, 0 SOSs, and 0 indicators.
 Presolve time = 3.04 sec. (1732.57 ticks)
-Found incumbent of value 45.000000 after 3.91 sec. (2361.62 ticks)
+Found incumbent of value 45.000000 after 3.90 sec. (2361.62 ticks)
 Probing time = 0.06 sec. (27.74 ticks)
 Tried aggregator 1 time.
 Presolve time = 0.27 sec. (163.77 ticks)
@@ -28,22 +28,22 @@ Root relaxation solution time = 1.37 sec. (884.91 ticks)
 *     0+    0                           23.0000       19.0000       11   17.39%
 *     0+    0                           19.0000       19.0000       11    0.00%
       0     0        cutoff             19.0000       19.0000       11    0.00%
-Elapsed time = 14.29 sec. (9881.58 ticks, tree = 0.00 MB, solutions = 4)
+Elapsed time = 14.27 sec. (9881.58 ticks, tree = 0.00 MB, solutions = 4)
 
 Root node processing (before b&c):
-  Real time             =   10.02 sec. (7318.17 ticks)
+  Real time             =   10.00 sec. (7318.17 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =   10.02 sec. (7318.17 ticks)
+Total (root+branch&cut) =   10.00 sec. (7318.17 ticks)
 
 Solution pool: 4 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  1.9000000000e+01
-Solution time =   14.39 sec.  Iterations = 11  Nodes = 0
-Deterministic time = 9936.23 ticks  (690.68 ticks/sec)
+Solution time =   14.37 sec.  Iterations = 11  Nodes = 0
+Deterministic time = 9936.23 ticks  (691.66 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_35_184/vrp/solution.sol'.

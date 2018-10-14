@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 03:57:56 2018
+Log started (V12.5.0.0) Sun Sep 30 09:46:41 2018
 
 New value for writelevel: 3
 Aggregator has done 1547972 substitutions...
@@ -8,7 +8,7 @@ MIP Presolve eliminated 3114232 rows and 4673498 columns.
 Aggregator did 1559266 substitutions.
 Reduced MIP has 147662 rows, 442212 columns, and 1031828 nonzeros.
 Reduced MIP has 442212 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 24.03 sec. (15064.12 ticks)
+Presolve time = 24.04 sec. (15064.12 ticks)
 Found incumbent of value 86.000000 after 26.82 sec. (16420.51 ticks)
 Probing time = 0.30 sec. (103.99 ticks)
 Tried aggregator 1 time.
@@ -18,7 +18,7 @@ Clique table members: 38098.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 13.17 sec. (6416.94 ticks)
+Root relaxation solution time = 13.13 sec. (6416.94 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
@@ -35,17 +35,17 @@ MIP Presolve modified 1892 coefficients.
 Aggregator did 62952 substitutions.
 Reduced MIP has 83247 rows, 203218 columns, and 603978 nonzeros.
 Reduced MIP has 203218 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 7.31 sec. (4909.35 ticks)
+Presolve time = 7.32 sec. (4909.35 ticks)
 Probing time = 0.53 sec. (83.94 ticks)
 Tried aggregator 1 time.
 Presolve time = 1.75 sec. (1878.26 ticks)
-Represolve time = 10.51 sec. (7365.54 ticks)
+Represolve time = 10.52 sec. (7365.54 ticks)
 Probing time = 0.53 sec. (83.94 ticks)
 Clique table members: 928756.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
 Parallel mode: deterministic, using up to 4 threads.
-Root relaxation solution time = 7.40 sec. (5102.14 ticks)
+Root relaxation solution time = 7.37 sec. (5102.14 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
@@ -54,22 +54,22 @@ Root relaxation solution time = 7.40 sec. (5102.14 ticks)
       0     0       24.0000   262       25.0000       24.0000       19    4.00%
 *     0+    0                           24.0000       24.0000       19    0.00%
       0     0        cutoff             24.0000       24.0000       19    0.00%
-Elapsed time = 204.64 sec. (83810.66 ticks, tree = 0.00 MB, solutions = 4)
+Elapsed time = 205.73 sec. (83810.66 ticks, tree = 0.00 MB, solutions = 4)
 
 Root node processing (before b&c):
-  Real time             =  176.13 sec. (66676.67 ticks)
+  Real time             =  177.21 sec. (66676.67 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =  176.13 sec. (66676.67 ticks)
+Total (root+branch&cut) =  177.21 sec. (66676.67 ticks)
 
 Solution pool: 4 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  2.4000000000e+01
-Solution time =  205.33 sec.  Iterations = 19  Nodes = 0
-Deterministic time = 84139.09 ticks  (409.77 ticks/sec)
+Solution time =  206.42 sec.  Iterations = 19  Nodes = 0
+Deterministic time = 84139.09 ticks  (407.61 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_48_441/vrp/solution.sol'.

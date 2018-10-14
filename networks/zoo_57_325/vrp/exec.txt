@@ -1,5 +1,5 @@
 
-Log started (V12.5.0.0) Wed Sep 12 08:26:04 2018
+Log started (V12.5.0.0) Sun Sep 30 19:06:43 2018
 
 New value for writelevel: 3
 Aggregator has done 1767073 substitutions...
@@ -8,8 +8,8 @@ MIP Presolve eliminated 3669624 rows and 5443848 columns.
 Aggregator did 1774224 substitutions.
 Reduced MIP has 121500 rows, 363528 columns, and 848232 nonzeros.
 Reduced MIP has 363528 binaries, 0 generals, 0 SOSs, and 0 indicators.
-Presolve time = 24.09 sec. (14043.56 ticks)
-Found incumbent of value 108.000000 after 26.43 sec. (15332.06 ticks)
+Presolve time = 24.12 sec. (14043.56 ticks)
+Found incumbent of value 108.000000 after 26.46 sec. (15332.06 ticks)
 Probing time = 0.24 sec. (84.54 ticks)
 Tried aggregator 1 time.
 Presolve time = 1.09 sec. (538.33 ticks)
@@ -28,24 +28,24 @@ Root relaxation solution time = 5.40 sec. (2846.89 ticks)
       0     0       39.0000   177      106.0000       39.0000       11   63.21%
 *     0+    0                           39.0000       39.0000       12    0.00%
       0     0        cutoff             39.0000       39.0000       12    0.00%
-Elapsed time = 55.29 sec. (27644.19 ticks, tree = 0.00 MB, solutions = 3)
+Elapsed time = 55.34 sec. (27644.19 ticks, tree = 0.00 MB, solutions = 3)
 
 Implied bound cuts applied:  1
 
 Root node processing (before b&c):
-  Real time             =   27.41 sec. (11638.35 ticks)
+  Real time             =   27.44 sec. (11638.35 ticks)
 Parallel b&c, 4 threads:
   Real time             =    0.00 sec. (0.00 ticks)
   Sync time (average)   =    0.00 sec.
   Wait time (average)   =    0.00 sec.
                           ------------
-Total (root+branch&cut) =   27.41 sec. (11638.35 ticks)
+Total (root+branch&cut) =   27.44 sec. (11638.35 ticks)
 
 Solution pool: 3 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  3.9000000000e+01
-Solution time =   55.91 sec.  Iterations = 12  Nodes = 0
-Deterministic time = 27965.66 ticks  (500.18 ticks/sec)
+Solution time =   55.95 sec.  Iterations = 12  Nodes = 0
+Deterministic time = 27965.66 ticks  (499.87 ticks/sec)
 
 
 Incumbent solution written to file 'networks/zoo_57_325/vrp/solution.sol'.
