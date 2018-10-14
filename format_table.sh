@@ -8,9 +8,9 @@ vrp_sol=$(cat networks/$1/vrp/groups.txt | grep "Number" | awk '{print $NF}')
 into_time_ran=$(cat networks/$1/standard/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
 vrp_time_ran=$(cat networks/$1/vrp/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
 lower=$(cat networks/$1/lower/groups.txt | grep "Number" | awk '{print $NF}')
-lower_time_ran=$(cat networks/$1/lower/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
+#lower_time_ran=$(cat networks/$1/lower/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
 lower2=$(cat networks/$1/lower2/groups.txt | grep "Number" | awk '{print $NF}')
-lower2_time_ran=$(cat networks/$1/lower2/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
+#lower2_time_ran=$(cat networks/$1/lower2/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
 
 
 # Latex table
