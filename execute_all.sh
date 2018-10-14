@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#echo "| TEST NAME | NODE COUNT | LINK COUNT | FLOW COUNT | INTO TIME RAN | INTO SOLUTION | VRP TIME RAN | VRP SOLUTION | LOWER BOUND | GAP (%)| PROPORTION | ITERATIONS |"
+echo "| TEST NAME | NODE COUNT | LINK COUNT | FLOW COUNT | COMPACT SOLUTION | COMPACT TIME | VRP SOLUTION | VRP TIME | LOWER SOLUTION | LOWER TIME | RELAX SOLUTION | RELAX TIME |"
 echo "|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|"
 
 for file in ./networks/*/; do
