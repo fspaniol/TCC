@@ -265,12 +265,6 @@ func main() {
 		return
 	}
 
-	valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
-	val := math.Round(valueFloat)
-	fmt.Printf("Number of groups: %v\n", val)
-
-	return
-
 	groups = make(map[int]*list.List)
 	breaks = make(map[int]map[string]bool)
 	links = make(map[string]map[string]int)
@@ -296,8 +290,8 @@ func main() {
 	// 	fmt.Println("OKAY")
 	// }
 
-	valueFloat, _ = strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
-	val = math.Round(valueFloat)
+	valueFloat, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
+	val := math.Round(valueFloat)
 	fmt.Printf("Number of groups: %v\n", val)
 	output()
 }

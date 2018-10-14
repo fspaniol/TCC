@@ -18,7 +18,7 @@ lower2_time_ran=$(cat networks/$1/lower2/exec.txt | grep "Total (root+branch&cut
 
 # # Format of the table
 # # "| TEST NAME | NODE COUNT | LINK COUNT | FLOW COUNT | COMPACT SOLUTION | COMPACT TIME RAN | VRP SOLUTION | VRP TIME RAN | LOWER SOLUTION | LOWER TIME RAN | LOWER2 SOLUTION | LOWER2 TIME RAN |"
-echo "|$(echo $1 | sed 's/_/\\_/g')|$nodes|$links|$flows|$into_time_ran|$into_sol|$vrp_time_ran|$vrp_sol|$lower|$lower_time_ran|$lower2|$lower2_time_ran|"
+echo "|$(echo $1 | sed 's/_/\\_/g')|$nodes|$links|$flows|$into_sol|$into_time_ran|$vrp_sol|$vrp_time_ran|$lower|$lower_time_ran|$lower2|$lower2_time_ran|"
 
 
 #gap=$(cat networks/$1/standard/exec.txt | grep "(gap =" | awk '{print $NF}' | tr -d ")")
