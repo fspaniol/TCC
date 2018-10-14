@@ -1,0 +1,58 @@
+
+Log started (V12.5.0.0) Sun Oct 14 01:01:43 2018
+
+New value for writelevel: 4
+Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
+Tried aggregator 1 time.
+LP Presolve eliminated 1129062 rows and 1760634 columns.
+Aggregator did 7 substitutions.
+Reduced LP has 70169 rows, 74759 columns, and 214669 nonzeros.
+Presolve time = 1.40 sec. (582.40 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.000000
+Perturbation started.
+Iteration:   203   Dual objective     =            70.000000
+Iteration:   999   Dual objective     =            70.000008
+Iteration:  1743   Dual objective     =            70.000014
+Iteration:  2442   Dual objective     =            70.000018
+Iteration:  3137   Dual objective     =            70.000022
+Iteration:  3792   Dual objective     =            70.000026
+Iteration:  4403   Dual objective     =            70.000029
+Iteration:  4979   Dual objective     =            70.000031
+Iteration:  5524   Dual objective     =            71.000032
+Iteration:  6043   Dual objective     =            71.000033
+Iteration:  6532   Dual objective     =            71.000035
+Iteration:  6994   Dual objective     =            71.000036
+Iteration:  7430   Dual objective     =            71.000037
+Iteration:  7826   Dual objective     =            71.000038
+Iteration:  8253   Dual objective     =            71.000039
+Iteration:  8610   Dual objective     =            71.000040
+Iteration:  8940   Dual objective     =            71.000040
+Iteration:  9241   Dual objective     =            71.000040
+Iteration:  9538   Dual objective     =            71.000041
+Iteration:  9892   Dual objective     =            71.000041
+Iteration: 10217   Dual objective     =            71.000042
+Iteration: 10524   Dual objective     =            71.000042
+Iteration: 10874   Dual objective     =            71.000043
+Iteration: 11217   Dual objective     =            71.000043
+Iteration: 11481   Dual objective     =            71.000043
+Iteration: 11753   Dual objective     =            71.000044
+Iteration: 12069   Dual objective     =            71.000044
+Iteration: 12372   Dual objective     =            71.000044
+Iteration: 12641   Dual objective     =            71.000044
+Iteration: 12901   Dual objective     =            71.000044
+Iteration: 13135   Dual objective     =            71.000044
+Removing perturbation.
+Using devex.
+
+Barrier solved model.
+
+
+Primal simplex - Optimal:  Objective =  7.1000000000e+01
+Solution time =    5.12 sec.  Iterations = 0 (0)
+Deterministic time = 2746.36 ticks  (536.80 ticks/sec)
+
+
+Solution written to file 'networks/zoo_140_4830/lower2/solution.sol'.

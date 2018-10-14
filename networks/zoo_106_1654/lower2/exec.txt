@@ -1,0 +1,46 @@
+
+Log started (V12.5.0.0) Sun Oct 14 00:44:35 2018
+
+New value for writelevel: 4
+Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
+Tried aggregator 1 time.
+LP Presolve eliminated 353736 rows and 510631 columns.
+Aggregator did 43 substitutions.
+Reduced LP has 13856 rows, 15298 columns, and 42820 nonzeros.
+Presolve time = 0.37 sec. (170.36 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             3.960000
+Perturbation started.
+Iteration:   203   Dual objective     =            48.970000
+Iteration:   606   Dual objective     =            48.970017
+Iteration:   988   Dual objective     =            48.970029
+Iteration:  1348   Dual objective     =            52.980037
+Iteration:  1697   Dual objective     =            52.980045
+Iteration:  2016   Dual objective     =            55.980049
+Iteration:  2310   Dual objective     =            58.980052
+Iteration:  2596   Dual objective     =            63.990052
+Iteration:  2808   Dual objective     =            65.990051
+Iteration:  3042   Dual objective     =            65.990055
+Iteration:  3225   Dual objective     =            65.990056
+Iteration:  3379   Dual objective     =            65.990057
+Iteration:  3578   Dual objective     =            65.990061
+Iteration:  3775   Dual objective     =            65.990064
+Iteration:  3997   Dual objective     =            65.990066
+Iteration:  4189   Dual objective     =            66.990066
+Iteration:  4376   Dual objective     =            68.000065
+Iteration:  4546   Dual objective     =            68.000065
+Iteration:  4701   Dual objective     =            68.000066
+Removing perturbation.
+Reinitializing dual norms . . .
+
+Dual simplex solved model.
+
+
+Dual simplex - Optimal:  Objective =  6.8000000000e+01
+Solution time =    0.92 sec.  Iterations = 4759 (0)
+Deterministic time = 554.23 ticks  (601.34 ticks/sec)
+
+
+Solution written to file 'networks/zoo_106_1654/lower2/solution.sol'.

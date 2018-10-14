@@ -1,0 +1,47 @@
+
+Log started (V12.5.0.0) Sun Oct 14 00:54:30 2018
+
+New value for writelevel: 4
+Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
+Tried aggregator 1 time.
+LP Presolve eliminated 704094 rows and 1111631 columns.
+Aggregator did 21 substitutions.
+Reduced LP has 24771 rows, 27892 columns, and 77099 nonzeros.
+Presolve time = 0.81 sec. (350.07 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             2.970000
+Perturbation started.
+Iteration:   203   Dual objective     =            62.970000
+Iteration:   725   Dual objective     =            63.980012
+Iteration:  1220   Dual objective     =            63.980020
+Iteration:  1678   Dual objective     =            63.980027
+Iteration:  2107   Dual objective     =            64.980032
+Iteration:  2516   Dual objective     =            65.980036
+Iteration:  2904   Dual objective     =            65.980041
+Iteration:  3271   Dual objective     =            69.990041
+Iteration:  3620   Dual objective     =            71.990042
+Iteration:  3942   Dual objective     =            71.990044
+Iteration:  4213   Dual objective     =            73.000045
+Iteration:  4453   Dual objective     =            73.000046
+Iteration:  4716   Dual objective     =            73.000047
+Iteration:  4946   Dual objective     =            73.000048
+Iteration:  5144   Dual objective     =            73.000049
+Iteration:  5366   Dual objective     =            73.000049
+Iteration:  5580   Dual objective     =            73.000050
+Iteration:  5770   Dual objective     =            73.000050
+Iteration:  5956   Dual objective     =            73.000051
+Iteration:  6114   Dual objective     =            73.000051
+Removing perturbation.
+Reinitializing dual norms . . .
+
+Dual simplex solved model.
+
+
+Dual simplex - Optimal:  Objective =  7.3000000000e+01
+Solution time =    1.81 sec.  Iterations = 6259 (0)
+Deterministic time = 1107.98 ticks  (610.53 ticks/sec)
+
+
+Solution written to file 'networks/zoo_129_3332/lower2/solution.sol'.

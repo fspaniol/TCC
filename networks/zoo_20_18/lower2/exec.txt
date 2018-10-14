@@ -1,0 +1,19 @@
+
+Log started (V12.5.0.0) Sun Oct 14 01:19:00 2018
+
+New value for writelevel: 4
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 478 columns.
+Aggregator did 8 substitutions.
+Reduced LP has 68 rows, 72 columns, and 207 nonzeros.
+Presolve time = 0.00 sec. (0.20 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             2.000000
+
+Dual simplex - Optimal:  Objective =  6.0000000000e+00
+Solution time =    0.00 sec.  Iterations = 27 (0)
+Deterministic time = 0.39 ticks  (354.83 ticks/sec)
+
+
+Solution written to file 'networks/zoo_20_18/lower2/solution.sol'.

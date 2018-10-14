@@ -1,0 +1,47 @@
+
+Log started (V12.5.0.0) Sun Oct 14 00:52:24 2018
+
+New value for writelevel: 4
+Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
+Tried aggregator 1 time.
+LP Presolve eliminated 605071 rows and 943512 columns.
+Aggregator did 13 substitutions.
+Reduced LP has 20654 rows, 23375 columns, and 64341 nonzeros.
+Presolve time = 0.68 sec. (298.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.000000
+Perturbation started.
+Iteration:   203   Dual objective     =            60.000000
+Iteration:   684   Dual objective     =            60.000011
+Iteration:  1122   Dual objective     =            60.000019
+Iteration:  1536   Dual objective     =            60.000025
+Iteration:  1920   Dual objective     =            60.000030
+Iteration:  2284   Dual objective     =            61.000034
+Iteration:  2589   Dual objective     =            62.000036
+Iteration:  2895   Dual objective     =            63.000038
+Iteration:  3156   Dual objective     =            63.000040
+Iteration:  3435   Dual objective     =            63.000044
+Iteration:  3677   Dual objective     =            65.000042
+Iteration:  3891   Dual objective     =            65.000043
+Iteration:  4140   Dual objective     =            65.000044
+Iteration:  4372   Dual objective     =            65.000046
+Iteration:  4589   Dual objective     =            65.000047
+Iteration:  4790   Dual objective     =            65.000048
+Iteration:  4995   Dual objective     =            65.000049
+Iteration:  5195   Dual objective     =            65.000050
+Iteration:  5415   Dual objective     =            65.000050
+Iteration:  5589   Dual objective     =            65.000050
+Removing perturbation.
+Using devex.
+
+Barrier solved model.
+
+
+Primal simplex - Optimal:  Objective =  6.5000000000e+01
+Solution time =    1.61 sec.  Iterations = 0 (0)
+Deterministic time = 935.39 ticks  (581.56 ticks/sec)
+
+
+Solution written to file 'networks/zoo_122_2930/lower2/solution.sol'.

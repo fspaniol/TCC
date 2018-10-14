@@ -1,0 +1,48 @@
+
+Log started (V12.5.0.0) Sun Oct 14 00:55:47 2018
+
+New value for writelevel: 4
+Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
+Tried aggregator 1 time.
+LP Presolve eliminated 732690 rows and 1159932 columns.
+Aggregator did 10 substitutions.
+Reduced LP has 24314 rows, 27530 columns, and 75782 nonzeros.
+Presolve time = 0.85 sec. (363.44 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             1.000000
+Perturbation started.
+Iteration:   203   Dual objective     =            64.000000
+Iteration:   722   Dual objective     =            64.000011
+Iteration:  1208   Dual objective     =            64.000019
+Iteration:  1666   Dual objective     =            64.000026
+Iteration:  2084   Dual objective     =            64.000031
+Iteration:  2466   Dual objective     =            64.000034
+Iteration:  2805   Dual objective     =            65.000036
+Iteration:  3091   Dual objective     =            65.000038
+Iteration:  3378   Dual objective     =            65.000040
+Iteration:  3682   Dual objective     =            65.000041
+Iteration:  3941   Dual objective     =            65.000042
+Iteration:  4181   Dual objective     =            65.000044
+Iteration:  4465   Dual objective     =            65.000046
+Iteration:  4708   Dual objective     =            65.000046
+Iteration:  4944   Dual objective     =            65.000047
+Iteration:  5161   Dual objective     =            65.000048
+Iteration:  5388   Dual objective     =            65.000049
+Iteration:  5588   Dual objective     =            65.000050
+Iteration:  5798   Dual objective     =            65.000050
+Iteration:  6003   Dual objective     =            65.000051
+Iteration:  6205   Dual objective     =            65.000051
+Removing perturbation.
+Using devex.
+
+Barrier solved model.
+
+
+Primal simplex - Optimal:  Objective =  6.5000000000e+01
+Solution time =    2.00 sec.  Iterations = 0 (0)
+Deterministic time = 1128.06 ticks  (563.71 ticks/sec)
+
+
+Solution written to file 'networks/zoo_132_3432/lower2/solution.sol'.

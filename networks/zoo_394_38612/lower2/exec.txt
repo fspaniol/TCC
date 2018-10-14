@@ -1,0 +1,7 @@
+
+Log started (V12.5.0.0) Sun Oct 14 14:42:52 2018
+
+New value for writelevel: 4
+No problem exists.
+No problem exists.
+No file written.
