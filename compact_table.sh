@@ -38,6 +38,8 @@ for file in ./networks/*/ ; do
     links=$(wc -l <networks/$name/links.txt | sed -e 's/^[ \t]*//')
     flows="$(cut -d'_' -f3 <<<$name)"
 
+    # echo $nodes $links $flows > networks/$name/info.txt
+
     if [ $nodes -le 30 ] ; then
         if [ $links -le 25 ] ; then
             if [ $flows -le 12 ]; then
