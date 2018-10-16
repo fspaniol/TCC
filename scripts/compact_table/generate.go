@@ -13,12 +13,15 @@ import (
 )
 
 type scenario struct {
-	nodes    int
-	links    int
-	flows    int
-	time     float32
-	solution int
-	gap      float32
+	nodes           int
+	links           int
+	flows           int
+	time            float32
+	compactSolution int
+	vrpSolution     int
+	lowerSolution   int
+	lower2Solution  int
+	gap             float32
 }
 
 // depois tem que incluir o tempo, botando no arquivo info.txt
@@ -39,6 +42,16 @@ var (
 		{0, 300, 2750, 4300, 8000, 15000},
 	}
 )
+
+func getSolution(path string) (int, error) {
+	sol, err := parser.Transform(path)
+	if err != nil {
+		return 0, err
+	}
+
+	valCompact, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
+	return int(math.Round(valCompact)), nil
+}
 
 func sortEntry(s scenario) {
 	i := 0
@@ -91,21 +104,32 @@ func fillScenarios() {
 		scanner.Scan()
 		flows, _ := strconv.Atoi(scanner.Text())
 
-		sol, err := parser.Transform(fmt.Sprintf("networks/%s/standard/solution.sol", f.Name()))
+		/*solCompact, err := getSolution(fmt.Sprintf("networks/%s/standard/solution.sol", f.Name()))
 		if err != nil {
 			continue
 		}
 
-		val, _ := strconv.ParseFloat(sol.Header.ObjectiveValue, 32)
-		val = math.Round(val)
+		solVrp, err := getSolution(fmt.Sprintf("networks/%s/vrp/solution.sol", f.Name()))
+		if err != nil {
+			continue
+		}
+
+		solLower, err := getSolution(fmt.Sprintf("networks/%s/lower/solution.sol", f.Name()))
+		if err != nil {
+			continue
+		}
+
+		solLower2, err := getSolution(fmt.Sprintf("networks/%s/lower2/solution.sol", f.Name()))
+		if err != nil {
+			continue
+		}*/
 
 		s := scenario{
-			nodes:    nodes,
-			links:    links,
-			flows:    flows,
-			time:     0,
-			solution: int(val),
-			gap:      0,
+			nodes: nodes,
+			links: links,
+			flows: flows,
+			time:  0,
+			gap:   0,
 		}
 
 		sortEntry(s)

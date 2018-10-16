@@ -2,12 +2,6 @@ package main
 
 import "fmt"
 
-const (
-
-	// Size of multirow
-	sizeRow = 6
-)
-
 func writeTable() {
 	// top header
 	fmt.Println("\\begin{table}[]")
@@ -15,10 +9,36 @@ func writeTable() {
 	fmt.Println("\\begin{tabular}{|c|c|c|c|c|}")
 	fmt.Println("\\hline \\#nodes & \\#links & \\#flows & Quantity & Group Name \\\\ \\hline")
 
-	for i := range scenarios {
-		fmt.Printf("\\multirow{%v}{*}{1-%v}\n", sizeRow, divisions[i][0])
-		fmt.Printf("& \\multirow{3}{*}{1-%v} & -%v & %v & %s \\\\ \\cline{3-5}& & -%v & %v & %s \\\\ \\cline{3-5} & & %v- & %v & %s \\\\ \\cline{2-5} \n", divisions[i][1], divisions[i][2], len(scenarios[i][0][0]), fmt.Sprintf("net-%v-%v-%v", divisions[i][0], divisions[i][1], divisions[i][2]), divisions[i][3], len(scenarios[i][0][1]), fmt.Sprintf("net-%v-%v-%v", divisions[i][0], divisions[i][1], divisions[i][3]), divisions[i][3]+1, len(scenarios[i][0][2]), fmt.Sprintf("net-%v-%v-top", divisions[i][0], divisions[i][1]))
-		fmt.Printf("& \\multirow{3}{*}{%v-} & -%v & %v & %s \\\\ \\cline{3-5}& & -%v & %v & %s \\\\ \\cline{3-5} & & %v- & %v & %s \\\\ \\hline \n", divisions[i][1]+1, divisions[i][4], len(scenarios[i][1][0]), fmt.Sprintf("net-%v-top-%v", divisions[i][0], divisions[i][4]), divisions[i][5], len(scenarios[i][1][1]), fmt.Sprintf("net-%v-top-%v", divisions[i][0], divisions[i][5]), divisions[i][5]+1, len(scenarios[i][1][2]), fmt.Sprintf("net-%v-top-top", divisions[i][0]))
+	for inI, i := range scenarios {
+		// base of each nodes division
+		fmt.Printf("\\multirow{%v}{*}{1-%v}\n", len(divisions[inI]), divisions[inI][0])
+
+		for inJ, j := range i {
+			// base of each links division
+			var val string
+			if inJ == len(scenarios[inI])-1 {
+				val = fmt.Sprintf("%v-", divisions[inI][1]+1)
+			} else {
+				val = fmt.Sprintf("-%v", divisions[inI][1])
+			}
+			fmt.Printf("& \\multirow{%v}{*}{%s}\n", len(j), val)
+
+			for inK, k := range j {
+				var val string
+				if inK == len(j)-1 {
+					val = fmt.Sprintf("%v-", divisions[inI][5]+1)
+				} else {
+					val = fmt.Sprintf("-%v", divisions[inI][inK+(inJ*2)+2])
+				}
+				if inK != 0 {
+					fmt.Print("& ")
+				}
+				fmt.Printf("& %s & %v & hehehe \\\\ \\cline{3-5}\n", val, len(k))
+			}
+			fmt.Println("\\cline{2-5}")
+		}
+
+		fmt.Println("\\hline")
 	}
 
 	// bottom header
@@ -27,4 +47,9 @@ func writeTable() {
 	fmt.Println("\\legend{Source: The Authors}")
 	fmt.Println("\\label{tab:results-short}")
 	fmt.Println("\\end{table}")
+}
+
+func getSols(i, j, k int) string {
+
+	return ""
 }
