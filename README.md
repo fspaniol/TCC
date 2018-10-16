@@ -4,7 +4,8 @@
 
 ## Current status:
 
-Have to parse the output of CPLEX
+Writing the thesis
+Creating scripts to create tables in LaTeX
 
 ## Executing `execute.sh`
 
@@ -29,10 +30,3 @@ Make sure that the weight doesn't surpass the limit.
 
 ## TODO
 Print the output in JSON
-
-Execute all test in one hour to get final results
-
-Compare the implementations between VRP and INTO
-
-Prepare validator for new model
-Create pre-processing for vrp
