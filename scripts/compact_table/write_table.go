@@ -4,6 +4,7 @@ import "fmt"
 
 func writeTable() {
 	// top header
+	fmt.Println("\\begin{landscape}")
 	fmt.Println("\\begin{table}[]")
 	fmt.Println("\\centering")
 	fmt.Println("\\begin{tabular}{|c|c|c|c|c|c|c|c|c|}")
@@ -34,9 +35,9 @@ func writeTable() {
 					fmt.Print("& ")
 				}
 
-				fmt.Printf("& %s & %v & hehehe & %s \\\\ \\cline{3-5}\n", val, len(k), getSols(k))
+				fmt.Printf("& %s & %v & hehehe & %s \\\\ \\cline{3-9}\n", val, len(k), getSols(k))
 			}
-			fmt.Println("\\cline{2-5}")
+			fmt.Println("\\cline{2-9}")
 		}
 
 		fmt.Println("\\hline")
@@ -48,23 +49,32 @@ func writeTable() {
 	fmt.Println("\\legend{Source: The Authors}")
 	fmt.Println("\\label{tab:results-short}")
 	fmt.Println("\\end{table}")
+	fmt.Println("\\end{landscape}")
 }
 
 func getSols(s []scenario) string {
 	var avgCompact, avgVRP, avgLower, avgLower2 float32
 	var sums [4]int
+	counter := 0
 
 	for _, i := range s {
 		sums[0] += i.compactSolution
-		sums[1] += i.vrpSolution
+		if i.vrpSolution != 0 {
+			sums[1] += i.vrpSolution
+			counter++
+		}
 		sums[2] += i.lowerSolution
 		sums[3] += i.lower2Solution
 	}
 
 	avgCompact = float32(sums[0]) / float32(len(s))
-	avgVRP = float32(sums[1]) / float32(len(s))
+	avgVRP = float32(sums[1]) / float32(counter)
 	avgLower = float32(sums[2]) / float32(len(s))
 	avgLower2 = float32(sums[3]) / float32(len(s))
 
-	return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f", avgCompact, avgVRP, avgLower, avgLower2)
+	if counter > 0 {
+		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f", avgCompact, avgVRP, avgLower, avgLower2)
+	}
+
+	return fmt.Sprintf("%.1f & - & %.1f & %.1f", avgCompact, avgLower, avgLower2)
 }
