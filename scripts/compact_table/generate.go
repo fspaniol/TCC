@@ -104,14 +104,14 @@ func fillScenarios() {
 		scanner.Scan()
 		flows, _ := strconv.Atoi(scanner.Text())
 
-		/*solCompact, err := getSolution(fmt.Sprintf("networks/%s/standard/solution.sol", f.Name()))
+		solCompact, err := getSolution(fmt.Sprintf("networks/%s/standard/solution.sol", f.Name()))
 		if err != nil {
 			continue
 		}
 
 		solVrp, err := getSolution(fmt.Sprintf("networks/%s/vrp/solution.sol", f.Name()))
 		if err != nil {
-			continue
+			solVrp = 0
 		}
 
 		solLower, err := getSolution(fmt.Sprintf("networks/%s/lower/solution.sol", f.Name()))
@@ -122,14 +122,18 @@ func fillScenarios() {
 		solLower2, err := getSolution(fmt.Sprintf("networks/%s/lower2/solution.sol", f.Name()))
 		if err != nil {
 			continue
-		}*/
+		}
 
 		s := scenario{
-			nodes: nodes,
-			links: links,
-			flows: flows,
-			time:  0,
-			gap:   0,
+			nodes:           nodes,
+			links:           links,
+			flows:           flows,
+			compactSolution: solCompact,
+			vrpSolution:     solVrp,
+			lowerSolution:   solLower,
+			lower2Solution:  solLower2,
+			time:            0,
+			gap:             0,
 		}
 
 		sortEntry(s)
