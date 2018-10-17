@@ -13,7 +13,17 @@ func writeTable() {
 
 	for inI, i := range scenarios {
 		// base of each nodes division
-		fmt.Printf("\\multirow{%v}{*}{1-%v}\n", len(divisions[inI]), divisions[inI][0])
+		var group string
+		if inI == 0 {
+			group = fmt.Sprintf("1-%d", divisions[inI][0])
+		} else {
+			if inI == len(divisions)-1 {
+				group = fmt.Sprintf("%d-", divisions[inI-1][0]+1)
+			} else {
+				group = fmt.Sprintf("%d-%d", divisions[inI-1][0]+1, divisions[inI][0])
+			}
+		}
+		fmt.Printf("\\multirow{%v}{*}{%s}\n", len(divisions[inI]), group)
 
 		for inJ, j := range i {
 			// base of each links division
@@ -54,28 +64,43 @@ func writeTable() {
 }
 
 func getSols(s []scenario) string {
-	var avgCompact, avgVRP, avgLower float32
-	var sums [4]int
+	var sums [4][3]float32
+	var avgs [4][3]float32
 	counter := 0
 
 	for _, i := range s {
-		sums[0] += i.compactSolution
+		sums[0][0] += float32(i.compactSolution)
+		sums[0][1] += i.compactTime
+		sums[0][2] += i.compactGap
+
 		if i.vrpSolution != 0 {
-			sums[1] += i.vrpSolution
+			sums[1][0] += float32(i.vrpSolution)
+			sums[1][1] += i.vrpTime
+			sums[1][2] += i.vrpGap
 			counter++
 		}
-		sums[2] += i.lowerSolution
-		sums[3] += i.lower2Solution
+
+		sums[2][0] += float32(i.lowerSolution)
+		sums[2][1] += i.lowerTime
+		sums[2][2] += i.lowerGap
+
+		// sums[3][0] += float32(i.lower2Solution)
 	}
 
-	avgCompact = float32(sums[0]) / float32(len(s))
-	avgVRP = float32(sums[1]) / float32(counter)
-	avgLower = float32(sums[2]) / float32(len(s))
-	//avgLower2 = float32(sums[3]) / float32(len(s))
+	for i := range sums {
+		div := float32(len(s))
+		if i == 1 {
+			div = float32(counter)
+		}
+
+		avgs[i][0] = sums[i][0] / div
+		avgs[i][1] = sums[i][1] / div
+		avgs[i][2] = sums[i][2] / div
+	}
 
 	if counter > 0 {
-		return fmt.Sprintf("%.1f & 0 & 0 & %.1f & 0 & 0 & %.1f & 0 & 0", avgCompact, avgVRP, avgLower)
+		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[1][0], avgs[1][1], avgs[1][2], avgs[2][0], avgs[2][1], avgs[2][2])
 	}
 
-	return fmt.Sprintf("%.1f & 0 & 0 & - & 0 & 0 & %.1f & 0 & 0", avgCompact, avgLower)
+	return fmt.Sprintf("%.1f & %.1f & %.1f & - & - & - & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[2][0], avgs[2][1], avgs[2][2])
 }

@@ -16,12 +16,16 @@ type scenario struct {
 	nodes           int
 	links           int
 	flows           int
-	time            float32
 	compactSolution int
+	compactTime     float32
+	compactGap      float32
 	vrpSolution     int
+	vrpTime         float32
+	vrpGap          float32
 	lowerSolution   int
+	lowerTime       float32
+	lowerGap        float32
 	lower2Solution  int
-	gap             float32
 }
 
 // depois tem que incluir o tempo, botando no arquivo info.txt
@@ -103,6 +107,27 @@ func fillScenarios() {
 		links, _ := strconv.Atoi(scanner.Text())
 		scanner.Scan()
 		flows, _ := strconv.Atoi(scanner.Text())
+		scanner.Scan()
+		compactTime, _ := strconv.ParseFloat(scanner.Text(), 32)
+		scanner.Scan()
+		compactGap, _ := strconv.ParseFloat(scanner.Text(), 32)
+		scanner.Scan()
+		if compactTime < 3000 {
+			compactGap = 0.00
+		}
+		vrpTime, _ := strconv.ParseFloat(scanner.Text(), 32)
+		scanner.Scan()
+		vrpGap, _ := strconv.ParseFloat(scanner.Text(), 32)
+		scanner.Scan()
+		if vrpTime < 3000 {
+			vrpGap = 0.00
+		}
+		lowerTime, _ := strconv.ParseFloat(scanner.Text(), 32)
+		scanner.Scan()
+		lowerGap, _ := strconv.ParseFloat(scanner.Text(), 32)
+		if lowerTime < 3000 {
+			lowerGap = 0.00
+		}
 
 		solCompact, err := getSolution(fmt.Sprintf("networks/%s/standard/solution.sol", f.Name()))
 		if err != nil {
@@ -129,11 +154,15 @@ func fillScenarios() {
 			links:           links,
 			flows:           flows,
 			compactSolution: solCompact,
+			compactTime:     float32(compactTime),
+			compactGap:      float32(compactGap),
 			vrpSolution:     solVrp,
+			vrpTime:         float32(vrpTime),
+			vrpGap:          float32(vrpGap),
 			lowerSolution:   solLower,
+			lowerTime:       float32(lowerTime),
+			lowerGap:        float32(lowerGap),
 			lower2Solution:  solLower2,
-			time:            0,
-			gap:             0,
 		}
 
 		sortEntry(s)
@@ -146,8 +175,9 @@ func print() {
 	for i := range scenarios {
 		for j := range scenarios[i] {
 			for k := range scenarios[i][j] {
-				fmt.Printf("%v %v %v: %v \n", i, j, k, len(scenarios[i][j][k]))
-				for _, _ = range scenarios[i][j][k] {
+				// fmt.Printf("%v %v %v: %v \n", i, j, k, len(scenarios[i][j][k]))
+				for _, x := range scenarios[i][j][k] {
+					fmt.Println(x)
 				}
 			}
 		}
