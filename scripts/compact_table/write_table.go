@@ -7,8 +7,8 @@ func writeTable() {
 	fmt.Println("\\begin{landscape}")
 	fmt.Println("\\begin{table}[]")
 	fmt.Println("\\centering")
-	fmt.Println("\\begin{tabular}{|c|c|c|c|c|c|c|c|c|}")
-	fmt.Println("\\hline \\#nodes & \\#links & \\#flows & Quantity & Group Name & Compact Solution & VRP Solution & Lower Solution & Lower2 Solution\\\\ \\hline")
+	fmt.Println("\\begin{tabular}{|c|c|c|c|c|c|c|}")
+	fmt.Println("\\hline \\#nodes & \\#links & \\#flows & Quantity & Compact Solution & VRP Solution & Lower Solution \\\\ \\hline")
 
 	for inI, i := range scenarios {
 		// base of each nodes division
@@ -35,9 +35,9 @@ func writeTable() {
 					fmt.Print("& ")
 				}
 
-				fmt.Printf("& %s & %v & hehehe & %s \\\\ \\cline{3-9}\n", val, len(k), getSols(k))
+				fmt.Printf("& %s & %v & %s \\\\ \\cline{3-7}\n", val, len(k), getSols(k))
 			}
-			fmt.Println("\\cline{2-9}")
+			fmt.Println("\\cline{2-7}")
 		}
 
 		fmt.Println("\\hline")
@@ -53,7 +53,7 @@ func writeTable() {
 }
 
 func getSols(s []scenario) string {
-	var avgCompact, avgVRP, avgLower, avgLower2 float32
+	var avgCompact, avgVRP, avgLower float32
 	var sums [4]int
 	counter := 0
 
@@ -70,11 +70,11 @@ func getSols(s []scenario) string {
 	avgCompact = float32(sums[0]) / float32(len(s))
 	avgVRP = float32(sums[1]) / float32(counter)
 	avgLower = float32(sums[2]) / float32(len(s))
-	avgLower2 = float32(sums[3]) / float32(len(s))
+	//avgLower2 = float32(sums[3]) / float32(len(s))
 
 	if counter > 0 {
-		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f", avgCompact, avgVRP, avgLower, avgLower2)
+		return fmt.Sprintf("%.1f & %.1f & %.1f", avgCompact, avgVRP, avgLower)
 	}
 
-	return fmt.Sprintf("%.1f & - & %.1f & %.1f", avgCompact, avgLower, avgLower2)
+	return fmt.Sprintf("%.1f & - & %.1f", avgCompact, avgLower)
 }
