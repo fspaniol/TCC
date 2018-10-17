@@ -7,8 +7,9 @@ func writeTable() {
 	fmt.Println("\\begin{landscape}")
 	fmt.Println("\\begin{table}[]")
 	fmt.Println("\\centering")
-	fmt.Println("\\begin{tabular}{|c|c|c|c|c|c|c|}")
-	fmt.Println("\\hline \\#nodes & \\#links & \\#flows & Quantity & Compact Solution & VRP Solution & Lower Solution \\\\ \\hline")
+	fmt.Println("\\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}")
+	fmt.Println("\\hline \\#nodes & \\#links & \\#flows & Quantity & \\multicolumn{3}{c|}{Compact} & \\multicolumn{3}{c|}{VRP} & \\multicolumn{3}{c|}{Lower Bound} \\\\ \\hline")
+	fmt.Println("& & & & Solution & Time & Gap & Solution & Time & Gap & Solution & Time & Gap \\\\ \\hline")
 
 	for inI, i := range scenarios {
 		// base of each nodes division
@@ -35,9 +36,9 @@ func writeTable() {
 					fmt.Print("& ")
 				}
 
-				fmt.Printf("& %s & %v & %s \\\\ \\cline{3-7}\n", val, len(k), getSols(k))
+				fmt.Printf("& %s & %v & %s \\\\ \\cline{3-13}\n", val, len(k), getSols(k))
 			}
-			fmt.Println("\\cline{2-7}")
+			fmt.Println("\\cline{2-13}")
 		}
 
 		fmt.Println("\\hline")
@@ -73,8 +74,8 @@ func getSols(s []scenario) string {
 	//avgLower2 = float32(sums[3]) / float32(len(s))
 
 	if counter > 0 {
-		return fmt.Sprintf("%.1f & %.1f & %.1f", avgCompact, avgVRP, avgLower)
+		return fmt.Sprintf("%.1f & 0 & 0 & %.1f & 0 & 0 & %.1f & 0 & 0", avgCompact, avgVRP, avgLower)
 	}
 
-	return fmt.Sprintf("%.1f & - & %.1f", avgCompact, avgLower)
+	return fmt.Sprintf("%.1f & 0 & 0 & - & 0 & 0 & %.1f & 0 & 0", avgCompact, avgLower)
 }
