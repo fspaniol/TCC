@@ -1,13 +1,11 @@
 #!/bin/bash
 
-column="\\multicolumn{1}{c|}{}"
-
 echo "\\begin{landscape}"
-echo "\\begin{longtable}{|c|c|c|c|cc|cc|cc|cc|}"
+echo "\\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}"
 echo "\\caption{Result table}"
 echo "\\hline"
-echo "Instance Name & \\#nodes & \\#links & \\#flows & Compact                 &      & VRP                           &      & LB1                           &      & LB2                           &      \\\\ \\hline"
-echo "&         &         &         & \\multicolumn{1}{c|}{Solution} & Time & \\multicolumn{1}{c|}{Solution} & Time & \\multicolumn{1}{c|}{Solution} & Time & \\multicolumn{1}{c|}{Solution} & Time \\\\ \\hline"
+echo "Instance Name & \\#nodes & \\#links & \\#flows & \\multicolumn{3}{c|}{Compact} & \\multicolumn{3}{c|}{VRP} & \\multicolumn{3}{c|}{Lower Bound} \\\\ \\hline"
+echo "& & & & Solution & Time & Gap & Solution & Time & Gap & Solution & Time & Gap \\\\ \\hline"
 
 for file in ./networks/zoo_??_*/; do
 	name=$(basename $file)
@@ -15,13 +13,16 @@ for file in ./networks/zoo_??_*/; do
     nodes="$(expr $(sed '3q;d' networks/$name/input.dat | tr -cd ' ' | wc -m) - 2)"
     flows="$(cut -d'_' -f3 <<<$name)"
     into_sol=$(cat networks/$name/standard/groups.txt | grep "Number" | awk '{print $NF}')
+    into_time_ran=$(cat networks/$name/standard/exec.txt | grep "Solution time =" | awk '{print $4}')
+    into_gap=$(cat networks/$name/standard/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
     vrp_sol=$(cat networks/$name/vrp/groups.txt | grep "Number" | awk '{print $NF}')
-    into_time_ran=$(cat networks/$name/standard/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
-    vrp_time_ran=$(cat networks/$name/vrp/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
-    lower=$(cat networks/$name/lower/groups.txt | grep "Number" | awk '{print $NF}')
-    lower_time_ran=$(cat networks/$name/lower/exec.txt | grep "Total (root+branch&cut)" | awk '{print $4}')
+    vrp_time_ran=$(cat networks/$name/vrp/exec.txt | grep "Solution time =" | awk '{print $4}')
+    vrp_gap=$(cat networks/$name/vrp/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
+    lower_sol=$(cat networks/$name/lower/groups.txt | grep "Number" | awk '{print $NF}')
+    lower_time_ran=$(cat networks/$name/lower/exec.txt | grep "Solution time =" | awk '{print $4}')
+    lower_gap=$(cat networks/$name/lower/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
 
-    echo "$(echo $name | sed 's/_/\\_/g') & $nodes & $links & $flows & \\multicolumn{1}{c|}{$into_sol} & $into_time_ran & \\multicolumn{1}{c|}{$vrp_sol} & $vrp_time_ran & \\multicolumn{1}{c|}{$lower} & $lower_time_ran & \\multicolumn{1}{c|}{0} & 0 \\\\ \\hline "
+    echo "$(echo $name | sed 's/_/\\_/g') & $nodes & $links & $flows & $into_sol & $into_time_ran & $into_gap & $vrp_sol & $vrp_time_ran & $vrp_gap & $lower_sol & $lower_time_ran & $lower_gap \\\\ \\hline "
 done
 
 echo "%\\legend{Source: The authors}"
