@@ -2,7 +2,7 @@
 <CPLEXSolution version="1.2">
  <header
    problemName="networks/zoo_134_885/lower2/model.lp"
-   objectiveValue="65"
+   objectiveValue="50"
    solutionTypeValue="1"
    solutionTypeString="basic"
    solutionStatusValue="1"
@@ -10,18 +10,18 @@
    solutionMethodString="dual"
    primalFeasible="1"
    dualFeasible="1"
-   simplexIterations="2662"
+   simplexIterations="1833"
    writeLevel="4"/>
  <quality
    epRHS="1e-06"
    epOpt="1e-06"
-   maxPrimalInfeas="0"
+   maxPrimalInfeas="8.67614720000001e-07"
    maxDualInfeas="0"
-   maxPrimalResidual="0"
+   maxPrimalResidual="2.30101785607222e-13"
    maxDualResidual="0"
-   maxX="1"
+   maxX="1.702464"
    maxPi="1"
-   maxSlack="1"
+   maxSlack="7.702464"
    maxRedCost="1"
-   kappa="4692561.86170213"/>
+   kappa="719091.337843183"/>
 </CPLEXSolution>

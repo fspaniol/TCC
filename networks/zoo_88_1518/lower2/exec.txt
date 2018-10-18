@@ -1,28 +1,21 @@
 
-Log started (V12.5.0.0) Sun Oct 14 14:49:30 2018
+Log started (V12.5.0.0) Thu Oct 18 04:02:32 2018
 
 New value for writelevel: 4
 Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
 Tried aggregator 1 time.
-LP Presolve eliminated 194398 rows and 320486 columns.
-Aggregator did 5 substitutions.
-Reduced LP has 9045 rows, 10433 columns, and 28294 nonzeros.
-Presolve time = 0.20 sec. (100.69 ticks)
+LP Presolve eliminated 198952 rows and 320486 columns.
+Aggregator did 1518 substitutions.
+Reduced LP has 28408 rows, 16416 columns, and 89294 nonzeros.
+Presolve time = 0.24 sec. (121.48 ticks)
 Initializing dual steep norms . . .
 
 Iteration log . . .
-Iteration:     1   Dual objective     =             0.000000
+Iteration:     1   Dual objective     =             1.000000
 Perturbation started.
 Iteration:   203   Dual objective     =            44.000000
-Iteration:   492   Dual objective     =            44.000008
-Iteration:   762   Dual objective     =            44.000013
-Iteration:  1017   Dual objective     =            44.000017
-Iteration:  1235   Dual objective     =            44.000020
-Iteration:  1438   Dual objective     =            44.000023
-Iteration:  1619   Dual objective     =            44.000024
-Iteration:  1779   Dual objective     =            44.000025
-Iteration:  1926   Dual objective     =            44.000026
-Iteration:  2082   Dual objective     =            44.000027
+Iteration:   621   Dual objective     =            44.000031
+Iteration:   940   Dual objective     =            44.000042
 Removing perturbation.
 Reinitializing dual norms . . .
 
@@ -30,8 +23,8 @@ Dual simplex solved model.
 
 
 Dual simplex - Optimal:  Objective =  4.4000000000e+01
-Solution time =    0.39 sec.  Iterations = 2192 (0)
-Deterministic time = 250.59 ticks  (634.97 ticks/sec)
+Solution time =    0.43 sec.  Iterations = 1272 (0)
+Deterministic time = 259.79 ticks  (605.68 ticks/sec)
 
 
 Solution written to file 'networks/zoo_88_1518/lower2/solution.sol'.

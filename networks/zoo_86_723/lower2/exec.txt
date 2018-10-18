@@ -1,31 +1,20 @@
 
-Log started (V12.5.0.0) Sun Oct 14 14:49:15 2018
+Log started (V12.5.0.0) Thu Oct 18 04:02:16 2018
 
 New value for writelevel: 4
 Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
 Tried aggregator 1 time.
-LP Presolve eliminated 80545 rows and 129277 columns.
-Aggregator did 6 substitutions.
-Reduced LP has 8203 rows, 8810 columns, and 25034 nonzeros.
-Presolve time = 0.09 sec. (44.80 ticks)
+LP Presolve eliminated 82716 rows and 129278 columns.
+Aggregator did 723 substitutions.
+Reduced LP has 25118 rows, 13585 columns, and 79057 nonzeros.
+Presolve time = 0.11 sec. (58.52 ticks)
 Initializing dual steep norms . . .
 
 Iteration log . . .
 Iteration:     1   Dual objective     =             1.000000
 Perturbation started.
 Iteration:   203   Dual objective     =            34.000000
-Iteration:   488   Dual objective     =            34.000007
-Iteration:   756   Dual objective     =            34.000012
-Iteration:   992   Dual objective     =            34.000015
-Iteration:  1194   Dual objective     =            34.000017
-Iteration:  1371   Dual objective     =            34.000019
-Iteration:  1552   Dual objective     =            34.000020
-Iteration:  1698   Dual objective     =            34.000021
-Iteration:  1835   Dual objective     =            34.000021
-Iteration:  1967   Dual objective     =            34.000022
-Iteration:  2088   Dual objective     =            34.000022
-Iteration:  2212   Dual objective     =            34.000022
-Iteration:  2328   Dual objective     =            34.000023
+Iteration:   526   Dual objective     =            34.000006
 Removing perturbation.
 Reinitializing dual norms . . .
 
@@ -33,8 +22,8 @@ Dual simplex solved model.
 
 
 Dual simplex - Optimal:  Objective =  3.4000000000e+01
-Solution time =    0.32 sec.  Iterations = 2393 (0)
-Deterministic time = 220.81 ticks  (694.54 ticks/sec)
+Solution time =    0.22 sec.  Iterations = 736 (0)
+Deterministic time = 137.63 ticks  (637.88 ticks/sec)
 
 
 Solution written to file 'networks/zoo_86_723/lower2/solution.sol'.

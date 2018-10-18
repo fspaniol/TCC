@@ -1,41 +1,30 @@
 
-Log started (V12.5.0.0) Sun Oct 14 14:50:22 2018
+Log started (V12.5.0.0) Thu Oct 18 04:03:29 2018
 
 New value for writelevel: 4
 Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
 Tried aggregator 1 time.
-LP Presolve eliminated 154570 rows and 246161 columns.
-Aggregator did 11 substitutions.
-Reduced LP has 11754 rows, 12812 columns, and 36118 nonzeros.
-Presolve time = 0.18 sec. (82.45 ticks)
+LP Presolve eliminated 158138 rows and 246160 columns.
+Aggregator did 1188 substitutions.
+Reduced LP has 36233 rows, 19833 columns, and 114122 nonzeros.
+Presolve time = 0.20 sec. (103.76 ticks)
 Initializing dual steep norms . . .
 
 Iteration log . . .
-Iteration:     1   Dual objective     =             1.990000
+Iteration:     1   Dual objective     =             1.000000
 Perturbation started.
-Iteration:   304   Dual objective     =            39.000000
-Iteration:   622   Dual objective     =            40.000010
-Iteration:   904   Dual objective     =            41.000015
-Iteration:  1159   Dual objective     =            42.000017
-Iteration:  1388   Dual objective     =            42.000020
-Iteration:  1607   Dual objective     =            42.000023
-Iteration:  1812   Dual objective     =            42.000024
-Iteration:  2001   Dual objective     =            42.000026
-Iteration:  2196   Dual objective     =            43.000025
-Iteration:  2372   Dual objective     =            43.000026
-Iteration:  2556   Dual objective     =            43.000027
-Iteration:  2691   Dual objective     =            43.000028
-Iteration:  2809   Dual objective     =            43.000028
-Iteration:  2946   Dual objective     =            43.000029
+Iteration:   203   Dual objective     =            39.000000
+Iteration:   533   Dual objective     =            39.000004
+Iteration:   835   Dual objective     =            39.000005
 Removing perturbation.
 Reinitializing dual norms . . .
 
 Dual simplex solved model.
 
 
-Dual simplex - Optimal:  Objective =  4.3000000000e+01
-Solution time =    0.47 sec.  Iterations = 2948 (0)
-Deterministic time = 301.03 ticks  (644.20 ticks/sec)
+Dual simplex - Optimal:  Objective =  3.9000000000e+01
+Solution time =    0.40 sec.  Iterations = 897 (0)
+Deterministic time = 241.23 ticks  (609.89 ticks/sec)
 
 
 Solution written to file 'networks/zoo_96_1188/lower2/solution.sol'.

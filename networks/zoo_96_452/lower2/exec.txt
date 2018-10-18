@@ -1,35 +1,31 @@
 
-Log started (V12.5.0.0) Sun Oct 14 14:51:05 2018
+Log started (V12.5.0.0) Thu Oct 18 04:04:17 2018
 
 New value for writelevel: 4
 Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
 Tried aggregator 1 time.
-LP Presolve eliminated 62468 rows and 96418 columns.
-Aggregator did 49 substitutions.
-Reduced LP has 4460 rows, 4781 columns, and 13664 nonzeros.
-Presolve time = 0.06 sec. (32.71 ticks)
+LP Presolve eliminated 63841 rows and 96419 columns.
+Aggregator did 459 substitutions.
+Reduced LP has 13733 rows, 7473 columns, and 42999 nonzeros.
+Presolve time = 0.07 sec. (40.58 ticks)
 Initializing dual steep norms . . .
 
 Iteration log . . .
-Iteration:     1   Dual objective     =            11.970000
-Iteration:   253   Dual objective     =            39.000000
+Iteration:     1   Dual objective     =             9.000000
 Perturbation started.
-Iteration:   304   Dual objective     =            39.000000
-Iteration:   497   Dual objective     =            43.000010
-Iteration:   667   Dual objective     =            48.000012
-Iteration:   809   Dual objective     =            48.000018
-Iteration:   966   Dual objective     =            48.000028
-Iteration:  1107   Dual objective     =            48.000035
-Iteration:  1250   Dual objective     =            50.000024
+Iteration:   203   Dual objective     =            36.000000
+Iteration:   489   Dual objective     =            36.000008
+Iteration:   774   Dual objective     =            36.000015
+Iteration:  1021   Dual objective     =            36.000015
 Removing perturbation.
 Reinitializing dual norms . . .
 
 Dual simplex solved model.
 
 
-Dual simplex - Optimal:  Objective =  5.0000000000e+01
-Solution time =    0.14 sec.  Iterations = 1262 (0)
-Deterministic time = 85.31 ticks  (616.57 ticks/sec)
+Dual simplex - Optimal:  Objective =  3.6000000000e+01
+Solution time =    0.17 sec.  Iterations = 1069 (0)
+Deterministic time = 103.70 ticks  (623.34 ticks/sec)
 
 
 Solution written to file 'networks/zoo_96_452/lower2/solution.sol'.

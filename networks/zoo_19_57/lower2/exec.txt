@@ -1,22 +1,20 @@
 
-Log started (V12.5.0.0) Sun Oct 14 01:19:00 2018
+Log started (V12.5.0.0) Thu Oct 18 01:10:36 2018
 
 New value for writelevel: 4
 Tried aggregator 1 time.
-LP Presolve eliminated 1597 rows and 2389 columns.
-Aggregator did 15 substitutions.
-Reduced LP has 245 rows, 275 columns, and 785 nonzeros.
-Presolve time = 0.00 sec. (0.92 ticks)
+LP Presolve eliminated 1772 rows and 2390 columns.
+Aggregator did 58 substitutions.
+Reduced LP has 784 rows, 463 columns, and 2388 nonzeros.
+Presolve time = 0.00 sec. (1.42 ticks)
 Initializing dual steep norms . . .
 
 Iteration log . . .
-Iteration:     1   Dual infeasibility =             1.000000
-Iteration:     3   Dual objective     =             3.000000
-Iteration:    64   Dual objective     =            10.000000
+Iteration:     1   Dual objective     =             1.000000
 
-Dual simplex - Optimal:  Objective =  1.2000000000e+01
-Solution time =    0.00 sec.  Iterations = 73 (2)
-Deterministic time = 1.89 ticks  (663.38 ticks/sec)
+Dual simplex - Optimal:  Objective =  9.0000000000e+00
+Solution time =    0.00 sec.  Iterations = 54 (0)
+Deterministic time = 2.69 ticks  (728.50 ticks/sec)
 
 
 Solution written to file 'networks/zoo_19_57/lower2/solution.sol'.

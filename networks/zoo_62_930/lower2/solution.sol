@@ -10,18 +10,18 @@
    solutionMethodString="dual"
    primalFeasible="1"
    dualFeasible="1"
-   simplexIterations="1534"
+   simplexIterations="485"
    writeLevel="4"/>
  <quality
    epRHS="1e-06"
    epOpt="1e-06"
-   maxPrimalInfeas="0"
+   maxPrimalInfeas="4.44089209850063e-16"
    maxDualInfeas="0"
-   maxPrimalResidual="0"
+   maxPrimalResidual="1.22124532708767e-15"
    maxDualResidual="0"
-   maxX="1"
+   maxX="2.134"
    maxPi="1"
-   maxSlack="1"
+   maxSlack="8.134"
    maxRedCost="1"
-   kappa="1700574.08"/>
+   kappa="506686.748401216"/>
 </CPLEXSolution>

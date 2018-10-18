@@ -1,32 +1,28 @@
 
-Log started (V12.5.0.0) Sun Oct 14 14:48:11 2018
+Log started (V12.5.0.0) Thu Oct 18 04:01:06 2018
 
 New value for writelevel: 4
 Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
 Tried aggregator 1 time.
-LP Presolve eliminated 32691 rows and 52225 columns.
-Aggregator did 50 substitutions.
-Reduced LP has 1609 rows, 1845 columns, and 5115 nonzeros.
-Presolve time = 0.03 sec. (16.91 ticks)
+LP Presolve eliminated 33683 rows and 52222 columns.
+Aggregator did 339 substitutions.
+Reduced LP has 5140 rows, 3008 columns, and 15937 nonzeros.
+Presolve time = 0.03 sec. (20.71 ticks)
 Initializing dual steep norms . . .
 
 Iteration log . . .
-Iteration:     1   Dual objective     =             9.970000
-Iteration:   161   Dual objective     =            28.980000
+Iteration:     1   Dual objective     =             7.000000
 Perturbation started.
-Iteration:   203   Dual objective     =            28.980000
-Iteration:   326   Dual objective     =            33.000010
-Iteration:   447   Dual objective     =            39.000014
-Iteration:   553   Dual objective     =            43.000014
+Iteration:   203   Dual objective     =            27.000000
 Removing perturbation.
 Reinitializing dual norms . . .
 
 Dual simplex solved model.
 
 
-Dual simplex - Optimal:  Objective =  4.3000000000e+01
-Solution time =    0.06 sec.  Iterations = 600 (0)
-Deterministic time = 35.33 ticks  (594.04 ticks/sec)
+Dual simplex - Optimal:  Objective =  2.7000000000e+01
+Solution time =    0.07 sec.  Iterations = 251 (0)
+Deterministic time = 40.33 ticks  (596.92 ticks/sec)
 
 
 Solution written to file 'networks/zoo_79_328/lower2/solution.sol'.

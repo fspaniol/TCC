@@ -7,22 +7,21 @@
    solutionTypeString="basic"
    solutionStatusValue="1"
    solutionStatusString="optimal"
-   solutionMethodString="primal"
+   solutionMethodString="dual"
    primalFeasible="1"
    dualFeasible="1"
-   simplexIterations="0"
-   barrierIterations="15"
+   simplexIterations="28973"
    writeLevel="4"/>
  <quality
    epRHS="1e-06"
    epOpt="1e-06"
-   maxPrimalInfeas="5.55111512312578e-17"
+   maxPrimalInfeas="9.87553364847806e-07"
    maxDualInfeas="0"
-   maxPrimalResidual="3.88578058618805e-16"
+   maxPrimalResidual="1.55200884695977e-13"
    maxDualResidual="0"
-   maxX="1"
+   maxX="2.64034874180428"
    maxPi="1"
-   maxSlack="1"
+   maxSlack="8.64034874180428"
    maxRedCost="1"
-   kappa="766433156.637052"/>
+   kappa="10695315.3918062"/>
 </CPLEXSolution>
