@@ -26,6 +26,8 @@ type scenario struct {
 	lowerTime       float32
 	lowerGap        float32
 	lower2Solution  int
+	lower2Time      float32
+	lower2Gap       float32
 }
 
 // depois tem que incluir o tempo, botando no arquivo info.txt
@@ -111,27 +113,34 @@ func fillScenarios() {
 		compactTime, _ := strconv.ParseFloat(scanner.Text(), 32)
 		scanner.Scan()
 		compactGap, _ := strconv.ParseFloat(scanner.Text(), 32)
-		scanner.Scan()
 		if compactTime < 3000 {
 			compactGap = 0.00
 		}
+		scanner.Scan()
 		vrpTime, _ := strconv.ParseFloat(scanner.Text(), 32)
 		scanner.Scan()
 		vrpGap, _ := strconv.ParseFloat(scanner.Text(), 32)
-		scanner.Scan()
 		if vrpTime < 3000 {
 			vrpGap = 0.00
 		}
+		scanner.Scan()
 		lowerTime, _ := strconv.ParseFloat(scanner.Text(), 32)
 		scanner.Scan()
 		lowerGap, _ := strconv.ParseFloat(scanner.Text(), 32)
 		if lowerTime < 3000 {
 			lowerGap = 0.00
 		}
+		scanner.Scan()
+		lower2Time, _ := strconv.ParseFloat(scanner.Text(), 32)
+		scanner.Scan()
+		lower2Gap, _ := strconv.ParseFloat(scanner.Text(), 32)
+		if lower2Time < 3000 {
+			lower2Gap = 0.00
+		}
 
 		solCompact, err := getSolution(fmt.Sprintf("networks/%s/standard/solution.sol", f.Name()))
 		if err != nil {
-			continue
+			solCompact = 0
 		}
 
 		solVrp, err := getSolution(fmt.Sprintf("networks/%s/vrp/solution.sol", f.Name()))
@@ -141,12 +150,12 @@ func fillScenarios() {
 
 		solLower, err := getSolution(fmt.Sprintf("networks/%s/lower/solution.sol", f.Name()))
 		if err != nil {
-			continue
+			solLower = 0
 		}
 
 		solLower2, err := getSolution(fmt.Sprintf("networks/%s/lower2/solution.sol", f.Name()))
 		if err != nil {
-			continue
+			solLower2 = 0
 		}
 
 		s := scenario{
@@ -163,6 +172,8 @@ func fillScenarios() {
 			lowerTime:       float32(lowerTime),
 			lowerGap:        float32(lowerGap),
 			lower2Solution:  solLower2,
+			lower2Time:      float32(lower2Time),
+			lower2Gap:       float32(lower2Gap),
 		}
 
 		sortEntry(s)

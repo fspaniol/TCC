@@ -84,9 +84,9 @@ func getSols(s []scenario) string {
 		sums[2][1] += i.lowerTime
 		sums[2][2] += i.lowerGap
 
-		sums[3][0] = 0
-		sums[3][1] = 0
-		sums[3][2] = 0
+		sums[3][0] += float32(i.lower2Solution)
+		sums[3][1] += i.lower2Time
+		sums[3][2] += i.lower2Gap
 	}
 
 	for i := range sums {
@@ -98,10 +98,12 @@ func getSols(s []scenario) string {
 		avgs[i][0] = sums[i][0] / div
 		avgs[i][1] = sums[i][1] / div
 		avgs[i][2] = sums[i][2] / div
+
 	}
 
 	// Lower bound gap
 	avgs[2][2] = (sums[0][0] - sums[2][0]) / sums[2][0]
+	avgs[3][2] = (sums[0][0] - sums[3][0]) / sums[3][0]
 
 	if counter > 0 {
 		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %d / %d & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[1][0], avgs[1][1], avgs[1][2], counter, len(s), avgs[2][0], avgs[2][1], avgs[2][2], avgs[3][0], avgs[3][1], avgs[3][2])
