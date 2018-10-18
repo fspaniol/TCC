@@ -1,13 +1,13 @@
 #!/bin/bash
 
 echo "\\begin{landscape}"
-echo "\\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}"
+echo "\\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}"
 echo "\\caption{Result table}"
 echo "\\hline"
-echo "Instance Name & \\#nodes & \\#links & \\#flows & \\multicolumn{3}{c|}{Compact} & \\multicolumn{3}{c|}{VRP} & \\multicolumn{3}{c|}{Lower Bound} \\\\ \\hline"
-echo "& & & & Solution & Time & Gap & Solution & Time & Gap & Solution & Time & Gap \\\\ \\hline"
+echo "Instance Name & \\#nodes & \\#links & \\#flows & \\multicolumn{3}{c|}{Cover} & \\multicolumn{3}{c|}{VRP} & \\multicolumn{3}{c|}{Lower Bound} & \\multicolumn{3}{c|}{Relax} \\\\ \\hline"
+echo "& & & & Sol & Time & Gap & Sol & Time & Gap & Sol & Time & Gap_v & Sol & Time & Gap_v \\\\ \\hline"
 
-for file in ./networks/zoo_??_*/; do
+for file in ./networks/*/; do
 	name=$(basename $file)
 	links=$(wc -l <networks/$name/links.txt | sed -e 's/^[ \t]*//')
     nodes="$(expr $(sed '3q;d' networks/$name/input.dat | tr -cd ' ' | wc -m) - 2)"
@@ -20,9 +20,17 @@ for file in ./networks/zoo_??_*/; do
     vrp_gap=$(cat networks/$name/vrp/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
     lower_sol=$(cat networks/$name/lower/groups.txt | grep "Number" | awk '{print $NF}')
     lower_time_ran=$(cat networks/$name/lower/exec.txt | grep "Solution time =" | awk '{print $4}')
-    lower_gap=$(cat networks/$name/lower/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
+    lower_gap=$(echo "scale=2; ($into_sol-$lower_sol)/$lower_sol" | bc -l)
 
-    echo "$(echo $name | sed 's/_/\\_/g') & $nodes & $links & $flows & $into_sol & $into_time_ran & $into_gap & $vrp_sol & $vrp_time_ran & $vrp_gap & $lower_sol & $lower_time_ran & $lower_gap \\\\ \\hline "
+    if (( $(echo "$into_time_ran < 3000" |bc -l) )); then
+        into_gap="0.00"
+    fi
+
+    if (( $(echo "$vrp_time_ran < 3000" |bc -l) )); then
+        vrp_gap="0.00"
+    fi
+
+    echo "$(echo $name | sed 's/_/\\_/g') & $nodes & $links & $flows & $into_sol & $into_time_ran & $into_gap & $vrp_sol & $vrp_time_ran & $vrp_gap & $lower_sol & $lower_time_ran & $lower_gap & 0 & 0 & 0 \\\\ \\hline "
 done
 
 echo "%\\legend{Source: The authors}"
