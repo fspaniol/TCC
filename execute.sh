@@ -4,6 +4,8 @@
 
 mkdir networks/$1/lower2
 
+rm networks/$1/lower2/exec.txt
+
 # Generate the linear file
 glpsol -m glpk/into-lower2.mod -d networks/$1/input.dat --wlp networks/$1/lower2/model.lp --check
 
