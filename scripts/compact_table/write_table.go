@@ -7,10 +7,10 @@ func writeTable() {
 	fmt.Println("\\begin{landscape}")
 	fmt.Println("\\begin{table}[]")
 	fmt.Println("\\centering")
-	fmt.Println("\\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}")
-	fmt.Println("\\hline \\#nodes & \\#links & \\#flows & Quantity & \\multicolumn{3}{c|}{Cover} & \\multicolumn{4}{c|}{VRP} & \\multicolumn{3}{c|}{Lower Bound} & \\multicolumn{3}{c|}{Relax}\\\\ \\hline")
-	fmt.Println("& & & & Sol & Time & Gap & Sol & Time & Gap & Fraction & Sol & Time & Gap_v & Sol & Time & Gap_v\\\\ \\hline")
-
+	fmt.Println("\\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}")
+	fmt.Println("\\hline \\#nodes & \\#links & \\#flows & Name & Quantity & \\multicolumn{3}{c|}{Cover} & \\multicolumn{4}{c|}{VRP} & \\multicolumn{3}{c|}{Lower Bound} & \\multicolumn{3}{c|}{Relax}\\\\ \\hline")
+	fmt.Println("& & & & & Sol & Time & Gap & Sol & Time & Gap & Fraction & Sol & Time & Gap_v & Sol & Time & Gap_v\\\\ \\hline")
+	count := 1
 	for inI, i := range scenarios {
 		// base of each nodes division
 		var group string
@@ -46,11 +46,11 @@ func writeTable() {
 					fmt.Print("& ")
 				}
 
-				fmt.Printf("& %s & %v & %s \\\\ \\cline{3-17}\n", val, len(k), getSols(k))
+				fmt.Printf("& %s & %s & %v & %s \\\\ \\cline{3-18}\n", val, fmt.Sprintf("Group\\_%d", count), len(k), getSols(k))
+				count++
 			}
-			fmt.Println("\\cline{2-17}")
+			fmt.Println("\\cline{2-18}")
 		}
-
 		fmt.Println("\\hline")
 	}
 
