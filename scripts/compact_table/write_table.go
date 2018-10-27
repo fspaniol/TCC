@@ -5,6 +5,7 @@ import "fmt"
 func writeTable() {
 	// top header
 	fmt.Println("\\begin{landscape}")
+	fmt.Println("\\thispagestyle{empty}")
 	fmt.Println("\\begin{table}[]")
 	fmt.Println("\\centering")
 	fmt.Println("\\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}")
