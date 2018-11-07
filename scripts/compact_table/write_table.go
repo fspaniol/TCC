@@ -8,20 +8,20 @@ func writeTable() {
 	fmt.Println("\\thispagestyle{empty}")
 	fmt.Println("\\begin{table}[]")
 	fmt.Println("\\centering")
-	fmt.Println("\\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}")
-	fmt.Println("\\hline \\#nodes & \\#links & \\#flows & Name & Quantity & \\multicolumn{3}{c|}{Cover} & \\multicolumn{4}{c|}{VRP} & \\multicolumn{3}{c|}{Lower Bound} & \\multicolumn{3}{c|}{Relax}\\\\ \\hline")
-	fmt.Println("& & & & & Sol & Time & Gap & Sol & Time & Gap & Fraction & Sol & Time & Gap_v & Sol & Time & Gap_v\\\\ \\hline")
+	fmt.Println("\\begin{tabular}{c|c|c|ccccccccccccccc}")
+	fmt.Println("\\toprule \\#nodes & \\#links & \\#flows & Group & Quantity & \\multicolumn{3}{c}{Cover} & \\multicolumn{4}{c}{VRP} & \\multicolumn{3}{c}{Lower Bound} & \\multicolumn{3}{c}{Relax}\\\\")
+	fmt.Println("& & & & & Sol & Time & Gap & Sol & Time & Gap & Fraction & Sol & Time & Gap_v & Sol & Time & Gap_v\\\\ \\midrule")
 	count := 1
 	for inI, i := range scenarios {
 		// base of each nodes division
 		var group string
 		if inI == 0 {
-			group = fmt.Sprintf("1-%d", divisions[inI][0])
+			group = fmt.Sprintf("$1-%d$", divisions[inI][0])
 		} else {
 			if inI == len(divisions)-1 {
-				group = fmt.Sprintf("%d-", divisions[inI-1][0]+1)
+				group = fmt.Sprintf("$%d \\leq$", divisions[inI-1][0]+1)
 			} else {
-				group = fmt.Sprintf("%d-%d", divisions[inI-1][0]+1, divisions[inI][0])
+				group = fmt.Sprintf("$%d-%d$", divisions[inI-1][0]+1, divisions[inI][0])
 			}
 		}
 		fmt.Printf("\\multirow{%v}{*}{%s}\n", len(divisions[inI]), group)
@@ -30,30 +30,32 @@ func writeTable() {
 			// base of each links division
 			var val string
 			if inJ == len(scenarios[inI])-1 {
-				val = fmt.Sprintf("%v-", divisions[inI][1]+1)
+				val = fmt.Sprintf("$%v \\leq$", divisions[inI][1]+1)
 			} else {
-				val = fmt.Sprintf("-%v", divisions[inI][1])
+				val = fmt.Sprintf("$\\leq %v$", divisions[inI][1])
 			}
 			fmt.Printf("& \\multirow{%v}{*}{%s}\n", len(j), val)
 
 			for inK, k := range j {
 				var val string
 				if inK == len(j)-1 {
-					val = fmt.Sprintf("%v-", divisions[inI][5]+1)
+					val = fmt.Sprintf("$%v \\leq$", divisions[inI][5]+1)
 				} else {
-					val = fmt.Sprintf("-%v", divisions[inI][inK+(inJ*2)+2])
+					val = fmt.Sprintf("$\\leq %v$", divisions[inI][inK+(inJ*2)+2])
 				}
 				if inK != 0 {
 					fmt.Print("& ")
 				}
 
-				fmt.Printf("& %s & %s & %v & %s \\\\ \\cline{3-18}\n", val, fmt.Sprintf("Group\\_%d", count), len(k), getSols(k))
+				fmt.Printf("& %s & %d & %v & %s \\\\\n", val, count, len(k), getSols(k))
 				count++
 			}
-			fmt.Println("\\cline{2-18}")
+			fmt.Println("\\cline{2-3}")
 		}
-		fmt.Println("\\hline")
+		fmt.Println("\\cline{1-3}")
 	}
+
+	fmt.Println("\\bottomrule")
 
 	// bottom header
 	fmt.Println("\\end{tabular}")
@@ -110,5 +112,5 @@ func getSols(s []scenario) string {
 		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %d / %d & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[1][0], avgs[1][1], avgs[1][2], counter, len(s), avgs[2][0], avgs[2][1], avgs[2][2], avgs[3][0], avgs[3][1], avgs[3][2])
 	}
 
-	return fmt.Sprintf("%.1f & %.1f & %.1f & - & - & - & - & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[2][0], avgs[2][1], avgs[2][2], avgs[3][0], avgs[3][1], avgs[3][2])
+	return fmt.Sprintf("%.1f & %.1f & %.1f & & & & & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[2][0], avgs[2][1], avgs[2][2], avgs[3][0], avgs[3][1], avgs[3][2])
 }
