@@ -8,9 +8,11 @@ func writeTable() {
 	fmt.Println("\\thispagestyle{empty}")
 	fmt.Println("\\begin{table}[]")
 	fmt.Println("\\centering")
-	fmt.Println("\\begin{tabular}{c|c|c|ccccccccccccccc}")
-	fmt.Println("\\toprule \\#nodes & \\#links & \\#flows & Group & Quantity & \\multicolumn{3}{c}{Cover} & \\multicolumn{4}{c}{VRP} & \\multicolumn{3}{c}{Lower Bound} & \\multicolumn{3}{c}{Relax}\\\\")
-	fmt.Println("& & & & & Sol & Time & Gap & Sol & Time & Gap & Fraction & Sol & Time & Gap_v & Sol & Time & Gap_v\\\\ \\midrule")
+	fmt.Println("\\vspace{0.5em}")
+	fmt.Println("\\setlength\\tabcolsep{4pt}")
+	fmt.Println("\\begin{tabular}{l|l|l|ll|lll|lll|lll|lll}")
+	fmt.Println("\\toprule \\#nodes & \\#links & \\#flows & Group & \\#instances & \\multicolumn{3}{c|}{Cover} & \\multicolumn{3}{c|}{VRP} & \\multicolumn{3}{c|}{Lower} & \\multicolumn{3}{c}{Relax}\\\\")
+	fmt.Println("& & & & & Sol & Time & CPLEX Gap & Sol & Time & CPLEX Gap & Sol & Time & $Gap_v$ & Sol & Time & $Gap_v$\\\\ \\midrule")
 	count := 1
 	for inI, i := range scenarios {
 		// base of each nodes division
@@ -105,12 +107,12 @@ func getSols(s []scenario) string {
 	}
 
 	// Lower bound gap
-	avgs[2][2] = (sums[0][0] - sums[2][0]) / sums[2][0]
-	avgs[3][2] = (sums[0][0] - sums[3][0]) / sums[3][0]
+	avgs[2][2] = (sums[0][0] - sums[2][0]) / sums[0][0]
+	avgs[3][2] = (sums[0][0] - sums[3][0]) / sums[0][0]
 
 	if counter > 0 {
-		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %d / %d & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[1][0], avgs[1][1], avgs[1][2], counter, len(s), avgs[2][0], avgs[2][1], avgs[2][2], avgs[3][0], avgs[3][1], avgs[3][2])
+		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[1][0], avgs[1][1], avgs[1][2], avgs[2][0], avgs[2][1], avgs[2][2], avgs[3][0], avgs[3][1], avgs[3][2])
 	}
 
-	return fmt.Sprintf("%.1f & %.1f & %.1f & & & & & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[2][0], avgs[2][1], avgs[2][2], avgs[3][0], avgs[3][1], avgs[3][2])
+	return fmt.Sprintf("%.1f & %.1f & %.1f & & & & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[2][0], avgs[2][1], avgs[2][2], avgs[3][0], avgs[3][1], avgs[3][2])
 }

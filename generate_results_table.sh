@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo "\\begin{landscape}"
-echo "\\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}"
+echo "\\begin{longtable}{llllllllllllllll}"
 echo "\\caption{Result table}"
 echo "\\hline"
 echo "Instance Name & \\#nodes & \\#links & \\#flows & \\multicolumn{3}{c|}{Cover} & \\multicolumn{3}{c|}{VRP} & \\multicolumn{3}{c|}{Lower Bound} & \\multicolumn{3}{c|}{Relax} \\\\ \\hline"
-echo "& & & & Sol & Time & Gap & Sol & Time & Gap & Sol & Time & Gap_v & Sol & Time & Gap_v \\\\ \\hline"
+echo "& & & & Sol & Time & CPLEX Gap & Sol & Time & CPLEX Gap & Sol & Time & Gap_v & Sol & Time & Gap_v \\\\ \\hline"
 
 for file in ./networks/*_?_*/; do
 	name=$(basename $file)
@@ -20,10 +20,10 @@ for file in ./networks/*_?_*/; do
     vrp_gap=$(cat networks/$name/vrp/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
     lower_sol=$(cat networks/$name/lower/groups.txt | grep "Number" | awk '{print $NF}')
     lower_time_ran=$(cat networks/$name/lower/exec.txt | grep "Solution time =" | awk '{print $4}')
-    lower_gap=$(echo "scale=2; ($into_sol-$lower_sol)/$lower_sol" | bc -l)
-    relax_sol=$(cat networks/$name/lower2/groups.txt | grep "Number" | awk '{print $NF}')
-    relax_time_ran=$(cat networks/$name/lower2/exec.txt | grep "Solution time =" | awk '{print $4}')
-    relax_gap=$(echo "scale=2; ($into_sol-$lower_sol)/$lower_sol" | bc -l)
+    lower_gap=$(echo "scale=2; ($into_sol-$lower_sol)/$into_sol" | bc -l)
+    relax_sol=$(cat networks/$name/relax/groups.txt | grep "Number" | awk '{print $NF}')
+    relax_time_ran=$(cat networks/$name/relax/exec.txt | grep "Solution time =" | awk '{print $4}')
+    relax_gap=$(echo "scale=2; ($into_sol-$relax_sol)/$into_sol" | bc -l)
 
     if (( $(echo "$into_time_ran < 3000" |bc -l) )); then
         into_gap="0.00"
@@ -49,10 +49,10 @@ for file in ./networks/*_??_*/; do
     vrp_gap=$(cat networks/$name/vrp/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
     lower_sol=$(cat networks/$name/lower/groups.txt | grep "Number" | awk '{print $NF}')
     lower_time_ran=$(cat networks/$name/lower/exec.txt | grep "Solution time =" | awk '{print $4}')
-    lower_gap=$(echo "scale=2; ($into_sol-$lower_sol)/$lower_sol" | bc -l)
-    relax_sol=$(cat networks/$name/lower2/groups.txt | grep "Number" | awk '{print $NF}')
-    relax_time_ran=$(cat networks/$name/lower2/exec.txt | grep "Solution time =" | awk '{print $4}')
-    relax_gap=$(echo "scale=2; ($into_sol-$lower_sol)/$lower_sol" | bc -l)
+    lower_gap=$(echo "scale=2; ($into_sol-$lower_sol)/$into_sol" | bc -l)
+    relax_sol=$(cat networks/$name/relax/groups.txt | grep "Number" | awk '{print $NF}')
+    relax_time_ran=$(cat networks/$name/relax/exec.txt | grep "Solution time =" | awk '{print $4}')
+    relax_gap=$(echo "scale=2; ($into_sol-$relax_sol)/$into_sol" | bc -l)
 
     if (( $(echo "$into_time_ran < 3000" |bc -l) )); then
         into_gap="0.00"
@@ -78,10 +78,10 @@ for file in ./networks/*_???_*/; do
     vrp_gap=$(cat networks/$name/vrp/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
     lower_sol=$(cat networks/$name/lower/groups.txt | grep "Number" | awk '{print $NF}')
     lower_time_ran=$(cat networks/$name/lower/exec.txt | grep "Solution time =" | awk '{print $4}')
-    lower_gap=$(echo "scale=2; ($into_sol-$lower_sol)/$lower_sol" | bc -l)
-    relax_sol=$(cat networks/$name/lower2/groups.txt | grep "Number" | awk '{print $NF}')
-    relax_time_ran=$(cat networks/$name/lower2/exec.txt | grep "Solution time =" | awk '{print $4}')
-    relax_gap=$(echo "scale=2; ($into_sol-$lower_sol)/$lower_sol" | bc -l)
+    lower_gap=$(echo "scale=2; ($into_sol-$lower_sol)/$into_sol" | bc -l)
+    relax_sol=$(cat networks/$name/relax/groups.txt | grep "Number" | awk '{print $NF}')
+    relax_time_ran=$(cat networks/$name/relax/exec.txt | grep "Solution time =" | awk '{print $4}')
+    relax_gap=$(echo "scale=2; ($into_sol-$relax_sol)/$into_sol" | bc -l)
 
     if (( $(echo "$into_time_ran < 3000" |bc -l) )); then
         into_gap="0.00"

@@ -11,8 +11,8 @@ for file in ./networks/*/ ; do
     vrp_gap=$(cat networks/$name/vrp/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
     lower_time=$(cat networks/$name/lower/exec.txt | grep "Solution time =" | awk '{print $4}')
     lower_gap=$(cat networks/$name/lower/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
-    lower2_time=$(cat networks/$name/lower2/exec.txt | grep "Solution time =" | awk '{print $4}')
-    lower2_gap=$(cat networks/$name/lower2/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
+    lower2_time=$(cat networks/$name/relax/exec.txt | grep "Solution time =" | awk '{print $4}')
+    lower2_gap=$(cat networks/$name/relax/exec.txt | grep "%" | awk '{print $NF}' | tail -n1 | tr -d "%)")
 
     if [ "$compact_time" == "" ]; then
         compact_time="0.00"
