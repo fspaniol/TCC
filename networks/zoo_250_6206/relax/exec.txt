@@ -1,0 +1,48 @@
+
+Log started (V12.5.0.0) Thu Nov 22 15:03:17 2018
+
+New value for writelevel: 4
+Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
+Tried aggregator 1 time.
+LP Presolve eliminated 2437758 rows and 3814282 columns.
+Aggregator did 6210 substitutions.
+Reduced LP has 386191 rows, 202202 columns, and 1220654 nonzeros.
+Presolve time = 3.67 sec. (1393.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             5.000000
+Perturbation started.
+Iteration:   304   Dual objective     =           112.000000
+Iteration:  1866   Dual objective     =           112.000018
+Iteration:  3246   Dual objective     =           112.000024
+Iteration:  4512   Dual objective     =           112.000028
+Iteration:  5706   Dual objective     =           112.000032
+Iteration:  6829   Dual objective     =           112.000033
+Iteration:  7995   Dual objective     =           112.000036
+Iteration:  9085   Dual objective     =           112.000037
+Iteration: 10137   Dual objective     =           112.000038
+Iteration: 11094   Dual objective     =           112.000038
+Iteration: 11911   Dual objective     =           112.000039
+Iteration: 12826   Dual objective     =           112.000057
+Iteration: 13707   Dual objective     =           112.000172
+Iteration: 14671   Dual objective     =           112.000289
+Iteration: 15402   Dual objective     =           112.000368
+Iteration: 16140   Dual objective     =           112.000488
+Iteration: 16833   Dual objective     =           112.000594
+Iteration: 17608   Dual objective     =           112.000736
+Iteration: 18507   Dual objective     =           112.000761
+Iteration: 18932   Dual objective     =           112.000761
+Iteration: 19837   Dual objective     =           112.000762
+Removing perturbation.
+Reinitializing dual norms . . .
+
+Dual simplex solved model.
+
+
+Dual simplex - Optimal:  Objective =  1.1200000000e+02
+Solution time =   13.65 sec.  Iterations = 20298 (0)
+Deterministic time = 5615.28 ticks  (411.41 ticks/sec)
+
+
+Solution written to file 'networks/zoo_250_6206/relax/solution.sol'.

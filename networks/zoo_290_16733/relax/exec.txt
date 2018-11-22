@@ -1,0 +1,46 @@
+
+Log started (V12.5.0.0) Thu Nov 22 15:20:30 2018
+
+New value for writelevel: 4
+Parallel mode: deterministic, using up to 4 threads for concurrent optimization.
+Tried aggregator 1 time.
+LP Presolve eliminated 8420417 rows and 12975496 columns.
+Aggregator did 16737 substitutions.
+Reduced LP has 998955 rows, 524322 columns, and 3158963 nonzeros.
+Presolve time = 12.67 sec. (4574.40 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             2.000000
+Perturbation started.
+Iteration:   304   Dual objective     =           143.000000
+Iteration:  2841   Dual objective     =           143.000019
+Iteration:  5279   Dual objective     =           143.000027
+Iteration:  7527   Dual objective     =           143.000034
+Iteration:  9580   Dual objective     =           143.000038
+Iteration: 11542   Dual objective     =           143.000042
+Iteration: 13412   Dual objective     =           143.000045
+Iteration: 15124   Dual objective     =           143.000047
+Iteration: 16647   Dual objective     =           143.000050
+Iteration: 18175   Dual objective     =           143.000052
+Iteration: 19478   Dual objective     =           143.000053
+Iteration: 20908   Dual objective     =           143.000055
+Iteration: 22187   Dual objective     =           143.000057
+Iteration: 23647   Dual objective     =           143.000060
+Iteration: 24748   Dual objective     =           143.000060
+Iteration: 25842   Dual objective     =           143.000063
+Iteration: 27042   Dual objective     =           143.000063
+Iteration: 27761   Dual objective     =           143.000063
+Iteration: 28292   Dual objective     =           143.000063
+Removing perturbation.
+Reinitializing dual norms . . .
+
+Dual simplex solved model.
+
+
+Dual simplex - Optimal:  Objective =  1.4300000000e+02
+Solution time =   39.49 sec.  Iterations = 29261 (0)
+Deterministic time = 15112.31 ticks  (382.65 ticks/sec)
+
+
+Solution written to file 'networks/zoo_290_16733/relax/solution.sol'.
