@@ -8,7 +8,7 @@ func writeTable() {
 	fmt.Println("\\thispagestyle{empty}")
 	fmt.Println("\\begin{table}[]")
 	fmt.Println("\\centering")
-	fmt.Println("\\vspace{0.5em}")
+	fmt.Println("\\def\\arraystretch{0.9}")
 	fmt.Println("\\setlength\\tabcolsep{4pt}")
 	fmt.Println("\\begin{tabular}{l|l|l|ll|lll|lll|lll|lll}")
 	fmt.Println("\\toprule \\#nodes & \\#links & \\#flows & Group & \\#instances & \\multicolumn{3}{c|}{Cover} & \\multicolumn{3}{c|}{VRP} & \\multicolumn{3}{c|}{Lower} & \\multicolumn{3}{c}{Relax}\\\\")
@@ -56,6 +56,10 @@ func writeTable() {
 		}
 		fmt.Println("\\cline{1-3}")
 	}
+
+	// Averages
+	fmt.Println("\\midrule")
+	fmt.Println("& & & & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\\")
 
 	fmt.Println("\\bottomrule")
 
