@@ -1,0 +1,46 @@
+data;
+
+set V := h1 h2 h3 r1 r2 r3 r4 r5;
+
+set A := r1 h1
+         r1 r2
+         r2 r1
+         r2 h2
+         r2 r3
+         r3 r2
+         r3 h3
+         r4 r3
+         r4 r2
+         r5 r4
+         ;
+
+set S := 1 2 3 4 5;
+
+set F[1] := r1 r2
+            r2 h2
+            ;
+set F[2] := r2 r3
+            r3 h3
+            ;
+set F[3] := r3 r2
+            r2 r1
+            r1 h1
+            ;
+set F[4] := r5 r4
+            r4 r2
+            r2 h2
+            ;
+set F[5] := r5 r4
+            r4 r3
+            r3 h3
+            ;
+
+set Last[1] := r2 h2;
+set Last[2] := r3 h3;
+set Last[3] := r1 h1;
+set Last[4] := r2 h2;
+set Last[5] := r3 h3;
+
+param q := 5;
+
+end;

@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+var (
+	sums [30][4][3]float32
+	avgs [30][4][3]float32
+	i    = 0
+)
+
 func writeTable() {
 	// top header
 	fmt.Println("\\begin{landscape}")
@@ -59,7 +65,7 @@ func writeTable() {
 
 	// Averages
 	fmt.Println("\\midrule")
-	fmt.Println("& & & & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\\")
+	fmt.Printf("& & & & & %.1f & %.1f & %.1f &&&& %.1f & %.1f & %.1f & %.1f & %.1f & %.1f\\\\\n", findAvg(0, 0), findAvg(0, 1), findAvg(0, 2), findAvg(2, 0), findAvg(2, 1), findAvg(2, 2), findAvg(3, 0), findAvg(3, 1), findAvg(3, 2))
 
 	fmt.Println("\\bottomrule")
 
@@ -73,50 +79,62 @@ func writeTable() {
 }
 
 func getSols(s []scenario) string {
-	var sums [4][3]float32
-	var avgs [4][3]float32
 	counter := 0
 
-	for _, i := range s {
-		sums[0][0] += float32(i.compactSolution)
-		sums[0][1] += i.compactTime
-		sums[0][2] += i.compactGap
+	for _, j := range s {
+		sums[i][0][0] += float32(j.compactSolution)
+		sums[i][0][1] += j.compactTime
+		sums[i][0][2] += j.compactGap
 
-		if i.vrpSolution != 0 {
-			sums[1][0] += float32(i.vrpSolution)
-			sums[1][1] += i.vrpTime
-			sums[1][2] += i.vrpGap
+		if j.vrpSolution != 0 {
+			sums[i][1][0] += float32(j.vrpSolution)
+			sums[i][1][1] += j.vrpTime
+			sums[i][1][2] += j.vrpGap
 			counter++
 		}
 
-		sums[2][0] += float32(i.lowerSolution)
-		sums[2][1] += i.lowerTime
-		sums[2][2] += i.lowerGap
+		sums[i][2][0] += float32(j.lowerSolution)
+		sums[i][2][1] += j.lowerTime
+		sums[i][2][2] += j.lowerGap
 
-		sums[3][0] += float32(i.lower2Solution)
-		sums[3][1] += i.lower2Time
-		sums[3][2] += i.lower2Gap
+		sums[i][3][0] += float32(j.lower2Solution)
+		sums[i][3][1] += j.lower2Time
+		sums[i][3][2] += j.lower2Gap
 	}
 
-	for i := range sums {
+	for j := range sums[i] {
 		div := float32(len(s))
-		if i == 1 {
+		if j == 1 {
 			div = float32(counter)
 		}
 
-		avgs[i][0] = sums[i][0] / div
-		avgs[i][1] = sums[i][1] / div
-		avgs[i][2] = sums[i][2] / div
+		avgs[i][j][0] = sums[i][j][0] / div
+		avgs[i][j][1] = sums[i][j][1] / div
+		avgs[i][j][2] = sums[i][j][2] / div
 
 	}
 
 	// Lower bound gap
-	avgs[2][2] = (sums[0][0] - sums[2][0]) / sums[0][0]
-	avgs[3][2] = (sums[0][0] - sums[3][0]) / sums[0][0]
+	avgs[i][2][2] = (sums[i][0][0] - sums[i][2][0]) / sums[i][0][0]
+	avgs[i][3][2] = (sums[i][0][0] - sums[i][3][0]) / sums[i][0][0]
+	avgs[i][2][2] *= 100
+	avgs[i][3][2] *= 100
+
+	defer func() {
+		i++
+	}()
 
 	if counter > 0 {
-		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[1][0], avgs[1][1], avgs[1][2], avgs[2][0], avgs[2][1], avgs[2][2], avgs[3][0], avgs[3][1], avgs[3][2])
+		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f\\%% & %.1f & %.1f & %.1f\\%%", avgs[i][0][0], avgs[i][0][1], avgs[i][0][2], avgs[i][1][0], avgs[i][1][1], avgs[i][1][2], avgs[i][2][0], avgs[i][2][1], avgs[i][2][2], avgs[i][3][0], avgs[i][3][1], avgs[i][3][2])
 	}
 
-	return fmt.Sprintf("%.1f & %.1f & %.1f & & & & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[0][0], avgs[0][1], avgs[0][2], avgs[2][0], avgs[2][1], avgs[2][2], avgs[3][0], avgs[3][1], avgs[3][2])
+	return fmt.Sprintf("%.1f & %.1f & %.1f & & & & %.1f & %.1f & %.1f\\%% & %.1f & %.1f & %.1f\\%%", avgs[i][0][0], avgs[i][0][1], avgs[i][0][2], avgs[i][2][0], avgs[i][2][1], avgs[i][2][2], avgs[i][3][0], avgs[i][3][1], avgs[i][3][2])
+}
+
+func findAvg(i, j int) float32 {
+	var tmp float32
+	for a := 0; a < 30; a++ {
+		tmp += avgs[a][i][j]
+	}
+	return tmp / 30
 }

@@ -64,4 +64,15 @@ s.t. dispatchLast{s in S, (u,v) in Last[s]}: Y[s,u] >= X[u,v,s];
 
 solve;
 
+# display{s in S, (u,v) in F[s]: X[u,v,s] = 1}: X[u,v,s];
+# display{s in S, (u,v) in F[s]: Y[s,u] = 1}: Y[s,u];
+display: card(V);
+display: card(S);
+display: sum{s in S, u in V} Y[s,u];
+display: q;
+display{s in S, (u,v) in F[s]}: X[u,v,s];
+#display{s in S, (u,v) in F[s]: Y[s,u] = 1}: Y[s,u];
+display{s in S, (u,v) in F[s]}: Y[s,u];
+display{s in S, (u,v) in F[s]}: C[s,u];
+
 end;
