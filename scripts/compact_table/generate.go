@@ -153,7 +153,7 @@ func fillScenarios() {
 			solLower = 0
 		}
 
-		solLower2, err := getSolution(fmt.Sprintf("networks/%s/lower2/solution.sol", f.Name()))
+		solLower2, err := getSolution(fmt.Sprintf("networks/%s/relax/solution.sol", f.Name()))
 		if err != nil {
 			solLower2 = 0
 		}

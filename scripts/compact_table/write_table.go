@@ -17,7 +17,7 @@ func writeTable() {
 	fmt.Println("\\def\\arraystretch{0.9}")
 	fmt.Println("\\setlength\\tabcolsep{4pt}")
 	fmt.Println("\\begin{tabular}{l|l|l|ll|lll|lll|lll|lll}")
-	fmt.Println("\\toprule \\#nodes & \\#links & \\#flows & Group & \\#instances & \\multicolumn{3}{c|}{Cover} & \\multicolumn{3}{c|}{VRP} & \\multicolumn{3}{c|}{Lower} & \\multicolumn{3}{c}{Relax}\\\\")
+	fmt.Println("\\toprule \\#devices & \\#links & \\#flows & Group & \\#instances & \\multicolumn{3}{c|}{Cover} & \\multicolumn{3}{c|}{VRP} & \\multicolumn{3}{c|}{Lower} & \\multicolumn{3}{c}{Relax}\\\\")
 	fmt.Println("& & & & & Sol & Time & CPLEX Gap & Sol & Time & CPLEX Gap & Sol & Time & $Gap_v$ & Sol & Time & $Gap_v$\\\\ \\midrule")
 	count := 1
 	for inI, i := range scenarios {
@@ -125,10 +125,10 @@ func getSols(s []scenario) string {
 	}()
 
 	if counter > 0 {
-		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f\\%% & %.1f & %.1f & %.1f\\%%", avgs[i][0][0], avgs[i][0][1], avgs[i][0][2], avgs[i][1][0], avgs[i][1][1], avgs[i][1][2], avgs[i][2][0], avgs[i][2][1], avgs[i][2][2], avgs[i][3][0], avgs[i][3][1], avgs[i][3][2])
+		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[i][0][0], avgs[i][0][1], avgs[i][0][2], avgs[i][1][0], avgs[i][1][1], avgs[i][1][2], avgs[i][2][0], avgs[i][2][1], avgs[i][2][2], avgs[i][3][0], avgs[i][3][1], avgs[i][3][2])
 	}
 
-	return fmt.Sprintf("%.1f & %.1f & %.1f & & & & %.1f & %.1f & %.1f\\%% & %.1f & %.1f & %.1f\\%%", avgs[i][0][0], avgs[i][0][1], avgs[i][0][2], avgs[i][2][0], avgs[i][2][1], avgs[i][2][2], avgs[i][3][0], avgs[i][3][1], avgs[i][3][2])
+	return fmt.Sprintf("%.1f & %.1f & %.1f & & & & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[i][0][0], avgs[i][0][1], avgs[i][0][2], avgs[i][2][0], avgs[i][2][1], avgs[i][2][2], avgs[i][3][0], avgs[i][3][1], avgs[i][3][2])
 }
 
 func findAvg(i, j int) float32 {
