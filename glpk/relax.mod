@@ -23,10 +23,10 @@ set A, dimen 2;
 var C{S,V} >= 0;
 # Control the weight that each route is handling
 
-var Y{S,V} >=0;
+var Y{S,V} >=0, <=1;
 # Check whether route k dispatches on node V
 
-var X{A,S} >=0;
+var X{A,S} >=0, <=1;
 # Check whether arch A is handled by route K
 
 param q;
