@@ -71,7 +71,7 @@ func writeTable() {
 
 	// bottom header
 	fmt.Println("\\end{tabular}")
-	fmt.Println("\\caption{Solution Groups}")
+	fmt.Println("\\caption{Solution groups}")
 	fmt.Println("\\legend{Source: The Authors}")
 	fmt.Println("\\label{tab:results-short}")
 	fmt.Println("\\end{table}")
@@ -124,11 +124,10 @@ func getSols(s []scenario) string {
 		i++
 	}()
 
-	if counter > 0 {
-		return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[i][0][0], avgs[i][0][1], avgs[i][0][2], avgs[i][1][0], avgs[i][1][1], avgs[i][1][2], avgs[i][2][0], avgs[i][2][1], avgs[i][2][2], avgs[i][3][0], avgs[i][3][1], avgs[i][3][2])
+	if counter < len(s) {
+		return fmt.Sprintf("%.1f & %.1f & %.1f & & & & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[i][0][0], avgs[i][0][1], avgs[i][0][2], avgs[i][2][0], avgs[i][2][1], avgs[i][2][2], avgs[i][3][0], avgs[i][3][1], avgs[i][3][2])
 	}
-
-	return fmt.Sprintf("%.1f & %.1f & %.1f & & & & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[i][0][0], avgs[i][0][1], avgs[i][0][2], avgs[i][2][0], avgs[i][2][1], avgs[i][2][2], avgs[i][3][0], avgs[i][3][1], avgs[i][3][2])
+	return fmt.Sprintf("%.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f & %.1f", avgs[i][0][0], avgs[i][0][1], avgs[i][0][2], avgs[i][1][0], avgs[i][1][1], avgs[i][1][2], avgs[i][2][0], avgs[i][2][1], avgs[i][2][2], avgs[i][3][0], avgs[i][3][1], avgs[i][3][2])
 }
 
 func findAvg(i, j int) float32 {
