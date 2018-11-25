@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Defini\IeC {\c c}\IeC {\~a}o do Problema}{7}{0}{2}
+\beamer@sectionintoc {3}{Algoritmo Proposto}{31}{0}{3}
+\beamer@sectionintoc {4}{Experimentos computacionais}{41}{0}{4}
+\beamer@sectionintoc {5}{Considera\IeC {\c c}\IeC {\~o}es Finais}{61}{0}{5}

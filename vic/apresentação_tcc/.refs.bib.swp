@@ -1,0 +1,72 @@
+@article{burke2012late,
+  title={The late acceptance hill-climbing heuristic},
+  author={Burke, Edmund K and Bykov, Yuri},
+  journal={Department of Computing Science and Mathematics University of Stirling—Technical Report CSM-192. ISSN},
+  pages={1460--9673},
+  year={2012}
+}
+
+@article{valouxis2012systematic,
+  title={A systematic two phase approach for the nurse rostering problem},
+  author={Valouxis, Christos and Gogos, Christos and Goulas, George and Alefragis, Panayiotis and Housos, Efthymios},
+  journal={European Journal of Operational Research},
+  volume={219},
+  number={2},
+  pages={425--433},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@inproceedings{burke10,
+  title={An ejection chain method and a branch and price algorithm applied to the instances of the first international nurse rostering competition, 2010},
+  author={Burke, Edmund K and Curtois, Tim},
+  booktitle={Proceedings of the 8th International Conference on the Practice and Theory of Automated Timetabling PATAT},
+  volume={10},
+  pages={13},
+  year={2010}
+}
+
+@article{nonobe2010,
+  title={INRC2010: An approach using a general constraint optimization solver},
+  author={Nonobe, Koji},
+  journal={The First International Nurse Rostering Competition (INRC 2010)},
+  year={2010}
+}
+
+@inproceedings{haspeslagh2010first,
+  title={First International Nurse Rostering Competition 2010 (August 10-13, 2010, Belfast, UK)},
+  author={Haspeslagh, Stefaan and De Causmaecker, Patrick and St{\o}levik, Martin and Schaerf, Andrea},
+  booktitle={PATAT 2010-Proceedings of the 8th International Conference on the Practice and Theory of Automated Timetabling, Belfast, Northern-Ireland, UK},
+  year={2010}
+}
+
+@inproceedings{romer2015multi,
+  title={A multi-commodity flow-based mixed-integer linear programming formulation for nurse rostering problems},
+  author={R{\"o}mer, Michael},
+  booktitle={OR2015-International Conference on Operations Research, Vienna},
+  year={2015}
+}
+
+@inproceedings{kheirisequence,
+  title={A Sequence-based Selection Hyper-heuristic},
+  author={Kheiri, Ahmed and Ozcan, Ender and Lewis, Rhyd and Thompson, Jonathan},
+  booktitle={Proceedings of the 11th International Conference of the Practice and Theory of Automated Timetabling},
+  year={2016},
+  organization={PATAT}
+}
+
+@article{gomes2017variable,
+  title={Variable neighborhood search accelerated column generation for the nurse rostering problem},
+  author={Gomes, Rafael AM and Toffolo, T{\'u}lio AM and Santos, Haroldo Gambini},
+  journal={Electronic Notes in Discrete Mathematics},
+  volume={58},
+  pages={31--38},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@ARTICLE{ceschia2015model,
+author ={Ceschia, Sara and Dang, Nguyen Thi Thanh and De Causmaecker, Patrick and Haspeslagh, Stefaan and Schaerf, Andrea},
+title = {Second International Nurse Rostering Competition: mathematical model},
+year={2015}
+}
